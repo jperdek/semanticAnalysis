@@ -1,0 +1,7 @@
+<hasGloss>
+<byTransport>
+rdfs:comment
+<occursSince>
+<occursUntil>
+<hasSuccessor>
+<hasPredecessor>

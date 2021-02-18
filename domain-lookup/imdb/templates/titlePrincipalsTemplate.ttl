@@ -1,0 +1,17 @@
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix gr:      <http://purl.org/goodrelations/v1#> .
+@prefix foaf:    <http://xmlns.com/foaf/0.1/> .
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix vso:     <http://purl.org/vso/ns#> .
+@prefix imdb: <http://datasets.imdbws.com/resource#> .
+
+
+imdb:Title-${tconst} imdb:hasPersonel _:person-${tconst}-${ordering} . 
+
+_:person-${tconst}-${ordering} 
+	imdb:person "${nconst}" ;
+	rdf:type "${category}" ;
+	imdb:job "${job}" ;
+	imdb:characters "${characters}" .
+	

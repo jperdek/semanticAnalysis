@@ -1,0 +1,15 @@
+@base <http://yago-knowledge.org/resource/> .
+@prefix dbp: <http://dbpedia.org/ontology/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+<Single-entry_bookkeeping_system>	rdf:type	<wikicat_Accounting_systems> .
+<Single-entry_bookkeeping_system>	rdf:type	<wordnet_abstraction_100002137> .
+<Single-entry_bookkeeping_system>	rdf:type	<wordnet_accounting_113405962> .
+<Single-entry_bookkeeping_system>	rdf:type	<wordnet_communication_100033020> .
+<Single-entry_bookkeeping_system>	rdf:type	<wordnet_document_113403331> .
+<Single-entry_bookkeeping_system>	rdf:type	<wordnet_record_113403643> .
+<Single-entry_bookkeeping_system>	rdf:type	<wordnet_register_113412321> .
+<Single-entry_bookkeeping_system>	rdf:type	owl:Thing .

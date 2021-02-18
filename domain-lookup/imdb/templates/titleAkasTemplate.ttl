@@ -1,0 +1,19 @@
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix gr:      <http://purl.org/goodrelations/v1#> .
+@prefix foaf:    <http://xmlns.com/foaf/0.1/> .
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix vso:     <http://purl.org/vso/ns#> .
+@prefix imdb: <http://datasets.imdbws.com/resource#> .
+
+
+imdb:Title-${titleId} imdb:languageTitle _:languageTitle-${ordering} .
+
+_:languageTitle-${ordering}
+	imdb:title "${title}" ;
+	imdb:region "${region}" ;
+	imdb:language "${language}" ;
+	imdb:types "${types}" ;
+	imdb:attributes "${attributes}" ;
+	imdb:isOriginalTitle "${isOriginalTitle}" .
+	

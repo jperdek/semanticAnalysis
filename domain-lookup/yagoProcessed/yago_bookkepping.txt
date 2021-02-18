@@ -1,0 +1,153 @@
+@base <http://yago-knowledge.org/resource/> .
+@prefix dbp: <http://dbpedia.org/ontology/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+<Bookkeeping_association>	skos:prefLabel	"Bookkeeping association"@eng .
+<wordnet_bookkeeping_100619230>	skos:prefLabel	"bookkeeping"@eng .
+<Single-entry_bookkeeping_system>	skos:prefLabel	"Single-entry bookkeeping system"@eng .
+<Double-entry_bookkeeping_system>	skos:prefLabel	"Double-entry bookkeeping system"@eng .
+<wordnet_single_entry_100619419>	<hasGloss>	"a simple bookkeeping system; transactions are entered in only one account"@eng .
+<wordnet_posting_106494373>	<hasGloss>	"(bookkeeping) a listing on the company's records; 'the posting was made in the cash account'"@eng .
+<wordnet_trial_balance_113411005>	<hasGloss>	"a balance of debits and credits in double-entry bookkeeping; drawn up to test their equality"@eng .
+<wordnet_bookkeeping_100619230>	<hasGloss>	"the activity of recording business transactions"@eng .
+<Double-entry_bookkeeping_system>	rdfs:label	"Partita doppia"@ita .
+<Double-entry_bookkeeping_system>	rdfs:label	"Método das partidas dobradas"@por .
+<Double-entry_bookkeeping_system>	rdfs:label	"Двойная запись"@rus .
+<wordnet_bookkeeping_100619230>	rdfs:label	"clerking"@eng .
+<Double-entry_bookkeeping_system>	rdfs:label	"複式記帳"@lzh .
+<Double-entry_bookkeeping_system>	rdfs:label	"复式簿记"@zho .
+<Double-entry_bookkeeping_system>	rdfs:label	"복식 부기"@kor .
+<wordnet_bookkeeping_100619230>	rdfs:label	"bookkeeping"@eng .
+<Double-entry_bookkeeping_system>	rdfs:label	"Pembukuan berpasangan"@ind .
+<Single-entry_bookkeeping_system>	rdfs:label	"Jednoduché účetnictví"@ces .
+<Double-entry_bookkeeping_system>	rdfs:label	"قيد مزدوج"@ara .
+<Double-entry_bookkeeping_system>	rdfs:label	"Dobbelt bokholderi"@nob .
+<Double-entry_bookkeeping_system>	rdfs:label	"Double-entry bookkeeping system"@eng .
+<Double-entry_bookkeeping_system>	rdfs:label	"ද්වҭ්ව çı් පܭ් තжӸේ ක්‍රҺා=Һ"@sin .
+<Double-entry_bookkeeping_system>	rdfs:label	"Dubbel bokföring"@swe .
+<Double-entry_bookkeeping_system>	rdfs:label	"Podvojné účtovníctvo"@slk .
+<Single-entry_bookkeeping_system>	rdfs:label	"Kameralistika"@lit .
+<Double-entry_bookkeeping_system>	rdfs:label	"இரட͟Ȫͪதிவு கணக͕uȪͪு மqை"@tam .
+<Single-entry_bookkeeping_system>	rdfs:label	"Enkel boekhouden"@nld .
+<Double-entry_bookkeeping_system>	rdfs:label	"Kettős könyvelés"@hun .
+<Single-entry_bookkeeping_system>	rdfs:label	"قيد مفرد"@ara .
+<Double-entry_bookkeeping_system>	rdfs:label	"Dubbel bokfoering"@swe .
+<Double-entry_bookkeeping_system>	rdfs:label	"حسابداری دوطرفه"@fas .
+<Double-entry_bookkeeping_system>	rdfs:label	"Reguła podwójnego zapisu"@pol .
+<Double-entry_bookkeeping_system>	rdfs:label	"দু তরফা দাখিল পদͧতি"@ben .
+<Single-entry_bookkeeping_system>	rdfs:label	"Single-entry bookkeeping system"@eng .
+<Double-entry_bookkeeping_system>	rdfs:label	"Principiul dublei inregistrari"@ron .
+<Single-entry_bookkeeping_system>	rdfs:label	"Kameralistik"@deu .
+<Single-entry_bookkeeping_system>	rdfs:label	"Jednoduché účtovníctvo"@slk .
+<Double-entry_bookkeeping_system>	rdfs:label	"Regula podwojnego zapisu"@pol .
+<Double-entry_bookkeeping_system>	rdfs:label	"Hệ thống ghi sổ kép"@vie .
+<Double-entry_bookkeeping_system>	rdfs:label	"Divkarsais ieraksts"@lav .
+<Double-entry_bookkeeping_system>	rdfs:label	"Kahekordse kirjendamise põhimõte"@est .
+<Double-entry_bookkeeping_system>	rdfs:label	"Partida doble"@spa .
+<Double-entry_bookkeeping_system>	rdfs:label	"Partida doble"@cat .
+<Double-entry_bookkeeping_system>	rdfs:label	"Comptabilite en partie double"@fra .
+<Double-entry_bookkeeping_system>	rdfs:label	"Kahdenkertainen kirjanpito"@fin .
+<Double-entry_bookkeeping_system>	rdfs:label	"Principiul dublei înregistrări"@ron .
+<Double-entry_bookkeeping_system>	rdfs:label	"Подвійний запис"@ukr .
+<Single-entry_bookkeeping_system>	rdfs:label	"単式簿記"@jpn .
+<Double-entry_bookkeeping_system>	rdfs:label	"Dubbel boekhouden"@nld .
+<wordnet_double_entry_100619578>	rdfs:label	"double-entry bookkeeping"@eng .
+<Double-entry_bookkeeping_system>	rdfs:label	"Dobbelt bogholderi"@dan .
+<Double-entry_bookkeeping_system>	rdfs:label	"Divkāršais ieraksts"@lav .
+<Double-entry_bookkeeping_system>	rdfs:label	"הנהלת חשבונות כפולה"@heb .
+<Double-entry_bookkeeping_system>	rdfs:label	"दोहरी प्रविष्टि प्रणाली"@hin .
+<Double-entry_bookkeeping_system>	rdfs:label	"Metodo das partidas dobradas"@por .
+<Double-entry_bookkeeping_system>	rdfs:label	"दोहोरो लेखा प्रणाली"@nep .
+<Double-entry_bookkeeping_system>	rdfs:label	"Dvojno knjigovodstvo"@hrv .
+<Double-entry_bookkeeping_system>	rdfs:label	"Dvojno knjigovodstvo"@srp .
+<Double-entry_bookkeeping_system>	rdfs:label	"Kahekordse kirjendamise pohimote"@est .
+<Double-entry_bookkeeping_system>	rdfs:label	"複式簿記"@jpn .
+<Bookkeeping_association>	rdfs:label	"Bookkeeping association"@eng .
+<Double-entry_bookkeeping_system>	rdfs:label	"Kettoes koenyveles"@hun .
+<Single-entry_bookkeeping_system>	rdfs:label	"הנהלת חשבונות חד-צדית"@heb .
+<wordnet_single_entry_100619419>	rdfs:label	"single-entry bookkeeping"@eng .
+<Double-entry_bookkeeping_system>	rdfs:label	"Қосарлы жазба"@kaz .
+<Double-entry_bookkeeping_system>	rdfs:label	"Dvejybinis irasas"@lit .
+<Double-entry_bookkeeping_system>	rdfs:label	"Buchführung"@deu .
+<Double-entry_bookkeeping_system>	rdfs:label	"Buchfuehrung"@deu .
+<Double-entry_bookkeeping_system>	rdfs:label	"Podvojné účetnictví"@ces .
+<Double-entry_bookkeeping_system>	rdfs:label	"Dvejybinis įrašas"@lit .
+<Double-entry_bookkeeping_system>	rdfs:label	"Dubbelinskrywingstelsel"@afr .
+<Double-entry_bookkeeping_system>	rdfs:label	"Comptabilité en partie double"@fra .
+<Double-entry_bookkeeping_system>	<redirectedFrom>	"دفترداری دوطرفه"@fas .
+<Double-entry_bookkeeping_system>	<redirectedFrom>	"Double-entry book-keeping systems"@eng .
+<Double-entry_bookkeeping_system>	<redirectedFrom>	"Podwójna księgowość"@pol .
+<Double-entry_bookkeeping_system>	<redirectedFrom>	"Double entries"@eng .
+<Double-entry_bookkeeping_system>	<redirectedFrom>	"Double entry book keeping system"@eng .
+<Double-entry_bookkeeping_system>	<redirectedFrom>	"Dual aspect"@eng .
+<Double-entry_bookkeeping_system>	<redirectedFrom>	"Principe comptable de la partie double"@fra .
+<Double-entry_bookkeeping_system>	<redirectedFrom>	"Summen und Saldenliste"@deu .
+<Double-entry_bookkeeping_system>	<redirectedFrom>	"Double entry book keepers"@eng .
+<Double-entry_bookkeeping_system>	<redirectedFrom>	"Double-Entry Accounting"@eng .
+<Double-entry_bookkeeping_system>	<redirectedFrom>	"دفترداري دوبل"@fas .
+<Yu_Cong_Eng_v._Trinidad>	<redirectedFrom>	"Chinese Bookkeeping Act"@eng .
+<Double-entry_bookkeeping_system>	<redirectedFrom>	"حسابداري دوطرفه"@fas .
+<Double-entry_bookkeeping_system>	<redirectedFrom>	"Double-entry book keeping systems"@eng .
+<Double-entry_bookkeeping_system>	<redirectedFrom>	"Double entry book keeper"@eng .
+<Double-entry_bookkeeping_system>	<redirectedFrom>	"Double-entry bookkeeping systems"@eng .
+<Hollywood_accounting>	<redirectedFrom>	"Hollywood bookkeeping"@eng .
+<Double-entry_bookkeeping_system>	<redirectedFrom>	"Comptabilité En Partie Double"@fra .
+<Double-entry_bookkeeping_system>	<redirectedFrom>	"Double entry book-keeper"@eng .
+<Double-entry_bookkeeping_system>	<redirectedFrom>	"Kassenabschluss"@deu .
+<Double-entry_bookkeeping_system>	<redirectedFrom>	"Aufzeichnungspflicht"@deu .
+<Double-entry_bookkeeping_system>	<redirectedFrom>	"Derivative Buchführungspflicht"@deu .
+<Double-entry_bookkeeping_system>	<redirectedFrom>	"Double-entry Accounting"@eng .
+<Double-entry_bookkeeping_system>	<redirectedFrom>	"Double-entry accounting system"@eng .
+<Double-entry_bookkeeping_system>	<redirectedFrom>	"Fehlbuchung"@deu .
+<Double-entry_bookkeeping_system>	<redirectedFrom>	"Geheimbuch"@deu .
+<Double-entry_bookkeeping_system>	<redirectedFrom>	"دفترداری دوبل"@fas .
+<Double-entry_bookkeeping_system>	<redirectedFrom>	"حسابداري دوبل"@fas .
+<Single-entry_bookkeeping_system>	<redirectedFrom>	"Single-entry accounting system"@eng .
+<Double-entry_bookkeeping_system>	<redirectedFrom>	"Teoría de la partida doble"@spa .
+<Single-entry_bookkeeping_system>	<redirectedFrom>	"Kameralbuchhaltung"@deu .
+<Single-entry_bookkeeping_system>	<redirectedFrom>	"Single-entry bookkeeping"@eng .
+<Double-entry_bookkeeping_system>	<redirectedFrom>	"Double entry system"@eng .
+<Double-entry_bookkeeping_system>	<redirectedFrom>	"Contabilidad por partida doble"@spa .
+<Double-entry_bookkeeping_system>	<redirectedFrom>	"Double entry bookkeeping systems"@eng .
+<Single-entry_bookkeeping_system>	<redirectedFrom>	"Kameralist"@deu .
+<Double-entry_bookkeeping_system>	<redirectedFrom>	"دفترداري دوطرفه"@fas .
+<Double-entry_bookkeeping_system>	<redirectedFrom>	"حسابداری دوبل"@fas .
+<Double-entry_bookkeeping_system>	<redirectedFrom>	"Summen- und Saldenliste"@deu .
+<Double-entry_bookkeeping_system>	<redirectedFrom>	"Double-entry"@eng .
+<Double-entry_bookkeeping_system>	<redirectedFrom>	"Buchführungspflicht"@deu .
+<Double-entry_bookkeeping_system>	<redirectedFrom>	"Teoria de la partida doble"@spa .
+<Double-entry_bookkeeping_system>	<redirectedFrom>	"Double entry book-keeping systems"@eng .
+<Double-entry_bookkeeping_system>	<redirectedFrom>	"Double entry bookkeepers"@eng .
+<Bookkeeping_association>	<redirectedFrom>	"Bookkeeping associations"@eng .
+<Double-entry_bookkeeping_system>	<redirectedFrom>	"Double entry book keeping"@eng .
+<Double-entry_bookkeeping_system>	<redirectedFrom>	"Comptabilité d'engagement"@fra .
+<Double-entry_bookkeeping_system>	<redirectedFrom>	"Comptabilite en partie double"@fra .
+<Double-entry_bookkeeping_system>	<redirectedFrom>	"Double-entry bookkeeper"@eng .
+<Double-entry_bookkeeping_system>	<redirectedFrom>	"Double-entry book keeping"@eng .
+<Double-entry_bookkeeping_system>	<redirectedFrom>	"Double-entries"@eng .
+<Double-entry_bookkeeping_system>	<redirectedFrom>	"Double entry booking"@eng .
+<Double-entry_bookkeeping_system>	<redirectedFrom>	"Digraphie"@fra .
+<Double-entry_bookkeeping_system>	<redirectedFrom>	"Double-entry book keeper"@eng .
+<Double-entry_bookkeeping_system>	<redirectedFrom>	"Double-entry book-keeper"@eng .
+<Double-entry_bookkeeping_system>	<redirectedFrom>	"Double entry book keeping systems"@eng .
+<Double-entry_bookkeeping_system>	<redirectedFrom>	"Doble entrada"@spa .
+<Double-entry_bookkeeping_system>	<redirectedFrom>	"Double-entry system"@eng .
+<Double-entry_bookkeeping_system>	<redirectedFrom>	"Double entry book-keepers"@eng .
+<Single-entry_bookkeeping_system>	<redirectedFrom>	"Books of original entry"@eng .
+<Double-entry_bookkeeping_system>	<redirectedFrom>	"Split transaction"@eng .
+<Double-entry_bookkeeping_system>	<redirectedFrom>	"Contabilidad de causacion"@spa .
+<Double-entry_bookkeeping_system>	<redirectedFrom>	"Double entry bookkeeper"@eng .
+<Single-entry_bookkeeping_system>	<redirectedFrom>	"Single entry bookkeeping"@eng .
+<Double-entry_bookkeeping_system>	<redirectedFrom>	"Double entry"@eng .
+<Double-entry_bookkeeping_system>	<redirectedFrom>	"Double-entry book keeping system"@eng .
+<Single-entry_bookkeeping_system>	<redirectedFrom>	"Kamerale Buchführung"@deu .
+<Double-entry_bookkeeping_system>	<redirectedFrom>	"Double book-keeping"@eng .
+<Double-entry_bookkeeping_system>	<redirectedFrom>	"نظام مسك الدفاتر ثنائى المدخل"@ara .
+<Double-entry_bookkeeping_system>	<redirectedFrom>	"نظام القيد المزدوج"@ara .
+<Double-entry_bookkeeping_system>	<redirectedFrom>	"Zasada podwójnego zapisu"@pol .
+<Single-entry_bookkeeping_system>	<redirectedFrom>	"Kameralistische Buchführung"@deu .
+<Double-entry_bookkeeping_system>	<redirectedFrom>	"Double-entry bookkeeping system"@ara .
+<Double-entry_bookkeeping_system>	<redirectedFrom>	"Cash book, Journal"@eng .

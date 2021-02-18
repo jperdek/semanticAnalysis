@@ -1,0 +1,7 @@
+<hasGloss>
+<wasDestroyedOnDate>
+<startedOnDate>
+<wasBornOnDate>
+<happenedOnDate>
+<diedOnDate>
+<wasCreatedOnDate>
