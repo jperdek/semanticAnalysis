@@ -1,5 +1,6 @@
 *.json
 !categorization/semcor_frequencies.json
+!domain-lookup/wordnet/*.json
 
 # Created by .ignore support plugin (hsz.mobi)
 ### Python template
