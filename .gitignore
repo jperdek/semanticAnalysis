@@ -1,4 +1,5 @@
 *.json
+!categorization/semcor_frequencies.json
 
 # Created by .ignore support plugin (hsz.mobi)
 ### Python template

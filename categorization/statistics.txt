@@ -1,0 +1,116 @@
+Number words:  81004
+Number meanings:  129088
+Meanings without categories set:  37455
+Average number meanings:  1.5936003160337762
+Min count:  1
+Max count:  3086
+Count for:  0  is:  0
+Count for:  1  is:  104888
+Count for:  2  is:  8455
+Count for:  3  is:  4062
+Count for:  4  is:  2476
+Count for:  5  is:  1650
+Count for:  6  is:  1223
+Count for:  7  is:  873
+Count for:  8  is:  703
+Count for:  9  is:  574
+Count for:  10  is:  454
+Count for:  11  is:  364
+Count for:  12  is:  322
+Count for:  13  is:  315
+Count for:  14  is:  227
+Count for:  15  is:  199
+Count for:  16  is:  170
+Count for:  17  is:  155
+Count for:  18  is:  124
+Count for:  19  is:  139
+Count for:  20  is:  126
+Count for:  21  is:  96
+Count for:  22  is:  81
+Count for:  23  is:  84
+Count for:  24  is:  68
+Count for:  25  is:  76
+Count for:  26  is:  62
+Count for:  27  is:  59
+Count for:  28  is:  55
+Count for:  29  is:  50
+Count for:  30  is:  39
+Count for:  31  is:  34
+Count for:  32  is:  51
+Count for:  33  is:  45
+Count for:  34  is:  43
+Count for:  35  is:  33
+Count for:  36  is:  28
+Count for:  37  is:  24
+Count for:  38  is:  26
+Count for:  39  is:  31
+Count for:  40  is:  19
+Count for:  41  is:  22
+Count for:  42  is:  16
+Count for:  43  is:  21
+Count for:  44  is:  14
+Count for:  45  is:  19
+Count for:  46  is:  16
+Count for:  47  is:  15
+Count for:  48  is:  12
+Count for:  49  is:  13
+Count for:  50  is:  19
+Count for:  51  is:  16
+Count for:  52  is:  11
+Count for:  53  is:  9
+Count for:  54  is:  5
+Count for:  55  is:  4
+Count for:  56  is:  12
+Count for:  57  is:  9
+Count for:  58  is:  9
+Count for:  59  is:  12
+Count for:  60  is:  11
+Count for:  61  is:  7
+Count for:  62  is:  10
+Count for:  63  is:  6
+Count for:  64  is:  9
+Count for:  65  is:  9
+Count for:  66  is:  11
+Count for:  67  is:  7
+Count for:  68  is:  3
+Count for:  69  is:  5
+Count for:  70  is:  3
+Count for:  71  is:  8
+Count for:  72  is:  2
+Count for:  73  is:  4
+Count for:  74  is:  6
+Count for:  75  is:  4
+Count for:  76  is:  7
+Count for:  77  is:  4
+Count for:  78  is:  6
+Count for:  79  is:  4
+Count for:  80  is:  4
+Count for:  81  is:  3
+Count for:  82  is:  4
+Count for:  83  is:  2
+Count for:  84  is:  4
+Count for:  85  is:  5
+Count for:  86  is:  3
+Count for:  87  is:  3
+Count for:  88  is:  6
+Count for:  89  is:  8
+Count for:  90  is:  0
+Count for:  91  is:  4
+Count for:  92  is:  5
+Count for:  93  is:  3
+Count for:  94  is:  1
+Count for:  95  is:  3
+Count for:  96  is:  2
+Count for:  97  is:  5
+Count for:  98  is:  3
+Count for:  99  is:  1
+
+#nltk.download('wordnet')
+#https://www.nltk.org/howto/wordnet.html
+#https://www.nltk.org/howto/corpus.html
+#https://www.kaggle.com/borrkk/dictionary
+#https://paperswithcode.com/task/word-sense-disambiguation
+#http://moin.delph-in.net/wiki/SemCor
+#https://course.ccs.neu.edu/csg224/ssl/semcor/semcor2.0/doc/cxtfile.htm
+#https://course.ccs.neu.edu/csg224/ssl/semcor/semcor2.0/doc/taglist.htm
+#http://moin.delph-in.net/wiki/SemCor
