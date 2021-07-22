@@ -184,5 +184,6 @@ def usage_wordnet_lemma_and_synsets():
 
 
 if __name__ == "__main__":
+    #usage_wordnet_lemma_and_synsets()
     process_semcor()
     create_statistics_from_semcor_and_categories("semcor_frequencies.json")

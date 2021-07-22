@@ -10,9 +10,15 @@ class SemcorAnalyser:
         with open(filename, "r", encoding="utf-8") as file:
             return json.load(file)
 
-    def __init__(self, path_to_hierarchy, path_to_semcor_frequencies):
+    def __init__(self, path_to_hierarchy = "../domain-lookup/wordnet/domain-parts.json",
+                 path_to_semcor_frequencies = "semcor_frequencies.json"):
         self.domain_hierarchy = self.load_as_json(path_to_hierarchy)
         self.semcor_frequencies = self.load_as_json(path_to_semcor_frequencies)
+        self.vector_for_domain_synset = self.create_vector_for_domain()
+
+    def __init__(self, loaded_hierarchy, loaded_semcor_frequencies, load_files):
+        self.domain_hierarchy = loaded_hierarchy
+        self.semcor_frequencies = loaded_semcor_frequencies
         self.vector_for_domain_synset = self.create_vector_for_domain()
 
     def create_vector_for_domain(self):
@@ -78,10 +84,12 @@ class SemcorAnalyser:
             if value > 0:
                 print("Category: ", category_name, " value: ", value)
 
-    def analyse_text_semcor(self, text, k, repeat=2, use_normal_dist=True, debug=False, describe=False):
+    def analyse_text_semcor(self, text, k, repeat=2, use_normal_dist=False, debug=False, describe=False):
         dest_text_domain_vector = self.create_vector_for_domain()
         words_text = text.split()
         length_text = len(words_text)
+        print(type(length_text))
+        print(type(k))
         for time in range(0, repeat):
             for i in range(0, length_text - k + 1):
                 for j in range(i - k, i + k):
