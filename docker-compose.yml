@@ -1,0 +1,15 @@
+version: "3.8"
+services:
+  app:
+    build: .
+    command: python apis/http/api/endpoints.py
+    ports:
+      - "5000:5000"
+    extra_hosts:
+        - "hostname1  localhost:127.0.0.1"
+    networks:
+      - buildernet
+networks:
+  buildernet:
+    driver: "bridge"
+    

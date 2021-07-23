@@ -1,5 +1,5 @@
 *.json
-!categorization/semcor_frequencies.json
+!serverParts/apis/http/api/senseAnalysis/categorization/semcor_frequencies.json
 !domain-lookup/wordnet/*.json
 !domain-lookup/wordnet/*.json
 !readability/outputFiles/*.json

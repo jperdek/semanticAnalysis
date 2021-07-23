@@ -183,38 +183,47 @@ def classify(train_file, test_file, no_unexpected_values=False):
 
 
 def analyse_weir_cetd_files():
-    classify("./pageAnalyser/train_cetd_extractor.json", "./pageAnalyser/test_cetd_extractor.json",
+    classify("serverParts/apis/http/api/segmentationAnalysis/pageAnalyser/train_cetd_extractor.json",
+             "serverParts/apis/http/api/segmentationAnalysis/pageAnalyser/test_cetd_extractor.json",
              no_unexpected_values=False)
-    classify("./pageAnalyser/train_cetd__edgare_extractor.json", "./pageAnalyser/test_cetd_edgare_extractor.json",
+    classify("serverParts/apis/http/api/segmentationAnalysis/pageAnalyser/train_cetd__edgare_extractor.json",
+             "serverParts/apis/http/api/segmentationAnalysis/pageAnalyser/test_cetd_edgare_extractor.json",
              no_unexpected_values=False)
-    classify("./pageAnalyser/train_cetd_variant_extractor.json", "./pageAnalyser/test_cetd_variant_extractor.json",
+    classify("serverParts/apis/http/api/segmentationAnalysis/pageAnalyser/train_cetd_variant_extractor.json",
+             "serverParts/apis/http/api/segmentationAnalysis/pageAnalyser/test_cetd_variant_extractor.json",
              no_unexpected_values=False)
-    classify("./pageAnalyser/train_cetd_extractor_whole.json", "./pageAnalyser/test_cetd_extractor_whole.json",
+    classify("serverParts/apis/http/api/segmentationAnalysis/pageAnalyser/train_cetd_extractor_whole.json",
+             "serverParts/apis/http/api/segmentationAnalysis/pageAnalyser/test_cetd_extractor_whole.json",
              no_unexpected_values=False)
-    classify("./pageAnalyser/train_cetd__edgare_extractor_whole.json",
-             "./pageAnalyser/test_cetd_edgare_extractor_whole.json", no_unexpected_values=False)
-    classify("./pageAnalyser/train_cetd_variant_extractor_whole.json",
-             "./pageAnalyser/test_cetd_variant_extractor_whole.json", no_unexpected_values=False)
+    classify("serverParts/apis/http/api/segmentationAnalysis/pageAnalyser/train_cetd__edgare_extractor_whole.json",
+             "serverParts/apis/http/api/segmentationAnalysis/pageAnalyser/test_cetd_edgare_extractor_whole.json", no_unexpected_values=False)
+    classify("serverParts/apis/http/api/segmentationAnalysis/pageAnalyser/train_cetd_variant_extractor_whole.json",
+             "serverParts/apis/http/api/segmentationAnalysis/pageAnalyser/test_cetd_variant_extractor_whole.json", no_unexpected_values=False)
 
 
 def analyse_weir_som_files():
-    classify("./pageAnalyser/train_beautifulsoup.json", "./pageAnalyser/test_beautifulsoup.json",
+    classify("serverParts/apis/http/api/segmentationAnalysis/pageAnalyser/train_beautifulsoup.json",
+             "serverParts/apis/http/api/segmentationAnalysis/pageAnalyser/test_beautifulsoup.json",
              no_unexpected_values=False)
-    classify("./pageAnalyser/train_beautifulsoup_whole.json", "./pageAnalyser/test_beautifulsoup_whole.json",
+    classify("serverParts/apis/http/api/segmentationAnalysis/pageAnalyser/train_beautifulsoup_whole.json",
+             "serverParts/apis/http/api/segmentationAnalysis/pageAnalyser/test_beautifulsoup_whole.json",
              no_unexpected_values=False)
 
 
 def analyse_swde_som_files():
-    classify("./pageAnalyser/train_beautifulsoup_swde.json", "./pageAnalyser/test_beautifulsoup_swde.json",
+    classify("output/pageAnalyser/train_beautifulsoup_swde.json", "output/pageAnalyser/test_beautifulsoup_swde.json",
              no_unexpected_values=False)
-    classify("./pageAnalyser/train_beautifulsoup_swde_whole.json", "./pageAnalyser/test_beautifulsoup_swde_whole.json",
+    classify("output/pageAnalyser/train_beautifulsoup_swde_whole.json",
+             "output/pageAnalyser/test_beautifulsoup_swde_whole.json",
              no_unexpected_values=False)
 
 
 def analyse_weir_plain_files():
-    classify("./pageAnalyser/train_plain.json", "./pageAnalyser/test_plain.json",
+    classify("serverParts/apis/http/api/segmentationAnalysis/pageAnalyser/train_plain.json",
+             "serverParts/apis/http/api/segmentationAnalysis/pageAnalyser/test_plain.json",
              no_unexpected_values=False)
-    classify("./pageAnalyser/train_plain_whole.json", "./pageAnalyser/test_plain_whole.json",
+    classify("serverParts/apis/http/api/segmentationAnalysis/pageAnalyser/train_plain_whole.json",
+             "serverParts/apis/http/api/segmentationAnalysis/pageAnalyser/test_plain_whole.json",
              no_unexpected_values=False)
 
 
