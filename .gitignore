@@ -3,6 +3,7 @@
 !domain-lookup/wordnet/*.json
 !domain-lookup/wordnet/*.json
 !readability/outputFiles/*.json
+!serverParts/apis/http/api/web/static/*
 
 # Created by .ignore support plugin (hsz.mobi)
 ### Python template
