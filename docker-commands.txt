@@ -1,2 +1,6 @@
 docker build -t semantic-aspects-api:latest .
 docker run -p 5000:5000 semantic-aspects-api
+
+
+docker build -t jperdek/semantic-aspects-api:latest .
+docker push jperdek/semantic-aspects-api:latest

@@ -63,7 +63,7 @@ def startup():
     semcor_frequencies = load_local_json_file('semcor_frequencies.json')
     print('OK')
     g.semcorAnalyser = SemcorAnalyser(domain_parts,semcor_frequencies, True)
-    print('end')
+    print('end')    
 
 
 if __name__ == "__main__":
