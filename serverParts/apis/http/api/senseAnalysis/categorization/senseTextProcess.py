@@ -100,8 +100,6 @@ class SemcorAnalyser:
         dest_text_domain_vector = self.create_vector_for_domain()
         words_text = text.split()
         length_text = len(words_text)
-        print(type(length_text))
-        print(type(k))
         for time in range(0, repeat):
             for i in range(0, length_text - k + 1):
                 for j in range(i - k, i + k):
@@ -121,8 +119,6 @@ class SemcorAnalyser:
         dest_text_domain_vector = self.create_vector_for_domain()
         words_text = text.split()
         length_text = len(words_text)
-        print(type(length_text))
-        print(type(k))
         for time in range(0, repeat):
             for i in range(0, length_text - k + 1):
                 for j in range(i - k, i + k):

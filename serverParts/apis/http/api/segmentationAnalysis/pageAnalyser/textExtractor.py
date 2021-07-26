@@ -69,6 +69,19 @@ def convert_dict_of_files_to_array_of_dict(input_json_file, output_json_file):
     save_as_json(result_conversion, output_json_file)
 
 
+def convert_document_to_text(html_page, category=None):
+    result = dict()
+    if category is not None:
+        result['category'] = category
+
+    try:
+        dom = BeautifulSoup(html_page, "html.parser")
+        result['text'] = dom.get_text()
+    except UnicodeDecodeError as e:
+        result['text'] = "Error: " + str(e)
+    return result
+
+
 if __name__ == "__main__":
     convert_dict_of_files_to_array_of_dict('d:\\dipldatasets\\weir\\output_beautifulsoap.json',
                                            'd:\\dipldatasets\\weir\\output_beautifulsoap_processed.json')

@@ -3,6 +3,8 @@ import json
 from senseAnalysis.categorization.senseTextProcess import SemcorAnalyser
 from flask import g
 
+from serverParts.apis.http.api.middlewares import login_required
+
 
 def load_local_json_file(file_name):
     stream = send_from_directory('web/static', file_name)
@@ -14,13 +16,14 @@ def json_response(payload, status=200):
     return json.dumps(payload), status, {'content-type': 'application/json' }
 
 
-simple_page = Blueprint('simple_page', __name__, template_folder='templates')
+sense_api = Blueprint('sense_api', __name__, template_folder='templates')
 
 semcorAnalyser = None
 
 
-@simple_page.route("/kudoss", methods=["GET"])
-def analyze():
+@sense_api.route("/senseAnalysis", methods=["GET"])
+@login_required
+def sense_analysis():
     global semcorAnalyser
     if semcorAnalyser is not None:
         g.semcorAnalyser = semcorAnalyser
@@ -35,5 +38,4 @@ def analyze():
     text = request.args.get('text')
     k = int(request.args.get('k'))
     result = g.semcorAnalyser.analyse_text_semcor_results(text, k, return_results=True)
-    print(result)
     return json_response(result)

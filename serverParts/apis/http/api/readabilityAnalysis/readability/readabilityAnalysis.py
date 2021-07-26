@@ -98,6 +98,7 @@ class ReadabilityAnalyser:
             content["flesch_kincaid"] = record
         except ReadabilityException as e:
             if not error_ignore:
+                content["flesch_kincaid"] = str(e)
                 print(e)
 
     def flesch_ease(self, content, error_ignore=True):
@@ -110,6 +111,7 @@ class ReadabilityAnalyser:
             content['flesch_ease'] = record
         except ReadabilityException as e:
             if not error_ignore:
+                content['flesch_ease'] = str(e)
                 print(e)
 
     def dale_chall(self, content, error_ignore=True):
@@ -121,6 +123,7 @@ class ReadabilityAnalyser:
             content['dale_chall'] = record
         except ReadabilityException as e:
             if not error_ignore:
+                content['dale_chall'] = str(e)
                 print(e)
 
     def automated_readability_index(self, content, error_ignore=True):
@@ -133,6 +136,7 @@ class ReadabilityAnalyser:
             content['ari'] = record
         except ReadabilityException as e:
             if not error_ignore:
+                content['ari'] = str(e)
                 print(e)
 
     def coleman_liau_index(self, content, error_ignore=True):
@@ -142,8 +146,11 @@ class ReadabilityAnalyser:
             record['score'] = coleman_liau.score
             record['grade_level'] = coleman_liau.grade_level
             content['cli'] = record
+            print(record)
         except ReadabilityException as e:
+            print(e)
             if not error_ignore:
+                content['cli'] = str(e)
                 print(e)
 
     def gunning_fog_index(self, content, error_ignore=True):
@@ -155,6 +162,7 @@ class ReadabilityAnalyser:
             content['gunning_fog'] = record
         except ReadabilityException as e:
             if not error_ignore:
+                content['gunning_fog'] = str(e)
                 print(e)
 
     def smog(self, content, all_sentences=False, error_ignore=True):
@@ -172,6 +180,10 @@ class ReadabilityAnalyser:
                 content['smog'] = record
         except ReadabilityException as e:
             if not error_ignore:
+                if all_sentences:
+                    content['smog_all'] = str(e)
+                else:
+                    content['smog'] = str(e)
                 print(e)
 
     def spache_readability_formula(self, content, error_ignore=True):
@@ -183,6 +195,7 @@ class ReadabilityAnalyser:
             content['spache'] = record
         except ReadabilityException as e:
             if not error_ignore:
+                content['spache'] = str(e)
                 print(e)
 
     def linsear_write(self, content, error_ignore=True):
@@ -194,6 +207,7 @@ class ReadabilityAnalyser:
             content['linsear_write'] = record
         except ReadabilityException as e:
             if not error_ignore:
+                content['linsear_write'] = str(e)
                 print(e)
 
     @staticmethod
@@ -217,6 +231,30 @@ class ReadabilityAnalyser:
             analyser.linsear_write(analysed_file_record)
             result.append(analysed_file_record)
         save_as_json(result, output_json_file)
+
+    def check_readability(self, use_methods=None, errors_included=True):
+        result_analysis = dict()
+        if use_methods is None or 'flesch_kincaid' in use_methods:
+            self.flesch_kincaid(result_analysis, not errors_included)
+        if use_methods is None or 'flesch_ease' in use_methods:
+            self.flesch_ease(result_analysis, not errors_included)
+        if use_methods is None or 'dale_chall' in use_methods:
+            self.dale_chall(result_analysis, not errors_included)
+        if use_methods is None or 'ari' in use_methods:
+            self.automated_readability_index(result_analysis, not errors_included)
+        if use_methods is None or 'cli' in use_methods:
+            self.coleman_liau_index(result_analysis, not errors_included)
+        if use_methods is None or 'gunning_fog' in use_methods:
+            self.gunning_fog_index(result_analysis, not errors_included)
+        if use_methods is None or 'smog' in use_methods:
+            self.smog(result_analysis, not errors_included)
+        if use_methods is None or 'smog_all' in use_methods:
+            self.smog(result_analysis, True, not errors_included)
+        if use_methods is None or 'spache' in use_methods:
+            self.spache_readability_formula(result_analysis, not errors_included)
+        if use_methods is None or 'linsear_write' in use_methods:
+            self.linsear_write(result_analysis, not errors_included)
+        return result_analysis
 
     @staticmethod
     def initialize_basic_dict(categories, values, process_category=True):

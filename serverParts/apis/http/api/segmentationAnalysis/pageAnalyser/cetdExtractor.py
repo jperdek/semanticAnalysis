@@ -1,4 +1,4 @@
-from serverParts.apis.http.api.segmentationAnalysis.pageAnalyser import Extractor, EDGARExtractor, VariantExtractor
+from segmentationAnalysis.pageAnalyser.CETD.extractor import Extractor, EDGARExtractor, VariantExtractor
 import os
 import json
 
@@ -21,6 +21,43 @@ def example_test():
         print(extracted2)
         extracted3 = ext3.extract_content(sample)
         print(extracted3)
+
+
+def apply_segmentation(html_page, methods=None, normal=None, edgare=None, variant=None):
+    results = dict()
+    if methods is None or 'normal' in methods:
+        if normal is None:
+            ext1 = Extractor()
+        else:
+            ext1 = normal
+        try:
+            results['normal'] = ext1.extract_content(html_page)
+        except Exception as e:
+            results['normal'] = "Error: " + str(e)
+    if methods is None or 'edgare' in methods:
+        if edgare is None:
+            ext2 = EDGARExtractor()
+        else:
+            ext2 = edgare
+        try:
+            results['edgare'] = ext2.extract_content(html_page)
+        except Exception as e:
+            results['edgare'] = "Error: " + str(e)
+    if methods is None or 'variant' in methods:
+        if variant is None:
+            ext3 = VariantExtractor()
+        else:
+            ext3 = variant
+        try:
+            results['variant'] = ext3.extract_content(html_page)
+        except Exception as e:
+            results['variant'] = "Error: " + str(e)
+
+    if methods is not None:
+        for method in methods:
+            if method not in ['normal', 'edgare', 'variant']:
+                results[method] = "Error: unknown method!"
+    return results
 
 
 def save_as_json(object_to_save, filename):

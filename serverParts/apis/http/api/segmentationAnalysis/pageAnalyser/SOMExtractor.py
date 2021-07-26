@@ -179,6 +179,21 @@ class SOMBeautifulSoup:
                     SOMBeautifulSoup.parse_tree_dom_beautiful_soup(dictionary[dom_label]['children'], child, order,
                                                                    file_name, skip_tags=skip_tags)
 
+    @staticmethod
+    def parse_tree_beautiful_soup(html_page, page_name="undefined", root=None):
+        if root is None:
+            root = {}
+        try:
+            dom = BeautifulSoup(html_page, "html.parser")
+            SOMBeautifulSoup.parse_tree_dom_beautiful_soup(root, dom, 1, page_name)
+        except etree.XMLSyntaxError as syntax_error:
+            return "Error: " + str(syntax_error)
+        except UnicodeDecodeError as unicode_error:
+            return "Error: " + str(unicode_error)
+        except RecursionError as recursion_error:
+            return "Error: " + str(recursion_error)
+        return root
+
 
 class SOMLxml:
 
@@ -444,7 +459,8 @@ class ExtractFromTree:
         # save_as_json(file_content, "./example.json")
 
     @staticmethod
-    def add_to_file_content(content_string, file_content, file_name, category, add_domain=False, domain_name=""):
+    def add_to_file_content(content_string, file_content, file_name, category, add_domain=False, domain_name="",
+                            unique_texts=True):
         if add_domain:
             file_name = file_name + "_" + domain_name + "_" + category
 
@@ -457,7 +473,9 @@ class ExtractFromTree:
         if 'category' not in file_content[file_name]:
             file_content[file_name]['category'] = category
 
-        file_content[file_name]['text'].append(content_string)
+        if not unique_texts or content_string not in file_content[file_name]['text']:
+            file_content[file_name]['text'].append(content_string)
+
 
     @staticmethod
     def extract_info_for_file(content, file_content, treshold, category, add_domain=False, domain_name=""):
