@@ -29,8 +29,12 @@ def is_access_token_valid1(token, issuer='https://dev-03853854.okta.com', client
 ENV_FILE = find_dotenv()
 if ENV_FILE:
     load_dotenv(ENV_FILE)
+
+# domain link from issuer
 AUTH0_DOMAIN = env.get("dev-03853854.okta.com")
+# okta developer -> security -> API -> Authorization -> Authorization servers -> edit -> Metadata URI
 PATH_TO_AUTH_SERVER = "https://dev-03853854.okta.com/oauth2/default/.well-known/oauth-authorization-server"
+# client id like 0oa19wfjhrBoVLqSw5d7
 API_IDENTIFIER = env.get('0oa19wfjhrBoVLqSw5d7')
 ALGORITHMS = ["RS256"]
 
