@@ -21,7 +21,7 @@ sense_api = Blueprint('sense_api', __name__, template_folder='templates')
 semcorAnalyser = None
 
 
-@sense_api.route("/senseAnalysis", methods=["GET"])
+@sense_api.route("/api/senseAnalysis", methods=["GET"])
 @login_required
 def sense_analysis():
     global semcorAnalyser

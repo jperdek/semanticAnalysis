@@ -12,7 +12,8 @@ app = Flask(__name__, static_url_path='',
             template_folder='web/templates')
 
 flask_cors.CORS(app)
-app.register_blueprint(sense_api)
+#app.register_blueprint(sense_api, url_prefix="/api/senseAnalysis")
+app.register_blueprint(sense_api, url_prefix="/")
 app.register_blueprint(readability_api)
 app.register_blueprint(segmentation_api)
 app.register_blueprint(keywords_api)
