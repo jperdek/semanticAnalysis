@@ -60,7 +60,8 @@ def process_semcor():
     word_synset_dict = process_semcor_dir_xml_files("D:/dipldatasets/semcor/brownv/tagfiles", word_synset_dict)
     word_synset_dict = count_category_word_frequencies(word_synset_dict)
     word_synset_dict = add_and_initialize_category_associations(word_synset_dict,
-                                                                "../../../../../../output/domain-lookup/wordnet/domain-parts.json")
+                                                                "../../../../../../output/domain-lookup/wordnet"
+                                                                "/domain-parts.json")
     save_as_json(word_synset_dict, "semcor_frequencies.json")
 
 
@@ -184,6 +185,6 @@ def usage_wordnet_lemma_and_synsets():
 
 
 if __name__ == "__main__":
-    #usage_wordnet_lemma_and_synsets()
+    # usage_wordnet_lemma_and_synsets()
     process_semcor()
     create_statistics_from_semcor_and_categories("semcor_frequencies.json")

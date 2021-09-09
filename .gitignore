@@ -4,6 +4,7 @@
 !domain-lookup/wordnet/*.json
 !readability/outputFiles/*.json
 !serverParts/apis/http/api/web/static/*
+!serverParts/apis/http/api/textUnderstanding/group.json
 
 # Created by .ignore support plugin (hsz.mobi)
 ### Python template
