@@ -1,0 +1,10 @@
+to test use 2 commands:
+cd /path/to/this/dict
+python mapper.py < data.txt | sort | python combiner.py | sort | python reducer.py
+
+
+to see output after part1:
+python mapper.py < data.txt
+
+to see output after part2:
+python mapper.py < data.txt | sort | python combiner.py

@@ -1,5 +1,6 @@
 import math
 import json
+from typing import Optional
 
 
 class ConceptVectorNormalizationTools:
@@ -20,7 +21,7 @@ class ConceptVectorNormalizationTools:
                 vector_size = ConceptVectorNormalizationTools.evaluate_vector_size(context.values())
                 for vector_position_name, vector_position_value in context.items():
                     vector_position_values = vector_position_values + separator \
-                                             + vector_position_name + "(" +\
+                                             + vector_position_name + "(" + \
                                              str(round(float(vector_position_value)
                                                        / vector_size, decimal_places)) + ")"
                 add_length = separator + str(len(context.keys()))
@@ -49,17 +50,30 @@ class ConceptVectorNormalizationTools:
         return normalized_values_dict[concept][type_word]
 
     @staticmethod
-    def evaluate_value_for_cluster(concept: str, normalized_values_dict: dict, clusters: dict):
+    def evaluate_concept_cluster_vector_for_cluster_using_concept(concept: str,
+                                                                  normalized_values_dict: dict,
+                                                                  clusters: dict) -> Optional[dict]:
         if concept not in normalized_values_dict:
             return None
         result = dict()
-        for typed_word in normalized_values_dict[concept]:
-            if typed_word in clusters:
-                if result[clusters[typed_word]] is None:
-                    result[clusters[typed_word]] = 0.0
+        result_name = dict()
+        concept_cluster_vector = dict()
+        for typed_word in normalized_values_dict[concept].keys():
+            if typed_word in clusters.values():
+                cluster_name = clusters[typed_word]
+                if result[cluster_name] is None:
+                    result[cluster_name] = 0.0
+                    result_name[cluster_name] = ""
                 # sum normalized value for every cluster
-                result[clusters[typed_word]] = result[clusters[typed_word]] + normalized_values_dict[concept][typed_word]
-        return dict(sorted(result.items(), key=lambda x: x[1]))
+                result[clusters[typed_word]] = result[cluster_name] + normalized_values_dict[
+                    concept][typed_word]
+                if result_name[cluster_name] == "":
+                    result_name[cluster_name] = typed_word
+                else:
+                    result_name[cluster_name] = result_name[cluster_name] + typed_word
+        for cluster_name, value in result.items():
+            concept_cluster_vector[cluster_name] = value
+        return dict(sorted(concept_cluster_vector.items(), key=lambda x: x[1]))
 
     @staticmethod
     def load_as_json(filename: str):

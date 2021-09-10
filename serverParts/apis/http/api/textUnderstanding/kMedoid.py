@@ -251,7 +251,8 @@ def k_medoid_algorithm(k: int, result_dict: dict,
     print("Initial asociation of medoids started:")
     result_connections = associate_medoids_to_closest_one(random_k_medoids_keys, result_dict, distance)
     print("Swaping medoids started:")
-    try_swap_medoids_randomized(random_k_medoids_keys, result_dict, result_connections, distance, max_iterations, treshold)
+    try_swap_medoids_randomized(random_k_medoids_keys, result_dict,
+                                result_connections, distance, max_iterations, treshold)
     # print_results(result_connections)
     print("Saving results")
     save_results(result_connections, file_name)
