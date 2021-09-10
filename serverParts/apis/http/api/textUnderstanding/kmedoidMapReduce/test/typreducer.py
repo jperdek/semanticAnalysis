@@ -62,7 +62,8 @@ for index, cluster_dict in enumerate(clusters):
                 min_sample_index = i
                 min_cluster = chosen_cluster
     if min_cluster is not None:
-        print(list(samples[min_sample_index].keys())[0] + "\t" + json.dumps(list(samples[min_sample_index].values())[0])
+        print(list(samples[min_sample_index].keys())[0])
+        print("C\t" + list(samples[min_sample_index].keys())[0] + "\t" + json.dumps(list(samples[min_sample_index].values())[0])
               + "\t" + json.dumps(clusters[index]))
     else:
-        print(cluster_name + "\t" + json.dumps(cluster) + "\t" + json.dumps(clusters[index]))
+        print("C\t" + cluster_name + "\t" + json.dumps(cluster) + "\t" + json.dumps(clusters[index]))

@@ -1,5 +1,20 @@
+LOAD USING JSON
+cd /path/to/this/dict
+python map.py < data1.txt | sort | python combiner.py | sort | python reducer.py
+
+LOAD USING PLAIN FILE
 to test use 2 commands:
 cd /path/to/this/dict
+python mapper.py < data.txt | sort | python combiner.py | sort | python reducer.py
+
+
+without created anaconda environment - its creation:
+cd path to semanticWeb/root/dir/serverParts
+conda env create -f environment1.txt
+conda actvate semanticWeb
+cd /path/to/this/dict
+python map.py < data1.txt | sort | python combiner.py | sort | python reducer.py
+OR
 python mapper.py < data.txt | sort | python combiner.py | sort | python reducer.py
 
 
@@ -8,3 +23,5 @@ python mapper.py < data.txt
 
 to see output after part2:
 python mapper.py < data.txt | sort | python combiner.py
+
+hadoop jar ../hadoop-streaming-2.7.2.jar -mapper "python count_and_sum/mapper.py" -reducer "python count_and_sum/reducer.py" -file count_and_sum/mapper.py -file count_and_sum/reducer.py -input /user/perdek/example.txt -output /new

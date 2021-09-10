@@ -1,100 +1,100 @@
-metal	material(7809)	1
-football	sport(6244)	activity(867)	2
-iron	metal(5124)	mineral(3026)	element(1833)	nutrient(1390)	material(1260)	micronutrient(842)	6
-anger	emotion(5064)	feeling(1506)	2
-steel	material(4561)	metal(2271)	industry(1613)	3
-calcium	mineral(4246)	nutrient(1618)	element(993)	3
-income	factor(3727)	variable(1321)	2
-broccoli	vegetable(3680)	food(1557)	2
-baseball	sport(3627)	1
-massachusetts	state(3548)	1
-sink	fixture(3434)	1
-london	city(3210)	1
-minnesota	state(3070)	1
-mining	industry(2848)	sector(1186)	activity(862)	3
-plumbing	service(2674)	solution(2001)	2
-twitter	site(2646)	platform(1491)	website(1122)	company(706)	4
-chrome	browser(2587)	1
-spinach	vegetable(2474)	food(1266)	green(877)	3
-safety	issue(2461)	factor(1636)	area(989)	topic(902)	4
-sport	activity(2422)	1
-pineapple	fruit(2358)	1
-type	factor(2268)	1
-nevada	state(2246)	1
-ibuprofen	nsaid(2243)	medication(1000)	painkiller(763)	3
-oxygen	gas(2185)	element(1167)	2
-pasta	food(2171)	carbohydrate(720)	2
-rice	crop(2171)	food(1986)	grain(1500)	cereal(740)	4
-medicine	profession(2157)	field(1785)	area(866)	discipline(721)	4
-toluene	solvent(1915)	1
-tuna	fish(1892)	1
-music	activity(1857)	subject(1125)	file(738)	3
-sony	company(1841)	brand(1011)	2
-walking	activity(1820)	exercise(902)	2
-radio	medium(1784)	item(720)	2
-pool	amenity(1756)	1
-energy	sector(1747)	industry(1162)	area(761)	3
-estrogen	hormone(1743)	1
-sadness	emotion(1705)	1
-availability	factor(1695)	1
-brain	organ(1692)	tissue(1240)	2
-training	service(1610)	factor(1214)	issue(1102)	activity(1057)	area(751)	5
-france	nation(1609)	1
-psychology	discipline(1605)	field(795)	2
-conference	event(1537)	1
-respect	value(1475)	1
-russian	language(1465)	1
-prednisone	corticosteroid(1447)	1
-cricket	sport(1445)	insect(844)	2
-lubricant	additive(1424)	1
-speed	factor(1401)	parameter(918)	information(823)	3
-diving	activity(1400)	1
-boeing	company(1386)	1
-pepper	vegetable(1380)	spice(769)	2
-protein	nutrient(1349)	biomolecule(997)	macromolecule(952)	molecule(946)	4
-camping	activity(1319)	1
-circle	shape(1302)	1
-mackerel	fish(1300)	1
-helium	gas(1292)	1
-scarf	accessory(1279)	1
-vermont	state(1273)	1
-gardening	activity(1255)	1
-oak	hardwood(1248)	1
-rock	object(1218)	material(758)	obstacle(756)	3
-cardboard	material(1174)	1
-travel	expense(1139)	cost(1044)	2
-battery	item(1121)	1
-wyoming	state(1104)	1
-ipad	device(1101)	1
-corticosteroid	medication(1094)	1
-bluetooth	feature(1057)	1
-millet	grain(1053)	1
-thanksgiving	holiday(1051)	1
-houston	city(1038)	1
-height	factor(1025)	1
-anthropology	discipline(1020)	1
-towel	item(1001)	1
-starbucks	company(997)	1
-composite	material(965)	1
-aphid	insect(940)	1
-blog	tool(926)	1
-rainfall	factor(909)	1
-shopping	activity(884)	1
-tiger	animal(880)	1
-butanol	alcohol(871)	1
-legume	food(867)	1
-utility	expense(851)	industry(716)	2
-mineral	nutrient(850)	1
-presence	factor(848)	1
-labor	cost(848)	1
-petrochemical	industry(833)	1
-palpitation	symptom(833)	1
-class	factor(796)	1
-terrain	factor(784)	1
-friend	person(774)	1
-chloride	anion(755)	1
-access	issue(754)	1
-drama	activity(748)	1
-pneumothorax	complication(748)	1
-breed	factor(740)	1
-globalization	factor(702)	1
+metal	material(7809.0)	1
+glass	material(6950.0)	item(1210.0)	surface(741.0)	3
+facebook	site(5008.0)	company(2589.0)	website(2428.0)	platform(1921.0)	service(895.0)	tool(755.0)	6
+soccer	sport(4752.0)	activity(863.0)	2
+pain	symptom(4493.0)	factor(705.0)	2
+date	information(4463.0)	datum(815.0)	2
+meat	food(3756.0)	product(821.0)	2
+ohio	state(3570.0)	1
+india	market(3305.0)	economy(2949.0)	nation(2021.0)	place(965.0)	4
+amazon	company(3115.0)	site(1043.0)	retailer(736.0)	3
+obesity	factor(2975.0)	condition(1676.0)	2
+milk	food(2948.0)	product(919.0)	liquid(759.0)	3
+food	item(2716.0)	industry(2266.0)	service(1140.0)	expense(1111.0)	resource(969.0)	product(946.0)	topic(794.0)	necessity(789.0)	sector(774.0)	9
+titanium	metal(2690.0)	material(1805.0)	2
+lung	organ(2622.0)	tissue(770.0)	2
+refrigerator	appliance(2539.0)	item(754.0)	2
+barley	grain(2529.0)	crop(1069.0)	cereal(789.0)	3
+spinach	vegetable(2474.0)	food(1266.0)	green(877.0)	3
+asthma	condition(2469.0)	1
+boston	city(2454.0)	1
+sport	activity(2422.0)	1
+yoga	activity(2386.0)	class(964.0)	exercise(870.0)	practice(768.0)	4
+cycling	activity(2374.0)	sport(1138.0)	2
+rice	crop(2171.0)	food(1986.0)	grain(1500.0)	cereal(740.0)	4
+medicine	profession(2157.0)	field(1785.0)	area(866.0)	discipline(721.0)	4
+history	subject(2154.0)	discipline(865.0)	topic(725.0)	3
+quality	factor(2065.0)	1
+toy	item(2032.0)	1
+antidepressant	medication(2028.0)	1
+aspirin	medication(1998.0)	nsaid(1116.0)	medicine(700.0)	3
+stabilizer	additive(1980.0)	1
+seattle	city(1929.0)	1
+brass	material(1898.0)	metal(1893.0)	2
+accountant	professional(1868.0)	1
+cereal	food(1846.0)	1
+diarrhea	symptom(1770.0)	1
+weakness	symptom(1751.0)	1
+blueberry	fruit(1705.0)	berry(1054.0)	2
+france	nation(1609.0)	1
+rat	animal(1603.0)	specie(983.0)	rodent(913.0)	3
+patch	word(1458.0)	1
+stock	asset(1443.0)	investment(825.0)	2
+parsley	herb(1435.0)	1
+laptop	device(1409.0)	1
+ontario	province(1408.0)	1
+cattle	animal(1381.0)	livestock(1048.0)	specie(745.0)	3
+piano	instrument(1296.0)	1
+cleaning	service(1295.0)	1
+party	event(1223.0)	1
+installation	service(1217.0)	1
+pneumonia	complication(1213.0)	infection(810.0)	2
+australia	jurisdiction(1206.0)	nation(1085.0)	place(842.0)	market(790.0)	4
+papaya	fruit(1192.0)	1
+idaho	state(1186.0)	1
+teamwork	skill(1119.0)	1
+fox	animal(1115.0)	predator(839.0)	2
+perl	language(1108.0)	1
+yeast	microorganism(1107.0)	organism(867.0)	2
+cake	food(1100.0)	1
+chair	item(1098.0)	1
+molybdenum	metal(1073.0)	1
+archery	activity(1072.0)	1
+track	sport(1067.0)	1
+avocado	food(1061.0)	1
+golfing	activity(1059.0)	1
+polyethylene	polyolefin(1037.0)	material(922.0)	polymer(810.0)	3
+anthropology	discipline(1020.0)	1
+polyester	material(1002.0)	1
+painting	activity(983.0)	improvement(772.0)	service(747.0)	3
+magazine	medium(969.0)	1
+pork	meat(968.0)	1
+dryer	appliance(964.0)	1
+hotel	business(956.0)	1
+sodium	mineral(953.0)	electrolyte(865.0)	2
+contract	document(942.0)	1
+leaf	debris(919.0)	1
+rainfall	factor(909.0)	1
+spleen	organ(895.0)	1
+triangle	shape(863.0)	1
+van	vehicle(863.0)	1
+infrastructure	factor(834.0)	1
+oatmeal	food(831.0)	1
+scanner	device(812.0)	1
+punjab	state(778.0)	1
+psychologist	professional(774.0)	1
+confidentiality	issue(766.0)	1
+airline	industry(761.0)	1
+tobacco	crop(760.0)	1
+cr	element(755.0)	1
+chloride	anion(755.0)	1
+dyspnea	symptom(754.0)	1
+poster	material(750.0)	1
+biodiesel	biofuel(744.0)	1
+rash	symptom(727.0)	1
+talc	filler(721.0)	1
+pfizer	company(717.0)	1
+resin	material(710.0)	1
+photo	file(706.0)	1
+ruby	language(704.0)	1
+sweating	symptom(704.0)	1
