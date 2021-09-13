@@ -24,4 +24,122 @@ python mapper.py < data.txt
 to see output after part2:
 python mapper.py < data.txt | sort | python combiner.py
 
-hadoop jar ../hadoop-streaming-2.7.2.jar -mapper "python count_and_sum/mapper.py" -reducer "python count_and_sum/reducer.py" -file count_and_sum/mapper.py -file count_and_sum/reducer.py -input /user/perdek/example.txt -output /new
+
+TEST WHOLE PIPELINE
+python mrjobsync.py < dataonly.txt
+
+
+TEST MAPPER ONLY
+python mrjobsync.py --mapper --step-num=0 < dataonly.txt
+python mrjobsync.py --mapper --step-num=0 < dataonly.txt | sort
+
+TEST COMBINER
+python mrjobsync.py --mapper --step-num=0 < dataonly.txt | sort > mapper_output.txt
+python mrjobsync.py --combiner --step-num=0 < mapper_output.txt
+python mrjobsync.py --combiner --step-num=0 < mapper_output.txt | sort
+
+TEST REDUCER
+python mrjobsync.py --reducer --step-num=0 < combiner_output.txt
+
+
+python your_mr_job_sub_class.py -r hadoop < input > output
+
+
+
+        with open('/temp/InitProcessingResults/clusters' + str(self.options.iteration) + '.txt', "w",
+                  encoding="utf-8") as f:
+            for i, cluster_dict in enumerate(self.cluster_connections.values()):
+                cluster = list(cluster_dict.values())[0]
+                cluster_name = list(cluster_dict.keys())[0]
+                #yield "C\t" + cluster_name, json.dumps(cluster)
+                yield i, (cluster_name, cluster_name, list(self.cluster_connections.keys()))
+                f.write("C\t" + cluster_name + "\t" + json.dumps(cluster) + "\n")
+        if int(self.options.iteration) == 1:
+            previous_data_file_path = self.get_base_path()
+            actual_data_file_path = self.get_data_file_path(1)
+        else:
+            previous_data_file_path = self.get_data_file_path(int(self.options.iteration) - 1)
+            actual_data_file_path = self.get_data_file_path(int(self.options.iteration))
+        self.create_actualized_data_file(previous_data_file_path, actual_data_file_path, dict())
+        self.samples = list()
+        self.numbers = list()
+        self.red_clusters = dict()
+        return
+
+        with open('/temp/InitProcessingResults/clusters' + str(self.options.iteration) + '.txt', "a",
+                  encoding="utf-8") as f:
+            f.write("C\t" + cluster_name + "\t" + json.dumps(list(cluster_instance.values())[0]) + "\n")
+        yield "C\t" + cluster_name, self.red_clusters
+        if int(self.options.iteration) == 1:
+            previous_data_file_path = self.get_base_path()
+            actual_data_file_path = self.get_data_file_path(1)
+        else:
+            previous_data_file_path = self.get_data_file_path(int(self.options.iteration) - 1)
+            actual_data_file_path = self.get_data_file_path(int(self.options.iteration))
+        self.create_actualized_data_file(previous_data_file_path, actual_data_file_path, dict())
+        return
+
+
+        for i, sample_dict in enumerate(self.samples):
+        min_distance = float('inf')
+        if sample_dict is not None:
+            sample = list(sample_dict.values())[0]
+
+                distance = self.evaluate_cosine_weight(cluster, sample)
+                if distance < min_distance:
+                    if cluster_name in categorization_cluster_dict:
+                        continue
+                    min_distance = distance
+                    categorization_dict[i] = cluster
+                    if cluster_name not in categorization_cluster_dict:
+                        categorization_cluster_dict[cluster_name] = dict()
+                    categorization_cluster_dict[cluster_name]['dist'] = distance
+                    categorization_cluster_dict[cluster_name]['sample'] = sample_dict
+                    break
+
+
+categorization_dict = dict()
+        categorization_cluster_dict = dict()
+        for cluster_dict in self.red_clusters:
+            min_distance_to_cluster = float('inf')
+            cluster = list(cluster_dict.values())[0]
+            cluster_name = list(cluster_dict.keys())[0]
+            for i, sample_dict in enumerate(self.samples):
+                sample = list(sample_dict.values())[0]
+                distance = self.evaluate_cosine_weight(cluster, sample)
+                if distance < min_distance_to_cluster:
+                    if cluster_name not in categorization_cluster_dict:
+                        if cluster_name not in categorization_cluster_dict:
+                            categorization_cluster_dict[cluster_name] = dict()
+                        else:
+                            # found min size for it, but after possible change finding minimal for previous cluster required
+                            continue
+                        min_distance_to_cluster = distance
+                        categorization_dict[i] = cluster
+                        categorization_cluster_dict[cluster_name]['dist'] = distance
+                        categorization_cluster_dict[cluster_name]['sample'] = sample
+
+RUN JOB IN MRJOB CLASS
+#if self.counter1 < 5:
+        #    self.run_job()
+
+        categorization_cluster_dict = dict()
+        for cluster_dict in self.cluster_connections.values():
+            min_distance = float('inf')
+            cluster = list(cluster_dict.values())[0]
+            cluster_name = list(cluster_dict.keys())[0]
+            for sample_name, sample_dict in self.samples.items():
+                if sample_dict is not None:
+                    sample = list(sample_dict.values())[0]
+                    distance = self.evaluate_cosine_weight(cluster, sample)
+                    if distance < min_distance:
+                        no = False
+                        for name, dict_sample in categorization_cluster_dict.items():
+                            if sample_dict == dict_sample['sample']:
+                                no = True
+                        if not no:
+                            min_distance = distance
+                            if cluster_name not in categorization_cluster_dict:
+                                categorization_cluster_dict[cluster_name] = dict()
+                            categorization_cluster_dict[cluster_name]['dist'] = distance
+                            categorization_cluster_dict[cluster_name]['sample'] = sample_dict

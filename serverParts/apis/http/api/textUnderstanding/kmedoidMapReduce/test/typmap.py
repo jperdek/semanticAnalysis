@@ -55,6 +55,8 @@ with open(0, "r", encoding="utf-8") as file:
             continue
         elif line_parts[0] == 'S':
             sample = json.loads(line_parts[2])
+        else:
+            continue
 
         for cluster_name, cluster_vectors in clusters.items():
             distance = evaluate_cosine_weight(sample, cluster_vectors)

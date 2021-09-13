@@ -1,100 +1,100 @@
-metal	material(7809.0)	1
-glass	material(6950.0)	item(1210.0)	surface(741.0)	3
-facebook	site(5008.0)	company(2589.0)	website(2428.0)	platform(1921.0)	service(895.0)	tool(755.0)	6
+carrot	vegetable(5042.0)	food(1140.0)	2
+strawberry	fruit(4824.0)	flavor(866.0)	berry(770.0)	3
+dog	animal(4809.0)	pet(2166.0)	mammal(915.0)	specie(724.0)	4
 soccer	sport(4752.0)	activity(863.0)	2
-pain	symptom(4493.0)	factor(705.0)	2
-date	information(4463.0)	datum(815.0)	2
-meat	food(3756.0)	product(821.0)	2
-ohio	state(3570.0)	1
+vegetable	food(4638.0)	crop(805.0)	2
+china	market(4198.0)	economy(3603.0)	nation(2960.0)	place(950.0)	state(710.0)	5
+ethnicity	factor(3708.0)	variable(778.0)	characteristic(747.0)	3
+egg	food(3667.0)	ingredient(788.0)	2
+magnesium	mineral(3446.0)	metal(1537.0)	nutrient(1211.0)	element(864.0)	4
+doctor	professional(3334.0)	1
 india	market(3305.0)	economy(2949.0)	nation(2021.0)	place(965.0)	4
 amazon	company(3115.0)	site(1043.0)	retailer(736.0)	3
-obesity	factor(2975.0)	condition(1676.0)	2
-milk	food(2948.0)	product(919.0)	liquid(759.0)	3
-food	item(2716.0)	industry(2266.0)	service(1140.0)	expense(1111.0)	resource(969.0)	product(946.0)	topic(794.0)	necessity(789.0)	sector(774.0)	9
-titanium	metal(2690.0)	material(1805.0)	2
-lung	organ(2622.0)	tissue(770.0)	2
-refrigerator	appliance(2539.0)	item(754.0)	2
-barley	grain(2529.0)	crop(1069.0)	cereal(789.0)	3
-spinach	vegetable(2474.0)	food(1266.0)	green(877.0)	3
-asthma	condition(2469.0)	1
-boston	city(2454.0)	1
-sport	activity(2422.0)	1
-yoga	activity(2386.0)	class(964.0)	exercise(870.0)	practice(768.0)	4
-cycling	activity(2374.0)	sport(1138.0)	2
-rice	crop(2171.0)	food(1986.0)	grain(1500.0)	cereal(740.0)	4
-medicine	profession(2157.0)	field(1785.0)	area(866.0)	discipline(721.0)	4
-history	subject(2154.0)	discipline(865.0)	topic(725.0)	3
-quality	factor(2065.0)	1
-toy	item(2032.0)	1
-antidepressant	medication(2028.0)	1
-aspirin	medication(1998.0)	nsaid(1116.0)	medicine(700.0)	3
-stabilizer	additive(1980.0)	1
-seattle	city(1929.0)	1
+book	item(2845.0)	resource(1613.0)	material(1210.0)	product(807.0)	4
+cheese	food(2801.0)	1
+plumbing	service(2674.0)	solution(2001.0)	2
+georgia	state(2545.0)	1
+onion	vegetable(2542.0)	food(1745.0)	ingredient(707.0)	3
+hockey	sport(2212.0)	1
+goat	animal(2136.0)	livestock(835.0)	2
+canoeing	activity(2080.0)	1
+craft	activity(1922.0)	1
 brass	material(1898.0)	metal(1893.0)	2
-accountant	professional(1868.0)	1
-cereal	food(1846.0)	1
-diarrhea	symptom(1770.0)	1
-weakness	symptom(1751.0)	1
-blueberry	fruit(1705.0)	berry(1054.0)	2
-france	nation(1609.0)	1
-rat	animal(1603.0)	specie(983.0)	rodent(913.0)	3
-patch	word(1458.0)	1
-stock	asset(1443.0)	investment(825.0)	2
-parsley	herb(1435.0)	1
-laptop	device(1409.0)	1
-ontario	province(1408.0)	1
-cattle	animal(1381.0)	livestock(1048.0)	specie(745.0)	3
-piano	instrument(1296.0)	1
-cleaning	service(1295.0)	1
-party	event(1223.0)	1
-installation	service(1217.0)	1
-pneumonia	complication(1213.0)	infection(810.0)	2
-australia	jurisdiction(1206.0)	nation(1085.0)	place(842.0)	market(790.0)	4
-papaya	fruit(1192.0)	1
-idaho	state(1186.0)	1
-teamwork	skill(1119.0)	1
-fox	animal(1115.0)	predator(839.0)	2
-perl	language(1108.0)	1
-yeast	microorganism(1107.0)	organism(867.0)	2
-cake	food(1100.0)	1
-chair	item(1098.0)	1
-molybdenum	metal(1073.0)	1
-archery	activity(1072.0)	1
-track	sport(1067.0)	1
-avocado	food(1061.0)	1
+louisiana	state(1873.0)	1
+safari	browser(1805.0)	1
+exercise	factor(1788.0)	activity(760.0)	2
+radio	medium(1784.0)	item(720.0)	2
+alabama	state(1775.0)	1
+christianity	religion(1742.0)	1
+sadness	emotion(1705.0)	1
+hospital	institution(1702.0)	facility(1279.0)	organization(1129.0)	building(827.0)	setting(760.0)	place(709.0)	6
+density	property(1698.0)	factor(942.0)	parameter(713.0)	3
+maine	state(1678.0)	1
+quinoa	grain(1621.0)	1
+elephant	animal(1603.0)	1
+social	factor(1564.0)	1
+detroit	city(1550.0)	1
+hp	company(1544.0)	1
+ginger	spice(1528.0)	herb(739.0)	2
+pump	equipment(1472.0)	component(1159.0)	2
+tennessee	state(1470.0)	1
+morphine	opioid(1458.0)	opiate(929.0)	2
+cooking	activity(1452.0)	1
+maintenance	service(1452.0)	cost(1172.0)	2
+cisco	company(1451.0)	1
+cricket	sport(1445.0)	insect(844.0)	2
+bee	insect(1441.0)	pollinator(807.0)	2
+bolt	fastener(1395.0)	1
+vitamin	nutrient(1395.0)	1
+beijing	city(1365.0)	1
+protein	nutrient(1349.0)	biomolecule(997.0)	macromolecule(952.0)	molecule(946.0)	4
+poly	polymer(1348.0)	1
+skin	tissue(1319.0)	1
+title	information(1316.0)	1
+table	item(1309.0)	object(759.0)	2
+stove	appliance(1304.0)	1
+steroid	medication(1291.0)	1
+geography	factor(1280.0)	subject(1254.0)	2
+scarf	accessory(1279.0)	1
+oregano	herb(1226.0)	1
+maharashtra	state(1221.0)	1
+immigration	issue(1214.0)	1
+invoice	document(1199.0)	1
+dopamine	neurotransmitter(1189.0)	1
+cardboard	material(1174.0)	1
+option	derivative(1161.0)	1
+unemployment	factor(1132.0)	issue(962.0)	2
+baltimore	city(1066.0)	1
 golfing	activity(1059.0)	1
-polyethylene	polyolefin(1037.0)	material(922.0)	polymer(810.0)	3
-anthropology	discipline(1020.0)	1
-polyester	material(1002.0)	1
-painting	activity(983.0)	improvement(772.0)	service(747.0)	3
-magazine	medium(969.0)	1
+bluetooth	feature(1057.0)	1
+hurricane	disaster(1036.0)	1
+poultry	food(1022.0)	1
+badminton	sport(1017.0)	1
+fertilizer	input(998.0)	1
+linux	system(971.0)	1
 pork	meat(968.0)	1
-dryer	appliance(964.0)	1
-hotel	business(956.0)	1
-sodium	mineral(953.0)	electrolyte(865.0)	2
-contract	document(942.0)	1
-leaf	debris(919.0)	1
-rainfall	factor(909.0)	1
-spleen	organ(895.0)	1
-triangle	shape(863.0)	1
-van	vehicle(863.0)	1
-infrastructure	factor(834.0)	1
-oatmeal	food(831.0)	1
-scanner	device(812.0)	1
-punjab	state(778.0)	1
+marble	material(966.0)	1
+equipment	item(955.0)	asset(889.0)	resource(810.0)	3
+chrysler	brand(945.0)	1
+trauma	factor(940.0)	1
+router	device(901.0)	1
+palladium	metal(901.0)	1
+adidas	brand(900.0)	1
+lorazepam	benzodiazepine(891.0)	1
+medicaid	program(858.0)	1
+joy	emotion(849.0)	1
+progesterone	hormone(843.0)	1
+building	structure(841.0)	asset(734.0)	2
+class	factor(796.0)	1
+inc	company(787.0)	1
+economy	factor(780.0)	1
 psychologist	professional(774.0)	1
-confidentiality	issue(766.0)	1
-airline	industry(761.0)	1
-tobacco	crop(760.0)	1
-cr	element(755.0)	1
-chloride	anion(755.0)	1
-dyspnea	symptom(754.0)	1
 poster	material(750.0)	1
 biodiesel	biofuel(744.0)	1
-rash	symptom(727.0)	1
-talc	filler(721.0)	1
-pfizer	company(717.0)	1
-resin	material(710.0)	1
-photo	file(706.0)	1
-ruby	language(704.0)	1
-sweating	symptom(704.0)	1
+albumin	protein(742.0)	1
+peanut	food(739.0)	1
+catalase	enzyme(729.0)	1
+borough	municipality(729.0)	1
+austin	city(724.0)	1
+business	field(708.0)	1
+shrimp	seafood(707.0)	1

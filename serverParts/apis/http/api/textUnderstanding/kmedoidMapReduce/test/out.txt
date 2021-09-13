@@ -1,0 +1,100 @@
+C	address	{"information": 6136.0, "datum": 787.0}	anticipate	{"word": 5290.0}
+C	adidas	{"brand": 900.0}	chrysler	{"brand": 945.0}
+C	alaska	{"state": 1196.0}	alabama	{"state": 1775.0}
+C	aluminium	{"metal": 1504.0, "material": 1370.0}	brass	{"material": 1898.0, "metal": 1893.0}
+C	amazon	{"company": 3115.0, "site": 1043.0, "retailer": 736.0}	wal-mart	{"retailer": 854.0}
+C	amylase	{"enzyme": 701.0}	catalase	{"enzyme": 729.0}
+C	antidepressant	{"medication": 2028.0}	antihistamine	{"medication": 1328.0}
+C	anxiety	{"symptom": 2470.0, "issue": 1881.0, "emotion": 1355.0, "factor": 1288.0, "condition": 1256.0, "problem": 1194.0, "disorder": 718.0}	anxiety	{"symptom": 2470.0, "issue": 1881.0, "emotion": 1355.0, "factor": 1288.0, "condition": 1256.0, "problem": 1194.0, "disorder": 718.0}
+C	baltimore	{"city": 1066.0}	amsterdam	{"city": 804.0}
+C	bathroom	{"fixture": 1582.0}	bathtub	{"fixture": 3181.0}
+C	bear	{"animal": 1310.0}	dolphin	{"animal": 745.0}
+C	beet	{"vegetable": 1121.0}	carrot	{"vegetable": 5042.0, "food": 1140.0}
+C	belt	{"accessory": 1226.0}	bag	{"item": 853.0, "accessory": 825.0}
+C	borough	{"municipality": 729.0}	village	{"municipality": 737.0}
+C	boston	{"city": 2454.0}	boston	{"city": 2454.0}
+C	business	{"field": 708.0}	engineering	{"field": 1231.0, "discipline": 835.0, "profession": 755.0}
+C	caffeine	{"stimulant": 2212.0}	amphetamine	{"stimulant": 1022.0}
+C	chromium	{"metal": 2429.0, "element": 905.0}	manganese	{"metal": 1569.0, "mineral": 1049.0, "element": 1000.0}
+C	city	{"municipality": 767.0}	city	{"municipality": 767.0}
+C	competition	{"factor": 1210.0}	accessibility	{"factor": 918.0}
+C	culture	{"factor": 2904.0, "topic": 743.0, "issue": 735.0}	motivation	{"factor": 1704.0, "topic": 785.0}
+C	dancing	{"activity": 1264.0}	bowling	{"activity": 865.0}
+C	depression	{"issue": 2382.0, "symptom": 2354.0, "condition": 2280.0, "problem": 1915.0, "factor": 1417.0, "disorder": 1179.0}	schizophrenia	{"disorder": 814.0}
+C	disability	{"factor": 743.0}	geography	{"factor": 1280.0, "subject": 1254.0}
+C	divorce	{"event": 816.0, "issue": 707.0}	divorce	{"event": 816.0, "issue": 707.0}
+C	dizziness	{"symptom": 3049.0}	confusion	{"symptom": 877.0}
+C	duck	{"bird": 727.0}	heron	{"bird": 864.0}
+C	earthquake	{"disaster": 1667.0, "event": 1118.0}	flood	{"disaster": 1737.0, "event": 1010.0}
+C	eating	{"activity": 735.0}	workshop	{"activity": 1101.0, "event": 910.0}
+C	ebay	{"site": 956.0, "company": 915.0}	ebay	{"site": 956.0, "company": 915.0}
+C	eczema	{"condition": 863.0}	diabetes	{"condition": 6493.0, "factor": 1764.0, "illness": 1512.0, "comorbidity": 942.0}
+C	eggplant	{"vegetable": 844.0}	onion	{"vegetable": 2542.0, "food": 1745.0, "ingredient": 707.0}
+C	email	{"information": 826.0, "service": 754.0}	email	{"information": 826.0, "service": 754.0}
+C	fatigue	{"symptom": 6206.0, "factor": 1571.0}	fatigue	{"symptom": 6206.0, "factor": 1571.0}
+C	food	{"item": 2716.0, "industry": 2266.0, "service": 1140.0, "expense": 1111.0, "resource": 969.0, "product": 946.0, "topic": 794.0, "necessity": 789.0, "sector": 774.0}	appliance	{"item": 1294.0}
+C	gas	{"utility": 1596.0, "industry": 1340.0}	electricity	{"utility": 1990.0, "service": 1381.0}
+C	globalization	{"factor": 702.0}	stress	{"factor": 6433.0, "issue": 849.0, "condition": 807.0}
+C	graduation	{"event": 701.0}	concert	{"event": 2457.0}
+C	gym	{"amenity": 795.0, "facility": 781.0}	school	{"institution": 2369.0, "organization": 1431.0, "facility": 1236.0, "amenity": 1157.0, "place": 849.0, "building": 804.0, "setting": 762.0}
+C	height	{"factor": 1025.0}	height	{"factor": 1025.0}
+C	heron	{"bird": 864.0}	heron	{"bird": 864.0}
+C	hormone	{"factor": 1009.0}	hormone	{"factor": 1009.0}
+C	horse	{"animal": 2997.0}	horse	{"animal": 2997.0}
+C	illness	{"factor": 1127.0, "circumstance": 822.0}	illness	{"factor": 1127.0, "circumstance": 822.0}
+C	joy	{"emotion": 849.0}	guilt	{"emotion": 1265.0}
+C	judaism	{"religion": 1274.0}	buddhism	{"religion": 1457.0}
+C	kiwi	{"fruit": 731.0}	apricot	{"fruit": 1590.0}
+C	lacrosse	{"sport": 714.0}	badminton	{"sport": 1017.0}
+C	land	{"asset": 881.0}	cash	{"asset": 872.0}
+C	leather	{"material": 2303.0}	acrylic	{"material": 1145.0}
+C	length	{"factor": 803.0}	length	{"factor": 803.0}
+C	louisiana	{"state": 1873.0}	washington	{"state": 3566.0, "city": 1093.0}
+C	marketing	{"area": 1350.0, "topic": 990.0, "department": 896.0}	ethic	{"topic": 914.0}
+C	mineral	{"nutrient": 850.0}	vitamin	{"nutrient": 1395.0}
+C	missouri	{"state": 1207.0}	missouri	{"state": 1207.0}
+C	mitochondria	{"organelle": 1136.0}	mitochondria	{"organelle": 1136.0}
+C	nature	{"factor": 952.0}	nature	{"factor": 952.0}
+C	netflix	{"company": 886.0, "service": 757.0}	netflix	{"company": 886.0, "service": 757.0}
+C	oak	{"hardwood": 1248.0}	maple	{"hardwood": 716.0}
+C	oregano	{"herb": 1226.0}	basil	{"herb": 2090.0}
+C	oregon	{"state": 3519.0}	oregon	{"state": 3519.0}
+C	paint	{"material": 1936.0, "item": 1371.0, "product": 955.0}	book	{"item": 2845.0, "resource": 1613.0, "material": 1210.0, "product": 807.0}
+C	perl	{"language": 1108.0}	arabic	{"language": 1797.0}
+C	pharmaceutical	{"industry": 3311.0, "sector": 788.0}	textile	{"industry": 2185.0, "sector": 715.0}
+C	physical	{"service": 2080.0, "factor": 908.0}	cleaning	{"service": 1295.0}
+C	pigment	{"additive": 2187.0}	antioxidant	{"additive": 3084.0}
+C	pineapple	{"fruit": 2358.0}	pineapple	{"fruit": 2358.0}
+C	pneumothorax	{"complication": 748.0}	bleeding	{"complication": 2005.0}
+C	portland	{"city": 1402.0}	portland	{"city": 1402.0}
+C	protease	{"enzyme": 830.0}	protease	{"enzyme": 830.0}
+C	pump	{"equipment": 1472.0, "component": 1159.0}	capacitor	{"component": 922.0}
+C	quartz	{"mineral": 906.0}	calcium	{"mineral": 4246.0, "nutrient": 1618.0, "element": 993.0}
+C	quinoa	{"grain": 1621.0}	wheat	{"crop": 3132.0, "grain": 2560.0, "cereal": 1349.0, "food": 881.0}
+C	rajasthan	{"state": 771.0}	rajasthan	{"state": 771.0}
+C	restaurant	{"business": 2007.0, "amenity": 1983.0, "facility": 1299.0, "place": 807.0, "service": 737.0}	brighton	{"place": 2269.0}
+C	rock	{"object": 1218.0, "material": 758.0, "obstacle": 756.0}	nail	{"object": 751.0}
+C	safety	{"issue": 2461.0, "factor": 1636.0, "area": 989.0, "topic": 902.0}	security	{"issue": 2646.0, "factor": 838.0, "service": 815.0, "area": 813.0}
+C	salmonella	{"bacterium": 1193.0, "pathogen": 709.0}	bacterium	{"microorganism": 3554.0, "organism": 1878.0, "pathogen": 1018.0, "microbe": 785.0}
+C	scarf	{"accessory": 1279.0}	scarf	{"accessory": 1279.0}
+C	shampoo	{"product": 944.0}	milk	{"food": 2948.0, "product": 919.0, "liquid": 759.0}
+C	smartphone	{"device": 1636.0}	ipad	{"device": 1101.0}
+C	speed	{"factor": 1401.0, "parameter": 918.0, "information": 823.0}	concentration	{"factor": 1009.0, "parameter": 716.0}
+C	stock	{"asset": 1443.0, "investment": 825.0}	bond	{"asset": 872.0, "investment": 717.0, "security": 711.0}
+C	tablet	{"device": 2436.0}	tablet	{"device": 2436.0}
+C	tantalum	{"metal": 705.0}	molybdenum	{"metal": 1073.0}
+C	tennis	{"sport": 4964.0, "activity": 1929.0}	volleyball	{"sport": 2339.0, "activity": 789.0}
+C	thyme	{"herb": 1828.0}	thyme	{"herb": 1828.0}
+C	titanium	{"metal": 2690.0, "material": 1805.0}	gold	{"metal": 4058.0, "material": 1561.0, "commodity": 1031.0}
+C	track	{"sport": 1067.0}	track	{"sport": 1067.0}
+C	tuna	{"fish": 1892.0}	mackerel	{"fish": 1300.0}
+C	type	{"factor": 2268.0}	type	{"factor": 2268.0}
+C	unilever	{"company": 910.0}	cisco	{"company": 1451.0}
+C	vanilla	{"flavor": 789.0}	chocolate	{"food": 2401.0, "flavor": 912.0}
+C	video	{"medium": 1764.0, "file": 922.0, "resource": 899.0, "datum": 788.0, "application": 770.0, "material": 753.0}	film	{"medium": 950.0}
+C	village	{"municipality": 737.0}	village	{"municipality": 737.0}
+C	washer	{"appliance": 1052.0}	microwave	{"appliance": 1052.0}
+C	wool	{"material": 900.0}	paper	{"material": 3828.0, "industry": 1340.0, "item": 1274.0}
+C	xylene	{"solvent": 727.0}	acetone	{"solvent": 2998.0}
+C	yoga	{"activity": 2386.0, "class": 964.0, "exercise": 870.0, "practice": 768.0}	meditation	{"technique": 1047.0, "practice": 966.0, "activity": 728.0}
+C	youtube	{"site": 1578.0, "website": 1046.0}	linkedin	{"site": 1009.0}
