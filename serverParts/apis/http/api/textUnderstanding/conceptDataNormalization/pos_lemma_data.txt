@@ -1,0 +1,1001 @@
+age__NN	factor(0.95166)	variable(0.2537)	characteristic(0.12161)	information(0.09377)	datum(0.04963)	demographic(0.04257)	parameter(0.03575)	covariate(0.02898)	8
+california__NN	state(1.0)	1
+gender__NN	factor(0.92344)	variable(0.29812)	characteristic(0.16528)	issue(0.11791)	information(0.1061)	demographic(0.06165)	topic(0.04588)	7
+temperature__NN	factor(0.84489)	parameter(0.46327)	variable(0.19038)	condition(0.1811)	datum(0.04991)	5
+copper__NN	metal(0.9445)	material(0.26431)	mineral(0.14394)	element(0.13165)	4
+name__NN	information(0.99498)	datum(0.1001)	2
+plastic__NN	material(0.9963)	industry(0.08591)	2
+texas__NN	state(1.0)	1
+florida__NN	state(1.0)	1
+google__NN	company(0.8883)	engine(0.45927)	2
+metal__NN	material(1.0)	1
+glass__NN	material(0.97979)	item(0.17058)	surface(0.10446)	3
+size__NN	factor(0.91334)	information(0.20938)	characteristic(0.20298)	parameter(0.17085)	feature(0.13682)	variable(0.13396)	property(0.12211)	7
+headache__NN	symptom(1.0)	1
+diabetes__NNS	condition(0.93288)	factor(0.25344)	illness(0.21724)	comorbidity(0.13534)	4
+stress__NN	factor(0.98382)	issue(0.12984)	condition(0.12342)	3
+aluminum__NN	metal(0.75902)	material(0.65106)	2
+basketball__NN	sport(0.98285)	activity(0.18439)	2
+nausea__NN	symptom(1.0)	1
+apple__NN	fruit(0.81029)	company(0.55854)	food(0.14782)	brand(0.09803)	4
+education__NN	factor(0.73354)	area(0.34578)	issue(0.31283)	sector(0.25151)	service(0.23627)	variable(0.23205)	field(0.1427)	topic(0.14012)	characteristic(0.1257)	industry(0.12558)	10
+football__NN	sport(0.9905)	activity(0.13753)	2
+fatigue__NN	symptom(0.96942)	factor(0.2454)	2
+microsoft__NN	company(0.98964)	vendor(0.14359)	2
+address__NN	information(0.99187)	datum(0.12722)	2
+cost__NN	factor(0.95411)	issue(0.27354)	consideration(0.12186)	3
+ph__NN	parameter(0.72386)	factor(0.66925)	variable(0.12192)	condition(0.11517)	4
+smoking__NN	factor(0.95189)	habit(0.30645)	2
+ibm__NN	company(0.98268)	vendor(0.1853)	2
+fruit__NN	food(0.97872)	item(0.16068)	product(0.12764)	3
+wedding__NN	event(0.84025)	occasion(0.5422)	2
+infection__NN	complication(0.92688)	factor(0.28433)	condition(0.20415)	problem(0.13551)	4
+anticipate__NN	word(1.0)	1
+shop__NN	place(0.97931)	amenity(0.20235)	2
+location__NN	factor(0.80813)	information(0.57695)	variable(0.11859)	3
+diet__NN	factor(1.0)	1
+iron__NN	metal(0.7814)	mineral(0.46146)	element(0.27953)	nutrient(0.21197)	material(0.19215)	micronutrient(0.1284)	6
+anger__NN	emotion(0.95851)	feeling(0.28505)	2
+carrot__NN	vegetable(0.97538)	food(0.22053)	2
+facebook__NN	site(0.76604)	company(0.39602)	website(0.37139)	platform(0.29384)	service(0.1369)	tool(0.11549)	6
+fever__NN	symptom(1.0)	1
+tennis__NN	sport(0.9321)	activity(0.36221)	2
+strawberry__NN	fruit(0.97234)	flavor(0.17455)	berry(0.1552)	3
+dog__NN	animal(0.89026)	pet(0.40098)	mammal(0.16939)	specie(0.13403)	4
+fishing__NN	activity(0.93516)	sport(0.35422)	2
+soccer__NN	sport(0.98391)	activity(0.17869)	2
+vegetable__NN	food(0.98527)	crop(0.17101)	2
+weather__NN	factor(0.9828)	variable(0.18465)	2
+nickel__NN	metal(0.95994)	material(0.20023)	element(0.19603)	3
+steel__NN	material(0.85343)	metal(0.42494)	industry(0.30181)	3
+pain__NN	symptom(0.98791)	factor(0.15501)	2
+swim__VBG	activity(0.85673)	sport(0.49471)	exercise(0.14587)	3
+ethanol__NN	alcohol(0.89928)	solvent(0.37574)	biofuel(0.17075)	fuel(0.14478)	4
+date__NN	information(0.98373)	datum(0.17964)	2
+firefox__NN	browser(1.0)	1
+zinc__NN	metal(0.83505)	mineral(0.44492)	nutrient(0.21801)	element(0.18006)	micronutrient(0.15741)	5
+calcium__NN	mineral(0.91291)	nutrient(0.34788)	element(0.2135)	3
+illinois__NN	state(1.0)	1
+china__NN	market(0.65744)	economy(0.56426)	nation(0.46356)	place(0.14878)	state(0.11119)	5
+lead__NN	metal(0.9596)	element(0.2133)	material(0.18348)	3
+weight__NN	factor(0.96215)	variable(0.19581)	information(0.18956)	3
+methanol__NN	alcohol(0.90504)	solvent(0.42532)	2
+gold__NN	metal(0.90814)	material(0.34934)	commodity(0.23073)	3
+chicago__NN	city(1.0)	1
+silver__NN	metal(0.97152)	material(0.23697)	2
+arizona__NN	state(1.0)	1
+genetic__JJ	factor(1.0)	1
+paper__NN	material(0.90046)	industry(0.31521)	item(0.29968)	3
+banana__NN	fruit(0.91891)	food(0.34387)	crop(0.19329)	3
+anticipates__NNS	word(1.0)	1
+climate__NN	factor(1.0)	1
+meat__NN	food(0.97693)	product(0.21354)	2
+salmon__NN	fish(0.97964)	food(0.20076)	2
+furniture__NN	item(0.97945)	product(0.20167)	2
+income__NN	factor(0.94255)	variable(0.33408)	2
+clothing__NN	item(0.98084)	product(0.1948)	2
+fish__NN	food(0.94153)	animal(0.33693)	2
+ethnicity__NN	factor(0.9602)	variable(0.20147)	characteristic(0.19344)	3
+broccoli__NN	vegetable(0.92096)	food(0.38966)	2
+egg__NN	food(0.97768)	ingredient(0.21009)	2
+baseball__NN	sport(1.0)	1
+construction__NN	industry(0.84251)	sector(0.53869)	2
+potato__NN	food(0.78719)	vegetable(0.4724)	crop(0.39645)	3
+ohio__NN	state(1.0)	1
+washington__NN	state(0.9561)	city(0.29305)	2
+bacterium__NN	microorganism(0.84213)	organism(0.445)	pathogen(0.24122)	microbe(0.18601)	4
+massachusetts__NN	state(1.0)	1
+water__NN	liquid(0.57476)	fluid(0.40665)	utility(0.406)	service(0.35391)	resource(0.29793)	material(0.17947)	solvent(0.16032)	item(0.13614)	substance(0.13452)	factor(0.1329)	sector(0.11505)	11
+expect__VB	word(1.0)	1
+oregon__NN	state(1.0)	1
+heart__NN	organ(0.9669)	tissue(0.25517)	2
+cherry__NN	fruit(1.0)	1
+magnesium__NN	mineral(0.84963)	metal(0.37895)	nutrient(0.29858)	element(0.21302)	4
+sink__NN	fixture(1.0)	1
+automotive__JJ	industry(1.0)	1
+spanish__JJ	language(1.0)	1
+tomato__NN	vegetable(0.80382)	crop(0.37037)	food(0.35638)	plant(0.29948)	4
+hike__VBG	activity(1.0)	1
+doctor__NN	professional(1.0)	1
+pharmaceutical__JJ	industry(0.97283)	sector(0.23153)	2
+india__NN	market(0.66587)	economy(0.59415)	nation(0.40718)	place(0.19442)	4
+french__JJ	language(1.0)	1
+corn__NN	crop(0.84689)	grain(0.39067)	food(0.22693)	vegetable(0.20474)	plant(0.19168)	5
+colorado__NN	state(1.0)	1
+london__NN	city(1.0)	1
+cat__NN	animal(0.85532)	pet(0.51811)	2
+bathtub__NN	fixture(1.0)	1
+ceramic__JJ	material(1.0)	1
+wheat__NN	crop(0.71931)	grain(0.58794)	cereal(0.30982)	food(0.20233)	4
+nitrogen__NN	gas(0.69564)	nutrient(0.67698)	element(0.2404)	3
+amazon__NN	company(0.92532)	site(0.30982)	retailer(0.21863)	3
+antioxidant__NN	additive(1.0)	1
+concrete__NN	material(0.96985)	surface(0.24372)	2
+minnesota__NN	state(1.0)	1
+dizziness__NN	symptom(1.0)	1
+manufacturing__NN	industry(0.89046)	sector(0.45505)	2
+orange__NN	fruit(1.0)	1
+rabbit__NN	animal(0.92879)	specie(0.28709)	mammal(0.23436)	3
+kidney__NN	organ(0.9589)	tissue(0.28375)	2
+virginia__NN	state(1.0)	1
+acetone__NN	solvent(1.0)	1
+horse__NN	animal(1.0)	1
+pennsylvania__NN	state(1.0)	1
+obesity__NN	factor(0.87125)	condition(0.49083)	2
+agriculture__NN	sector(0.78677)	industry(0.50934)	area(0.28222)	activity(0.20475)	4
+time__NN	information(0.65213)	factor(0.64926)	parameter(0.2862)	resource(0.26699)	4
+milk__NN	food(0.92709)	product(0.28901)	liquid(0.23869)	3
+humidity__NN	factor(1.0)	1
+golf__NN	sport(0.81751)	activity(0.57592)	2
+culture__NN	factor(0.94092)	topic(0.24074)	issue(0.23815)	3
+jewelry__NN	item(0.82449)	valuable(0.47891)	accessory(0.30142)	3
+bread__NN	food(0.93322)	carbohydrate(0.26543)	item(0.24218)	3
+birthday__NN	occasion(0.83569)	event(0.5492)	2
+lawyer__NN	professional(1.0)	1
+mining__NN	industry(0.8891)	sector(0.37025)	activity(0.2691)	3
+book__NN	item(0.79486)	resource(0.45065)	material(0.33806)	product(0.22547)	4
+maryland__NN	state(1.0)	1
+cheese__NN	food(1.0)	1
+bird__NN	animal(1.0)	1
+plan__NN	word(1.0)	1
+food__NN	item(0.62755)	industry(0.52357)	service(0.2634)	expense(0.2567)	resource(0.22389)	product(0.21858)	topic(0.18346)	necessity(0.1823)	sector(0.17884)	9
+aerospace__NN	industry(1.0)	1
+stone__NN	material(1.0)	1
+health__NN	area(0.53616)	issue(0.49193)	factor(0.39116)	topic(0.3753)	sector(0.33483)	service(0.2541)	6
+titanium__NN	metal(0.83038)	material(0.55719)	2
+environment__NN	factor(0.79195)	issue(0.54683)	area(0.27164)	3
+estimate__NN	word(1.0)	1
+plumbing__NN	service(0.80065)	solution(0.59914)	2
+internet__NN	technology(0.85386)	network(0.4066)	medium(0.32496)	3
+security__NN	issue(0.88059)	factor(0.27889)	service(0.27123)	area(0.27057)	4
+twitter__NN	site(0.79846)	platform(0.44993)	website(0.33858)	company(0.21304)	4
+lung__NN	organ(0.95948)	tissue(0.28177)	2
+cabbage__NN	vegetable(0.94748)	food(0.31982)	2
+chrome__NN	browser(1.0)	1
+cinnamon__NN	spice(1.0)	1
+pear__NN	fruit(1.0)	1
+banking__NN	industry(0.84154)	sector(0.46172)	service(0.2804)	3
+georgia__NN	state(1.0)	1
+onion__NN	vegetable(0.80358)	food(0.55163)	ingredient(0.2235)	3
+refrigerator__NN	appliance(0.95862)	item(0.28468)	2
+arthritis__NN	condition(1.0)	1
+barley__NN	grain(0.88527)	crop(0.3742)	cereal(0.27619)	3
+cadmium__NN	metal(1.0)	1
+spinach__NN	vegetable(0.84895)	food(0.43442)	green(0.30094)	3
+anxiety__NN	symptom(0.60528)	issue(0.46094)	emotion(0.33204)	factor(0.31563)	condition(0.30778)	problem(0.29259)	disorder(0.17595)	7
+asthma__NN	condition(1.0)	1
+safety__NN	issue(0.75859)	factor(0.50429)	area(0.30485)	topic(0.27804)	4
+concert__NN	event(1.0)	1
+healthcare__NN	industry(0.91091)	sector(0.4126)	2
+boston__NN	city(1.0)	1
+maize__NN	crop(1.0)	1
+intend__NN	word(1.0)	1
+sheep__NN	animal(0.88419)	specie(0.33801)	livestock(0.32242)	3
+tablet__NN	device(1.0)	1
+chromium__NN	metal(0.93707)	element(0.34914)	2
+sport__NN	activity(1.0)	1
+chocolate__NN	food(0.93483)	flavor(0.35509)	2
+michigan__NNS	state(1.0)	1
+yoga__NN	activity(0.84522)	class(0.34149)	exercise(0.30819)	practice(0.27206)	4
+depression__NN	issue(0.49159)	symptom(0.48581)	condition(0.47054)	problem(0.39521)	factor(0.29244)	disorder(0.24332)	6
+intel__NN	company(1.0)	1
+cycling__NN	activity(0.90175)	sport(0.43226)	2
+school__NN	institution(0.67075)	organization(0.40517)	facility(0.34996)	amenity(0.32759)	place(0.24038)	building(0.22764)	setting(0.21575)	7
+pineapple__NN	fruit(1.0)	1
+deer__NN	animal(0.95056)	wildlife(0.31054)	2
+peach__NN	fruit(1.0)	1
+volleyball__NN	sport(0.94754)	activity(0.31963)	2
+phosphorus__NN	nutrient(0.9214)	mineral(0.38861)	2
+retail__JJ	industry(0.8457)	sector(0.53366)	2
+cow__NN	animal(1.0)	1
+rubber__NN	material(1.0)	1
+leather__NN	material(1.0)	1
+project__NN	word(1.0)	1
+bean__NN	food(0.76814)	crop(0.40494)	legume(0.38624)	vegetable(0.31113)	4
+grape__NN	fruit(1.0)	1
+brighton__NN	place(1.0)	1
+type__NN	factor(1.0)	1
+potassium__NN	mineral(0.78899)	nutrient(0.47528)	electrolyte(0.30077)	element(0.24726)	4
+art__NN	activity(0.80158)	subject(0.59789)	2
+communication__NN	skill(0.76785)	topic(0.40221)	area(0.37282)	issue(0.33113)	4
+nevada__NN	state(1.0)	1
+ibuprofen__NN	nsaid(0.87221)	medication(0.38886)	painkiller(0.2967)	3
+chemical__NN	industry(1.0)	1
+christmas__NN	holiday(0.90329)	occasion(0.42903)	2
+hockey__NN	sport(1.0)	1
+caffeine__NN	stimulant(1.0)	1
+experience__NN	factor(1.0)	1
+plasticizer__NN	additive(1.0)	1
+printer__NN	device(0.8602)	equipment(0.36871)	peripheral(0.35229)	3
+pigment__NN	additive(1.0)	1
+textile__NN	industry(0.95041)	sector(0.311)	2
+oxygen__NN	gas(0.88207)	element(0.47111)	2
+lifestyle__NN	factor(1.0)	1
+pasta__NN	food(0.94916)	carbohydrate(0.31478)	2
+rice__NN	crop(0.64145)	food(0.58679)	grain(0.44319)	cereal(0.21864)	4
+medicine__NN	profession(0.7147)	field(0.59144)	area(0.28694)	discipline(0.2389)	4
+dell__NN	company(0.94302)	manufacturer(0.33273)	2
+history__NN	subject(0.88577)	discipline(0.35571)	topic(0.29814)	3
+cornwall__NN	place(1.0)	1
+wisconsin__NN	state(1.0)	1
+goat__NN	animal(0.93136)	livestock(0.36409)	2
+alcohol__NN	substance(0.68935)	solvent(0.55316)	factor(0.46776)	3
+kayak__VBG	activity(1.0)	1
+sand__NN	material(1.0)	1
+basil__NN	herb(1.0)	1
+canoe__VBG	activity(1.0)	1
+physical__JJ	service(0.91648)	factor(0.40008)	2
+quality__NN	factor(1.0)	1
+mango__NN	fruit(1.0)	1
+skiing__NN	activity(0.89845)	sport(0.43907)	2
+television__NN	medium(0.91854)	item(0.39534)	2
+price__NN	factor(0.84987)	information(0.52699)	2
+toy__NN	item(1.0)	1
+antidepressant__NN	medication(1.0)	1
+restaurant__NN	business(0.60952)	amenity(0.60223)	facility(0.3945)	place(0.24508)	service(0.22383)	5
+bleeding__NN	complication(1.0)	1
+aspirin__NN	medication(0.83486)	nsaid(0.46632)	medicine(0.29249)	3
+cotton__NN	crop(0.77604)	material(0.4824)	fabric(0.40627)	3
+science__NN	subject(1.0)	1
+oil__NN	industry(0.62673)	commodity(0.36074)	contaminant(0.29904)	product(0.27134)	material(0.26662)	liquid(0.26253)	fluid(0.25781)	sector(0.23734)	resource(0.22633)	9
+benzene__NN	solvent(0.91819)	chemical(0.39614)	2
+electricity__NN	utility(0.82155)	service(0.57013)	2
+stabilizer__NN	additive(1.0)	1
+rosemary__NN	herb(1.0)	1
+coffee__NN	beverage(0.6196)	drink(0.46611)	stimulant(0.36159)	food(0.33617)	product(0.28343)	liquid(0.27339)	6
+law__NN	profession(0.93192)	field(0.36265)	2
+reading__NN	activity(1.0)	1
+brick__NN	material(1.0)	1
+paint__NN	material(0.75705)	item(0.53611)	product(0.37344)	3
+seattle__NN	city(1.0)	1
+mercury__NN	metal(1.0)	1
+religion__NN	factor(0.80381)	topic(0.50598)	issue(0.31285)	3
+craft__NN	activity(1.0)	1
+toluene__NN	solvent(1.0)	1
+inflation__NN	factor(1.0)	1
+telecommunication__NN	industry(0.83272)	sector(0.55369)	2
+nutrition__NN	factor(0.81368)	topic(0.58132)	2
+brass__NN	material(0.70804)	metal(0.70617)	2
+indiana__NN	state(1.0)	1
+air__NN	gas(0.85941)	fluid(0.51129)	2
+tuna__NN	fish(1.0)	1
+filler__NN	additive(1.0)	1
+connecticut__NN	state(1.0)	1
+samsung__NN	company(0.77798)	brand(0.54038)	manufacturer(0.32052)	3
+transportation__NN	service(0.7225)	industry(0.53265)	sector(0.31206)	issue(0.31129)	4
+brazil__NN	market(0.68124)	economy(0.6555)	nation(0.32594)	3
+dishwasher__NN	appliance(1.0)	1
+louisiana__NN	state(1.0)	1
+game__NN	activity(0.93177)	application(0.36305)	2
+accountant__NN	professional(1.0)	1
+acupuncture__NN	therapy(0.85294)	treatment(0.522)	2
+penicillin__NN	antibiotic(1.0)	1
+music__NN	activity(0.80979)	subject(0.49058)	file(0.32182)	3
+cobalt__NN	metal(1.0)	1
+cereal__NN	food(1.0)	1
+sony__NN	company(0.87653)	brand(0.48135)	2
+computer__NN	item(0.55149)	device(0.51605)	equipment(0.50824)	technology(0.30668)	electronic(0.27785)	5
+thyme__NN	herb(1.0)	1
+philadelphia__NN	city(1.0)	1
+delaware__NN	state(1.0)	1
+walk__VBG	activity(0.896)	exercise(0.44406)	2
+chemotherapy__NN	treatment(1.0)	1
+safari__NN	browser(1.0)	1
+pressure__NN	parameter(0.81005)	factor(0.47666)	variable(0.3415)	3
+arabic__NN	language(1.0)	1
+surfactant__NN	additive(1.0)	1
+platinum__NN	metal(1.0)	1
+exercise__NN	factor(0.92031)	activity(0.39118)	2
+radio__NN	medium(0.92733)	item(0.37426)	2
+nike__NN	company(0.71711)	brand(0.69696)	2
+antibiotic__JJ	medication(1.0)	1
+alabama__NN	state(1.0)	1
+diarrhea__NN	symptom(1.0)	1
+video__NN	medium(0.68921)	file(0.36023)	resource(0.35125)	datum(0.30788)	application(0.30084)	material(0.2942)	6
+garlic__NN	food(0.7914)	spice(0.39322)	ingredient(0.33653)	herb(0.32529)	4
+methane__NN	gas(1.0)	1
+electronic__JJ	industry(0.8127)	item(0.58268)	2
+pool__NN	amenity(1.0)	1
+cauliflower__NN	vegetable(1.0)	1
+clay__NN	material(1.0)	1
+weakness__NN	symptom(1.0)	1
+energy__NN	sector(0.78274)	industry(0.52063)	area(0.34097)	3
+estrogen__NN	hormone(1.0)	1
+christianity__NN	religion(1.0)	1
+flood__NN	disaster(0.86448)	event(0.50266)	2
+argon__NN	gas(1.0)	1
+lettuce__NN	vegetable(1.0)	1
+pryca__NN	shop(1.0)	1
+tetracycline__NN	antibiotic(1.0)	1
+awd__NN	feature(1.0)	1
+hypertension__NN	condition(0.75819)	factor(0.5415)	comorbidity(0.36321)	3
+islam__NN	religion(1.0)	1
+blueberry__NN	fruit(0.85059)	berry(0.52582)	2
+sadness__NN	emotion(1.0)	1
+motivation__NN	factor(0.90826)	topic(0.41842)	2
+hospital__NN	institution(0.61854)	facility(0.46481)	organization(0.4103)	building(0.30055)	setting(0.2762)	place(0.25766)	6
+density__NN	property(0.82086)	factor(0.45539)	parameter(0.34468)	3
+availability__NN	factor(1.0)	1
+brain__NN	organ(0.80659)	tissue(0.59112)	2
+privacy__NN	issue(1.0)	1
+maine__NN	state(1.0)	1
+truck__NN	vehicle(1.0)	1
+cough__NN	symptom(1.0)	1
+earthquake__NN	disaster(0.83051)	event(0.557)	2
+isopropanol__NN	alcohol(1.0)	1
+topography__NN	factor(1.0)	1
+tool__NN	item(1.0)	1
+square__NN	shape(1.0)	1
+sociology__NN	discipline(1.0)	1
+smartphone__NN	device(1.0)	1
+oklahoma__NN	state(1.0)	1
+snorkel__VBG	activity(1.0)	1
+electrical__JJ	service(0.84473)	solution(0.53519)	2
+quinoa__NN	grain(1.0)	1
+economic__JJ	factor(0.75777)	discipline(0.56011)	field(0.33475)	3
+training__NN	service(0.6102)	factor(0.46011)	issue(0.41767)	activity(0.40061)	area(0.28463)	5
+france__NN	nation(1.0)	1
+celery__NN	vegetable(1.0)	1
+honesty__NN	value(1.0)	1
+nylon__NN	material(1.0)	1
+psychology__NN	discipline(0.8961)	field(0.44386)	2
+rat__NN	animal(0.76687)	specie(0.47026)	rodent(0.43677)	3
+elephant__NN	animal(1.0)	1
+gas__NN	utility(0.76586)	industry(0.64301)	2
+apricot__NN	fruit(1.0)	1
+soybean__NN	crop(1.0)	1
+paris__NN	city(1.0)	1
+bathroom__NN	fixture(1.0)	1
+youtube__NN	site(0.83351)	website(0.5525)	2
+pen__VB	item(1.0)	1
+manganese__NNS	metal(0.73458)	mineral(0.49112)	element(0.46818)	3
+social__JJ	factor(1.0)	1
+light__NN	factor(1.0)	1
+detroit__NN	city(1.0)	1
+hp__NN	company(1.0)	1
+shape__NN	factor(0.82842)	feature(0.40481)	characteristic(0.3871)	3
+chicken__NN	meat(0.67463)	animal(0.55766)	food(0.48363)	3
+insurance__NN	cost(0.58132)	industry(0.54657)	expense(0.39963)	service(0.36375)	sector(0.26705)	5
+conference__NN	event(1.0)	1
+mouse__NN	device(0.87381)	mammal(0.48627)	2
+colorant__NN	additive(1.0)	1
+ginger__NN	spice(0.90024)	herb(0.43539)	2
+glucose__NN	sugar(1.0)	1
+tin__NN	metal(1.0)	1
+age__VBG	factor(1.0)	1
+tea__NN	beverage(0.76992)	drink(0.63814)	2
+polymer__NN	material(1.0)	1
+newspaper__NN	medium(0.89949)	source(0.43695)	2
+vomit__VBG	symptom(1.0)	1
+cucumber__NN	vegetable(1.0)	1
+aluminium__NN	metal(0.73927)	material(0.67341)	2
+bridge__NN	structure(1.0)	1
+hydrogen__NN	gas(1.0)	1
+java__NN	language(1.0)	1
+kansa__NN	state(1.0)	1
+pregnancy__NN	factor(0.78776)	condition(0.61598)	2
+sugar__NN	ingredient(0.69248)	food(0.63593)	carbohydrate(0.34068)	3
+japan__NN	nation(0.7707)	market(0.50308)	economy(0.39106)	3
+python__NN	language(1.0)	1
+hunt__VBG	activity(1.0)	1
+personality__NN	factor(1.0)	1
+respect__NN	value(1.0)	1
+insulin__NN	hormone(1.0)	1
+pump__NN	equipment(0.78569)	component(0.61862)	2
+rugby__NN	sport(1.0)	1
+tennessee__NN	state(1.0)	1
+shoe__NN	item(0.8119)	accessory(0.5838)	2
+mosquito__NN	insect(1.0)	1
+guitar__NN	instrument(1.0)	1
+russian__JJ	language(1.0)	1
+opera__NN	browser(1.0)	1
+italian__JJ	language(1.0)	1
+iowa__NN	state(1.0)	1
+patch__NN	word(1.0)	1
+morphine__NN	opioid(0.84335)	opiate(0.53736)	2
+buddhism__NN	religion(1.0)	1
+cooking__NN	activity(1.0)	1
+maintenance__NN	service(0.77814)	cost(0.62809)	2
+ford__NN	company(1.0)	1
+cisco__NN	company(1.0)	1
+yogurt__NN	food(1.0)	1
+prednisone__NN	corticosteroid(1.0)	1
+cricket__NN	sport(0.8635)	insect(0.50435)	2
+hat__NN	accessory(0.77676)	item(0.6298)	2
+stock__NN	asset(0.86813)	investment(0.49633)	2
+kentucky__NN	state(1.0)	1
+bee__NN	insect(0.8725)	pollinator(0.48862)	2
+dance__NN	activity(1.0)	1
+motorola__NN	company(1.0)	1
+parsley__NN	herb(1.0)	1
+lubricant__NN	additive(1.0)	1
+university__NN	institution(0.80291)	organization(0.59611)	2
+germany__NN	nation(0.89138)	market(0.45326)	2
+laptop__NN	device(1.0)	1
+ontario__NN	province(1.0)	1
+noise__NN	factor(0.84376)	issue(0.53672)	2
+portland__NN	city(1.0)	1
+speed__NN	factor(0.75071)	parameter(0.4919)	information(0.44099)	3
+dive__VBG	activity(1.0)	1
+bolt__NN	fastener(1.0)	1
+vitamin__NN	nutrient(1.0)	1
+europe__NN	region(1.0)	1
+irritability__NN	symptom(1.0)	1
+finance__NN	area(0.62672)	industry(0.60371)	sector(0.49271)	3
+boeing__VBG	company(1.0)	1
+cattle__NNS	animal(0.73188)	livestock(0.5554)	specie(0.39482)	3
+pepper__NN	vegetable(0.87353)	spice(0.48677)	2
+beijing__NN	city(1.0)	1
+clove__NN	spice(1.0)	1
+shanghai__NN	city(1.0)	1
+marketing__NN	area(0.71098)	topic(0.52138)	department(0.47188)	3
+protein__NN	nutrient(0.62795)	biomolecule(0.4641)	macromolecule(0.44315)	molecule(0.44036)	4
+poly__NN	polymer(1.0)	1
+transport__NN	sector(0.88449)	service(0.46656)	2
+chess__NN	game(1.0)	1
+clothe__NN	item(1.0)	1
+antihistamine__NN	medication(1.0)	1
+definition__NN	information(1.0)	1
+camp__VBG	activity(1.0)	1
+skin__NN	tissue(1.0)	1
+serotonin__NN	neurotransmitter(1.0)	1
+title__NN	information(1.0)	1
+myspace__NN	site(1.0)	1
+bear__NN	animal(1.0)	1
+gymnastic__JJ	sport(1.0)	1
+table__NN	item(0.86509)	object(0.50161)	2
+muscle__NN	tissue(1.0)	1
+stove__NN	appliance(1.0)	1
+circle__NN	shape(1.0)	1
+canada__NN	nation(0.83805)	jurisdiction(0.5456)	2
+propanol__NN	alcohol(1.0)	1
+mackerel__NN	fish(1.0)	1
+paracetamol__NN	painkiller(1.0)	1
+utah__NN	state(1.0)	1
+piano__NN	instrument(1.0)	1
+cleaning__NN	service(1.0)	1
+counsel__VBG	service(1.0)	1
+appliance__NN	item(1.0)	1
+integrity__NN	value(1.0)	1
+helium__NN	gas(1.0)	1
+steroid__NN	medication(1.0)	1
+target__NN	retailer(0.77023)	store(0.63776)	2
+genetics__NNS	factor(1.0)	1
+sucrose__NN	sugar(1.0)	1
+geography__NN	factor(0.71432)	subject(0.69981)	2
+scarf__NN	accessory(1.0)	1
+housing__NN	issue(0.74966)	service(0.49391)	area(0.44053)	3
+diazepam__NN	benzodiazepine(1.0)	1
+translation__NN	information(1.0)	1
+insomnia__NN	symptom(0.87412)	disorder(0.4857)	2
+beef__NN	meat(0.86929)	food(0.4943)	2
+anniversary__NN	occasion(0.79654)	event(0.60459)	2
+tungsten__NNS	metal(1.0)	1
+pesticide__NN	chemical(1.0)	1
+judaism__NN	religion(1.0)	1
+vermont__NN	state(1.0)	1
+rent__NN	expense(1.0)	1
+teacher__NN	professional(1.0)	1
+guilt__NN	emotion(1.0)	1
+dance__VBG	activity(1.0)	1
+yahoo__NN	engine(0.77906)	company(0.62695)	2
+gardening__NN	activity(1.0)	1
+hardness__NN	property(1.0)	1
+language__NN	factor(1.0)	1
+laundry__NN	service(1.0)	1
+montana__NN	state(1.0)	1
+oak__NN	hardwood(1.0)	1
+monkey__NN	animal(1.0)	1
+cement__NN	material(1.0)	1
+attitude__NN	factor(1.0)	1
+silicon__NN	material(0.7731)	element(0.63429)	2
+technology__NN	factor(0.84604)	topic(0.53312)	2
+toyota__NN	company(0.71053)	brand(0.70366)	2
+reliability__NN	factor(0.81231)	issue(0.58323)	2
+engineering__NN	field(0.73796)	discipline(0.50056)	profession(0.45261)	3
+honda__NN	brand(1.0)	1
+arsenic__NN	metal(1.0)	1
+belt__NN	accessory(1.0)	1
+oregano__NN	herb(1.0)	1
+atlanta__NN	city(1.0)	1
+carbon__NN	element(0.84395)	material(0.53643)	2
+bank__NN	institution(0.60373)	organization(0.43011)	business(0.40495)	lender(0.39608)	amenity(0.36007)	5
+party__NN	event(1.0)	1
+maharashtra__NN	state(1.0)	1
+bus__NN	vehicle(1.0)	1
+hinduism__NN	religion(1.0)	1
+rock__NN	object(0.7511)	material(0.46744)	obstacle(0.4662)	3
+installation__NN	service(1.0)	1
+immigration__NN	issue(1.0)	1
+pneumonia__NN	complication(0.83163)	infection(0.55533)	2
+diuretic__JJ	medication(1.0)	1
+competition__NN	factor(1.0)	1
+perforation__NN	complication(1.0)	1
+tiredness__NN	symptom(1.0)	1
+missouri__NN	state(1.0)	1
+australia__NNS	jurisdiction(0.60568)	nation(0.54491)	place(0.42287)	market(0.39675)	4
+love__NN	emotion(0.74472)	topic(0.49627)	theme(0.44621)	3
+occupation__NN	factor(0.7841)	information(0.62064)	2
+invoice__NN	document(1.0)	1
+blanket__NN	item(1.0)	1
+alaska__NN	state(1.0)	1
+salmonella__NN	bacterium(0.85965)	pathogen(0.51089)	2
+papaya__NN	fruit(1.0)	1
+repair__NN	service(1.0)	1
+dopamine__NN	neurotransmitter(1.0)	1
+season__NN	factor(1.0)	1
+idaho__NN	state(1.0)	1
+engineer__NN	professional(1.0)	1
+medication__NN	factor(1.0)	1
+politic__JJ	topic(1.0)	1
+toronto__NN	city(1.0)	1
+squat__NN	exercise(1.0)	1
+polypropylene__NN	material(0.72711)	polyolefin(0.50448)	plastic(0.46562)	3
+russia__NN	market(0.77223)	nation(0.63534)	2
+automobile__NN	industry(0.71344)	vehicle(0.70071)	2
+squash__NN	vegetable(1.0)	1
+cardboard__NN	material(1.0)	1
+chlorine__NN	chemical(1.0)	1
+oracle__NN	company(1.0)	1
+lion__NN	animal(0.82788)	predator(0.56091)	2
+future__NN	derivative(1.0)	1
+boxing__NN	sport(1.0)	1
+option__NN	derivative(1.0)	1
+medical__JJ	industry(1.0)	1
+leadership__NN	skill(0.76467)	topic(0.64442)	2
+tourism__NN	sector(0.76187)	industry(0.64773)	2
+acrylic__NN	material(1.0)	1
+fabric__NN	material(1.0)	1
+beetle__NN	insect(1.0)	1
+chloroform__NN	solvent(1.0)	1
+siemens__NNS	company(1.0)	1
+raccoon__NN	animal(1.0)	1
+travel__NN	expense(0.73718)	cost(0.6757)	2
+oat__NN	grain(1.0)	1
+mitochondrion__NNS	organelle(1.0)	1
+ski__NN	equipment(1.0)	1
+accelerometer__NN	sensor(1.0)	1
+dye__NN	additive(1.0)	1
+unemployment__NN	factor(0.76201)	issue(0.64757)	2
+tetrahydrofuran__NN	ether(0.8011)	solvent(0.59853)	2
+racism__NN	issue(1.0)	1
+illness__NN	factor(0.80793)	circumstance(0.58928)	2
+woman__NN	group(1.0)	1
+keyboard__NN	device(1.0)	1
+arkansas__NNS	state(1.0)	1
+library__NN	facility(1.0)	1
+duration__NN	factor(1.0)	1
+beet__NN	vegetable(1.0)	1
+battery__NN	item(1.0)	1
+fiberglass__NN	material(1.0)	1
+plum__NN	fruit(1.0)	1
+teamwork__NN	skill(1.0)	1
+nutmeg__NN	spice(1.0)	1
+fox__NN	animal(0.79905)	predator(0.60126)	2
+shell__NN	company(1.0)	1
+squirrel__NN	animal(1.0)	1
+dallas__NNS	city(1.0)	1
+car__NN	vehicle(0.76404)	item(0.64517)	2
+sage__NN	herb(1.0)	1
+perl__NN	language(1.0)	1
+mathematic__JJ	subject(1.0)	1
+quercetin__NN	flavonoid(1.0)	1
+yeast__NN	microorganism(0.78728)	organism(0.6166)	2
+light__VBG	factor(1.0)	1
+berry__NN	fruit(1.0)	1
+wyoming__VBG	state(1.0)	1
+softball__NN	sport(1.0)	1
+workshop__NN	activity(0.7708)	event(0.63708)	2
+ipad__NN	device(1.0)	1
+fructose__NN	sugar(1.0)	1
+cake__NN	food(1.0)	1
+chair__NN	item(1.0)	1
+snake__NN	animal(0.83579)	reptile(0.54906)	2
+raisin__NN	fruit(1.0)	1
+tile__VBG	service(0.71784)	solution(0.69621)	2
+corticosteroid__NN	medication(1.0)	1
+massage__NN	service(0.62689)	treatment(0.56087)	therapy(0.54078)	3
+gujarat__NN	state(1.0)	1
+ultrasound__NN	modality(1.0)	1
+silk__NN	fabric(0.74343)	material(0.66881)	2
+bat__NN	animal(1.0)	1
+password__NN	information(1.0)	1
+molybdenum__NN	metal(1.0)	1
+archery__NN	activity(1.0)	1
+iphone__NN	device(1.0)	1
+kale__NN	vegetable(0.80233)	green(0.59688)	2
+track__NN	sport(1.0)	1
+soil__NN	factor(1.0)	1
+baltimore__NN	city(1.0)	1
+sorghum__NN	crop(1.0)	1
+biking__NN	activity(1.0)	1
+report__NN	document(1.0)	1
+windsurf__VBG	activity(1.0)	1
+raspberry__NN	fruit(1.0)	1
+avocado__NN	food(1.0)	1
+golfing__NN	activity(1.0)	1
+bluetooth__NN	feature(1.0)	1
+turmeric__NN	spice(1.0)	1
+festival__NN	event(1.0)	1
+millet__NN	grain(1.0)	1
+microwave__NN	appliance(1.0)	1
+washer__NN	appliance(1.0)	1
+thanksgiving__VBG	holiday(1.0)	1
+mississippi__NN	state(1.0)	1
+coal__NN	fuel(1.0)	1
+sardine__NN	fish(1.0)	1
+korean__NN	language(1.0)	1
+nurse__NN	professional(1.0)	1
+meditation__NN	technique(0.65446)	practice(0.60383)	activity(0.45506)	3
+glove__NN	item(0.81368)	accessory(0.58131)	2
+demographic__JJ	factor(1.0)	1
+grasshopper__NN	insect(1.0)	1
+pollution__NN	factor(1.0)	1
+switch__NN	device(1.0)	1
+photoshop__NN	program(1.0)	1
+grain__NN	food(1.0)	1
+houston__NN	city(1.0)	1
+plant__NN	organism(1.0)	1
+frequency__NN	factor(0.76283)	parameter(0.6466)	2
+polyethylene__NN	polyolefin(0.64541)	material(0.57384)	polymer(0.50413)	3
+ant__NN	insect(1.0)	1
+hurricane__NN	disaster(1.0)	1
+screwdriver__NN	tool(1.0)	1
+erythromycin__NN	antibiotic(1.0)	1
+surgery__NN	treatment(1.0)	1
+rectangle__NN	shape(1.0)	1
+miami__NN	city(1.0)	1
+height__NN	factor(1.0)	1
+employment__NN	factor(0.74926)	issue(0.66227)	2
+asparagus__NN	vegetable(1.0)	1
+poultry__NN	food(1.0)	1
+amphetamine__NN	stimulant(1.0)	1
+alberta__NN	province(1.0)	1
+anthropology__NN	discipline(1.0)	1
+seminar__NN	event(0.77535)	activity(0.63154)	2
+property__NN	asset(1.0)	1
+badminton__NN	sport(1.0)	1
+human__NN	specie(0.78019)	mammal(0.62554)	2
+sustainability__NN	issue(1.0)	1
+hawaii__NN	state(1.0)	1
+mushroom__NN	vegetable(1.0)	1
+macrophage__NN	cell(1.0)	1
+concentration__NN	factor(0.81553)	parameter(0.57871)	2
+hormone__NN	factor(1.0)	1
+linkedin__NN	site(1.0)	1
+police__NNS	agency(0.81832)	service(0.57477)	2
+cumin__NN	spice(1.0)	1
+environmental__JJ	factor(1.0)	1
+volkswagen__NN	brand(1.0)	1
+moisture__NN	factor(1.0)	1
+sail__VBG	activity(1.0)	1
+polyester__NN	material(1.0)	1
+towel__NN	item(1.0)	1
+soup__NN	food(1.0)	1
+vinyl__NN	material(1.0)	1
+fertilizer__NN	input(1.0)	1
+starbucks__NNS	company(1.0)	1
+kerala__NN	state(1.0)	1
+constipation__NN	symptom(1.0)	1
+tree__NN	object(0.70042)	obstruction(0.51547)	obstacle(0.49367)	3
+fly__NN	insect(1.0)	1
+numbness__NN	symptom(1.0)	1
+acetonitrile__NN	solvent(1.0)	1
+hematoma__NN	complication(1.0)	1
+hammer__NN	tool(1.0)	1
+cookie__NN	technology(0.74045)	food(0.67211)	2
+painting__NN	activity(0.67508)	improvement(0.53018)	service(0.51301)	3
+watch__NN	item(1.0)	1
+lentil__NN	legume(1.0)	1
+pollen__NN	allergen(1.0)	1
+cosmetic__JJ	product(1.0)	1
+cultural__JJ	factor(1.0)	1
+karnataka__NN	state(1.0)	1
+valve__NN	component(1.0)	1
+tire__NN	item(1.0)	1
+family__NN	factor(0.75512)	topic(0.65558)	2
+linux__NN	system(1.0)	1
+virus__NN	pathogen(0.81)	microorganism(0.58643)	2
+magazine__NN	medium(1.0)	1
+pork__NN	meat(1.0)	1
+material__NN	factor(1.0)	1
+marble__NN	material(1.0)	1
+composite__JJ	material(1.0)	1
+viscosity__NN	property(1.0)	1
+dryer__NN	appliance(1.0)	1
+letter__NN	document(1.0)	1
+blackjack__NN	game(1.0)	1
+pencil__NN	item(1.0)	1
+zucchini__NN	vegetable(1.0)	1
+ebay__NN	site(0.72243)	company(0.69145)	2
+hotel__NN	business(1.0)	1
+watermelon__NN	fruit(1.0)	1
+equipment__NN	item(0.62186)	asset(0.57888)	resource(0.52744)	3
+resistor__NN	component(1.0)	1
+sodium__NN	mineral(0.74047)	electrolyte(0.67209)	2
+nature__NN	factor(1.0)	1
+roulette__NN	game(1.0)	1
+film__NN	medium(1.0)	1
+nokia__NNS	company(1.0)	1
+chrysler__NN	brand(1.0)	1
+shampoo__NN	product(1.0)	1
+contract__NN	document(1.0)	1
+trauma__NN	factor(1.0)	1
+aphid__NN	insect(1.0)	1
+happiness__NN	emotion(1.0)	1
+gravel__NN	material(1.0)	1
+dodge__NN	brand(1.0)	1
+distance__NN	factor(1.0)	1
+testosterone__NN	hormone(1.0)	1
+passport__NN	document(1.0)	1
+mumbai__NN	city(1.0)	1
+bp__NN	company(1.0)	1
+blog__NN	tool(1.0)	1
+capacitor__NN	component(1.0)	1
+bullying__NN	issue(1.0)	1
+naproxen__NN	nsaid(1.0)	1
+cranberry__NN	fruit(1.0)	1
+leaf__NN	debris(1.0)	1
+accessibility__NN	factor(1.0)	1
+salinity__NN	factor(1.0)	1
+ethic__JJ	topic(1.0)	1
+heat__NN	factor(1.0)	1
+unilever__NN	company(1.0)	1
+ospf__NN	protocol(1.0)	1
+rainfall__NN	factor(1.0)	1
+research__NN	activity(1.0)	1
+pda__NNS	device(1.0)	1
+epilepsy__NN	condition(1.0)	1
+quartz__NN	mineral(1.0)	1
+router__NN	device(1.0)	1
+pvc__NN	material(1.0)	1
+palladium__NN	metal(1.0)	1
+architect__NN	professional(1.0)	1
+wool__NN	material(1.0)	1
+adidas__NNS	brand(1.0)	1
+benzine__NN	solvent(1.0)	1
+design__NN	factor(0.72672)	service(0.68693)	2
+heredity__NN	factor(1.0)	1
+spleen__NN	organ(1.0)	1
+convenience__NN	factor(1.0)	1
+drought__NN	condition(0.76963)	factor(0.63849)	2
+lorazepam__NN	benzodiazepine(1.0)	1
+money__NN	resource(1.0)	1
+cleveland__NN	city(1.0)	1
+netflix__NN	company(0.76029)	service(0.64959)	2
+lemon__NN	fruit(1.0)	1
+shopping__NN	activity(1.0)	1
+timing__NN	factor(1.0)	1
+easter__NN	holiday(1.0)	1
+drill__NN	tool(1.0)	1
+land__NN	asset(1.0)	1
+brochure__NN	material(1.0)	1
+tiger__NN	animal(1.0)	1
+hemorrhage__NN	complication(1.0)	1
+denver__NN	city(1.0)	1
+confusion__NN	symptom(1.0)	1
+political__JJ	factor(1.0)	1
+candy__NN	item(0.76455)	food(0.64457)	2
+bond__NN	asset(0.65359)	investment(0.53742)	security(0.53292)	3
+cash__NN	asset(1.0)	1
+camera__NN	item(0.72935)	device(0.68414)	2
+butanol__NN	alcohol(1.0)	1
+asia__NN	region(1.0)	1
+legume__NN	food(1.0)	1
+description__NN	information(1.0)	1
+bowling__NN	activity(1.0)	1
+heron__NN	bird(1.0)	1
+parasailing__VBG	activity(1.0)	1
+triangle__NN	shape(1.0)	1
+eczema__NN	condition(1.0)	1
+van__NN	vehicle(1.0)	1
+melon__NN	fruit(1.0)	1
+gps__NN	technology(1.0)	1
+skill__NN	factor(1.0)	1
+tax__NN	cost(0.63529)	expense(0.55994)	charge(0.53187)	3
+wolf__NN	animal(1.0)	1
+medicaid__NN	program(1.0)	1
+elderly__RB	group(1.0)	1
+chlamydia__NN	infection(1.0)	1
+heparin__NN	anticoagulant(1.0)	1
+hexane__NN	solvent(1.0)	1
+bronze__NN	material(0.7374)	metal(0.67545)	2
+manchester__NN	city(1.0)	1
+jogging__NN	activity(1.0)	1
+wal-mart__NN	retailer(1.0)	1
+bag__NN	item(0.71881)	accessory(0.69521)	2
+utility__NN	expense(0.76519)	industry(0.6438)	2
+mineral__NN	nutrient(1.0)	1
+employee__NN	stakeholder(1.0)	1
+rise__VBD	flower(1.0)	1
+joy__NN	emotion(1.0)	1
+presence__NN	factor(1.0)	1
+labor__NN	cost(1.0)	1
+eggplant__NN	vegetable(1.0)	1
+progesterone__NN	hormone(1.0)	1
+preservative__NN	additive(1.0)	1
+chemistry__NN	subject(1.0)	1
+building__NN	structure(0.75341)	asset(0.65755)	2
+surf__VBG	activity(1.0)	1
+memory__NN	resource(1.0)	1
+jewellery__NN	item(1.0)	1
+infrastructure__NN	factor(1.0)	1
+petrochemical__NN	industry(1.0)	1
+palpitation__NN	symptom(1.0)	1
+oatmeal__NN	food(1.0)	1
+protease__NN	enzyme(1.0)	1
+disney__NN	company(1.0)	1
+email__NN	information(0.73856)	service(0.67418)	2
+cassava__NN	crop(1.0)	1
+vancouver__NN	city(1.0)	1
+gasoline__NN	fuel(1.0)	1
+hospitality__NN	industry(1.0)	1
+purse__NN	item(1.0)	1
+motorcycle__NN	vehicle(1.0)	1
+divorce__NN	event(0.75578)	issue(0.65482)	2
+mean__NN	statistic(1.0)	1
+trout__NN	fish(1.0)	1
+war__NN	event(1.0)	1
+budget__NN	factor(1.0)	1
+schizophrenia__NN	disorder(1.0)	1
+seriousness__NN	factor(1.0)	1
+scanner__NN	device(1.0)	1
+marriage__NN	event(1.0)	1
+resource__NN	factor(1.0)	1
+tokyo__NN	city(1.0)	1
+salt__NN	ingredient(1.0)	1
+cortisol__NN	hormone(1.0)	1
+aviation__NN	industry(1.0)	1
+ni__NN	metal(1.0)	1
+cardamom__NN	spice(1.0)	1
+clothes__NNS	item(1.0)	1
+insect__NN	animal(1.0)	1
+pancreas__NNS	organ(1.0)	1
+amsterdam__NN	city(1.0)	1
+olive__JJ	oil(1.0)	1
+length__NN	factor(1.0)	1
+carpet__NN	item(1.0)	1
+tuberculosis__NN	infection(1.0)	1
+hsbc__NN	bank(1.0)	1
+attorney__NN	professional(1.0)	1
+beverage__NN	industry(1.0)	1
+class__NN	factor(1.0)	1
+dairy__NN	food(1.0)	1
+gym__NN	amenity(0.71336)	facility(0.7008)	2
+fibroblast__NN	cell(1.0)	1
+lipase__NN	enzyme(1.0)	1
+vanilla__NN	flavor(1.0)	1
+silicone__NN	material(1.0)	1
+knowledge__NN	factor(1.0)	1
+inc__NN	company(1.0)	1
+telephone__NN	service(1.0)	1
+soda__NN	beverage(1.0)	1
+terrain__NN	factor(1.0)	1
+handout__NN	material(1.0)	1
+economy__NN	factor(1.0)	1
+upper__JJ	term(1.0)	1
+excel__NN	program(1.0)	1
+chamomile__NN	herb(1.0)	1
+corporation__NN	entity(1.0)	1
+restylane__NN	filler(1.0)	1
+punjab__NN	state(1.0)	1
+spermidine__NN	polyamine(1.0)	1
+allergy__NN	condition(1.0)	1
+selenium__NN	mineral(1.0)	1
+php__NN	language(1.0)	1
+friend__NN	person(1.0)	1
+butterfly__NN	insect(1.0)	1
+strength__NN	property(0.7228)	factor(0.69105)	2
+psychologist__NN	professional(1.0)	1
+run__VBG	activity(1.0)	1
+road__NN	feature(0.72848)	infrastructure(0.68507)	2
+rajasthan__NN	state(1.0)	1
+revenue__NN	information(1.0)	1
+lavender__NN	herb(1.0)	1
+city__NN	municipality(1.0)	1
+confidentiality__NN	issue(1.0)	1
+fibromyalgia__NN	condition(1.0)	1
+oval__NN	shape(1.0)	1
+anemia__NN	condition(1.0)	1
+ampicillin__NN	antibiotic(1.0)	1
+airline__NN	industry(1.0)	1
+analgesic__JJ	medication(1.0)	1
+text__NN	information(1.0)	1
+tobacco__NN	crop(1.0)	1
+nursing__NN	profession(1.0)	1
+fracture__NN	injury(1.0)	1
+cr__NN	element(1.0)	1
+chloride__NN	anion(1.0)	1
+access__NN	issue(1.0)	1
+dyspnea__NN	symptom(1.0)	1
+3m__CD	company(1.0)	1
+rye__NN	grain(1.0)	1
+kitchen__NN	room(0.71846)	area(0.69556)	2
+engine__NN	component(1.0)	1
+nail__NN	object(1.0)	1
+bing__NN	engine(1.0)	1
+poster__NN	material(1.0)	1
+wasp__NN	insect(1.0)	1
+violin__NN	instrument(1.0)	1
+drama__NN	activity(1.0)	1
+pneumothorax__NN	complication(1.0)	1
+berlin__NN	city(1.0)	1
+trust__NN	factor(1.0)	1
+bmw__NN	company(1.0)	1
+foam__NN	material(1.0)	1
+dolphin__NN	animal(1.0)	1
+juvederm__NN	filler(1.0)	1
+condition__NN	factor(1.0)	1
+carbamazepine__NN	anticonvulsant(1.0)	1
+biodiesel__NN	biofuel(1.0)	1
+disability__NN	factor(1.0)	1
+volume__NN	factor(1.0)	1
+albumin__NN	protein(1.0)	1
+diphenhydramine__NN	antihistamine(1.0)	1
+inflammation__NN	factor(1.0)	1
+breed__NN	factor(1.0)	1
+peanut__NN	food(1.0)	1
+cd__NN	metal(1.0)	1
+oyster__NN	shellfish(1.0)	1
+sing__VBG	activity(1.0)	1
+altitude__NN	factor(1.0)	1
+turnip__NN	vegetable(1.0)	1
+tv__NN	medium(1.0)	1
+frustration__NN	emotion(1.0)	1
+village__NN	municipality(1.0)	1
+plato__NN	philosopher(1.0)	1
+physician__NN	professional(1.0)	1
+eat__VBG	activity(1.0)	1
+mathematics__NNS	subject(1.0)	1
+discrimination__NN	issue(1.0)	1
+depth__NN	factor(1.0)	1
+sausage__NN	meat(1.0)	1
+supermarket__NN	amenity(1.0)	1
+kiwi__NN	fruit(1.0)	1
+coyote__NN	predator(1.0)	1
+image__NN	information(1.0)	1
+osteoporosis__NN	condition(1.0)	1
+catalase__NN	enzyme(1.0)	1
+borough__NN	municipality(1.0)	1
+consult__VBG	service(1.0)	1
+ether__NN	solvent(1.0)	1
+xylene__NN	solvent(1.0)	1
+rash__NN	symptom(1.0)	1
+duck__NN	bird(1.0)	1
+oven__RB	appliance(1.0)	1
+wire__NN	material(1.0)	1
+candle__NN	item(1.0)	1
+tile__NN	material(1.0)	1
+austin__NN	city(1.0)	1
+specie__NN	factor(1.0)	1
+biology__NN	subject(1.0)	1
+shame__NN	emotion(1.0)	1
+glaucoma__NN	condition(1.0)	1
+talc__NN	filler(1.0)	1
+picture__NN	item(1.0)	1
+mattress__NN	item(1.0)	1
+moth__NN	insect(1.0)	1
+pfizer__NN	company(1.0)	1
+maple__NN	hardwood(1.0)	1
+lacrosse__NN	sport(1.0)	1
+population__NN	factor(1.0)	1
+phone__NN	device(1.0)	1
+dioxane__NN	ether(1.0)	1
+resin__NN	material(1.0)	1
+vogue__NN	magazine(1.0)	1
+business__NN	field(1.0)	1
+window__NNS	system(1.0)	1
+shrimp__NN	seafood(1.0)	1
+dichloromethane__NN	solvent(1.0)	1
+photo__NN	file(1.0)	1
+tantalum__NN	metal(1.0)	1
+ruby__NN	language(1.0)	1
+sweat__VBG	symptom(1.0)	1
+wrestling__NN	sport(1.0)	1
+malnutrition__NN	factor(1.0)	1
+globalization__NN	factor(1.0)	1
+streptomycin__NN	antibiotic(1.0)	1
+graduation__NN	event(1.0)	1
+amylase__NN	enzyme(1.0)	1
+delta__NN	airline(1.0)	1
+structure__NN	factor(1.0)	1

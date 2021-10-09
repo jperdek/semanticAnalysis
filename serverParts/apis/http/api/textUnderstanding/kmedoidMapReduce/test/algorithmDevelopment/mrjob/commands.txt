@@ -1,0 +1,24 @@
+# START WHOLE K-MEDOID ALGORITHM
+# - change path to initial data and clusters!!!
+
+python mrjobsync.py
+
+#FOR TEST MAPREDUCE HADOOP FILE
+hadoop fs -copyFromLocal  ./test.py /temp/InitProcessingResults
+python test.py dataonly.txt -r hadoop --hadoop-streaming-jar=./hadoop-streaming-3.2.1.jar
+
+
+# FOR HADOOP
+cd /path/to/this/file
+hadoop fs -mkdir /temp
+hadoop fs -mkdir /temp/InitProcessingResults
+hadoop fs -copyFromLocal  ./dataonly.txt /temp/InitProcessingResults
+hadoop fs -copyFromLocal  ./clusteronly.txt /temp/InitProcessingResults
+hadoop fs -copyFromLocal  ./hadoop-streaming-3.2.1.jar /temp/InitProcessingResults
+hadoop fs -copyFromLocal  ./mrjobsync-hadoop.py /temp/InitProcessingResults
+
+
+--hadoop-streaming-jar=/temp/InitProcessingResults/hadoop-streaming-3.2.1.jar
+
+
+https://stackoverflow.com/questions/52108354/mrjob-returned-non-zero-exit-status-256

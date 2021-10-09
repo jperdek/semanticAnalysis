@@ -1,0 +1,1001 @@
+age	factor(0.95166)	variable(0.2537)	characteristic(0.12161)	information(0.09377)	datum(0.04963)	demographic(0.04257)	parameter(0.03575)	covariate(0.02898)	8
+california	state(1.0)	1
+gender	factor(0.92344)	variable(0.29812)	characteristic(0.16528)	issue(0.11791)	information(0.1061)	demographic(0.06165)	topic(0.04588)	7
+temperature	factor(0.84489)	parameter(0.46327)	variable(0.19038)	condition(0.1811)	datum(0.04991)	5
+copper	metal(0.9445)	material(0.26431)	mineral(0.14394)	element(0.13165)	4
+name	information(0.99498)	datum(0.1001)	2
+plastic	material(0.9963)	industry(0.08591)	2
+texas	state(1.0)	1
+florida	state(1.0)	1
+google	company(0.8883)	engine(0.45927)	2
+metal	material(1.0)	1
+glass	material(0.97979)	item(0.17058)	surface(0.10446)	3
+size	factor(0.91334)	information(0.20938)	characteristic(0.20298)	parameter(0.17085)	feature(0.13682)	variable(0.13396)	property(0.12211)	7
+headache	symptom(1.0)	1
+diabetes	condition(0.93288)	factor(0.25344)	illness(0.21724)	comorbidity(0.13534)	4
+stress	factor(0.98382)	issue(0.12984)	condition(0.12342)	3
+aluminum	metal(0.75902)	material(0.65106)	2
+basketball	sport(0.98285)	activity(0.18439)	2
+nausea	symptom(1.0)	1
+apple	fruit(0.81029)	company(0.55854)	food(0.14782)	brand(0.09803)	4
+education	factor(0.73354)	area(0.34578)	issue(0.31283)	sector(0.25151)	service(0.23627)	variable(0.23205)	field(0.1427)	topic(0.14012)	characteristic(0.1257)	industry(0.12558)	10
+football	sport(0.9905)	activity(0.13753)	2
+fatigue	symptom(0.96942)	factor(0.2454)	2
+microsoft	company(0.98964)	vendor(0.14359)	2
+address	information(0.99187)	datum(0.12722)	2
+cost	factor(0.95411)	issue(0.27354)	consideration(0.12186)	3
+ph	parameter(0.72386)	factor(0.66925)	variable(0.12192)	condition(0.11517)	4
+smoking	factor(0.95189)	habit(0.30645)	2
+ibm	company(0.98268)	vendor(0.1853)	2
+fruit	food(0.97872)	item(0.16068)	product(0.12764)	3
+wedding	event(0.84025)	occasion(0.5422)	2
+infection	complication(0.92688)	factor(0.28433)	condition(0.20415)	problem(0.13551)	4
+anticipate	word(1.0)	1
+shop	place(0.97931)	amenity(0.20235)	2
+location	factor(0.80813)	information(0.57695)	variable(0.11859)	3
+diet	factor(1.0)	1
+iron	metal(0.7814)	mineral(0.46146)	element(0.27953)	nutrient(0.21197)	material(0.19215)	micronutrient(0.1284)	6
+anger	emotion(0.95851)	feeling(0.28505)	2
+carrot	vegetable(0.97538)	food(0.22053)	2
+facebook	site(0.76604)	company(0.39602)	website(0.37139)	platform(0.29384)	service(0.1369)	tool(0.11549)	6
+fever	symptom(1.0)	1
+tennis	sport(0.9321)	activity(0.36221)	2
+strawberry	fruit(0.97234)	flavor(0.17455)	berry(0.1552)	3
+dog	animal(0.89026)	pet(0.40098)	mammal(0.16939)	specie(0.13403)	4
+fishing	activity(0.93516)	sport(0.35422)	2
+soccer	sport(0.98391)	activity(0.17869)	2
+vegetable	food(0.98527)	crop(0.17101)	2
+weather	factor(0.9828)	variable(0.18465)	2
+nickel	metal(0.95994)	material(0.20023)	element(0.19603)	3
+steel	material(0.85343)	metal(0.42494)	industry(0.30181)	3
+pain	symptom(0.98791)	factor(0.15501)	2
+swimming	activity(0.85673)	sport(0.49471)	exercise(0.14587)	3
+ethanol	alcohol(0.89928)	solvent(0.37574)	biofuel(0.17075)	fuel(0.14478)	4
+date	information(0.98373)	datum(0.17964)	2
+firefox	browser(1.0)	1
+zinc	metal(0.83505)	mineral(0.44492)	nutrient(0.21801)	element(0.18006)	micronutrient(0.15741)	5
+calcium	mineral(0.91291)	nutrient(0.34788)	element(0.2135)	3
+illinois	state(1.0)	1
+china	market(0.65744)	economy(0.56426)	nation(0.46356)	place(0.14878)	state(0.11119)	5
+lead	metal(0.9596)	element(0.2133)	material(0.18348)	3
+weight	factor(0.96215)	variable(0.19581)	information(0.18956)	3
+methanol	alcohol(0.90504)	solvent(0.42532)	2
+gold	metal(0.90814)	material(0.34934)	commodity(0.23073)	3
+chicago	city(1.0)	1
+silver	metal(0.97152)	material(0.23697)	2
+arizona	state(1.0)	1
+genetic	factor(1.0)	1
+paper	material(0.90046)	industry(0.31521)	item(0.29968)	3
+banana	fruit(0.91891)	food(0.34387)	crop(0.19329)	3
+anticipates	word(1.0)	1
+climate	factor(1.0)	1
+meat	food(0.97693)	product(0.21354)	2
+salmon	fish(0.97964)	food(0.20076)	2
+furniture	item(0.97945)	product(0.20167)	2
+income	factor(0.94255)	variable(0.33408)	2
+clothing	item(0.98084)	product(0.1948)	2
+fish	food(0.94153)	animal(0.33693)	2
+ethnicity	factor(0.9602)	variable(0.20147)	characteristic(0.19344)	3
+broccoli	vegetable(0.92096)	food(0.38966)	2
+egg	food(0.97768)	ingredient(0.21009)	2
+baseball	sport(1.0)	1
+construction	industry(0.84251)	sector(0.53869)	2
+potato	food(0.78719)	vegetable(0.4724)	crop(0.39645)	3
+ohio	state(1.0)	1
+washington	state(0.9561)	city(0.29305)	2
+bacterium	microorganism(0.84213)	organism(0.445)	pathogen(0.24122)	microbe(0.18601)	4
+massachusetts	state(1.0)	1
+water	liquid(0.57476)	fluid(0.40665)	utility(0.406)	service(0.35391)	resource(0.29793)	material(0.17947)	solvent(0.16032)	item(0.13614)	substance(0.13452)	factor(0.1329)	sector(0.11505)	11
+expect	word(1.0)	1
+oregon	state(1.0)	1
+heart	organ(0.9669)	tissue(0.25517)	2
+cherry	fruit(1.0)	1
+magnesium	mineral(0.84963)	metal(0.37895)	nutrient(0.29858)	element(0.21302)	4
+sink	fixture(1.0)	1
+automotive	industry(1.0)	1
+spanish	language(1.0)	1
+tomato	vegetable(0.80382)	crop(0.37037)	food(0.35638)	plant(0.29948)	4
+hiking	activity(1.0)	1
+doctor	professional(1.0)	1
+pharmaceutical	industry(0.97283)	sector(0.23153)	2
+india	market(0.66587)	economy(0.59415)	nation(0.40718)	place(0.19442)	4
+french	language(1.0)	1
+corn	crop(0.84689)	grain(0.39067)	food(0.22693)	vegetable(0.20474)	plant(0.19168)	5
+colorado	state(1.0)	1
+london	city(1.0)	1
+cat	animal(0.85532)	pet(0.51811)	2
+bathtub	fixture(1.0)	1
+ceramic	material(1.0)	1
+wheat	crop(0.71931)	grain(0.58794)	cereal(0.30982)	food(0.20233)	4
+nitrogen	gas(0.69564)	nutrient(0.67698)	element(0.2404)	3
+amazon	company(0.92532)	site(0.30982)	retailer(0.21863)	3
+antioxidant	additive(1.0)	1
+concrete	material(0.96985)	surface(0.24372)	2
+minnesota	state(1.0)	1
+dizziness	symptom(1.0)	1
+manufacturing	industry(0.89046)	sector(0.45505)	2
+orange	fruit(1.0)	1
+rabbit	animal(0.92879)	specie(0.28709)	mammal(0.23436)	3
+kidney	organ(0.9589)	tissue(0.28375)	2
+virginia	state(1.0)	1
+acetone	solvent(1.0)	1
+horse	animal(1.0)	1
+pennsylvania	state(1.0)	1
+obesity	factor(0.87125)	condition(0.49083)	2
+agriculture	sector(0.78677)	industry(0.50934)	area(0.28222)	activity(0.20475)	4
+time	information(0.65213)	factor(0.64926)	parameter(0.2862)	resource(0.26699)	4
+milk	food(0.92709)	product(0.28901)	liquid(0.23869)	3
+humidity	factor(1.0)	1
+golf	sport(0.81751)	activity(0.57592)	2
+culture	factor(0.94092)	topic(0.24074)	issue(0.23815)	3
+jewelry	item(0.82449)	valuable(0.47891)	accessory(0.30142)	3
+bread	food(0.93322)	carbohydrate(0.26543)	item(0.24218)	3
+birthday	occasion(0.83569)	event(0.5492)	2
+lawyer	professional(1.0)	1
+mining	industry(0.8891)	sector(0.37025)	activity(0.2691)	3
+book	item(0.79486)	resource(0.45065)	material(0.33806)	product(0.22547)	4
+maryland	state(1.0)	1
+cheese	food(1.0)	1
+bird	animal(1.0)	1
+plan	word(1.0)	1
+food	item(0.62755)	industry(0.52357)	service(0.2634)	expense(0.2567)	resource(0.22389)	product(0.21858)	topic(0.18346)	necessity(0.1823)	sector(0.17884)	9
+aerospace	industry(1.0)	1
+stone	material(1.0)	1
+health	area(0.53616)	issue(0.49193)	factor(0.39116)	topic(0.3753)	sector(0.33483)	service(0.2541)	6
+titanium	metal(0.83038)	material(0.55719)	2
+environment	factor(0.79195)	issue(0.54683)	area(0.27164)	3
+estimate	word(1.0)	1
+plumbing	service(0.80065)	solution(0.59914)	2
+internet	technology(0.85386)	network(0.4066)	medium(0.32496)	3
+security	issue(0.88059)	factor(0.27889)	service(0.27123)	area(0.27057)	4
+twitter	site(0.79846)	platform(0.44993)	website(0.33858)	company(0.21304)	4
+lung	organ(0.95948)	tissue(0.28177)	2
+cabbage	vegetable(0.94748)	food(0.31982)	2
+chrome	browser(1.0)	1
+cinnamon	spice(1.0)	1
+pear	fruit(1.0)	1
+banking	industry(0.84154)	sector(0.46172)	service(0.2804)	3
+georgia	state(1.0)	1
+onion	vegetable(0.80358)	food(0.55163)	ingredient(0.2235)	3
+refrigerator	appliance(0.95862)	item(0.28468)	2
+arthritis	condition(1.0)	1
+barley	grain(0.88527)	crop(0.3742)	cereal(0.27619)	3
+cadmium	metal(1.0)	1
+spinach	vegetable(0.84895)	food(0.43442)	green(0.30094)	3
+anxiety	symptom(0.60528)	issue(0.46094)	emotion(0.33204)	factor(0.31563)	condition(0.30778)	problem(0.29259)	disorder(0.17595)	7
+asthma	condition(1.0)	1
+safety	issue(0.75859)	factor(0.50429)	area(0.30485)	topic(0.27804)	4
+concert	event(1.0)	1
+healthcare	industry(0.91091)	sector(0.4126)	2
+boston	city(1.0)	1
+maize	crop(1.0)	1
+intend	word(1.0)	1
+sheep	animal(0.88419)	specie(0.33801)	livestock(0.32242)	3
+tablet	device(1.0)	1
+chromium	metal(0.93707)	element(0.34914)	2
+sport	activity(1.0)	1
+chocolate	food(0.93483)	flavor(0.35509)	2
+michigan	state(1.0)	1
+yoga	activity(0.84522)	class(0.34149)	exercise(0.30819)	practice(0.27206)	4
+depression	issue(0.49159)	symptom(0.48581)	condition(0.47054)	problem(0.39521)	factor(0.29244)	disorder(0.24332)	6
+intel	company(1.0)	1
+cycling	activity(0.90175)	sport(0.43226)	2
+school	institution(0.67075)	organization(0.40517)	facility(0.34996)	amenity(0.32759)	place(0.24038)	building(0.22764)	setting(0.21575)	7
+pineapple	fruit(1.0)	1
+deer	animal(0.95056)	wildlife(0.31054)	2
+peach	fruit(1.0)	1
+volleyball	sport(0.94754)	activity(0.31963)	2
+phosphorus	nutrient(0.9214)	mineral(0.38861)	2
+retail	industry(0.8457)	sector(0.53366)	2
+cow	animal(1.0)	1
+rubber	material(1.0)	1
+leather	material(1.0)	1
+project	word(1.0)	1
+bean	food(0.76814)	crop(0.40494)	legume(0.38624)	vegetable(0.31113)	4
+grape	fruit(1.0)	1
+brighton	place(1.0)	1
+type	factor(1.0)	1
+potassium	mineral(0.78899)	nutrient(0.47528)	electrolyte(0.30077)	element(0.24726)	4
+art	activity(0.80158)	subject(0.59789)	2
+communication	skill(0.76785)	topic(0.40221)	area(0.37282)	issue(0.33113)	4
+nevada	state(1.0)	1
+ibuprofen	nsaid(0.87221)	medication(0.38886)	painkiller(0.2967)	3
+chemical	industry(1.0)	1
+christmas	holiday(0.90329)	occasion(0.42903)	2
+hockey	sport(1.0)	1
+caffeine	stimulant(1.0)	1
+experience	factor(1.0)	1
+plasticizer	additive(1.0)	1
+printer	device(0.8602)	equipment(0.36871)	peripheral(0.35229)	3
+pigment	additive(1.0)	1
+textile	industry(0.95041)	sector(0.311)	2
+oxygen	gas(0.88207)	element(0.47111)	2
+lifestyle	factor(1.0)	1
+pasta	food(0.94916)	carbohydrate(0.31478)	2
+rice	crop(0.64145)	food(0.58679)	grain(0.44319)	cereal(0.21864)	4
+medicine	profession(0.7147)	field(0.59144)	area(0.28694)	discipline(0.2389)	4
+dell	company(0.94302)	manufacturer(0.33273)	2
+history	subject(0.88577)	discipline(0.35571)	topic(0.29814)	3
+cornwall	place(1.0)	1
+wisconsin	state(1.0)	1
+goat	animal(0.93136)	livestock(0.36409)	2
+alcohol	substance(0.68935)	solvent(0.55316)	factor(0.46776)	3
+kayaking	activity(1.0)	1
+sand	material(1.0)	1
+basil	herb(1.0)	1
+canoeing	activity(1.0)	1
+physical	service(0.91648)	factor(0.40008)	2
+quality	factor(1.0)	1
+mango	fruit(1.0)	1
+skiing	activity(0.89845)	sport(0.43907)	2
+television	medium(0.91854)	item(0.39534)	2
+price	factor(0.84987)	information(0.52699)	2
+toy	item(1.0)	1
+antidepressant	medication(1.0)	1
+restaurant	business(0.60952)	amenity(0.60223)	facility(0.3945)	place(0.24508)	service(0.22383)	5
+bleeding	complication(1.0)	1
+aspirin	medication(0.83486)	nsaid(0.46632)	medicine(0.29249)	3
+cotton	crop(0.77604)	material(0.4824)	fabric(0.40627)	3
+science	subject(1.0)	1
+oil	industry(0.62673)	commodity(0.36074)	contaminant(0.29904)	product(0.27134)	material(0.26662)	liquid(0.26253)	fluid(0.25781)	sector(0.23734)	resource(0.22633)	9
+benzene	solvent(0.91819)	chemical(0.39614)	2
+electricity	utility(0.82155)	service(0.57013)	2
+stabilizer	additive(1.0)	1
+rosemary	herb(1.0)	1
+coffee	beverage(0.6196)	drink(0.46611)	stimulant(0.36159)	food(0.33617)	product(0.28343)	liquid(0.27339)	6
+law	profession(0.93192)	field(0.36265)	2
+reading	activity(1.0)	1
+brick	material(1.0)	1
+paint	material(0.75705)	item(0.53611)	product(0.37344)	3
+seattle	city(1.0)	1
+mercury	metal(1.0)	1
+religion	factor(0.80381)	topic(0.50598)	issue(0.31285)	3
+craft	activity(1.0)	1
+toluene	solvent(1.0)	1
+inflation	factor(1.0)	1
+telecommunication	industry(0.83272)	sector(0.55369)	2
+nutrition	factor(0.81368)	topic(0.58132)	2
+brass	material(0.70804)	metal(0.70617)	2
+indiana	state(1.0)	1
+air	gas(0.85941)	fluid(0.51129)	2
+tuna	fish(1.0)	1
+filler	additive(1.0)	1
+connecticut	state(1.0)	1
+samsung	company(0.77798)	brand(0.54038)	manufacturer(0.32052)	3
+transportation	service(0.7225)	industry(0.53265)	sector(0.31206)	issue(0.31129)	4
+brazil	market(0.68124)	economy(0.6555)	nation(0.32594)	3
+dishwasher	appliance(1.0)	1
+louisiana	state(1.0)	1
+game	activity(0.93177)	application(0.36305)	2
+accountant	professional(1.0)	1
+acupuncture	therapy(0.85294)	treatment(0.522)	2
+penicillin	antibiotic(1.0)	1
+music	activity(0.80979)	subject(0.49058)	file(0.32182)	3
+cobalt	metal(1.0)	1
+cereal	food(1.0)	1
+sony	company(0.87653)	brand(0.48135)	2
+computer	item(0.55149)	device(0.51605)	equipment(0.50824)	technology(0.30668)	electronic(0.27785)	5
+thyme	herb(1.0)	1
+philadelphia	city(1.0)	1
+delaware	state(1.0)	1
+walking	activity(0.896)	exercise(0.44406)	2
+chemotherapy	treatment(1.0)	1
+safari	browser(1.0)	1
+pressure	parameter(0.81005)	factor(0.47666)	variable(0.3415)	3
+arabic	language(1.0)	1
+surfactant	additive(1.0)	1
+platinum	metal(1.0)	1
+exercise	factor(0.92031)	activity(0.39118)	2
+radio	medium(0.92733)	item(0.37426)	2
+nike	company(0.71711)	brand(0.69696)	2
+antibiotic	medication(1.0)	1
+alabama	state(1.0)	1
+diarrhea	symptom(1.0)	1
+video	medium(0.68921)	file(0.36023)	resource(0.35125)	datum(0.30788)	application(0.30084)	material(0.2942)	6
+garlic	food(0.7914)	spice(0.39322)	ingredient(0.33653)	herb(0.32529)	4
+methane	gas(1.0)	1
+electronic	industry(0.8127)	item(0.58268)	2
+pool	amenity(1.0)	1
+cauliflower	vegetable(1.0)	1
+clay	material(1.0)	1
+weakness	symptom(1.0)	1
+energy	sector(0.78274)	industry(0.52063)	area(0.34097)	3
+estrogen	hormone(1.0)	1
+christianity	religion(1.0)	1
+flood	disaster(0.86448)	event(0.50266)	2
+argon	gas(1.0)	1
+lettuce	vegetable(1.0)	1
+pryca	shop(1.0)	1
+tetracycline	antibiotic(1.0)	1
+awd	feature(1.0)	1
+hypertension	condition(0.75819)	factor(0.5415)	comorbidity(0.36321)	3
+islam	religion(1.0)	1
+blueberry	fruit(0.85059)	berry(0.52582)	2
+sadness	emotion(1.0)	1
+motivation	factor(0.90826)	topic(0.41842)	2
+hospital	institution(0.61854)	facility(0.46481)	organization(0.4103)	building(0.30055)	setting(0.2762)	place(0.25766)	6
+density	property(0.82086)	factor(0.45539)	parameter(0.34468)	3
+availability	factor(1.0)	1
+brain	organ(0.80659)	tissue(0.59112)	2
+privacy	issue(1.0)	1
+maine	state(1.0)	1
+truck	vehicle(1.0)	1
+cough	symptom(1.0)	1
+earthquake	disaster(0.83051)	event(0.557)	2
+isopropanol	alcohol(1.0)	1
+topography	factor(1.0)	1
+tool	item(1.0)	1
+square	shape(1.0)	1
+sociology	discipline(1.0)	1
+smartphone	device(1.0)	1
+oklahoma	state(1.0)	1
+snorkeling	activity(1.0)	1
+electrical	service(0.84473)	solution(0.53519)	2
+quinoa	grain(1.0)	1
+economic	factor(0.75777)	discipline(0.56011)	field(0.33475)	3
+training	service(0.6102)	factor(0.46011)	issue(0.41767)	activity(0.40061)	area(0.28463)	5
+france	nation(1.0)	1
+celery	vegetable(1.0)	1
+honesty	value(1.0)	1
+nylon	material(1.0)	1
+psychology	discipline(0.8961)	field(0.44386)	2
+rat	animal(0.76687)	specie(0.47026)	rodent(0.43677)	3
+elephant	animal(1.0)	1
+gas	utility(0.76586)	industry(0.64301)	2
+apricot	fruit(1.0)	1
+soybean	crop(1.0)	1
+paris	city(1.0)	1
+bathroom	fixture(1.0)	1
+youtube	site(0.83351)	website(0.5525)	2
+pen	item(1.0)	1
+manganese	metal(0.73458)	mineral(0.49112)	element(0.46818)	3
+social	factor(1.0)	1
+light	factor(1.0)	1
+detroit	city(1.0)	1
+hp	company(1.0)	1
+shape	factor(0.82842)	feature(0.40481)	characteristic(0.3871)	3
+chicken	meat(0.67463)	animal(0.55766)	food(0.48363)	3
+insurance	cost(0.58132)	industry(0.54657)	expense(0.39963)	service(0.36375)	sector(0.26705)	5
+conference	event(1.0)	1
+mouse	device(0.87381)	mammal(0.48627)	2
+colorant	additive(1.0)	1
+ginger	spice(0.90024)	herb(0.43539)	2
+glucose	sugar(1.0)	1
+tin	metal(1.0)	1
+aging	factor(1.0)	1
+tea	beverage(0.76992)	drink(0.63814)	2
+polymer	material(1.0)	1
+newspaper	medium(0.89949)	source(0.43695)	2
+vomiting	symptom(1.0)	1
+cucumber	vegetable(1.0)	1
+aluminium	metal(0.73927)	material(0.67341)	2
+bridge	structure(1.0)	1
+hydrogen	gas(1.0)	1
+java	language(1.0)	1
+kansas	state(1.0)	1
+pregnancy	factor(0.78776)	condition(0.61598)	2
+sugar	ingredient(0.69248)	food(0.63593)	carbohydrate(0.34068)	3
+japan	nation(0.7707)	market(0.50308)	economy(0.39106)	3
+python	language(1.0)	1
+hunting	activity(1.0)	1
+personality	factor(1.0)	1
+respect	value(1.0)	1
+insulin	hormone(1.0)	1
+pump	equipment(0.78569)	component(0.61862)	2
+rugby	sport(1.0)	1
+tennessee	state(1.0)	1
+shoe	item(0.8119)	accessory(0.5838)	2
+mosquito	insect(1.0)	1
+guitar	instrument(1.0)	1
+russian	language(1.0)	1
+opera	browser(1.0)	1
+italian	language(1.0)	1
+iowa	state(1.0)	1
+patch	word(1.0)	1
+morphine	opioid(0.84335)	opiate(0.53736)	2
+buddhism	religion(1.0)	1
+cooking	activity(1.0)	1
+maintenance	service(0.77814)	cost(0.62809)	2
+ford	company(1.0)	1
+cisco	company(1.0)	1
+yogurt	food(1.0)	1
+prednisone	corticosteroid(1.0)	1
+cricket	sport(0.8635)	insect(0.50435)	2
+hat	accessory(0.77676)	item(0.6298)	2
+stock	asset(0.86813)	investment(0.49633)	2
+kentucky	state(1.0)	1
+bee	insect(0.8725)	pollinator(0.48862)	2
+dance	activity(1.0)	1
+motorola	company(1.0)	1
+parsley	herb(1.0)	1
+lubricant	additive(1.0)	1
+university	institution(0.80291)	organization(0.59611)	2
+germany	nation(0.89138)	market(0.45326)	2
+laptop	device(1.0)	1
+ontario	province(1.0)	1
+noise	factor(0.84376)	issue(0.53672)	2
+portland	city(1.0)	1
+speed	factor(0.75071)	parameter(0.4919)	information(0.44099)	3
+diving	activity(1.0)	1
+bolt	fastener(1.0)	1
+vitamin	nutrient(1.0)	1
+europe	region(1.0)	1
+irritability	symptom(1.0)	1
+finance	area(0.62672)	industry(0.60371)	sector(0.49271)	3
+boeing	company(1.0)	1
+cattle	animal(0.73188)	livestock(0.5554)	specie(0.39482)	3
+pepper	vegetable(0.87353)	spice(0.48677)	2
+beijing	city(1.0)	1
+clove	spice(1.0)	1
+shanghai	city(1.0)	1
+marketing	area(0.71098)	topic(0.52138)	department(0.47188)	3
+protein	nutrient(0.62795)	biomolecule(0.4641)	macromolecule(0.44315)	molecule(0.44036)	4
+poly	polymer(1.0)	1
+transport	sector(0.88449)	service(0.46656)	2
+chess	game(1.0)	1
+clothe	item(1.0)	1
+antihistamine	medication(1.0)	1
+definition	information(1.0)	1
+camping	activity(1.0)	1
+skin	tissue(1.0)	1
+serotonin	neurotransmitter(1.0)	1
+title	information(1.0)	1
+myspace	site(1.0)	1
+bear	animal(1.0)	1
+gymnastic	sport(1.0)	1
+table	item(0.86509)	object(0.50161)	2
+muscle	tissue(1.0)	1
+stove	appliance(1.0)	1
+circle	shape(1.0)	1
+canada	nation(0.83805)	jurisdiction(0.5456)	2
+propanol	alcohol(1.0)	1
+mackerel	fish(1.0)	1
+paracetamol	painkiller(1.0)	1
+utah	state(1.0)	1
+piano	instrument(1.0)	1
+cleaning	service(1.0)	1
+counseling	service(1.0)	1
+appliance	item(1.0)	1
+integrity	value(1.0)	1
+helium	gas(1.0)	1
+steroid	medication(1.0)	1
+target	retailer(0.77023)	store(0.63776)	2
+genetics	factor(1.0)	1
+sucrose	sugar(1.0)	1
+geography	factor(0.71432)	subject(0.69981)	2
+scarf	accessory(1.0)	1
+housing	issue(0.74966)	service(0.49391)	area(0.44053)	3
+diazepam	benzodiazepine(1.0)	1
+translation	information(1.0)	1
+insomnia	symptom(0.87412)	disorder(0.4857)	2
+beef	meat(0.86929)	food(0.4943)	2
+anniversary	occasion(0.79654)	event(0.60459)	2
+tungsten	metal(1.0)	1
+pesticide	chemical(1.0)	1
+judaism	religion(1.0)	1
+vermont	state(1.0)	1
+rent	expense(1.0)	1
+teacher	professional(1.0)	1
+guilt	emotion(1.0)	1
+dancing	activity(1.0)	1
+yahoo	engine(0.77906)	company(0.62695)	2
+gardening	activity(1.0)	1
+hardness	property(1.0)	1
+language	factor(1.0)	1
+laundry	service(1.0)	1
+montana	state(1.0)	1
+oak	hardwood(1.0)	1
+monkey	animal(1.0)	1
+cement	material(1.0)	1
+attitude	factor(1.0)	1
+silicon	material(0.7731)	element(0.63429)	2
+technology	factor(0.84604)	topic(0.53312)	2
+toyota	company(0.71053)	brand(0.70366)	2
+reliability	factor(0.81231)	issue(0.58323)	2
+engineering	field(0.73796)	discipline(0.50056)	profession(0.45261)	3
+honda	brand(1.0)	1
+arsenic	metal(1.0)	1
+belt	accessory(1.0)	1
+oregano	herb(1.0)	1
+atlanta	city(1.0)	1
+carbon	element(0.84395)	material(0.53643)	2
+bank	institution(0.60373)	organization(0.43011)	business(0.40495)	lender(0.39608)	amenity(0.36007)	5
+party	event(1.0)	1
+maharashtra	state(1.0)	1
+bus	vehicle(1.0)	1
+hinduism	religion(1.0)	1
+rock	object(0.7511)	material(0.46744)	obstacle(0.4662)	3
+installation	service(1.0)	1
+immigration	issue(1.0)	1
+pneumonia	complication(0.83163)	infection(0.55533)	2
+diuretic	medication(1.0)	1
+competition	factor(1.0)	1
+perforation	complication(1.0)	1
+tiredness	symptom(1.0)	1
+missouri	state(1.0)	1
+australia	jurisdiction(0.60568)	nation(0.54491)	place(0.42287)	market(0.39675)	4
+love	emotion(0.74472)	topic(0.49627)	theme(0.44621)	3
+occupation	factor(0.7841)	information(0.62064)	2
+invoice	document(1.0)	1
+blanket	item(1.0)	1
+alaska	state(1.0)	1
+salmonella	bacterium(0.85965)	pathogen(0.51089)	2
+papaya	fruit(1.0)	1
+repair	service(1.0)	1
+dopamine	neurotransmitter(1.0)	1
+season	factor(1.0)	1
+idaho	state(1.0)	1
+engineer	professional(1.0)	1
+medication	factor(1.0)	1
+politic	topic(1.0)	1
+toronto	city(1.0)	1
+squat	exercise(1.0)	1
+polypropylene	material(0.72711)	polyolefin(0.50448)	plastic(0.46562)	3
+russia	market(0.77223)	nation(0.63534)	2
+automobile	industry(0.71344)	vehicle(0.70071)	2
+squash	vegetable(1.0)	1
+cardboard	material(1.0)	1
+chlorine	chemical(1.0)	1
+oracle	company(1.0)	1
+lion	animal(0.82788)	predator(0.56091)	2
+future	derivative(1.0)	1
+boxing	sport(1.0)	1
+option	derivative(1.0)	1
+medical	industry(1.0)	1
+leadership	skill(0.76467)	topic(0.64442)	2
+tourism	sector(0.76187)	industry(0.64773)	2
+acrylic	material(1.0)	1
+fabric	material(1.0)	1
+beetle	insect(1.0)	1
+chloroform	solvent(1.0)	1
+siemens	company(1.0)	1
+raccoon	animal(1.0)	1
+travel	expense(0.73718)	cost(0.6757)	2
+oat	grain(1.0)	1
+mitochondria	organelle(1.0)	1
+ski	equipment(1.0)	1
+accelerometer	sensor(1.0)	1
+dye	additive(1.0)	1
+unemployment	factor(0.76201)	issue(0.64757)	2
+tetrahydrofuran	ether(0.8011)	solvent(0.59853)	2
+racism	issue(1.0)	1
+illness	factor(0.80793)	circumstance(0.58928)	2
+woman	group(1.0)	1
+keyboard	device(1.0)	1
+arkansas	state(1.0)	1
+library	facility(1.0)	1
+duration	factor(1.0)	1
+beet	vegetable(1.0)	1
+battery	item(1.0)	1
+fiberglass	material(1.0)	1
+plum	fruit(1.0)	1
+teamwork	skill(1.0)	1
+nutmeg	spice(1.0)	1
+fox	animal(0.79905)	predator(0.60126)	2
+shell	company(1.0)	1
+squirrel	animal(1.0)	1
+dallas	city(1.0)	1
+car	vehicle(0.76404)	item(0.64517)	2
+sage	herb(1.0)	1
+perl	language(1.0)	1
+mathematic	subject(1.0)	1
+quercetin	flavonoid(1.0)	1
+yeast	microorganism(0.78728)	organism(0.6166)	2
+lighting	factor(1.0)	1
+berry	fruit(1.0)	1
+wyoming	state(1.0)	1
+softball	sport(1.0)	1
+workshop	activity(0.7708)	event(0.63708)	2
+ipad	device(1.0)	1
+fructose	sugar(1.0)	1
+cake	food(1.0)	1
+chair	item(1.0)	1
+snake	animal(0.83579)	reptile(0.54906)	2
+raisin	fruit(1.0)	1
+tiling	service(0.71784)	solution(0.69621)	2
+corticosteroid	medication(1.0)	1
+massage	service(0.62689)	treatment(0.56087)	therapy(0.54078)	3
+gujarat	state(1.0)	1
+ultrasound	modality(1.0)	1
+silk	fabric(0.74343)	material(0.66881)	2
+bat	animal(1.0)	1
+password	information(1.0)	1
+molybdenum	metal(1.0)	1
+archery	activity(1.0)	1
+iphone	device(1.0)	1
+kale	vegetable(0.80233)	green(0.59688)	2
+track	sport(1.0)	1
+soil	factor(1.0)	1
+baltimore	city(1.0)	1
+sorghum	crop(1.0)	1
+biking	activity(1.0)	1
+report	document(1.0)	1
+windsurfing	activity(1.0)	1
+raspberry	fruit(1.0)	1
+avocado	food(1.0)	1
+golfing	activity(1.0)	1
+bluetooth	feature(1.0)	1
+turmeric	spice(1.0)	1
+festival	event(1.0)	1
+millet	grain(1.0)	1
+microwave	appliance(1.0)	1
+washer	appliance(1.0)	1
+thanksgiving	holiday(1.0)	1
+mississippi	state(1.0)	1
+coal	fuel(1.0)	1
+sardine	fish(1.0)	1
+korean	language(1.0)	1
+nurse	professional(1.0)	1
+meditation	technique(0.65446)	practice(0.60383)	activity(0.45506)	3
+glove	item(0.81368)	accessory(0.58131)	2
+demographic	factor(1.0)	1
+grasshopper	insect(1.0)	1
+pollution	factor(1.0)	1
+switch	device(1.0)	1
+photoshop	program(1.0)	1
+grain	food(1.0)	1
+houston	city(1.0)	1
+plant	organism(1.0)	1
+frequency	factor(0.76283)	parameter(0.6466)	2
+polyethylene	polyolefin(0.64541)	material(0.57384)	polymer(0.50413)	3
+ant	insect(1.0)	1
+hurricane	disaster(1.0)	1
+screwdriver	tool(1.0)	1
+erythromycin	antibiotic(1.0)	1
+surgery	treatment(1.0)	1
+rectangle	shape(1.0)	1
+miami	city(1.0)	1
+height	factor(1.0)	1
+employment	factor(0.74926)	issue(0.66227)	2
+asparagus	vegetable(1.0)	1
+poultry	food(1.0)	1
+amphetamine	stimulant(1.0)	1
+alberta	province(1.0)	1
+anthropology	discipline(1.0)	1
+seminar	event(0.77535)	activity(0.63154)	2
+property	asset(1.0)	1
+badminton	sport(1.0)	1
+human	specie(0.78019)	mammal(0.62554)	2
+sustainability	issue(1.0)	1
+hawaii	state(1.0)	1
+mushroom	vegetable(1.0)	1
+macrophage	cell(1.0)	1
+concentration	factor(0.81553)	parameter(0.57871)	2
+hormone	factor(1.0)	1
+linkedin	site(1.0)	1
+police	agency(0.81832)	service(0.57477)	2
+cumin	spice(1.0)	1
+environmental	factor(1.0)	1
+volkswagen	brand(1.0)	1
+moisture	factor(1.0)	1
+sailing	activity(1.0)	1
+polyester	material(1.0)	1
+towel	item(1.0)	1
+soup	food(1.0)	1
+vinyl	material(1.0)	1
+fertilizer	input(1.0)	1
+starbucks	company(1.0)	1
+kerala	state(1.0)	1
+constipation	symptom(1.0)	1
+tree	object(0.70042)	obstruction(0.51547)	obstacle(0.49367)	3
+fly	insect(1.0)	1
+numbness	symptom(1.0)	1
+acetonitrile	solvent(1.0)	1
+hematoma	complication(1.0)	1
+hammer	tool(1.0)	1
+cookie	technology(0.74045)	food(0.67211)	2
+painting	activity(0.67508)	improvement(0.53018)	service(0.51301)	3
+watch	item(1.0)	1
+lentil	legume(1.0)	1
+pollen	allergen(1.0)	1
+cosmetic	product(1.0)	1
+cultural	factor(1.0)	1
+karnataka	state(1.0)	1
+valve	component(1.0)	1
+tire	item(1.0)	1
+family	factor(0.75512)	topic(0.65558)	2
+linux	system(1.0)	1
+virus	pathogen(0.81)	microorganism(0.58643)	2
+magazine	medium(1.0)	1
+pork	meat(1.0)	1
+material	factor(1.0)	1
+marble	material(1.0)	1
+composite	material(1.0)	1
+viscosity	property(1.0)	1
+dryer	appliance(1.0)	1
+letter	document(1.0)	1
+blackjack	game(1.0)	1
+pencil	item(1.0)	1
+zucchini	vegetable(1.0)	1
+ebay	site(0.72243)	company(0.69145)	2
+hotel	business(1.0)	1
+watermelon	fruit(1.0)	1
+equipment	item(0.62186)	asset(0.57888)	resource(0.52744)	3
+resistor	component(1.0)	1
+sodium	mineral(0.74047)	electrolyte(0.67209)	2
+nature	factor(1.0)	1
+roulette	game(1.0)	1
+film	medium(1.0)	1
+nokia	company(1.0)	1
+chrysler	brand(1.0)	1
+shampoo	product(1.0)	1
+contract	document(1.0)	1
+trauma	factor(1.0)	1
+aphid	insect(1.0)	1
+happiness	emotion(1.0)	1
+gravel	material(1.0)	1
+dodge	brand(1.0)	1
+distance	factor(1.0)	1
+testosterone	hormone(1.0)	1
+passport	document(1.0)	1
+mumbai	city(1.0)	1
+bp	company(1.0)	1
+blog	tool(1.0)	1
+capacitor	component(1.0)	1
+bullying	issue(1.0)	1
+naproxen	nsaid(1.0)	1
+cranberry	fruit(1.0)	1
+leaf	debris(1.0)	1
+accessibility	factor(1.0)	1
+salinity	factor(1.0)	1
+ethic	topic(1.0)	1
+heat	factor(1.0)	1
+unilever	company(1.0)	1
+ospf	protocol(1.0)	1
+rainfall	factor(1.0)	1
+research	activity(1.0)	1
+pdas	device(1.0)	1
+epilepsy	condition(1.0)	1
+quartz	mineral(1.0)	1
+router	device(1.0)	1
+pvc	material(1.0)	1
+palladium	metal(1.0)	1
+architect	professional(1.0)	1
+wool	material(1.0)	1
+adidas	brand(1.0)	1
+benzine	solvent(1.0)	1
+design	factor(0.72672)	service(0.68693)	2
+heredity	factor(1.0)	1
+spleen	organ(1.0)	1
+convenience	factor(1.0)	1
+drought	condition(0.76963)	factor(0.63849)	2
+lorazepam	benzodiazepine(1.0)	1
+money	resource(1.0)	1
+cleveland	city(1.0)	1
+netflix	company(0.76029)	service(0.64959)	2
+lemon	fruit(1.0)	1
+shopping	activity(1.0)	1
+timing	factor(1.0)	1
+easter	holiday(1.0)	1
+drill	tool(1.0)	1
+land	asset(1.0)	1
+brochure	material(1.0)	1
+tiger	animal(1.0)	1
+hemorrhage	complication(1.0)	1
+denver	city(1.0)	1
+confusion	symptom(1.0)	1
+political	factor(1.0)	1
+candy	item(0.76455)	food(0.64457)	2
+bond	asset(0.65359)	investment(0.53742)	security(0.53292)	3
+cash	asset(1.0)	1
+camera	item(0.72935)	device(0.68414)	2
+butanol	alcohol(1.0)	1
+asia	region(1.0)	1
+legume	food(1.0)	1
+description	information(1.0)	1
+bowling	activity(1.0)	1
+heron	bird(1.0)	1
+parasailing	activity(1.0)	1
+triangle	shape(1.0)	1
+eczema	condition(1.0)	1
+van	vehicle(1.0)	1
+melon	fruit(1.0)	1
+gps	technology(1.0)	1
+skill	factor(1.0)	1
+tax	cost(0.63529)	expense(0.55994)	charge(0.53187)	3
+wolf	animal(1.0)	1
+medicaid	program(1.0)	1
+elderly	group(1.0)	1
+chlamydia	infection(1.0)	1
+heparin	anticoagulant(1.0)	1
+hexane	solvent(1.0)	1
+bronze	material(0.7374)	metal(0.67545)	2
+manchester	city(1.0)	1
+jogging	activity(1.0)	1
+wal-mart	retailer(1.0)	1
+bag	item(0.71881)	accessory(0.69521)	2
+utility	expense(0.76519)	industry(0.6438)	2
+mineral	nutrient(1.0)	1
+employee	stakeholder(1.0)	1
+rose	flower(1.0)	1
+joy	emotion(1.0)	1
+presence	factor(1.0)	1
+labor	cost(1.0)	1
+eggplant	vegetable(1.0)	1
+progesterone	hormone(1.0)	1
+preservative	additive(1.0)	1
+chemistry	subject(1.0)	1
+building	structure(0.75341)	asset(0.65755)	2
+surfing	activity(1.0)	1
+memory	resource(1.0)	1
+jewellery	item(1.0)	1
+infrastructure	factor(1.0)	1
+petrochemical	industry(1.0)	1
+palpitation	symptom(1.0)	1
+oatmeal	food(1.0)	1
+protease	enzyme(1.0)	1
+disney	company(1.0)	1
+email	information(0.73856)	service(0.67418)	2
+cassava	crop(1.0)	1
+vancouver	city(1.0)	1
+gasoline	fuel(1.0)	1
+hospitality	industry(1.0)	1
+purse	item(1.0)	1
+motorcycle	vehicle(1.0)	1
+divorce	event(0.75578)	issue(0.65482)	2
+mean	statistic(1.0)	1
+trout	fish(1.0)	1
+war	event(1.0)	1
+budget	factor(1.0)	1
+schizophrenia	disorder(1.0)	1
+seriousness	factor(1.0)	1
+scanner	device(1.0)	1
+marriage	event(1.0)	1
+resource	factor(1.0)	1
+tokyo	city(1.0)	1
+salt	ingredient(1.0)	1
+cortisol	hormone(1.0)	1
+aviation	industry(1.0)	1
+ni	metal(1.0)	1
+cardamom	spice(1.0)	1
+clothes	item(1.0)	1
+insect	animal(1.0)	1
+pancreas	organ(1.0)	1
+amsterdam	city(1.0)	1
+olive	oil(1.0)	1
+length	factor(1.0)	1
+carpet	item(1.0)	1
+tuberculosis	infection(1.0)	1
+hsbc	bank(1.0)	1
+attorney	professional(1.0)	1
+beverage	industry(1.0)	1
+class	factor(1.0)	1
+dairy	food(1.0)	1
+gym	amenity(0.71336)	facility(0.7008)	2
+fibroblast	cell(1.0)	1
+lipase	enzyme(1.0)	1
+vanilla	flavor(1.0)	1
+silicone	material(1.0)	1
+knowledge	factor(1.0)	1
+inc	company(1.0)	1
+telephone	service(1.0)	1
+soda	beverage(1.0)	1
+terrain	factor(1.0)	1
+handout	material(1.0)	1
+economy	factor(1.0)	1
+upper	term(1.0)	1
+excel	program(1.0)	1
+chamomile	herb(1.0)	1
+corporation	entity(1.0)	1
+restylane	filler(1.0)	1
+punjab	state(1.0)	1
+spermidine	polyamine(1.0)	1
+allergy	condition(1.0)	1
+selenium	mineral(1.0)	1
+php	language(1.0)	1
+friend	person(1.0)	1
+butterfly	insect(1.0)	1
+strength	property(0.7228)	factor(0.69105)	2
+psychologist	professional(1.0)	1
+running	activity(1.0)	1
+road	feature(0.72848)	infrastructure(0.68507)	2
+rajasthan	state(1.0)	1
+revenue	information(1.0)	1
+lavender	herb(1.0)	1
+city	municipality(1.0)	1
+confidentiality	issue(1.0)	1
+fibromyalgia	condition(1.0)	1
+oval	shape(1.0)	1
+anemia	condition(1.0)	1
+ampicillin	antibiotic(1.0)	1
+airline	industry(1.0)	1
+analgesic	medication(1.0)	1
+text	information(1.0)	1
+tobacco	crop(1.0)	1
+nursing	profession(1.0)	1
+fracture	injury(1.0)	1
+cr	element(1.0)	1
+chloride	anion(1.0)	1
+access	issue(1.0)	1
+dyspnea	symptom(1.0)	1
+3m	company(1.0)	1
+rye	grain(1.0)	1
+kitchen	room(0.71846)	area(0.69556)	2
+engine	component(1.0)	1
+nail	object(1.0)	1
+bing	engine(1.0)	1
+poster	material(1.0)	1
+wasp	insect(1.0)	1
+violin	instrument(1.0)	1
+drama	activity(1.0)	1
+pneumothorax	complication(1.0)	1
+berlin	city(1.0)	1
+trust	factor(1.0)	1
+bmw	company(1.0)	1
+foam	material(1.0)	1
+dolphin	animal(1.0)	1
+juvederm	filler(1.0)	1
+condition	factor(1.0)	1
+carbamazepine	anticonvulsant(1.0)	1
+biodiesel	biofuel(1.0)	1
+disability	factor(1.0)	1
+volume	factor(1.0)	1
+albumin	protein(1.0)	1
+diphenhydramine	antihistamine(1.0)	1
+inflammation	factor(1.0)	1
+breed	factor(1.0)	1
+peanut	food(1.0)	1
+cd	metal(1.0)	1
+oyster	shellfish(1.0)	1
+singing	activity(1.0)	1
+altitude	factor(1.0)	1
+turnip	vegetable(1.0)	1
+tv	medium(1.0)	1
+frustration	emotion(1.0)	1
+village	municipality(1.0)	1
+plato	philosopher(1.0)	1
+physician	professional(1.0)	1
+eating	activity(1.0)	1
+mathematics	subject(1.0)	1
+discrimination	issue(1.0)	1
+depth	factor(1.0)	1
+sausage	meat(1.0)	1
+supermarket	amenity(1.0)	1
+kiwi	fruit(1.0)	1
+coyote	predator(1.0)	1
+image	information(1.0)	1
+osteoporosis	condition(1.0)	1
+catalase	enzyme(1.0)	1
+borough	municipality(1.0)	1
+consulting	service(1.0)	1
+ether	solvent(1.0)	1
+xylene	solvent(1.0)	1
+rash	symptom(1.0)	1
+duck	bird(1.0)	1
+oven	appliance(1.0)	1
+wire	material(1.0)	1
+candle	item(1.0)	1
+tile	material(1.0)	1
+austin	city(1.0)	1
+specie	factor(1.0)	1
+biology	subject(1.0)	1
+shame	emotion(1.0)	1
+glaucoma	condition(1.0)	1
+talc	filler(1.0)	1
+picture	item(1.0)	1
+mattress	item(1.0)	1
+moth	insect(1.0)	1
+pfizer	company(1.0)	1
+maple	hardwood(1.0)	1
+lacrosse	sport(1.0)	1
+population	factor(1.0)	1
+phone	device(1.0)	1
+dioxane	ether(1.0)	1
+resin	material(1.0)	1
+vogue	magazine(1.0)	1
+business	field(1.0)	1
+windows	system(1.0)	1
+shrimp	seafood(1.0)	1
+dichloromethane	solvent(1.0)	1
+photo	file(1.0)	1
+tantalum	metal(1.0)	1
+ruby	language(1.0)	1
+sweating	symptom(1.0)	1
+wrestling	sport(1.0)	1
+malnutrition	factor(1.0)	1
+globalization	factor(1.0)	1
+streptomycin	antibiotic(1.0)	1
+graduation	event(1.0)	1
+amylase	enzyme(1.0)	1
+delta	airline(1.0)	1
+structure	factor(1.0)	1

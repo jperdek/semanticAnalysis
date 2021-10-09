@@ -1,0 +1,901 @@
+S	age	{"factor": 35167.0, "variable": 9375.0, "characteristic": 4494.0, "information": 3465.0, "datum": 1834.0, "demographic": 1573.0, "parameter": 1321.0, "covariate": 1071.0}	age
+S	california	{"state": 18062.0}	california
+S	temperature	{"factor": 13660.0, "parameter": 7490.0, "variable": 3078.0, "condition": 2928.0, "datum": 807.0}	temperature
+S	copper	{"material": 901.0}	pvc
+S	name	{"metal": 1274.0}	tungsten
+S	plastic	{"industry": 820.0}	hospitality
+S	texas	{"state": 8056.0}	texas
+S	florida	{"state": 7836.0}	florida
+S	google	{"company": 7816.0, "engine": 4041.0}	google
+S	metal	{"material": 7809.0}	metal
+S	glass	{"material": 6950.0, "item": 1210.0, "surface": 741.0}	glass
+S	size	{"factor": 6709.0, "information": 1538.0, "characteristic": 1491.0, "parameter": 1255.0, "feature": 1005.0, "variable": 984.0, "property": 897.0}	size
+S	headache	{"symptom": 6620.0}	headache
+S	diabetes	{"condition": 777.0}	allergy
+S	aluminum	{"metal": 6433.0, "material": 5518.0}	aluminum
+S	basketball	{"sport": 6423.0, "activity": 1205.0}	basketball
+S	nausea	{"symptom": 6364.0}	nausea
+S	apple	{"fruit": 6315.0, "company": 4353.0, "food": 1152.0, "brand": 764.0}	apple
+S	education	{"factor": 6256.0, "area": 2949.0, "issue": 2668.0, "sector": 2145.0, "service": 2015.0, "variable": 1979.0, "field": 1217.0, "topic": 1195.0, "characteristic": 1072.0, "industry": 1071.0}	education
+S	football	{"sport": 6244.0, "activity": 867.0}	football
+S	fatigue	{"symptom": 6206.0, "factor": 1571.0}	fatigue
+S	microsoft	{"company": 5494.0, "vendor": 1036.0}	ibm
+S	address	{"information": 6136.0, "datum": 787.0}	address
+S	cost	{"factor": 5661.0, "issue": 1623.0, "consideration": 723.0}	cost
+S	ph	{"factor": 1009.0, "parameter": 716.0}	concentration
+S	smoking	{"factor": 5532.0, "habit": 1781.0}	smoking
+S	fruit	{"food": 5421.0, "item": 890.0, "product": 707.0}	fruit
+S	wedding	{"event": 5393.0, "occasion": 3480.0}	wedding
+S	infection	{"complication": 5294.0, "factor": 1624.0, "condition": 1166.0, "problem": 774.0}	infection
+S	anticipate	{"word": 3774.0}	anticipates
+S	shop	{"place": 5256.0, "amenity": 1086.0}	shop
+S	diet	{"factor": 5205.0}	diet
+S	iron	{"metal": 5124.0, "mineral": 3026.0, "element": 1833.0, "nutrient": 1390.0, "material": 1260.0, "micronutrient": 842.0}	iron
+S	anger	{"emotion": 5064.0, "feeling": 1506.0}	anger
+S	carrot	{"vegetable": 1121.0}	beet
+S	facebook	{"site": 5008.0, "company": 2589.0, "website": 2428.0, "platform": 1921.0, "service": 895.0, "tool": 755.0}	facebook
+S	fever	{"symptom": 4966.0}	fever
+S	tennis	{"sport": 4964.0, "activity": 1929.0}	tennis
+S	strawberry	{"fruit": 4824.0, "flavor": 866.0, "berry": 770.0}	strawberry
+S	dog	{"animal": 4809.0, "pet": 2166.0, "mammal": 915.0, "specie": 724.0}	dog
+S	fishing	{"activity": 4789.0, "sport": 1814.0}	fishing
+S	soccer	{"sport": 4752.0, "activity": 863.0}	soccer
+S	vegetable	{"food": 4638.0, "crop": 805.0}	vegetable
+S	weather	{"factor": 4604.0, "variable": 865.0}	weather
+S	nickel	{"metal": 4564.0, "material": 952.0, "element": 932.0}	nickel
+S	steel	{"material": 4561.0, "metal": 2271.0, "industry": 1613.0}	steel
+S	pain	{"symptom": 4493.0, "factor": 705.0}	pain
+S	swimming	{"activity": 4487.0, "sport": 2591.0, "exercise": 764.0}	swimming
+S	ethanol	{"alcohol": 4466.0, "solvent": 1866.0, "biofuel": 848.0, "fuel": 719.0}	ethanol
+S	date	{"information": 4463.0, "datum": 815.0}	date
+S	zinc	{"metal": 4313.0, "mineral": 2298.0, "nutrient": 1126.0, "element": 930.0, "micronutrient": 813.0}	zinc
+S	calcium	{"mineral": 4246.0, "nutrient": 1618.0, "element": 993.0}	calcium
+S	illinois	{"state": 4221.0}	illinois
+S	china	{"market": 4198.0, "economy": 3603.0, "nation": 2960.0, "place": 950.0, "state": 710.0}	china
+S	lead	{"metal": 4184.0, "element": 930.0, "material": 800.0}	lead
+S	weight	{"factor": 4157.0, "variable": 846.0, "information": 819.0}	weight
+S	gold	{"metal": 4058.0, "material": 1561.0, "commodity": 1031.0}	gold
+S	chicago	{"city": 4033.0}	chicago
+S	silver	{"metal": 3989.0, "material": 973.0}	silver
+S	arizona	{"state": 3846.0}	arizona
+S	genetic	{"factor": 3844.0}	genetic
+S	paper	{"material": 3828.0, "industry": 1340.0, "item": 1274.0}	paper
+S	banana	{"fruit": 3808.0, "food": 1425.0, "crop": 801.0}	banana
+S	climate	{"factor": 3756.0}	climate
+S	meat	{"food": 3756.0, "product": 821.0}	meat
+S	salmon	{"fish": 3733.0, "food": 765.0}	salmon
+S	furniture	{"item": 3730.0, "product": 768.0}	furniture
+S	income	{"factor": 3727.0, "variable": 1321.0}	income
+S	clothing	{"item": 3721.0, "product": 739.0}	clothing
+S	fish	{"food": 3711.0, "animal": 1328.0}	fish
+S	ethnicity	{"factor": 3708.0, "variable": 778.0, "characteristic": 747.0}	ethnicity
+S	broccoli	{"vegetable": 3680.0, "food": 1557.0}	broccoli
+S	egg	{"food": 3667.0, "ingredient": 788.0}	egg
+S	baseball	{"sport": 3627.0}	baseball
+S	construction	{"industry": 3580.0, "sector": 2289.0}	construction
+S	potato	{"food": 3576.0, "vegetable": 2146.0, "crop": 1801.0}	potato
+S	ohio	{"state": 3570.0}	ohio
+S	washington	{"state": 3566.0, "city": 1093.0}	washington
+S	bacterium	{"microorganism": 3554.0, "organism": 1878.0, "pathogen": 1018.0, "microbe": 785.0}	bacterium
+S	massachusetts	{"state": 3548.0}	massachusetts
+S	expect	{"word": 3528.0}	expect
+S	oregon	{"state": 3519.0}	oregon
+S	cherry	{"fruit": 3485.0}	cherry
+S	magnesium	{"mineral": 3446.0, "metal": 1537.0, "nutrient": 1211.0, "element": 864.0}	magnesium
+S	sink	{"fixture": 3434.0}	sink
+S	automotive	{"industry": 3432.0}	automotive
+S	spanish	{"language": 3431.0}	spanish
+S	tomato	{"vegetable": 3390.0, "crop": 1562.0, "food": 1503.0, "plant": 1263.0}	tomato
+S	hiking	{"activity": 3346.0}	hiking
+S	doctor	{"professional": 3334.0}	doctor
+S	pharmaceutical	{"industry": 3311.0, "sector": 788.0}	pharmaceutical
+S	india	{"jurisdiction": 1206.0, "nation": 1085.0, "place": 842.0, "market": 790.0}	australia
+S	french	{"language": 3276.0}	french
+S	corn	{"crop": 1066.0}	sorghum
+S	colorado	{"state": 3217.0}	colorado
+S	cat	{"animal": 3201.0, "pet": 1939.0}	cat
+S	bathtub	{"fixture": 3181.0}	bathtub
+S	ceramic	{"material": 3174.0}	ceramic
+S	wheat	{"crop": 3132.0, "grain": 2560.0, "cereal": 1349.0, "food": 881.0}	wheat
+S	nitrogen	{"gas": 3131.0, "nutrient": 3047.0, "element": 1082.0}	nitrogen
+S	amazon	{"company": 3115.0, "site": 1043.0, "retailer": 736.0}	amazon
+S	antioxidant	{"additive": 3084.0}	antioxidant
+S	concrete	{"material": 1606.0}	nylon
+S	minnesota	{"state": 3070.0}	minnesota
+S	dizziness	{"symptom": 3049.0}	dizziness
+S	manufacturing	{"industry": 3037.0, "sector": 1552.0}	manufacturing
+S	orange	{"fruit": 3020.0}	orange
+S	rabbit	{"animal": 3012.0, "specie": 931.0, "mammal": 760.0}	rabbit
+S	kidney	{"organ": 3011.0, "tissue": 891.0}	kidney
+S	virginia	{"state": 3009.0}	virginia
+S	acetone	{"solvent": 2998.0}	acetone
+S	horse	{"animal": 2997.0}	horse
+S	pennsylvania	{"state": 2996.0}	pennsylvania
+S	obesity	{"factor": 2975.0, "condition": 1676.0}	obesity
+S	agriculture	{"sector": 2955.0, "industry": 1913.0, "area": 1060.0, "activity": 769.0}	agriculture
+S	time	{"information": 2953.0, "factor": 2940.0, "parameter": 1296.0, "resource": 1209.0}	time
+S	milk	{"food": 2948.0, "product": 919.0, "liquid": 759.0}	milk
+S	humidity	{"factor": 2945.0}	humidity
+S	golf	{"sport": 2944.0, "activity": 2074.0}	golf
+S	culture	{"factor": 2904.0, "topic": 743.0, "issue": 735.0}	culture
+S	jewelry	{"item": 2894.0, "valuable": 1681.0, "accessory": 1058.0}	jewelry
+S	bread	{"food": 2890.0, "carbohydrate": 822.0, "item": 750.0}	bread
+S	lawyer	{"professional": 2857.0}	lawyer
+S	mining	{"industry": 2848.0, "sector": 1186.0, "activity": 862.0}	mining
+S	book	{"item": 2845.0, "resource": 1613.0, "material": 1210.0, "product": 807.0}	book
+S	maryland	{"state": 2839.0}	maryland
+S	cheese	{"food": 2801.0}	cheese
+S	bird	{"animal": 2779.0}	bird
+S	plan	{"word": 2739.0}	plan
+S	food	{"item": 2716.0, "industry": 2266.0, "service": 1140.0, "expense": 1111.0, "resource": 969.0, "product": 946.0, "topic": 794.0, "necessity": 789.0, "sector": 774.0}	food
+S	aerospace	{"industry": 2713.0}	aerospace
+S	stone	{"material": 2709.0}	stone
+S	health	{"area": 2703.0, "issue": 2480.0, "factor": 1972.0, "topic": 1892.0, "sector": 1688.0, "service": 1281.0}	health
+S	titanium	{"metal": 2690.0, "material": 1805.0}	titanium
+S	environment	{"factor": 2688.0, "issue": 1856.0, "area": 922.0}	environment
+S	estimate	{"word": 2674.0}	estimate
+S	internet	{"technology": 2667.0, "network": 1270.0, "medium": 1015.0}	internet
+S	security	{"issue": 2646.0, "factor": 838.0, "service": 815.0, "area": 813.0}	security
+S	twitter	{"site": 2646.0, "platform": 1491.0, "website": 1122.0, "company": 706.0}	twitter
+S	lung	{"organ": 2622.0, "tissue": 770.0}	lung
+S	cabbage	{"vegetable": 2613.0, "food": 882.0}	cabbage
+S	chrome	{"browser": 4369.0}	firefox
+S	cinnamon	{"spice": 2572.0}	cinnamon
+S	banking	{"industry": 2548.0, "sector": 1398.0, "service": 849.0}	banking
+S	georgia	{"state": 2545.0}	georgia
+S	onion	{"vegetable": 2542.0, "food": 1745.0, "ingredient": 707.0}	onion
+S	refrigerator	{"appliance": 2539.0, "item": 754.0}	refrigerator
+S	arthritis	{"condition": 2537.0}	arthritis
+S	barley	{"grain": 2529.0, "crop": 1069.0, "cereal": 789.0}	barley
+S	cadmium	{"metal": 2491.0}	cadmium
+S	spinach	{"vegetable": 2474.0, "food": 1266.0, "green": 877.0}	spinach
+S	anxiety	{"symptom": 2470.0, "issue": 1881.0, "emotion": 1355.0, "factor": 1288.0, "condition": 1256.0, "problem": 1194.0, "disorder": 718.0}	anxiety
+S	asthma	{"condition": 2469.0}	asthma
+S	safety	{"issue": 1691.0}	privacy
+S	concert	{"event": 2457.0}	concert
+S	boston	{"city": 2454.0}	boston
+S	maize	{"crop": 2449.0}	maize
+S	sheep	{"animal": 2438.0, "specie": 932.0, "livestock": 889.0}	sheep
+S	tablet	{"device": 2436.0}	tablet
+S	chromium	{"metal": 2429.0, "element": 905.0}	chromium
+S	sport	{"activity": 2422.0}	sport
+S	michigan	{"state": 2394.0}	michigan
+S	yoga	{"activity": 2386.0, "class": 964.0, "exercise": 870.0, "practice": 768.0}	yoga
+S	depression	{"issue": 2382.0, "symptom": 2354.0, "condition": 2280.0, "problem": 1915.0, "factor": 1417.0, "disorder": 1179.0}	depression
+S	intel	{"company": 2375.0}	intel
+S	cycling	{"activity": 2374.0, "sport": 1138.0}	cycling
+S	school	{"institution": 1224.0, "organization": 872.0, "business": 821.0, "lender": 803.0, "amenity": 730.0}	bank
+S	pineapple	{"fruit": 2358.0}	pineapple
+S	deer	{"animal": 2357.0, "wildlife": 770.0}	deer
+S	volleyball	{"sport": 1103.0}	softball
+S	phosphorus	{"nutrient": 2326.0, "mineral": 981.0}	phosphorus
+S	retail	{"industry": 2455.0, "sector": 1112.0}	healthcare
+S	cow	{"animal": 1603.0, "specie": 983.0, "rodent": 913.0}	rat
+S	leather	{"material": 2303.0}	leather
+S	project	{"word": 2301.0}	project
+S	bean	{"food": 2301.0, "crop": 1213.0, "legume": 1157.0, "vegetable": 932.0}	bean
+S	grape	{"fruit": 2277.0}	grape
+S	brighton	{"place": 2269.0}	brighton
+S	type	{"factor": 2268.0}	type
+S	potassium	{"material": 2310.0}	rubber
+S	art	{"activity": 2247.0, "subject": 1676.0}	art
+S	communication	{"skill": 2247.0, "topic": 1177.0, "area": 1091.0, "issue": 969.0}	communication
+S	nevada	{"state": 2246.0}	nevada
+S	ibuprofen	{"nsaid": 2243.0, "medication": 1000.0, "painkiller": 763.0}	ibuprofen
+S	chemical	{"utility": 1596.0, "industry": 1340.0}	gas
+S	hockey	{"sport": 2212.0}	hockey
+S	caffeine	{"stimulant": 1022.0}	amphetamine
+S	experience	{"factor": 2211.0}	experience
+S	plasticizer	{"additive": 2206.0}	plasticizer
+S	printer	{"device": 2200.0, "equipment": 943.0, "peripheral": 901.0}	printer
+S	pigment	{"additive": 2187.0}	pigment
+S	textile	{"industry": 2185.0, "sector": 715.0}	textile
+S	oxygen	{"gas": 2185.0, "element": 1167.0}	oxygen
+S	pasta	{"food": 2171.0, "carbohydrate": 720.0}	pasta
+S	rice	{"crop": 2171.0, "food": 1986.0, "grain": 1500.0, "cereal": 740.0}	rice
+S	medicine	{"profession": 760.0}	nursing
+S	dell	{"company": 2154.0, "manufacturer": 760.0}	dell
+S	history	{"subject": 2154.0, "discipline": 865.0, "topic": 725.0}	history
+S	cornwall	{"place": 2139.0}	cornwall
+S	wisconsin	{"state": 2136.0}	wisconsin
+S	goat	{"animal": 2136.0, "livestock": 835.0}	goat
+S	alcohol	{"substance": 2131.0, "solvent": 1710.0, "factor": 1446.0}	alcohol
+S	kayaking	{"activity": 2121.0}	kayaking
+S	sand	{"material": 2109.0}	sand
+S	basil	{"medium": 2033.0, "item": 875.0}	television
+S	physical	{"service": 2080.0, "factor": 908.0}	physical
+S	quality	{"factor": 2065.0}	quality
+S	mango	{"fruit": 2039.0}	mango
+S	skiing	{"activity": 907.0}	research
+S	price	{"factor": 2032.0, "information": 1260.0}	price
+S	toy	{"item": 2032.0}	toy
+S	antidepressant	{"medication": 2028.0}	antidepressant
+S	restaurant	{"business": 2007.0, "amenity": 1983.0, "facility": 1299.0, "place": 807.0, "service": 737.0}	restaurant
+S	bleeding	{"complication": 2005.0}	bleeding
+S	aspirin	{"medication": 1328.0}	antihistamine
+S	cotton	{"crop": 1998.0, "material": 1242.0, "fabric": 1046.0}	cotton
+S	science	{"subject": 1997.0}	science
+S	oil	{"industry": 1991.0, "commodity": 1146.0, "contaminant": 950.0, "product": 862.0, "material": 847.0, "liquid": 834.0, "fluid": 819.0, "sector": 754.0, "resource": 719.0}	oil
+S	benzene	{"solvent": 1991.0, "chemical": 859.0}	benzene
+S	electricity	{"factor": 784.0}	terrain
+S	stabilizer	{"additive": 1980.0}	stabilizer
+S	rosemary	{"herb": 1974.0}	rosemary
+S	coffee	{"beverage": 1974.0, "drink": 1485.0, "stimulant": 1152.0, "food": 1071.0, "product": 903.0, "liquid": 871.0}	coffee
+S	law	{"profession": 1971.0, "field": 767.0}	law
+S	reading	{"activity": 1952.0}	reading
+S	brick	{"material": 1951.0}	brick
+S	paint	{"material": 1936.0, "item": 1371.0, "product": 955.0}	paint
+S	seattle	{"city": 1929.0}	seattle
+S	mercury	{"metal": 1928.0}	mercury
+S	religion	{"factor": 1927.0, "topic": 1213.0, "issue": 750.0}	religion
+S	craft	{"activity": 2080.0}	canoeing
+S	toluene	{"solvent": 1915.0}	toluene
+S	inflation	{"factor": 1908.0}	inflation
+S	telecommunication	{"industry": 1907.0, "sector": 1268.0}	telecommunication
+S	nutrition	{"factor": 1905.0, "topic": 1361.0}	nutrition
+S	brass	{"material": 1898.0, "metal": 1893.0}	brass
+S	indiana	{"state": 1897.0}	indiana
+S	air	{"liquid": 3542.0, "fluid": 2506.0, "utility": 2502.0, "service": 2181.0, "resource": 1836.0, "material": 1106.0, "solvent": 988.0, "item": 839.0, "substance": 829.0, "factor": 819.0, "sector": 709.0}	water
+S	tuna	{"fish": 1892.0}	tuna
+S	filler	{"additive": 1892.0}	filler
+S	connecticut	{"state": 1891.0}	connecticut
+S	samsung	{"company": 1886.0, "brand": 1310.0, "manufacturer": 777.0}	samsung
+S	brazil	{"market": 1879.0, "economy": 1808.0, "nation": 899.0}	brazil
+S	dishwasher	{"appliance": 1879.0}	dishwasher
+S	louisiana	{"state": 1873.0}	louisiana
+S	game	{"activity": 1871.0, "application": 729.0}	game
+S	accountant	{"professional": 774.0}	psychologist
+S	acupuncture	{"therapy": 1866.0, "treatment": 1142.0}	acupuncture
+S	penicillin	{"antibiotic": 1862.0}	penicillin
+S	music	{"activity": 1857.0, "subject": 1125.0, "file": 738.0}	music
+S	cobalt	{"metal": 1847.0}	cobalt
+S	cereal	{"food": 1846.0}	cereal
+S	sony	{"company": 1841.0, "brand": 1011.0}	sony
+S	computer	{"item": 871.0, "device": 817.0}	camera
+S	thyme	{"herb": 1828.0}	thyme
+S	philadelphia	{"city": 1826.0}	philadelphia
+S	delaware	{"state": 1822.0}	delaware
+S	walking	{"activity": 1820.0, "exercise": 902.0}	walking
+S	chemotherapy	{"treatment": 1812.0}	chemotherapy
+S	safari	{"browser": 1805.0}	safari
+S	arabic	{"language": 1797.0}	arabic
+S	surfactant	{"additive": 1793.0}	surfactant
+S	platinum	{"metal": 1790.0}	platinum
+S	exercise	{"factor": 1788.0, "activity": 760.0}	exercise
+S	radio	{"item": 719.0}	picture
+S	nike	{"company": 1780.0, "brand": 1730.0}	nike
+S	alabama	{"state": 1775.0}	alabama
+S	diarrhea	{"symptom": 1770.0}	diarrhea
+S	video	{"medium": 1764.0, "file": 922.0, "resource": 899.0, "datum": 788.0, "application": 770.0, "material": 753.0}	video
+S	methane	{"gas": 1757.0}	methane
+S	electronic	{"industry": 1756.0, "item": 1259.0}	electronic
+S	pool	{"amenity": 1756.0}	pool
+S	cauliflower	{"vegetable": 1754.0}	cauliflower
+S	clay	{"material": 1751.0}	clay
+S	weakness	{"symptom": 1751.0}	weakness
+S	energy	{"sector": 1747.0, "industry": 1162.0, "area": 761.0}	energy
+S	flood	{"disaster": 1036.0}	hurricane
+S	argon	{"gas": 1732.0}	argon
+S	lettuce	{"vegetable": 1724.0}	lettuce
+S	pryca	{"shop": 1724.0}	pryca
+S	tetracycline	{"antibiotic": 1722.0}	tetracycline
+S	awd	{"feature": 1719.0}	awd
+S	hypertension	{"condition": 1718.0, "factor": 1227.0, "comorbidity": 823.0}	hypertension
+S	islam	{"religion": 1708.0}	islam
+S	sadness	{"emotion": 1705.0}	sadness
+S	motivation	{"factor": 740.0}	inflammation
+S	hospital	{"institution": 1702.0, "facility": 1279.0, "organization": 1129.0, "building": 827.0, "setting": 760.0, "place": 709.0}	hospital
+S	density	{"property": 1698.0, "factor": 942.0, "parameter": 713.0}	density
+S	availability	{"factor": 1025.0}	height
+S	brain	{"organ": 1692.0, "tissue": 1240.0}	brain
+S	maine	{"state": 1678.0}	maine
+S	truck	{"vehicle": 1671.0}	truck
+S	cough	{"factor": 884.0}	timing
+S	earthquake	{"disaster": 1667.0, "event": 1118.0}	earthquake
+S	isopropanol	{"alcohol": 1665.0}	isopropanol
+S	topography	{"factor": 1661.0}	topography
+S	tool	{"item": 1646.0}	tool
+S	square	{"shape": 1302.0}	circle
+S	sociology	{"discipline": 1636.0}	sociology
+S	smartphone	{"device": 1636.0}	smartphone
+S	snorkeling	{"activity": 1627.0}	snorkeling
+S	electrical	{"service": 1621.0, "solution": 1027.0}	electrical
+S	quinoa	{"grain": 1621.0}	quinoa
+S	economic	{"factor": 1614.0, "discipline": 1193.0, "field": 713.0}	economic
+S	training	{"service": 1610.0, "factor": 1214.0, "issue": 1102.0, "activity": 1057.0, "area": 751.0}	training
+S	france	{"nation": 1609.0}	france
+S	celery	{"vegetable": 1607.0}	celery
+S	honesty	{"value": 1607.0}	honesty
+S	elephant	{"animal": 1603.0}	elephant
+S	apricot	{"fruit": 2567.0}	pear
+S	soybean	{"crop": 1589.0}	soybean
+S	paris	{"city": 1584.0}	paris
+S	bathroom	{"fixture": 1582.0}	bathroom
+S	youtube	{"site": 1578.0, "website": 1046.0}	youtube
+S	pen	{"item": 1569.0}	pen
+S	manganese	{"metal": 1569.0, "mineral": 1049.0, "element": 1000.0}	manganese
+S	social	{"factor": 1564.0}	social
+S	light	{"factor": 1554.0}	light
+S	hp	{"company": 1544.0}	hp
+S	shape	{"factor": 1543.0, "feature": 754.0, "characteristic": 721.0}	shape
+S	chicken	{"meat": 1540.0, "animal": 1273.0, "food": 1104.0}	chicken
+S	insurance	{"cost": 1539.0, "industry": 1447.0, "expense": 1058.0, "service": 963.0, "sector": 707.0}	insurance
+S	conference	{"event": 1537.0}	conference
+S	mouse	{"device": 1531.0, "mammal": 852.0}	mouse
+S	colorant	{"additive": 1530.0}	colorant
+S	ginger	{"spice": 1528.0, "herb": 739.0}	ginger
+S	glucose	{"sugar": 1524.0}	glucose
+S	tin	{"metal": 1523.0}	tin
+S	aging	{"factor": 1522.0}	aging
+S	polymer	{"material": 1511.0}	polymer
+S	newspaper	{"medium": 1511.0, "source": 734.0}	newspaper
+S	vomiting	{"symptom": 1507.0}	vomiting
+S	cucumber	{"vegetable": 1504.0}	cucumber
+S	aluminium	{"metal": 1504.0, "material": 1370.0}	aluminium
+S	bridge	{"structure": 1504.0}	bridge
+S	hydrogen	{"gas": 1503.0}	hydrogen
+S	java	{"language": 1501.0}	java
+S	kansas	{"state": 1498.0}	kansas
+S	pregnancy	{"factor": 1495.0, "condition": 1169.0}	pregnancy
+S	sugar	{"ingredient": 1494.0, "food": 1372.0, "carbohydrate": 735.0}	sugar
+S	japan	{"nation": 1486.0, "market": 970.0, "economy": 754.0}	japan
+S	python	{"language": 1484.0}	python
+S	hunting	{"activity": 1477.0}	hunting
+S	personality	{"factor": 1476.0}	personality
+S	respect	{"value": 1475.0}	respect
+S	insulin	{"hormone": 1743.0}	estrogen
+S	pump	{"equipment": 1472.0, "component": 1159.0}	pump
+S	tennessee	{"state": 1470.0}	tennessee
+S	shoe	{"item": 1470.0, "accessory": 1057.0}	shoe
+S	mosquito	{"insect": 1469.0}	mosquito
+S	guitar	{"instrument": 1466.0}	guitar
+S	russian	{"language": 1465.0}	russian
+S	opera	{"browser": 1461.0}	opera
+S	italian	{"language": 1460.0}	italian
+S	iowa	{"state": 1460.0}	iowa
+S	patch	{"word": 1458.0}	patch
+S	morphine	{"opioid": 1458.0, "opiate": 929.0}	morphine
+S	buddhism	{"religion": 1742.0}	christianity
+S	cooking	{"activity": 1452.0}	cooking
+S	maintenance	{"service": 1452.0, "cost": 1172.0}	maintenance
+S	ford	{"company": 1452.0}	ford
+S	cisco	{"company": 1451.0}	cisco
+S	yogurt	{"food": 1450.0}	yogurt
+S	prednisone	{"corticosteroid": 1447.0}	prednisone
+S	cricket	{"sport": 1445.0, "insect": 844.0}	cricket
+S	hat	{"accessory": 1443.0, "item": 1170.0}	hat
+S	stock	{"asset": 1443.0, "investment": 825.0}	stock
+S	kentucky	{"state": 1442.0}	kentucky
+S	bee	{"insect": 1441.0, "pollinator": 807.0}	bee
+S	dance	{"activity": 1436.0}	dance
+S	motorola	{"company": 1435.0}	motorola
+S	parsley	{"herb": 1435.0}	parsley
+S	lubricant	{"additive": 1424.0}	lubricant
+S	university	{"institution": 1421.0, "organization": 1055.0}	university
+S	germany	{"nation": 1414.0, "market": 719.0}	germany
+S	ontario	{"province": 1408.0}	ontario
+S	noise	{"factor": 1407.0, "issue": 895.0}	noise
+S	portland	{"city": 1402.0}	portland
+S	speed	{"factor": 1401.0, "parameter": 918.0, "information": 823.0}	speed
+S	diving	{"activity": 1400.0}	diving
+S	vitamin	{"nutrient": 1395.0}	vitamin
+S	irritability	{"symptom": 1392.0}	irritability
+S	finance	{"area": 1389.0, "industry": 1338.0, "sector": 1092.0}	finance
+S	boeing	{"company": 1140.0}	siemens
+S	cattle	{"animal": 1381.0, "livestock": 1048.0, "specie": 745.0}	cattle
+S	pepper	{"vegetable": 1380.0, "spice": 769.0}	pepper
+S	beijing	{"city": 1365.0}	beijing
+S	clove	{"spice": 1359.0}	clove
+S	marketing	{"area": 1350.0, "topic": 990.0, "department": 896.0}	marketing
+S	protein	{"nutrient": 1349.0, "biomolecule": 997.0, "macromolecule": 952.0, "molecule": 946.0}	protein
+S	poly	{"polymer": 1348.0}	poly
+S	transport	{"service": 1880.0, "industry": 1386.0, "sector": 812.0, "issue": 810.0}	transportation
+S	chess	{"game": 961.0}	blackjack
+S	clothe	{"item": 1333.0}	clothe
+S	definition	{"information": 1320.0}	definition
+S	camping	{"activity": 1319.0}	camping
+S	skin	{"tissue": 1309.0}	muscle
+S	serotonin	{"neurotransmitter": 1318.0}	serotonin
+S	title	{"information": 1316.0}	title
+S	myspace	{"site": 1314.0}	myspace
+S	bear	{"animal": 1310.0}	bear
+S	gymnastic	{"sport": 1310.0}	gymnastic
+S	table	{"item": 1309.0, "object": 759.0}	table
+S	stove	{"appliance": 1304.0}	stove
+S	canada	{"nation": 1301.0, "jurisdiction": 847.0}	canada
+S	propanol	{"alcohol": 1301.0}	propanol
+S	mackerel	{"fish": 1300.0}	mackerel
+S	paracetamol	{"painkiller": 1299.0}	paracetamol
+S	utah	{"state": 1296.0}	utah
+S	piano	{"instrument": 1296.0}	piano
+S	cleaning	{"service": 1295.0}	counseling
+S	appliance	{"item": 1294.0}	appliance
+S	integrity	{"value": 1293.0}	integrity
+S	helium	{"gas": 1292.0}	helium
+S	steroid	{"medication": 1291.0}	steroid
+S	target	{"retailer": 1285.0, "store": 1064.0}	target
+S	genetics	{"factor": 1284.0}	genetics
+S	sucrose	{"sugar": 1101.0}	fructose
+S	geography	{"factor": 1280.0, "subject": 1254.0}	geography
+S	scarf	{"accessory": 1279.0}	scarf
+S	housing	{"issue": 1278.0, "service": 842.0, "area": 751.0}	housing
+S	diazepam	{"benzodiazepine": 1278.0}	diazepam
+S	translation	{"information": 1276.0}	translation
+S	insomnia	{"symptom": 1276.0, "disorder": 709.0}	insomnia
+S	beef	{"meat": 1275.0, "food": 725.0}	beef
+S	anniversary	{"occasion": 2879.0, "event": 1892.0}	birthday
+S	pesticide	{"chemical": 1274.0}	pesticide
+S	judaism	{"religion": 1274.0}	judaism
+S	vermont	{"state": 1273.0}	vermont
+S	rent	{"expense": 1272.0}	rent
+S	teacher	{"professional": 1272.0}	teacher
+S	guilt	{"emotion": 1265.0}	guilt
+S	dancing	{"activity": 1264.0}	dancing
+S	yahoo	{"engine": 751.0}	bing
+S	gardening	{"activity": 1255.0}	gardening
+S	hardness	{"property": 1255.0}	hardness
+S	language	{"factor": 1251.0}	language
+S	laundry	{"service": 1251.0}	laundry
+S	montana	{"state": 1249.0}	montana
+S	oak	{"hardwood": 1248.0}	oak
+S	monkey	{"animal": 1245.0}	monkey
+S	cement	{"material": 1244.0}	cement
+S	attitude	{"factor": 1243.0}	attitude
+S	silicon	{"element": 755.0}	cr
+S	technology	{"factor": 1241.0, "topic": 782.0}	technology
+S	toyota	{"company": 1241.0, "brand": 1229.0}	toyota
+S	reliability	{"factor": 1234.0, "issue": 886.0}	reliability
+S	engineering	{"discipline": 1605.0, "field": 795.0}	psychology
+S	honda	{"brand": 1230.0}	honda
+S	arsenic	{"metal": 1229.0}	arsenic
+S	belt	{"accessory": 1226.0}	belt
+S	oregano	{"herb": 1226.0}	oregano
+S	atlanta	{"city": 1225.0}	atlanta
+S	carbon	{"element": 1224.0, "material": 778.0}	carbon
+S	party	{"event": 1223.0}	party
+S	maharashtra	{"state": 1221.0}	maharashtra
+S	bus	{"vehicle": 1112.0, "item": 939.0}	car
+S	hinduism	{"religion": 1220.0}	hinduism
+S	rock	{"object": 1218.0, "material": 758.0, "obstacle": 756.0}	rock
+S	installation	{"service": 1217.0}	installation
+S	immigration	{"issue": 1214.0}	immigration
+S	pneumonia	{"complication": 1213.0, "infection": 810.0}	pneumonia
+S	diuretic	{"medication": 1211.0}	diuretic
+S	competition	{"factor": 1210.0}	competition
+S	perforation	{"complication": 1208.0}	perforation
+S	tiredness	{"symptom": 1208.0}	tiredness
+S	missouri	{"state": 1207.0}	missouri
+S	love	{"emotion": 1205.0, "topic": 803.0, "theme": 722.0}	love
+S	occupation	{"factor": 1204.0, "information": 953.0}	occupation
+S	invoice	{"document": 1199.0}	invoice
+S	blanket	{"item": 1197.0}	blanket
+S	alaska	{"state": 1629.0}	oklahoma
+S	salmonella	{"bacterium": 1193.0, "pathogen": 709.0}	salmonella
+S	papaya	{"fruit": 1192.0}	papaya
+S	repair	{"service": 1191.0}	repair
+S	dopamine	{"neurotransmitter": 1189.0}	dopamine
+S	season	{"factor": 1186.0}	season
+S	idaho	{"state": 1186.0}	idaho
+S	engineer	{"professional": 1186.0}	engineer
+S	medication	{"factor": 1185.0}	medication
+S	politic	{"topic": 1182.0}	politic
+S	toronto	{"city": 1182.0}	toronto
+S	squat	{"exercise": 1181.0}	squat
+S	russia	{"market": 1179.0, "nation": 970.0}	russia
+S	automobile	{"industry": 1177.0, "vehicle": 1156.0}	automobile
+S	squash	{"vegetable": 1177.0}	squash
+S	cardboard	{"material": 1174.0}	cardboard
+S	chlorine	{"chemical": 1171.0}	chlorine
+S	oracle	{"company": 1169.0}	oracle
+S	lion	{"animal": 1166.0, "predator": 790.0}	lion
+S	future	{"derivative": 1164.0}	future
+S	boxing	{"sport": 1162.0}	boxing
+S	option	{"derivative": 1161.0}	option
+S	medical	{"industry": 1157.0}	medical
+S	leadership	{"skill": 1151.0, "topic": 970.0}	leadership
+S	tourism	{"sector": 1148.0, "industry": 976.0}	tourism
+S	acrylic	{"material": 1145.0}	acrylic
+S	fabric	{"material": 1144.0}	fabric
+S	beetle	{"insect": 1143.0}	beetle
+S	chloroform	{"solvent": 1142.0}	chloroform
+S	raccoon	{"animal": 1140.0}	raccoon
+S	travel	{"expense": 1139.0, "cost": 1044.0}	travel
+S	oat	{"grain": 1136.0}	oat
+S	mitochondria	{"organelle": 1136.0}	mitochondria
+S	ski	{"equipment": 1134.0}	ski
+S	dye	{"additive": 843.0}	preservative
+S	unemployment	{"factor": 2177.0}	lifestyle
+S	tetrahydrofuran	{"ether": 1131.0, "solvent": 845.0}	tetrahydrofuran
+S	racism	{"issue": 1130.0}	racism
+S	illness	{"factor": 1127.0, "circumstance": 822.0}	illness
+S	woman	{"group": 858.0}	elderly
+S	keyboard	{"device": 1124.0}	keyboard
+S	arkansas	{"state": 1122.0}	arkansas
+S	library	{"facility": 1121.0}	library
+S	duration	{"factor": 1121.0}	duration
+S	battery	{"item": 957.0}	pencil
+S	fiberglass	{"material": 1121.0}	fiberglass
+S	plum	{"fruit": 1120.0}	plum
+S	teamwork	{"skill": 1119.0}	teamwork
+S	nutmeg	{"spice": 1115.0}	nutmeg
+S	fox	{"animal": 1115.0, "predator": 839.0}	fox
+S	shell	{"company": 1114.0}	shell
+S	squirrel	{"animal": 1113.0}	squirrel
+S	dallas	{"city": 1112.0}	dallas
+S	sage	{"herb": 1110.0}	sage
+S	perl	{"language": 1108.0}	perl
+S	mathematic	{"subject": 1108.0}	mathematic
+S	quercetin	{"flavonoid": 1108.0}	quercetin
+S	yeast	{"microorganism": 1107.0, "organism": 867.0}	yeast
+S	lighting	{"factor": 1106.0}	lighting
+S	berry	{"fruit": 1106.0}	berry
+S	wyoming	{"state": 1104.0}	wyoming
+S	workshop	{"activity": 1101.0, "event": 910.0}	workshop
+S	ipad	{"device": 1409.0}	laptop
+S	cake	{"food": 1100.0}	cake
+S	chair	{"item": 1098.0}	chair
+S	snake	{"animal": 1096.0, "reptile": 720.0}	snake
+S	raisin	{"fruit": 1096.0}	raisin
+S	tiling	{"service": 2674.0, "solution": 2001.0}	plumbing
+S	corticosteroid	{"medication": 1094.0}	corticosteroid
+S	massage	{"service": 1092.0, "treatment": 977.0, "therapy": 942.0}	massage
+S	ultrasound	{"modality": 1079.0}	ultrasound
+S	silk	{"fabric": 1076.0, "material": 968.0}	silk
+S	bat	{"animal": 1075.0}	bat
+S	password	{"information": 1073.0}	password
+S	molybdenum	{"metal": 1073.0}	molybdenum
+S	archery	{"activity": 1072.0}	archery
+S	iphone	{"device": 1071.0}	iphone
+S	kale	{"vegetable": 1070.0, "green": 796.0}	kale
+S	track	{"sport": 1067.0}	track
+S	soil	{"factor": 1066.0}	soil
+S	baltimore	{"city": 1066.0}	baltimore
+S	biking	{"activity": 1064.0}	biking
+S	report	{"document": 1063.0}	report
+S	windsurfing	{"activity": 1062.0}	windsurfing
+S	raspberry	{"fruit": 1062.0}	raspberry
+S	avocado	{"food": 2401.0, "flavor": 912.0}	chocolate
+S	golfing	{"activity": 1059.0}	golfing
+S	bluetooth	{"feature": 1057.0}	bluetooth
+S	turmeric	{"spice": 1056.0}	turmeric
+S	millet	{"grain": 1053.0}	millet
+S	microwave	{"appliance": 1052.0}	microwave
+S	washer	{"appliance": 1052.0}	washer
+S	thanksgiving	{"holiday": 882.0}	easter
+S	coal	{"fuel": 1050.0}	coal
+S	sardine	{"fish": 1050.0}	sardine
+S	korean	{"language": 1048.0}	korean
+S	nurse	{"professional": 1048.0}	nurse
+S	meditation	{"technique": 1047.0, "practice": 966.0, "activity": 728.0}	meditation
+S	glove	{"item": 1047.0, "accessory": 748.0}	glove
+S	demographic	{"factor": 1044.0}	demographic
+S	grasshopper	{"insect": 1042.0}	grasshopper
+S	pollution	{"factor": 1041.0}	pollution
+S	switch	{"device": 1041.0}	switch
+S	photoshop	{"program": 1041.0}	photoshop
+S	grain	{"food": 1040.0}	grain
+S	plant	{"organism": 1038.0}	plant
+S	frequency	{"factor": 1037.0, "parameter": 879.0}	frequency
+S	polyethylene	{"material": 1179.0, "polyolefin": 818.0, "plastic": 755.0}	polypropylene
+S	ant	{"insect": 1036.0}	ant
+S	screwdriver	{"tool": 1035.0}	screwdriver
+S	erythromycin	{"antibiotic": 1035.0}	erythromycin
+S	surgery	{"treatment": 1029.0}	surgery
+S	rectangle	{"shape": 1027.0}	rectangle
+S	miami	{"city": 1027.0}	miami
+S	employment	{"factor": 1025.0, "issue": 906.0}	employment
+S	asparagus	{"vegetable": 1022.0}	asparagus
+S	poultry	{"food": 1022.0}	poultry
+S	alberta	{"province": 1021.0}	alberta
+S	anthropology	{"discipline": 1020.0}	anthropology
+S	seminar	{"event": 1019.0, "activity": 830.0}	seminar
+S	property	{"asset": 1019.0}	property
+S	badminton	{"sport": 1471.0}	rugby
+S	human	{"specie": 1014.0, "mammal": 813.0}	human
+S	sustainability	{"issue": 1014.0}	sustainability
+S	mushroom	{"vegetable": 1011.0}	mushroom
+S	macrophage	{"cell": 1011.0}	macrophage
+S	hormone	{"factor": 1009.0}	hormone
+S	police	{"agency": 1008.0, "service": 708.0}	police
+S	cumin	{"spice": 1006.0}	cumin
+S	environmental	{"factor": 1005.0}	environmental
+S	volkswagen	{"brand": 1004.0}	volkswagen
+S	moisture	{"factor": 1003.0}	moisture
+S	sailing	{"activity": 1002.0}	sailing
+S	polyester	{"material": 1002.0}	polyester
+S	towel	{"item": 1001.0}	towel
+S	soup	{"food": 999.0}	soup
+S	vinyl	{"material": 998.0}	vinyl
+S	fertilizer	{"input": 998.0}	fertilizer
+S	starbucks	{"company": 997.0}	starbucks
+S	kerala	{"state": 997.0}	kerala
+S	constipation	{"symptom": 996.0}	constipation
+S	tree	{"object": 996.0, "obstruction": 733.0, "obstacle": 702.0}	tree
+S	fly	{"insect": 989.0}	fly
+S	numbness	{"symptom": 989.0}	numbness
+S	acetonitrile	{"solvent": 727.0}	ether
+S	hematoma	{"complication": 878.0}	hemorrhage
+S	hammer	{"tool": 987.0}	hammer
+S	cookie	{"technology": 986.0, "food": 895.0}	cookie
+S	painting	{"activity": 983.0, "improvement": 772.0, "service": 747.0}	painting
+S	watch	{"item": 983.0}	watch
+S	lentil	{"legume": 983.0}	lentil
+S	pollen	{"allergen": 982.0}	pollen
+S	cosmetic	{"product": 981.0}	cosmetic
+S	cultural	{"factor": 976.0}	cultural
+S	karnataka	{"state": 974.0}	karnataka
+S	valve	{"component": 973.0}	valve
+S	tire	{"item": 972.0}	tire
+S	family	{"factor": 5247.0, "information": 3746.0, "variable": 770.0}	location
+S	linux	{"system": 971.0}	linux
+S	virus	{"pathogen": 971.0, "microorganism": 703.0}	virus
+S	magazine	{"medium": 969.0}	magazine
+S	pork	{"meat": 968.0}	pork
+S	material	{"factor": 966.0}	material
+S	marble	{"material": 966.0}	marble
+S	composite	{"material": 965.0}	composite
+S	viscosity	{"property": 964.0}	viscosity
+S	dryer	{"appliance": 964.0}	dryer
+S	letter	{"document": 963.0}	letter
+S	zucchini	{"vegetable": 956.0}	zucchini
+S	ebay	{"site": 1009.0}	linkedin
+S	hotel	{"business": 956.0}	hotel
+S	watermelon	{"fruit": 956.0}	watermelon
+S	equipment	{"item": 955.0, "asset": 889.0, "resource": 810.0}	equipment
+S	resistor	{"component": 954.0}	resistor
+S	sodium	{"mineral": 953.0, "electrolyte": 865.0}	sodium
+S	nature	{"factor": 952.0}	nature
+S	roulette	{"game": 952.0}	roulette
+S	film	{"medium": 950.0}	film
+S	nokia	{"company": 949.0}	nokia
+S	chrysler	{"brand": 945.0}	chrysler
+S	shampoo	{"product": 944.0}	shampoo
+S	contract	{"document": 942.0}	contract
+S	trauma	{"factor": 940.0}	trauma
+S	aphid	{"insect": 940.0}	aphid
+S	happiness	{"emotion": 940.0}	happiness
+S	gravel	{"material": 939.0}	gravel
+S	dodge	{"brand": 939.0}	dodge
+S	distance	{"factor": 930.0}	distance
+S	testosterone	{"hormone": 930.0}	testosterone
+S	passport	{"document": 929.0}	passport
+S	mumbai	{"city": 928.0}	mumbai
+S	bp	{"company": 926.0}	bp
+S	capacitor	{"component": 922.0}	capacitor
+S	bullying	{"issue": 920.0}	bullying
+S	naproxen	{"nsaid": 920.0}	naproxen
+S	cranberry	{"fruit": 919.0}	cranberry
+S	leaf	{"debris": 919.0}	leaf
+S	accessibility	{"factor": 918.0}	accessibility
+S	salinity	{"factor": 916.0}	salinity
+S	ethic	{"topic": 914.0}	ethic
+S	heat	{"factor": 912.0}	heat
+S	ospf	{"protocol": 910.0}	ospf
+S	rainfall	{"factor": 909.0}	rainfall
+S	pdas	{"device": 906.0}	pdas
+S	epilepsy	{"condition": 906.0}	epilepsy
+S	quartz	{"mineral": 906.0}	quartz
+S	router	{"device": 901.0}	router
+S	palladium	{"metal": 901.0}	palladium
+S	architect	{"professional": 901.0}	architect
+S	wool	{"material": 900.0}	wool
+S	adidas	{"brand": 900.0}	adidas
+S	benzine	{"solvent": 896.0}	benzine
+S	design	{"factor": 895.0, "service": 846.0}	design
+S	heredity	{"factor": 895.0}	heredity
+S	spleen	{"organ": 895.0}	spleen
+S	convenience	{"factor": 893.0}	convenience
+S	drought	{"condition": 892.0, "factor": 740.0}	drought
+S	lorazepam	{"benzodiazepine": 891.0}	lorazepam
+S	cleveland	{"city": 888.0}	cleveland
+S	netflix	{"company": 910.0}	unilever
+S	lemon	{"fruit": 885.0}	lemon
+S	shopping	{"activity": 884.0}	shopping
+S	drill	{"tool": 926.0}	blog
+S	land	{"asset": 881.0}	land
+S	brochure	{"material": 881.0}	brochure
+S	tiger	{"animal": 880.0}	tiger
+S	confusion	{"symptom": 877.0}	confusion
+S	political	{"factor": 873.0}	political
+S	candy	{"food": 1759.0, "spice": 874.0, "ingredient": 748.0, "herb": 723.0}	garlic
+S	bond	{"asset": 872.0, "investment": 717.0, "security": 711.0}	bond
+S	cash	{"asset": 872.0}	cash
+S	butanol	{"alcohol": 4092.0, "solvent": 1923.0}	methanol
+S	asia	{"region": 1392.0}	europe
+S	legume	{"food": 867.0}	legume
+S	description	{"information": 866.0}	description
+S	bowling	{"activity": 865.0}	bowling
+S	heron	{"bird": 864.0}	heron
+S	parasailing	{"activity": 863.0}	parasailing
+S	triangle	{"shape": 863.0}	triangle
+S	eczema	{"condition": 863.0}	eczema
+S	van	{"vehicle": 863.0}	van
+S	melon	{"fruit": 863.0}	melon
+S	gps	{"technology": 862.0}	gps
+S	skill	{"factor": 860.0}	skill
+S	tax	{"cost": 860.0, "expense": 758.0, "charge": 720.0}	tax
+S	wolf	{"animal": 859.0}	wolf
+S	medicaid	{"program": 858.0}	medicaid
+S	chlamydia	{"infection": 858.0}	chlamydia
+S	heparin	{"anticoagulant": 858.0}	heparin
+S	hexane	{"solvent": 857.0}	hexane
+S	bronze	{"material": 857.0, "metal": 785.0}	bronze
+S	manchester	{"city": 857.0}	manchester
+S	jogging	{"activity": 854.0}	jogging
+S	wal-mart	{"retailer": 854.0}	wal-mart
+S	bag	{"item": 853.0, "accessory": 825.0}	bag
+S	utility	{"expense": 851.0, "industry": 716.0}	utility
+S	mineral	{"nutrient": 850.0}	mineral
+S	employee	{"stakeholder": 849.0}	employee
+S	rose	{"flower": 849.0}	rose
+S	joy	{"emotion": 849.0}	joy
+S	presence	{"factor": 848.0}	presence
+S	labor	{"cost": 848.0}	labor
+S	eggplant	{"vegetable": 844.0}	eggplant
+S	progesterone	{"hormone": 843.0}	progesterone
+S	chemistry	{"subject": 842.0}	chemistry
+S	building	{"structure": 841.0, "asset": 734.0}	building
+S	surfing	{"activity": 840.0}	surfing
+S	jewellery	{"item": 836.0}	jewellery
+S	infrastructure	{"factor": 834.0}	infrastructure
+S	petrochemical	{"industry": 833.0}	petrochemical
+S	palpitation	{"symptom": 833.0}	palpitation
+S	oatmeal	{"food": 831.0}	oatmeal
+S	protease	{"enzyme": 830.0}	protease
+S	disney	{"company": 829.0}	disney
+S	email	{"information": 826.0, "service": 754.0}	email
+S	cassava	{"crop": 825.0}	cassava
+S	vancouver	{"city": 824.0}	vancouver
+S	gasoline	{"fuel": 822.0}	gasoline
+S	purse	{"item": 818.0}	purse
+S	motorcycle	{"vehicle": 818.0}	motorcycle
+S	divorce	{"event": 816.0, "issue": 707.0}	divorce
+S	mean	{"statistic": 816.0}	mean
+S	trout	{"fish": 815.0}	trout
+S	war	{"event": 814.0}	war
+S	budget	{"factor": 814.0}	budget
+S	schizophrenia	{"disorder": 814.0}	schizophrenia
+S	seriousness	{"factor": 812.0}	seriousness
+S	scanner	{"device": 812.0}	scanner
+S	marriage	{"event": 811.0}	marriage
+S	resource	{"factor": 811.0}	resource
+S	tokyo	{"city": 810.0}	tokyo
+S	salt	{"ingredient": 809.0}	salt
+S	aviation	{"industry": 808.0}	aviation
+S	ni	{"metal": 808.0}	ni
+S	cardamom	{"spice": 807.0}	cardamom
+S	clothes	{"item": 805.0}	clothes
+S	insect	{"animal": 805.0}	insect
+S	pancreas	{"organ": 3505.0, "tissue": 925.0}	heart
+S	amsterdam	{"city": 3210.0}	london
+S	length	{"factor": 803.0}	length
+S	carpet	{"item": 803.0}	carpet
+S	tuberculosis	{"infection": 801.0}	tuberculosis
+S	hsbc	{"bank": 801.0}	hsbc
+S	attorney	{"professional": 799.0}	attorney
+S	beverage	{"industry": 798.0}	beverage
+S	class	{"factor": 796.0}	class
+S	dairy	{"food": 796.0}	dairy
+S	gym	{"amenity": 795.0, "facility": 781.0}	gym
+S	fibroblast	{"cell": 791.0}	fibroblast
+S	lipase	{"enzyme": 790.0}	lipase
+S	vanilla	{"flavor": 789.0}	vanilla
+S	silicone	{"material": 789.0}	silicone
+S	knowledge	{"factor": 788.0}	knowledge
+S	inc	{"company": 787.0}	inc
+S	telephone	{"service": 786.0}	telephone
+S	soda	{"beverage": 1519.0, "drink": 1259.0}	tea
+S	economy	{"factor": 780.0}	economy
+S	upper	{"term": 780.0}	upper
+S	excel	{"program": 780.0}	excel
+S	chamomile	{"herb": 780.0}	chamomile
+S	corporation	{"entity": 779.0}	corporation
+S	restylane	{"filler": 779.0}	restylane
+S	punjab	{"state": 778.0}	punjab
+S	spermidine	{"polyamine": 778.0}	spermidine
+S	selenium	{"mineral": 776.0}	selenium
+S	php	{"language": 775.0}	php
+S	friend	{"person": 774.0}	friend
+S	butterfly	{"insect": 774.0}	butterfly
+S	strength	{"factor": 6433.0, "issue": 849.0, "condition": 807.0}	stress
+S	running	{"activity": 773.0}	running
+S	road	{"feature": 772.0, "infrastructure": 726.0}	road
+S	revenue	{"information": 769.0}	revenue
+S	lavender	{"herb": 768.0}	lavender
+S	confidentiality	{"issue": 766.0}	confidentiality
+S	fibromyalgia	{"condition": 766.0}	fibromyalgia
+S	oval	{"shape": 765.0}	oval
+S	anemia	{"condition": 764.0}	anemia
+S	ampicillin	{"antibiotic": 764.0}	ampicillin
+S	airline	{"industry": 761.0}	airline
+S	analgesic	{"medication": 761.0}	analgesic
+S	text	{"information": 760.0}	text
+S	tobacco	{"crop": 760.0}	tobacco
+S	fracture	{"injury": 757.0}	fracture
+S	chloride	{"anion": 755.0}	chloride
+S	access	{"issue": 754.0}	access
+S	dyspnea	{"symptom": 754.0}	dyspnea
+S	3m	{"company": 753.0}	3m
+S	rye	{"grain": 753.0}	rye
+S	kitchen	{"room": 753.0, "area": 729.0}	kitchen
+S	engine	{"component": 751.0}	engine
+S	nail	{"object": 751.0}	nail
+S	poster	{"material": 750.0}	poster
+S	wasp	{"insect": 750.0}	wasp
+S	violin	{"instrument": 749.0}	violin
+S	drama	{"activity": 748.0}	drama
+S	pneumothorax	{"complication": 748.0}	pneumothorax
+S	berlin	{"city": 748.0}	berlin
+S	trust	{"factor": 747.0}	trust
+S	bmw	{"company": 746.0}	bmw
+S	foam	{"material": 745.0}	foam
+S	dolphin	{"animal": 745.0}	dolphin
+S	juvederm	{"filler": 745.0}	juvederm
+S	condition	{"factor": 744.0}	condition
+S	biodiesel	{"biofuel": 744.0}	biodiesel
+S	disability	{"factor": 743.0}	disability
+S	volume	{"factor": 742.0}	volume
+S	albumin	{"protein": 742.0}	albumin
+S	diphenhydramine	{"antihistamine": 742.0}	diphenhydramine
+S	breed	{"factor": 740.0}	breed
+S	peanut	{"food": 739.0}	peanut
+S	cd	{"metal": 739.0}	cd
+S	oyster	{"shellfish": 739.0}	oyster
+S	singing	{"activity": 738.0}	singing
+S	altitude	{"factor": 738.0}	altitude
+S	turnip	{"vegetable": 738.0}	turnip
+S	tv	{"medium": 737.0}	tv
+S	frustration	{"emotion": 737.0}	frustration
+S	village	{"municipality": 737.0}	village
+S	plato	{"philosopher": 737.0}	plato
+S	physician	{"professional": 736.0}	physician
+S	eating	{"activity": 735.0}	eating
+S	mathematics	{"subject": 735.0}	mathematics
+S	discrimination	{"issue": 733.0}	discrimination
+S	depth	{"factor": 732.0}	depth
+S	sausage	{"meat": 732.0}	sausage
+S	supermarket	{"amenity": 731.0}	supermarket
+S	kiwi	{"fruit": 731.0}	kiwi
+S	coyote	{"predator": 731.0}	coyote
+S	image	{"information": 730.0}	image
+S	osteoporosis	{"condition": 730.0}	osteoporosis
+S	catalase	{"enzyme": 729.0}	catalase
+S	borough	{"municipality": 767.0}	city
+S	consulting	{"service": 728.0}	consulting
+S	xylene	{"solvent": 727.0}	xylene
+S	rash	{"symptom": 727.0}	rash
+S	duck	{"bird": 727.0}	duck
+S	oven	{"appliance": 726.0}	oven
+S	wire	{"material": 725.0}	wire
+S	candle	{"item": 724.0}	candle
+S	tile	{"material": 724.0}	tile
+S	specie	{"factor": 723.0}	specie
+S	biology	{"subject": 723.0}	biology
+S	shame	{"emotion": 722.0}	shame
+S	glaucoma	{"condition": 721.0}	glaucoma
+S	talc	{"filler": 721.0}	talc
+S	mattress	{"item": 718.0}	mattress
+S	moth	{"insect": 718.0}	moth
+S	pfizer	{"company": 717.0}	pfizer
+S	maple	{"hardwood": 716.0}	maple
+S	population	{"factor": 713.0}	population
+S	phone	{"device": 712.0}	phone
+S	dioxane	{"ether": 712.0}	dioxane
+S	resin	{"material": 710.0}	resin
+S	vogue	{"magazine": 709.0}	vogue
+S	business	{"field": 708.0}	business
+S	windows	{"system": 708.0}	windows
+S	shrimp	{"seafood": 707.0}	shrimp
+S	dichloromethane	{"solvent": 706.0}	dichloromethane
+S	photo	{"file": 706.0}	photo
+S	tantalum	{"metal": 705.0}	tantalum
+S	ruby	{"language": 704.0}	ruby
+S	sweating	{"symptom": 704.0}	sweating
+S	wrestling	{"sport": 704.0}	wrestling
+S	malnutrition	{"factor": 703.0}	malnutrition
+S	globalization	{"factor": 702.0}	globalization
+S	streptomycin	{"antibiotic": 702.0}	streptomycin
+S	graduation	{"event": 1054.0}	festival
+S	amylase	{"enzyme": 701.0}	amylase
+S	delta	{"airline": 701.0}	delta
+S	structure	{"factor": 700.0}	structure

@@ -1,0 +1,1 @@
+python3 mrjobsync-hadoop22.py dataonly.txt -r hadoop --iteration 1 --jobconf mapreduce.job.reducers=1  --clusters clusteronly.txt --datafile dataonly.txt > ressss

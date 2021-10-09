@@ -4,13 +4,13 @@ from nltk.corpus import wordnet
 from nltk.stem import WordNetLemmatizer
 from nltk import pos_tag
 from nltk import word_tokenize
-import pickle
 import json
-import re
-from wordInfo import WordInfo
 
 
 # Separate array with spaces
+from serverParts.apis.http.api.textUnderstanding.wordInfo import WordInfo
+
+
 def separate_with_space(array):
     return ' '.join(array)
 
@@ -75,6 +75,17 @@ class POSTagging:
             stop_words_from_file = json.load(stop_words_file)
 
         return self.lemmatization_and_stop_words_removal_in_array(tokenized_text, stop_words_from_file)
+
+    def lemma_and_pos_of_word(self, word: str, word_lemmatized = WordNetLemmatizer()):
+        gen_list = pos_tag([word])
+        for word, tag in gen_list:
+            word_final = word_lemmatized.lemmatize(word, self.tag_map[tag[0]])
+            return word_final, self.tag_map[tag[0]]
+
+    def pos_of_word(self, word: str):
+        gen_list = pos_tag([word])
+        for word, tag in gen_list:
+            return word, self.tag_map[tag[0]]
 
     # Lemmatization using WordNet lemmatizer - not used because of language restrictions
     def pos_tagging_analysis(self, tokenized_text, stop_words_language):

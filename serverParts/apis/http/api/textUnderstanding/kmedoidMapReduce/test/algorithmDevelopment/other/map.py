@@ -28,7 +28,7 @@ def evaluate_cosine_weight(dict_vector1: dict, dict_vector2: dict) -> float:
 
 
 def parse_input_vector(line_parts_v: [str], sample_instance: dict) -> None:
-    for line_part in line_parts_v[1:len(line_parts_v) - 1]:
+    for line_part in line_parts_v[1:len(line_parts_v) - 2]:
         result = re.search(r'^([^(]*)\(([^)]*)\)$', line_part)
         vector_name = result.group(1)
         vector_value = float(result.group(2))
@@ -39,19 +39,11 @@ def read_clusters(clusters_instance: dict, cluster_file_path: str):
     with open(cluster_file_path, "r", encoding="utf-8") as cluster_file:
         for cluster_line in cluster_file:
             cluster_parts = cluster_line.split(separator)
-            created_cluster_name = cluster_parts[0]
-            clusters_instance[created_cluster_name] = dict()
-            parse_input_vector(cluster_parts, clusters_instance[created_cluster_name])
-
-            # some clusters shouldn't be connected, but if number of clusters must remain same following
-            # print is necessary
-            whole_cluster_instance = dict()
-            whole_cluster_instance[created_cluster_name] = clusters_instance[created_cluster_name]
-            print(created_cluster_name + ":" + json.dumps(whole_cluster_instance) + ";")
+            clusters_instance[cluster_parts[0]] = dict()
+            parse_input_vector(cluster_parts, clusters_instance[cluster_parts[0]])
 
 
-read_clusters(clusters, 'clusters.txt')
-
+read_clusters(clusters, '../clusters.txt')
 with open(0, "r", encoding="utf-8") as file:
     for line in file:
         min_distance = float('inf')
@@ -66,8 +58,7 @@ with open(0, "r", encoding="utf-8") as file:
                 whole_cluster = dict()
                 whole_cluster[cluster_name] = clusters[cluster_name]
                 chosen_cluster = whole_cluster
-                printed_cluster_name = cluster_name
-
         whole_sample = dict()
         whole_sample[line_parts[0]] = sample
-        print(printed_cluster_name + ":" + json.dumps(chosen_cluster) + ";" + json.dumps(whole_sample))
+        print(json.dumps(chosen_cluster) + ";" + json.dumps(whole_sample))
+

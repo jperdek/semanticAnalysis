@@ -28,7 +28,7 @@ def evaluate_cosine_weight(dict_vector1: dict, dict_vector2: dict) -> float:
 
 
 def parse_input_vector(line_parts_v: [str], sample_instance: dict) -> None:
-    for line_part in line_parts_v[1:len(line_parts_v) - 2]:
+    for line_part in line_parts_v[1:len(line_parts_v) - 1]:
         result = re.search(r'^([^(]*)\(([^)]*)\)$', line_part)
         vector_name = result.group(1)
         vector_value = float(result.group(2))
@@ -50,7 +50,7 @@ def read_clusters(clusters_instance: dict, cluster_file_path: str):
             print(created_cluster_name + ":" + json.dumps(whole_cluster_instance) + ";")
 
 
-read_clusters(clusters, 'clusters.txt')
+read_clusters(clusters, '../clusters.txt')
 
 with open(0, "r", encoding="utf-8") as file:
     for line in file:

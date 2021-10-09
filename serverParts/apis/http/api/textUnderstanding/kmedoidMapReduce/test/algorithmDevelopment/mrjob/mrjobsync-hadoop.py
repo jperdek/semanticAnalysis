@@ -2,7 +2,7 @@
 from mrjob.job import MRJob
 from mrjob.step import MRStep
 import math
-import numpy as np
+#import numpy as np
 import json
 import sys
 import os
@@ -29,7 +29,7 @@ class KMedoid(MRJob):
     # MAPPER PART
     @staticmethod
     def evaluate_cosine_weight(dict_vector1: dict, dict_vector2: dict) -> float:
-        unique_keys = np.unique(list(dict_vector1.keys()) + list(dict_vector2.keys()))
+        unique_keys = list(set(list(dict_vector1.keys()) + list(dict_vector2.keys())))
         upper_value = 0.0
         bottom_value_vector1 = 0.0
         bottom_value_vector2 = 0.0
@@ -60,7 +60,7 @@ class KMedoid(MRJob):
 
     def get_cluster_file_path(self):
         if self.options.iteration == '1':
-            return 'C:\\Users\\perde\\PycharmProjects\\semanticWeb\\serverParts\\apis\http\\api\\textUnderstanding\\kmedoidMapReduce\\test\\clusteronly.txt'
+            return '/temp/InitProcessingResults/clusteronly.txt'
         else:
             return '/temp/InitProcessingResults/clusters' + str(int(self.options.iteration) - 1) + '.txt'
 
@@ -152,11 +152,11 @@ class KMedoid(MRJob):
     # REDUCER PART
     @staticmethod
     def get_data_file_path(iteration: int):
-        return 'C:\\temp\\InitProcessingResults\\data' + str(iteration) + '.txt'
+        return '/temp/InitProcessingResults/data' + str(iteration) + '.txt'
 
     @staticmethod
     def get_base_path():
-        return 'C:\\Users\\perde\\PycharmProjects\\semanticWeb\\serverParts\\apis\\http\\api\\textUnderstanding\\kmedoidMapReduce\\test\\dataonly.txt'
+        return '/temp/InitProcessingResults/dataonly.txt'
 
     @staticmethod
     def evaluate_mid_sample_value_from_list(cluster_samples_instance: list, chosen_sample_data: dict):
@@ -237,66 +237,6 @@ class KMedoid(MRJob):
                             categorization_cluster_dict[cluster_name]['sample'] = sample_dict
 
         repeat = dict()
-        with open('/temp/InitProcessingResults/clusters' + str(self.options.iteration) + '.txt', "w", encoding="utf-8") as f:
-            for index, cluster_dict in enumerate(self.cluster_connections.values()):
-                cluster_name = list(cluster_dict.keys())[0]
-                cluster = list(cluster_dict.values())[0]
-
-                # C\tOLD_CLUSTER_NAME\tOLD_CLUSTER_DATA, NEW_CLUSTER_NAME\tNEW_CLUSTER_DATA
-                if cluster_name in categorization_cluster_dict:
-                    changed_cluster = dict()
-                    changed_cluster[cluster_name] = cluster
-                    previous_sample_name = list(categorization_cluster_dict[cluster_name]['sample'].keys())[0]
-                    # changed cluster will be added to replace record with previous cluster from data
-                    changed_clusters[previous_sample_name] = changed_cluster
-                    # previous - new cluster
-                    #f.write("C\t" + cluster_name + "\t" + json.dumps(cluster) + "\t" +
-                    #  list(self.samples[min_sample_index].keys())[0] + "\t" + json.dumps(
-                    #    list(self.samples[min_sample_index].values())[0]) + "\n")
-                    # prints replacement for previous cluster - new observed cluster
-                    repeat[previous_sample_name] = previous_sample_name
-                    yield (index, 'deleted', len(self.cluster_connections.values())), (cluster_name + "\t" + json.dumps(cluster) + '\t' + previous_sample_name + "\t" + json.dumps(
-                        list(categorization_cluster_dict[cluster_name]['sample'].values())[0]))
-                    #f.write("C\t" + previous_sample_name + "\t" + json.dumps(
-                    #    list(categorization_cluster_dict[cluster_name]['sample'].values())[0]) + "\n")
-                    f.write("C\t" + cluster_name + "\t" + json.dumps(
-                        list(categorization_cluster_dict[cluster_name]['sample'].values())[0]) + "\t" + previous_sample_name +  "\n")
-                    del categorization_cluster_dict[cluster_name]
-                else:
-                    #if cluster_name not in self.cluster_to_sample_connections or \
-                    #        self.cluster_to_sample_connections[cluster_name] not in categorization_dict:
-                    # previous - previous cluster
-                    #f.write("C\t" + cluster_name + "\t" + json.dumps(cluster) + '\t' +
-                    #        cluster_name + "\t" + json.dumps(cluster) + "\n")
-                    # prints unchanged cluster to file too
-                    #yield index, (cluster_name, cluster_name)
-                    yield (index, 'no'), (cluster_name + "\t" + json.dumps(cluster) + '\t')
-                    f.write("C\t" + cluster_name + "\t" + json.dumps(cluster) + "\t" + self.real_cluster_names[cluster_name] + "\n")
-
-        if int(self.options.iteration) == 1:
-            previous_data_file_path = self.get_base_path()
-            actual_data_file_path = self.get_data_file_path(1)
-        else:
-            previous_data_file_path = self.get_data_file_path(int(self.options.iteration) - 1)
-            actual_data_file_path = self.get_data_file_path(int(self.options.iteration))
-
-        with open(previous_data_file_path, "r", encoding="utf-8") as previous_file:
-            with open(actual_data_file_path, "w", encoding="utf-8") as actual_file:
-                for previous_file_line in previous_file:
-                    parsed_line = previous_file_line.split('\t')
-                    if parsed_line[1] in changed_clusters:
-                        new_cluster = changed_clusters[parsed_line[1]]
-                        new_cluster_name = list(new_cluster.keys())[0]
-                        new_cluster_data = list(new_cluster.values())[0]
-                        actual_file.write("S\t" + parsed_line[1] + '\t' + json.dumps(new_cluster_data) + "\t" + self.real_cluster_names[new_cluster_name].replace('\n', '') + '\n')
-                        #actual_file.write("S\t" + new_cluster_name + '\t' + json.dumps(new_cluster_data) + '\n')
-                        del changed_clusters[parsed_line[1]]
-                        yield 's created', (new_cluster_name + "\t" + json.dumps(new_cluster_data))
-                    else:
-                        actual_file.write("S\t" + parsed_line[1] + '\t' + parsed_line[2].replace('\n', '') + "\t" + parsed_line[1].replace('\n', '') + '\n')
-        self.cluster_to_sample_connections = dict()
-        self.cluster_connections = dict()
-        self.samples = dict()
 
     @staticmethod
     def create_actualized_data_file(previous_data_file_path: str, actual_data_file_path: str, mapping_dict: dict):
@@ -357,30 +297,15 @@ def file_data_are_same(cluster_file1: str, cluster_file2: str):
 
 def kmedoid():
     remove_old = True
-    previous_data_file_path = 'C:\\Users\\perde\\PycharmProjects\\semanticWeb\\serverParts\\apis\\http\\api\\textUnderstanding\\kmedoidMapReduce\\test\\dataonly.txt'
-    previous_cluster_file_path = 'C:\\Users\\perde\\PycharmProjects\\semanticWeb\\serverParts\\apis\http\\api\\textUnderstanding\\kmedoidMapReduce\\test\\clusteronly.txt'
+    base_path = '/temp/InitProcessingResults/'
+    previous_data_file_path = '/temp/InitProcessingResults/dataonly.txt'
+    previous_cluster_file_path = '/temp/InitProcessingResults/clusteronly.txt'
     print("Starting iteration: 1")
     run_job(KMedoid, [
-        previous_data_file_path,
+        base_path,
+        '-r=hadoop', '--hadoop-streaming-jar=/temp/InitProcessingResults/hadoop-streaming-3.2.1.jar'
         '--output-dir=/temp/InitProcessingResults', '--iteration=1'])
-    iteration = 1
-    while True:
-        iteration = iteration + 1
-        actual_cluster_file_path = '/temp/InitProcessingResults/clusters' + str(iteration - 1) + '.txt'
-        print('/temp/InitProcessingResults/clusters' + str(iteration - 1) + '.txt')
-        actual_data_file_path = '/temp/InitProcessingResults/data' + str(iteration - 1) + '.txt'
-        print("Starting iteration: " + str(iteration))
-        run_job(KMedoid, [
-            actual_data_file_path,
-            '--output-dir=/temp/InitProcessingResults', '--iteration=' + str(iteration)])
-        if file_data_are_same(previous_cluster_file_path, actual_cluster_file_path):
-            break
-        previous_data_file_path = actual_data_file_path
-        previous_cluster_file_path = actual_cluster_file_path
-        if remove_old:
-            if iteration > 3:
-                os.remove('/temp/InitProcessingResults/clusters' + str(int(iteration) - 2) + '.txt')
-                os.remove('/temp/InitProcessingResults/data' + str(int(iteration) - 2) + '.txt')
+ 
 
 
 def test_deletion_correctness():
@@ -389,5 +314,5 @@ def test_deletion_correctness():
 
 
 if __name__ == '__main__':
-    #KMedoid.run() #now new version has an argument with iteration
+    #  KMedoid.run()  # now new version has an argument with iteration
     kmedoid()

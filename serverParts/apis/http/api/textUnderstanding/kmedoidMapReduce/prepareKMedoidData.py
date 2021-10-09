@@ -1,4 +1,4 @@
-from serverParts.apis.http.api.textUnderstanding.conceptVectorNormalizationTools import ConceptVectorNormalizationTools
+from serverParts.apis.http.api.textUnderstanding.conceptDataNormalization.conceptVectorNormalizationTools import ConceptVectorNormalizationTools
 import random
 import json
 
@@ -101,12 +101,12 @@ def save_values_for_kmedoid_and_clusters_json_typed(result_dict: dict,
             if index not in cluster_indexes:
                 write_record_to_file_as_json_typed(record_file, context_key, context, "S", separator)
 
-    with open('test/dataonly.txt', "w", encoding="utf-8") as record_file:
+    with open('test/mrjob/dataonly.txt', "w", encoding="utf-8") as record_file:
         for index, (context_key, context) in enumerate(result_dict.items()):
             if index not in cluster_indexes:
                 write_record_to_file_as_json_typed(record_file, context_key, context, "S", separator)
 
-    with open('test/clusteronly.txt', "w", encoding="utf-8") as record_file:
+    with open('test/mrjob/clusteronly.txt', "w", encoding="utf-8") as record_file:
         for index, (context_key, context) in enumerate(result_dict.items()):
             if index in cluster_indexes:
                 write_record_to_file_as_json_typed(record_file, context_key, context, "C", separator)
@@ -128,7 +128,7 @@ if __name__ == "__main__":
     number_clusters = 2000
     number_clusters = 100  # for testing
     generate_clusters = True
-    save_normalization = False
+    save_normalization = True
 
     main_result_dict = dict()
     load_values('D://dipldatasets/data-concept-instance-relations.txt', main_result_dict)
@@ -136,14 +136,16 @@ if __name__ == "__main__":
         save_values_for_kmedoid(main_result_dict, 'D://dipldatasets/data-concept-instance-relations-remake.txt')
     else:
         chosen_clusters = create_random_array(len(main_result_dict.keys()), number_clusters)
-        save_values_for_kmedoid_and_clusters(main_result_dict, chosen_clusters, 'test/data.txt', 'test/clusters.txt')
+        save_values_for_kmedoid_and_clusters(main_result_dict, chosen_clusters, 'test/algorithmDevelopment/data.txt',
+                                             'test/algorithmDevelopment/clusters.txt')
         save_values_for_kmedoid_and_clusters_json(main_result_dict, chosen_clusters,
                                                   'test/data1.txt', 'test/clusters1.txt')
-        save_values_for_kmedoid_and_clusters_json_typed(main_result_dict, chosen_clusters, 'test/typdata.txt')
+        save_values_for_kmedoid_and_clusters_json_typed(main_result_dict, chosen_clusters,
+                                                        'test/algorithmDevelopment/typed/typdata.txt')
 
     if save_normalization:
         # normalize values
         ConceptVectorNormalizationTools.save_values_for_kmedoid_concept_normalized(
             main_result_dict, 'D://dipldatasets/data-concept-instance-relations-remake-normalized.txt')
         ConceptVectorNormalizationTools.save_values_for_kmedoid_concept_normalized_as_dict(
-            main_result_dict, 'D://dipldatasets/data-concept-instance-relations-remake-normalized.txt')
+            main_result_dict, 'D://dipldatasets/data-concept-instance-relations-remake-normalized.json')

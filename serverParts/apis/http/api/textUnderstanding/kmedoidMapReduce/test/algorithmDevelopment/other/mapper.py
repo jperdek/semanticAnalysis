@@ -39,11 +39,19 @@ def read_clusters(clusters_instance: dict, cluster_file_path: str):
     with open(cluster_file_path, "r", encoding="utf-8") as cluster_file:
         for cluster_line in cluster_file:
             cluster_parts = cluster_line.split(separator)
-            clusters_instance[cluster_parts[0]] = dict()
-            parse_input_vector(cluster_parts, clusters_instance[cluster_parts[0]])
+            created_cluster_name = cluster_parts[0]
+            clusters_instance[created_cluster_name] = dict()
+            parse_input_vector(cluster_parts, clusters_instance[created_cluster_name])
+
+            # some clusters shouldn't be connected, but if number of clusters must remain same following
+            # print is necessary
+            whole_cluster_instance = dict()
+            whole_cluster_instance[created_cluster_name] = clusters_instance[created_cluster_name]
+            print(created_cluster_name + ":" + json.dumps(whole_cluster_instance) + ";")
 
 
-read_clusters(clusters, 'test/clusters.txt')
+read_clusters(clusters, '../../../clusters.txt')
+
 with open(0, "r", encoding="utf-8") as file:
     for line in file:
         min_distance = float('inf')
@@ -58,7 +66,8 @@ with open(0, "r", encoding="utf-8") as file:
                 whole_cluster = dict()
                 whole_cluster[cluster_name] = clusters[cluster_name]
                 chosen_cluster = whole_cluster
+                printed_cluster_name = cluster_name
+
         whole_sample = dict()
         whole_sample[line_parts[0]] = sample
-        print(json.dumps(chosen_cluster) + ";" + json.dumps(whole_sample))
-
+        print(printed_cluster_name + ":" + json.dumps(chosen_cluster) + ";" + json.dumps(whole_sample))
