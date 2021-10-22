@@ -13,15 +13,15 @@ def load_values(file_name: str, result_dict: dict):
             if len(text1.split()) > 1 or len(text2.split()) > 1:
                 continue
 
-            # uncomment for testing purposes - set number clusters to 100 for example
-            if len(result_dict) > 1000:
-                result_dict[text2][text1] = float(value)
-                break
-
             if text2 not in result_dict:
                 result_dict[text2] = dict()
             if number_lines % 1000000 == 0:
                 print(1000000)
+
+            # uncomment for testing purposes - set number clusters to 100 for example
+            if len(result_dict) > 200000:
+                result_dict[text2][text1] = float(value)
+                break
 
             result_dict[text2][text1] = float(value)
     print("Whole length: " + str(len(result_dict)))
@@ -34,7 +34,7 @@ def save_values_for_kmedoid(result_dict: dict, file_name: str, separator='\t'):
             for vector_position_name, vector_position_value in context.items():
                 vector_position_values = vector_position_values + separator \
                                          + vector_position_name + "(" + \
-                                         str(vector_position_value.replace('\n', '')) + ")"
+                                         str(vector_position_value).replace('\n', '') + ")"
             add_length = separator + str(len(context.keys()))
             # separator between them should be included in second variable
             file.write(context_key + vector_position_values + add_length + "\n")
@@ -101,12 +101,12 @@ def save_values_for_kmedoid_and_clusters_json_typed(result_dict: dict,
             if index not in cluster_indexes:
                 write_record_to_file_as_json_typed(record_file, context_key, context, "S", separator)
 
-    with open('test/mrjob/dataonly.txt', "w", encoding="utf-8") as record_file:
+    with open('test/mrjob/dataonly1.txt', "w", encoding="utf-8") as record_file:
         for index, (context_key, context) in enumerate(result_dict.items()):
             if index not in cluster_indexes:
                 write_record_to_file_as_json_typed(record_file, context_key, context, "S", separator)
 
-    with open('test/mrjob/clusteronly.txt', "w", encoding="utf-8") as record_file:
+    with open('test/mrjob/clusteronly1.txt', "w", encoding="utf-8") as record_file:
         for index, (context_key, context) in enumerate(result_dict.items()):
             if index in cluster_indexes:
                 write_record_to_file_as_json_typed(record_file, context_key, context, "C", separator)
@@ -126,14 +126,14 @@ def create_random_array(length: int, max_iterations: int) -> list:
 
 if __name__ == "__main__":
     number_clusters = 2000
-    number_clusters = 100  # for testing
+    # number_clusters = 100  # for testing
     generate_clusters = True
-    save_normalization = True
+    save_normalization = False
 
     main_result_dict = dict()
     load_values('D://dipldatasets/data-concept-instance-relations.txt', main_result_dict)
     if not generate_clusters:
-        save_values_for_kmedoid(main_result_dict, 'D://dipldatasets/data-concept-instance-relations-remake.txt')
+        save_values_for_kmedoid(main_result_dict, 'D://dipldatasets/data-concept-instance-relations-remake2.txt')
     else:
         chosen_clusters = create_random_array(len(main_result_dict.keys()), number_clusters)
         save_values_for_kmedoid_and_clusters(main_result_dict, chosen_clusters, 'test/algorithmDevelopment/data.txt',

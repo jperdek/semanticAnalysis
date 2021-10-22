@@ -1,100 +1,2000 @@
-gender	factor(14230.0)	variable(4594.0)	characteristic(2547.0)	issue(1817.0)	information(1635.0)	demographic(950.0)	topic(707.0)	7
-stress	factor(6433.0)	issue(849.0)	condition(807.0)	3
-ibm	company(5494.0)	vendor(1036.0)	2
-location	factor(5247.0)	information(3746.0)	variable(770.0)	3
-firefox	browser(4369.0)	1
-methanol	alcohol(4092.0)	solvent(1923.0)	2
-anticipates	word(3774.0)	1
-water	liquid(3542.0)	fluid(2506.0)	utility(2502.0)	service(2181.0)	resource(1836.0)	material(1106.0)	solvent(988.0)	item(839.0)	substance(829.0)	factor(819.0)	sector(709.0)	11
-heart	organ(3505.0)	tissue(925.0)	2
-london	city(3210.0)	1
-birthday	occasion(2879.0)	event(1892.0)	2
-plumbing	service(2674.0)	solution(2001.0)	2
-pear	fruit(2567.0)	1
-healthcare	industry(2455.0)	sector(1112.0)	2
-intend	word(2444.0)	1
-chocolate	food(2401.0)	flavor(912.0)	2
-peach	fruit(2347.0)	1
-rubber	material(2310.0)	1
-christmas	holiday(2217.0)	occasion(1053.0)	2
-lifestyle	factor(2177.0)	1
-canoeing	activity(2080.0)	1
-television	medium(2033.0)	item(875.0)	2
-transportation	service(1880.0)	industry(1386.0)	sector(812.0)	issue(810.0)	4
-pressure	parameter(1798.0)	factor(1058.0)	variable(758.0)	3
-antibiotic	medication(1777.0)	1
-garlic	food(1759.0)	spice(874.0)	ingredient(748.0)	herb(723.0)	4
-estrogen	hormone(1743.0)	1
-christianity	religion(1742.0)	1
-blueberry	fruit(1705.0)	berry(1054.0)	2
-privacy	issue(1691.0)	1
-oklahoma	state(1629.0)	1
-nylon	material(1606.0)	1
-psychology	discipline(1605.0)	field(795.0)	2
-rat	animal(1603.0)	specie(983.0)	rodent(913.0)	3
-gas	utility(1596.0)	industry(1340.0)	2
-detroit	city(1550.0)	1
-tea	beverage(1519.0)	drink(1259.0)	2
-rugby	sport(1471.0)	1
-laptop	device(1409.0)	1
-bolt	fastener(1395.0)	1
-europe	region(1392.0)	1
-shanghai	city(1359.0)	1
-antihistamine	medication(1328.0)	1
-muscle	tissue(1309.0)	1
-circle	shape(1302.0)	1
-counseling	service(1295.0)	1
-tungsten	metal(1274.0)	1
-bank	institution(1224.0)	organization(872.0)	business(821.0)	lender(803.0)	amenity(730.0)	5
-australia	jurisdiction(1206.0)	nation(1085.0)	place(842.0)	market(790.0)	4
-polypropylene	material(1179.0)	polyolefin(818.0)	plastic(755.0)	3
-siemens	company(1140.0)	1
-accelerometer	sensor(1133.0)	1
-beet	vegetable(1121.0)	1
-car	vehicle(1112.0)	item(939.0)	2
-softball	sport(1103.0)	1
-fructose	sugar(1101.0)	1
-gujarat	state(1083.0)	1
-sorghum	crop(1066.0)	1
-festival	event(1054.0)	1
-mississippi	state(1050.0)	1
-houston	city(1038.0)	1
-hurricane	disaster(1036.0)	1
-height	factor(1025.0)	1
-amphetamine	stimulant(1022.0)	1
-hawaii	state(1014.0)	1
-concentration	factor(1009.0)	parameter(716.0)	2
-linkedin	site(1009.0)	1
-blackjack	game(961.0)	1
-pencil	item(957.0)	1
-blog	tool(926.0)	1
-unilever	company(910.0)	1
-research	activity(907.0)	1
-pvc	material(901.0)	1
-money	resource(890.0)	1
-timing	factor(884.0)	1
-easter	holiday(882.0)	1
-hemorrhage	complication(878.0)	1
-denver	city(878.0)	1
-camera	item(871.0)	device(817.0)	2
-elderly	group(858.0)	1
-preservative	additive(843.0)	1
-memory	resource(836.0)	1
-hospitality	industry(820.0)	1
-cortisol	hormone(809.0)	1
-olive	oil(804.0)	1
-terrain	factor(784.0)	1
-handout	material(784.0)	1
-allergy	condition(777.0)	1
-psychologist	professional(774.0)	1
-rajasthan	state(771.0)	1
-city	municipality(767.0)	1
-nursing	profession(760.0)	1
-cr	element(755.0)	1
-bing	engine(751.0)	1
-carbamazepine	anticonvulsant(744.0)	1
-inflammation	factor(740.0)	1
-ether	solvent(727.0)	1
-austin	city(724.0)	1
-picture	item(719.0)	1
-lacrosse	sport(714.0)	1
+cauliflower	vegetable(1754.0)	food(524.0)	exception(241.0)	crop(170.0)	veggie(130.0)	plant(85.0)	brassica(75.0)	item(29.0)	crucifer(24.0)	product(17.0)	ingredient(13.0)	produce(13.0)	favorite(10.0)	specie(9.0)	dish(8.0)	alias(8.0)	fruit(7.0)	flower(7.0)	vegies(7.0)	meal(6.0)	green(6.0)	favourite(6.0)	case(5.0)	preservative(5.0)	morphology(5.0)	relative(5.0)	flavour(5.0)	veg(5.0)	choice(4.0)	commodity(4.0)	appetizer(4.0)	option(3.0)	variety(3.0)	seed(3.0)	succulent(3.0)	soup(3.0)	brassicaceaes(3.0)	veges(3.0)	word(2.0)	topping(2.0)	source(2.0)	creation(2.0)	staple(2.0)	filling(2.0)	annual(2.0)	leaf(2.0)	seedling(2.0)	vege(2.0)	goitrogen(2.0)	stuffing(2.0)	vegs(2.0)	vegtables(2.0)	herb(2.0)	test(2.0)	recipe(2.0)	alternative(1.0)	goods(1.0)	flavor(1.0)	material(1.0)	59
+manganese	metal(1569.0)	mineral(1049.0)	element(1000.0)	micronutrient(376.0)	nutrient(288.0)	micronutrients(104.0)	constituent(99.0)	substance(81.0)	material(77.0)	impurity(74.0)	chemical(63.0)	ion(56.0)	cation(50.0)	parameter(42.0)	compound(38.0)	contaminant(37.0)	additive(36.0)	component(32.0)	microelement(31.0)	ingredient(28.0)	catalyst(28.0)	salt(23.0)	oxide(19.0)	commodity(18.0)	toxin(17.0)	antagonist(17.0)	resource(16.0)	nanoparticle(16.0)	antioxidant(15.0)	alloy(15.0)	inorganic(12.0)	dopant(11.0)	drier(11.0)	pollutant(10.0)	addition(10.0)	ore(10.0)	supplement(9.0)	micro-nutrients(9.0)	oxidant(8.0)	factor(7.0)	variable(7.0)	exception(7.0)	battery(7.0)	specie(6.0)	vitamin(6.0)	micromineral(6.0)	product(5.0)	solid(5.0)	sediment(5.0)	colorant(5.0)	tms(5.0)	inorganics(5.0)	agent(4.0)	goods(4.0)	analyte(4.0)	als(4.0)	acetylacetonate(4.0)	microelements(4.0)	microminerals(4.0)	method(3.0)	application(3.0)	option(3.0)	case(3.0)	variety(3.0)	indicator(3.0)	deficiency(3.0)	mediator(3.0)	ores(3.0)	radionuclide(3.0)	sulfate(3.0)	deoxidizer(3.0)	metaloxide(3.0)	oligoelement(3.0)	calciumantagonists(3.0)	severalessentialtransitionmetals(3.0)	analytes(3.0)	oligo-elements(3.0)	industry(2.0)	issue(2.0)	medium(2.0)	symptom(2.0)	enzyme(2.0)	solute(2.0)	particle(2.0)	nutrition(2.0)	hm(2.0)	activator(2.0)	inconvenience(2.0)	neurotoxicant(2.0)	boride(2.0)	othernutrients(2.0)	leachate(2.0)	mirconutrients(2.0)	deoxidizers(2.0)	ingre-dients(2.0)	micro-elements(2.0)	name(1.0)	project(1.0)	98
+attitude	factor(1243.0)	variable(278.0)	topic(263.0)	characteristic(163.0)	issue(137.0)	aspect(113.0)	concept(77.0)	construct(77.0)	area(66.0)	intangible(58.0)	barrier(56.0)	trait(51.0)	datum(46.0)	criterion(42.0)	element(41.0)	term(38.0)	skill(38.0)	attribute(34.0)	quality(34.0)	information(33.0)	difference(29.0)	influence(26.0)	component(26.0)	dimension(24.0)	determinant(24.0)	measure(23.0)	outcome(22.0)	resource(18.0)	item(18.0)	condition(18.0)	indicator(18.0)	word(17.0)	technique(16.0)	behavior(16.0)	form(16.0)	value(15.0)	theme(14.0)	capability(13.0)	state(11.0)	consideration(11.0)	field(10.0)	reason(10.0)	question(10.0)	feature(9.0)	vegetable(9.0)	parameter(9.0)	target(9.0)	matter(8.0)	dynamic(8.0)	category(7.0)	competency(7.0)	problem(6.0)	circumstance(6.0)	idea(6.0)	notion(6.0)	enabler(6.0)	event(5.0)	activity(5.0)	tool(5.0)	subject(5.0)	phenomenon(5.0)	process(5.0)	preference(5.0)	property(5.0)	principle(5.0)	explanation(5.0)	motive(5.0)	scale(4.0)	change(4.0)	technology(4.0)	ingredient(4.0)	domain(4.0)	label(4.0)	mediator(4.0)	antecedent(4.0)	moderator(4.0)	output(4.0)	angle(4.0)	representation(4.0)	judgment(4.0)	psychographic(4.0)	methstructures(4.0)	calmness(4.0)	song(3.0)	model(3.0)	obstacle(3.0)	system(3.0)	asset(3.0)	case(3.0)	basic(3.0)	concern(3.0)	effect(3.0)	result(3.0)	stage(3.0)	thought(3.0)	cognition(3.0)	report(3.0)	sequence(3.0)	psfs(3.0)	epas(3.0)	specific(3.0)	evidence(2.0)	signal(2.0)	person(2.0)	situation(2.0)	project(2.0)	survey(2.0)	respect(2.0)	magazine(2.0)	publication(2.0)	function(2.0)	strategy(2.0)	symptom(2.0)	object(2.0)	entity(2.0)	improvement(2.0)	sign(2.0)	invention(2.0)	suspect(2.0)	decision(2.0)	emotion(2.0)	alias(2.0)	kpi(2.0)	metric(2.0)	insight(2.0)	way(2.0)	similarity(2.0)	subsystem(2.0)	rest(2.0)	synonym(2.0)	knowledge(2.0)	convention(2.0)	norm(2.0)	disposition(2.0)	qualifier(2.0)	tidbit(2.0)	pf(2.0)	expectation(2.0)	othercharacteristics(2.0)	style(1.0)	phrase(1.0)	product(1.0)	character(1.0)	source(1.0)	144
+sardine	fish(1050.0)	food(212.0)	specie(100.0)	seafood(88.0)	species(39.0)	bait(38.0)	item(20.0)	product(18.0)	relative(11.0)	predator(10.0)	stock(8.0)	population(7.0)	dish(7.0)	card(7.0)	flavor(6.0)	fishery(6.0)	ingredient(5.0)	meat(5.0)	planktivore(5.0)	source(4.0)	game(4.0)	organism(4.0)	feed(4.0)	baitfish(4.0)	clupeoids(4.0)	option(3.0)	goods(3.0)	variety(3.0)	filling(3.0)	bluefish(3.0)	animal(2.0)	extras(2.0)	creature(2.0)	speciality(2.0)	favorite(2.0)	diet(2.0)	appetizer(2.0)	prey(2.0)	alternative(2.0)	variation(2.0)	activity(1.0)	name(1.0)	topping(1.0)	prop(1.0)	44
+pollen	allergen(982.0)	particle(251.0)	substance(191.0)	pollutant(124.0)	contaminant(90.0)	irritant(78.0)	trigger(62.0)	item(52.0)	factor(44.0)	antigen(44.0)	allergy(35.0)	source(33.0)	material(31.0)	aeroallergen(27.0)	bioaerosols(26.0)	tissue(25.0)	particulate(24.0)	debris(20.0)	inhalant(20.0)	microfossils(19.0)	product(18.0)	resource(16.0)	character(13.0)	impurity(11.0)	aeroallergens(11.0)	variable(9.0)	agent(9.0)	bioallergens(9.0)	object(8.0)	invader(8.0)	proxy(8.0)	element(7.0)	aerosol(7.0)	route(6.0)	compound(6.0)	sample(6.0)	symptom(6.0)	dust(6.0)	reward(6.0)	input(6.0)	sink(6.0)	evidence(5.0)	technique(5.0)	matter(5.0)	additive(5.0)	avenue(5.0)	offender(5.0)	term(4.0)	food(4.0)	reason(4.0)	process(4.0)	toxin(4.0)	micro-particles(4.0)	component(3.0)	case(3.0)	supplement(3.0)	indicator(3.0)	stuff(3.0)	marker(3.0)	habitat(3.0)	clue(3.0)	odor(3.0)	irritation(3.0)	palynomorphs(3.0)	allergans(3.0)	anhydrobiotes(3.0)	microtossils(3.0)	facility(2.0)	subject(2.0)	game(2.0)	characteristic(2.0)	solid(2.0)	chemical(2.0)	category(2.0)	specimen(2.0)	foodstuff(2.0)	text(2.0)	antihistamine(2.0)	extract(2.0)	fossil(2.0)	biological(2.0)	stimulus(2.0)	alergens(2.0)	allergens(2.0)	area(2.0)	option(2.0)	by-products(2.0)	fruit(2.0)	method(1.0)	name(1.0)	service(1.0)	topic(1.0)	tool(1.0)	datum(1.0)	work(1.0)	approach(1.0)	complication(1.0)	97
+eggplant	vegetable(844.0)	crop(195.0)	plant(149.0)	food(134.0)	veggie(64.0)	nightshade(43.0)	ingredient(38.0)	fruit(33.0)	product(23.0)	item(21.0)	specie(12.0)	topping(11.0)	shade(11.0)	seed(10.0)	choice(9.0)	dish(8.0)	case(7.0)	sandwich(7.0)	produce(7.0)	filling(6.0)	host(5.0)	vegetables(5.0)	name(4.0)	option(4.0)	variety(4.0)	berry(4.0)	recipe(4.0)	favorite(4.0)	appetizer(4.0)	edible(4.0)	hue(4.0)	seedling(4.0)	tool(3.0)	type(3.0)	commodity(3.0)	selection(3.0)	purine(3.0)	transplant(3.0)	species(3.0)	layer(2.0)	flavor(2.0)	sector(2.0)	classic(2.0)	colour(2.0)	entree(2.0)	side(2.0)	delicacy(2.0)	standby(2.0)	style(1.0)	material(1.0)	50
+cardamom	spice(807.0)	ingredient(85.0)	crop(44.0)	herb(36.0)	condiment(31.0)	flavor(30.0)	product(19.0)	item(12.0)	seasoning(10.0)	commodity(7.0)	specie(6.0)	flavoring(6.0)	botanical(6.0)	ntfp(6.0)	drink(5.0)	plant(5.0)	seed(5.0)	scent(5.0)	additive(4.0)	note(4.0)	flavourings(4.0)	aromatic(4.0)	carminative(4.0)	oil(3.0)	substance(3.0)	staple(3.0)	tea(3.0)	food(2.0)	topping(2.0)	material(2.0)	addition(2.0)	altitude(2.0)	essence(2.0)	plantation(2.0)	eos(2.0)	nte(2.0)	word(1.0)	project(1.0)	38
+park	area(619.0)	amenity(542.0)	place(459.0)	facility(287.0)	service(230.0)	location(179.0)	space(178.0)	feature(142.0)	site(86.0)	attraction(85.0)	project(78.0)	element(62.0)	activity(56.0)	venue(56.0)	issue(54.0)	asset(49.0)	destination(49.0)	environment(46.0)	organization(41.0)	resource(41.0)	improvement(40.0)	researcher(36.0)	institution(33.0)	landmark(33.0)	factor(32.0)	habitat(32.0)	study(31.0)	department(31.0)	setting(29.0)	item(28.0)	author(28.0)	property(27.0)	district(25.0)	scheme(24.0)	land(24.0)	outing(21.0)	landscape(21.0)	topic(19.0)	commodity(18.0)	event(17.0)	measure(17.0)	program(17.0)	goods(17.0)	information(17.0)	option(16.0)	agency(16.0)	initiative(15.0)	player(15.0)	condition(14.0)	sociologist(14.0)	structure(14.0)	entity(13.0)	convenience(13.0)	greenspace(13.0)	subject(12.0)	theme(12.0)	scholar(12.0)	node(12.0)	solution(11.0)	group(11.0)	plan(11.0)	company(10.0)	infrastructure(10.0)	function(10.0)	business(10.0)	category(10.0)	word(9.0)	opportunity(9.0)	situation(9.0)	term(9.0)	value(9.0)	case(8.0)	nature(8.0)	spot(8.0)	variable(7.0)	layer(7.0)	building(7.0)	sector(7.0)	cost(7.0)	board(7.0)	responsibility(7.0)	haunt(7.0)	product(6.0)	application(6.0)	form(6.0)	work(6.0)	system(6.0)	concept(6.0)	barrier(6.0)	enhancement(6.0)	theorist(6.0)	outdoor(6.0)	alternative(5.0)	field(5.0)	datum(5.0)	writer(5.0)	object(5.0)	development(5.0)	locale(5.0)	ecosystem(5.0)	street(5.0)	paper(5.0)	zone(5.0)	citizen(5.0)	campus(5.0)	discipline(4.0)	type(4.0)	need(4.0)	surrounding(4.0)	committee(4.0)	recreation(4.0)	overlay(4.0)	turf(4.0)	route(3.0)	incentive(3.0)	person(3.0)	time(3.0)	game(3.0)	circumstance(3.0)	benefit(3.0)	idea(3.0)	strategy(3.0)	legislation(3.0)	painting(3.0)	school(3.0)	intervention(3.0)	utility(3.0)	major(3.0)	consideration(3.0)	necessity(3.0)	hotel(3.0)	trip(3.0)	division(3.0)	reserve(3.0)	background(3.0)	shortcut(3.0)	permission(3.0)	aminities(3.0)	dominoe(3.0)	phrase(2.0)	method(2.0)	name(2.0)	criterion(2.0)	jurisdiction(2.0)	establishment(2.0)	title(2.0)	surface(2.0)	obstacle(2.0)	city(2.0)	basic(2.0)	privilege(2.0)	document(2.0)	investment(2.0)	literature(2.0)	county(2.0)	matter(2.0)	domain(2.0)	step(2.0)	boundary(2.0)	figure(2.0)	indicator(2.0)	star(2.0)	installation(2.0)	designation(2.0)	organic(2.0)	stage(2.0)	possibility(2.0)	decoration(2.0)	beach(2.0)	menu(2.0)	fee(2.0)	avenue(2.0)	office(2.0)	gem(2.0)	personnel(2.0)	ammenities(2.0)	info(2.0)	answer(2.0)	card(2.0)	outlet(2.0)	sight(2.0)	target(2.0)	niche(2.0)	locality(2.0)	museum(2.0)	proposal(2.0)	enclosure(2.0)	typology(2.0)	remnant(2.0)	dedication(2.0)	oasis(2.0)	bulletin(2.0)	thoma(2.0)	greenness(2.0)	customer(2.0)	image(2.0)	user(2.0)	fund(2.0)	experience(1.0)	industry(1.0)	technique(1.0)	effort(1.0)	influence(1.0)	model(1.0)	state(1.0)	investigator(1.0)	aspect(1.0)	change(1.0)	component(1.0)	region(1.0)	occasion(1.0)	source(1.0)	problem(1.0)	213
+voltage	parameter(616.0)	factor(198.0)	datum(167.0)	information(131.0)	variable(115.0)	value(80.0)	quantity(61.0)	condition(54.0)	feature(49.0)	characteristic(40.0)	measurement(37.0)	signal(29.0)	item(23.0)	issue(22.0)	technique(20.0)	stimulus(20.0)	attribute(19.0)	function(16.0)	sensor(16.0)	specification(14.0)	operation(13.0)	case(13.0)	property(12.0)	comparison(11.0)	aspect(11.0)	instrumentation(11.0)	topic(10.0)	concept(10.0)	setting(10.0)	consideration(10.0)	phenomenon(8.0)	method(7.0)	measure(7.0)	term(7.0)	maintenance(7.0)	basic(6.0)	advantage(6.0)	result(6.0)	force(6.0)	constraint(6.0)	info(6.0)	performance(6.0)	variation(6.0)	service(5.0)	option(5.0)	device(5.0)	fact(5.0)	test(5.0)	effect(5.0)	record(5.0)	output(5.0)	skin(5.0)	word(4.0)	application(4.0)	requirement(4.0)	number(4.0)	rating(4.0)	measurands(4.0)	project(3.0)	indicator(3.0)	wave(3.0)	input(3.0)	difference(3.0)	fault(3.0)	circuitry(3.0)	stimulation(3.0)	sincethemeasurementswereperformedacrossmanyparameters(3.0)	housekeepingparameters(3.0)	event(2.0)	criterion(2.0)	procedure(2.0)	influence(2.0)	state(2.0)	subject(2.0)	technology(2.0)	choice(2.0)	stress(2.0)	control(2.0)	structure(2.0)	category(2.0)	domain(2.0)	capacity(2.0)	command(2.0)	analysis(2.0)	stat(2.0)	spec(2.0)	reference(2.0)	marking(2.0)	waveform(2.0)	effector(2.0)	charger(2.0)	dcs(2.0)	alsoinvestigatedthemixingperformancefordifferentconditions(2.0)	fewcomparisons(2.0)	problem(2.0)	unit(2.0)	element(1.0)	product(1.0)	area(1.0)	time(1.0)	change(1.0)	reason(1.0)	type(1.0)	103
+fair	event(565.0)	activity(102.0)	term(94.0)	word(73.0)	issue(47.0)	mechanism(24.0)	group(15.0)	function(14.0)	venue(14.0)	occasion(13.0)	adjective(13.0)	principle(12.0)	context(11.0)	ad(11.0)	location(10.0)	concept(10.0)	rating(9.0)	service(8.0)	topic(8.0)	law(7.0)	product(6.0)	company(6.0)	area(6.0)	project(6.0)	brand(6.0)	matter(6.0)	descriptor(6.0)	provision(6.0)	program(5.0)	initiative(5.0)	author(5.0)	value(5.0)	standard(5.0)	characteristic(5.0)	label(5.0)	objective(5.0)	monument(5.0)	feature(4.0)	format(4.0)	institution(4.0)	attraction(4.0)	category(4.0)	attribute(4.0)	comment(4.0)	meaning(4.0)	association(4.0)	entitlement(4.0)	festivity(4.0)	submission(4.0)	diction(4.0)	place(3.0)	organization(3.0)	measure(3.0)	datum(3.0)	subject(3.0)	surface(3.0)	theme(3.0)	fund(3.0)	idea(3.0)	scheme(3.0)	right(3.0)	goal(3.0)	shade(3.0)	specific(3.0)	obligation(3.0)	remark(3.0)	generalization(3.0)	indivisibility(3.0)	infotainment(3.0)	method(2.0)	facility(2.0)	factor(2.0)	technique(2.0)	opportunity(2.0)	situation(2.0)	resource(2.0)	option(2.0)	practice(2.0)	model(2.0)	aspect(2.0)	trait(2.0)	site(2.0)	skill(2.0)	purpose(2.0)	protection(2.0)	show(2.0)	corporation(2.0)	space(2.0)	entry(2.0)	channel(2.0)	activist(2.0)	fundraiser(2.0)	similarity(2.0)	grade(2.0)	commercial(2.0)	description(2.0)	move(2.0)	gig(2.0)	gathering(2.0)	launch(2.0)	cream(2.0)	reply(2.0)	vocabulary(2.0)	booking(2.0)	homophone(2.0)	setting(2.0)	name(1.0)	criterion(1.0)	field(1.0)	application(1.0)	form(1.0)	reason(1.0)	study(1.0)	region(1.0)	condition(1.0)	source(1.0)	action(1.0)	case(1.0)	ingredient(1.0)	119
+turkish	language(562.0)	case(21.0)	group(19.0)	ethnicity(17.0)	tradition(16.0)	nationality(15.0)	cuisine(15.0)	publication(13.0)	culture(12.0)	name(11.0)	course(7.0)	style(6.0)	crisis(6.0)	airline(5.0)	word(4.0)	subject(4.0)	type(3.0)	option(2.0)	pipe(2.0)	influence(2.0)	team(2.0)	scheme(2.0)	carrier(2.0)	feminist(2.0)	restaurant(2.0)	seasoning(2.0)	encoding(2.0)	experience(1.0)	method(1.0)	factor(1.0)	company(1.0)	issue(1.0)	topic(1.0)	information(1.0)	movie(1.0)	35
+creativity	skill(532.0)	quality(264.0)	characteristic(207.0)	factor(197.0)	topic(188.0)	concept(163.0)	area(135.0)	trait(134.0)	issue(129.0)	value(128.0)	attribute(111.0)	aspect(76.0)	word(74.0)	ability(61.0)	theme(57.0)	term(54.0)	element(39.0)	criterion(37.0)	intangible(31.0)	competency(27.0)	talent(25.0)	construct(25.0)	strength(24.0)	capability(23.0)	disposition(22.0)	activity(21.0)	gift(21.0)	subject(19.0)	competence(19.0)	feature(18.0)	idea(17.0)	capacity(16.0)	category(15.0)	benefit(14.0)	variable(12.0)	journal(12.0)	phrase(11.0)	process(11.0)	phenomenon(10.0)	function(10.0)	outcome(10.0)	virtue(10.0)	asset(8.0)	parameter(8.0)	principle(8.0)	field(7.0)	component(7.0)	condition(7.0)	course(7.0)	context(7.0)	state(6.0)	expression(6.0)	need(6.0)	matter(6.0)	behavior(5.0)	reason(5.0)	dimension(5.0)	concern(5.0)	metric(5.0)	notion(5.0)	difference(5.0)	technique(4.0)	food(4.0)	tool(4.0)	title(4.0)	magazine(4.0)	keyword(4.0)	strategy(4.0)	instrument(4.0)	goal(4.0)	belief(4.0)	offshoot(4.0)	module(4.0)	truth(4.0)	rubric(4.0)	excellence(4.0)	person(3.0)	resource(3.0)	standard(3.0)	purpose(3.0)	advantage(3.0)	qualification(3.0)	emotion(3.0)	consideration(3.0)	theory(3.0)	joy(3.0)	facet(3.0)	viewpoint(3.0)	behaviour(3.0)	sentiment(3.0)	name(3.0)	facility(2.0)	service(2.0)	practice(2.0)	item(2.0)	change(2.0)	ingredient(2.0)	task(2.0)	medium(2.0)	attitude(2.0)	interest(2.0)	question(2.0)	force(2.0)	point(2.0)	contribution(2.0)	objective(2.0)	credential(2.0)	answer(2.0)	fundamental(2.0)	feeling(2.0)	elective(2.0)	skillset(2.0)	rationality(2.0)	method(2.0)	avenue(2.0)	event(1.0)	discipline(1.0)	style(1.0)	alternative(1.0)	incentive(1.0)	challenge(1.0)	situation(1.0)	measure(1.0)	documentation(1.0)	study(1.0)	respect(1.0)	action(1.0)	127
+cds	item(509.0)	medium(289.0)	product(208.0)	material(166.0)	resource(91.0)	investment(89.0)	supplement(63.0)	device(47.0)	technology(39.0)	disc(35.0)	accessory(32.0)	goods(31.0)	good(28.0)	asset(23.0)	merchandise(22.0)	format(18.0)	source(18.0)	semiconductor(18.0)	valuable(18.0)	supply(17.0)	gift(17.0)	tool(16.0)	music(16.0)	disk(15.0)	stuff(13.0)	option(12.0)	account(12.0)	category(11.0)	attachment(10.0)	instrument(10.0)	effect(10.0)	information(9.0)	prize(8.0)	reference(8.0)	donation(8.0)	article(7.0)	object(7.0)	consumable(7.0)	sector(6.0)	mediums(6.0)	alternative(5.0)	facility(5.0)	service(5.0)	piece(4.0)	area(4.0)	variable(4.0)	form(4.0)	publication(4.0)	innovation(4.0)	carrier(4.0)	invention(4.0)	security(4.0)	exam(4.0)	peripheral(4.0)	aid(4.0)	collection(4.0)	insert(4.0)	photocatalyst(4.0)	merch(4.0)	hardcopies(4.0)	present(4.0)	phrase(3.0)	method(3.0)	topic(3.0)	program(3.0)	approach(3.0)	mean(3.0)	sensor(3.0)	exception(3.0)	expense(3.0)	perk(3.0)	way(3.0)	electronic(3.0)	offering(3.0)	belonging(3.0)	event(2.0)	book(2.0)	amenity(2.0)	purchase(2.0)	system(2.0)	case(2.0)	function(2.0)	market(2.0)	need(2.0)	additive(2.0)	package(2.0)	software(2.0)	touch(2.0)	contribution(2.0)	widget(2.0)	plastic(2.0)	artifact(2.0)	treasure(2.0)	niche(2.0)	receiver(2.0)	possession(2.0)	stalwart(2.0)	ogs(2.0)	collectible(2.0)	collateral(2.0)	souvenir(2.0)	recording(2.0)	advancement(2.0)	villa(2.0)	containers(2.0)	qds(2.0)	enclosure(2.0)	incentive(1.0)	technique(1.0)	name(1.0)	feature(1.0)	place(1.0)	effort(1.0)	application(1.0)	term(1.0)	agent(1.0)	datum(1.0)	component(1.0)	phenomenon(1.0)	basic(1.0)	120
+woodpecker	bird(499.0)	specie(82.0)	animal(46.0)	species(36.0)	predator(26.0)	wildlife(22.0)	songbird(18.0)	word(8.0)	vertebrate(7.0)	excavator(7.0)	cavity-nesters(7.0)	group(6.0)	landbirds(5.0)	item(2.0)	user(2.0)	platform(2.0)	favorite(2.0)	locator(2.0)	sighting(2.0)	insectivore(2.0)	factor(1.0)	21
+fedex	company(497.0)	carrier(182.0)	courier(91.0)	service(55.0)	shipper(43.0)	enterprise(36.0)	client(30.0)	organization(26.0)	business(25.0)	corporation(25.0)	firm(24.0)	integrator(23.0)	brand(22.0)	customer(20.0)	partner(20.0)	shipping(18.0)	place(16.0)	competitor(16.0)	advertiser(11.0)	name(10.0)	option(10.0)	method(9.0)	employer(8.0)	multinational(8.0)	fleet(7.0)	vendor(6.0)	envelope(6.0)	amenity(4.0)	store(4.0)	giant(4.0)	operator(4.0)	airline(4.0)	provider(4.0)	account(4.0)	contractor(4.0)	facility(3.0)	team(3.0)	cost(3.0)	job(3.0)	stock(3.0)	expense(3.0)	transport(3.0)	lsps(3.0)	sponsor(3.0)	retailer(2.0)	package(2.0)	supplier(2.0)	contender(2.0)	outfit(2.0)	receipt(2.0)	marketer(2.0)	ompanies(2.0)	franchisor(2.0)	forwarder(2.0)	3pl(2.0)	item(2.0)	route(1.0)	player(1.0)	operation(1.0)	59
+bench	amenity(492.0)	item(249.0)	feature(162.0)	element(88.0)	furniture(81.0)	accessory(74.0)	product(72.0)	facility(69.0)	equipment(68.0)	object(53.0)	structure(51.0)	furnishing(42.0)	improvement(35.0)	brand(34.0)	piece(29.0)	obstacle(29.0)	option(28.0)	area(24.0)	prop(21.0)	project(18.0)	surface(16.0)	exercise(15.0)	place(14.0)	event(12.0)	fixture(12.0)	furnishings(12.0)	lift(11.0)	service(9.0)	assembly(9.0)	apparatuses(9.0)	component(8.0)	installation(8.0)	obstruction(7.0)	enhancement(7.0)	accoutrement(7.0)	memorial(7.0)	seating(7.0)	material(6.0)	movement(6.0)	hardscape(6.0)	location(5.0)	name(5.0)	tool(5.0)	purpose(5.0)	point(5.0)	gage(5.0)	activity(4.0)	opportunity(4.0)	application(4.0)	type(4.0)	article(4.0)	mean(4.0)	setting(4.0)	platform(4.0)	touch(4.0)	decoration(4.0)	factor(3.0)	aspect(3.0)	function(3.0)	idea(3.0)	control(3.0)	need(3.0)	addition(3.0)	accent(3.0)	donation(3.0)	appurtenance(3.0)	elevation(3.0)	purchase(3.0)	style(2.0)	infrastructure(2.0)	scale(2.0)	form(2.0)	datum(2.0)	information(2.0)	basic(2.0)	site(2.0)	upgrade(2.0)	ground(2.0)	step(2.0)	table(2.0)	stuff(2.0)	venue(2.0)	gift(2.0)	nicety(2.0)	ornament(2.0)	account(2.0)	spot(2.0)	weight(2.0)	ornamentation(2.0)	props(2.0)	system(2.0)	method(2.0)	label(2.0)	visual(2.0)	evidence(1.0)	website(1.0)	company(1.0)	initiative(1.0)	work(1.0)	shape(1.0)	100
+mysql	database(432.0)	technology(136.0)	service(52.0)	application(47.0)	language(36.0)	feature(33.0)	tool(33.0)	component(33.0)	software(29.0)	company(26.0)	system(25.0)	rdbm(22.0)	program(15.0)	dbms(15.0)	product(14.0)	item(11.0)	project(11.0)	platform(10.0)	server(10.0)	brand(8.0)	rdbms(8.0)	option(7.0)	topic(7.0)	dependency(7.0)	driver(6.0)	package(6.0)	db(6.0)	solution(5.0)	term(4.0)	process(4.0)	partner(4.0)	script(3.0)	format(3.0)	store(3.0)	skill(3.0)	module(3.0)	sql-servers(3.0)	case(2.0)	version(2.0)	class(2.0)	customer(2.0)	implementation(2.0)	competitor(2.0)	engine(2.0)	plugin(2.0)	addon(2.0)	daemon(2.0)	backends(2.0)	backend(2.0)	firm(1.0)	organization(1.0)	area(1.0)	player(1.0)	value(1.0)	54
+usa	nation(421.0)	market(305.0)	jurisdiction(174.0)	economy(169.0)	place(154.0)	state(104.0)	area(99.0)	region(98.0)	destination(64.0)	society(54.0)	culture(42.0)	power(41.0)	case(38.0)	location(37.0)	team(28.0)	donor(27.0)	democracy(26.0)	government(24.0)	county(21.0)	company(20.0)	system(17.0)	network(17.0)	federation(16.0)	exception(15.0)	colony(15.0)	geography(13.0)	territory(13.0)	administration(12.0)	institution(11.0)	setting(11.0)	competitor(11.0)	context(10.0)	partner(10.0)	issue(8.0)	abbreviation(8.0)	republic(8.0)	initialisms(8.0)	topic(7.0)	source(7.0)	channel(7.0)	ally(7.0)	coutries(7.0)	naos(7.0)	scale(6.0)	equipment(6.0)	instance(6.0)	community(6.0)	emitter(6.0)	importer(6.0)	continent(6.0)	initialism(6.0)	player(5.0)	subsidiary(5.0)	product(4.0)	actor(4.0)	program(4.0)	map(4.0)	venue(4.0)	acronym(4.0)	locality(4.0)	land(4.0)	exporter(4.0)	surprise(4.0)	superpower(4.0)	polluter(4.0)	westerncountries(4.0)	word(3.0)	situation(3.0)	organization(3.0)	project(3.0)	site(3.0)	track(3.0)	course(3.0)	weakness(3.0)	station(3.0)	outlier(3.0)	powerhouse(3.0)	countrys(3.0)	embassy(3.0)	century(3.0)	delegation(3.0)	dcs(3.0)	pow(3.0)	medc(3.0)	industrializers(3.0)	investor(2.0)	member(2.0)	brand(2.0)	customer(2.0)	stakeholder(2.0)	agency(2.0)	message(2.0)	nationality(2.0)	notation(2.0)	treaty(2.0)	world(2.0)	courntries(2.0)	anagram(2.0)	topper(2.0)	flute(2.0)	contries(2.0)	colossus(2.0)	countties(2.0)	countryes(2.0)	superpowers(2.0)	climate(2.0)	artwork(2.0)	event(1.0)	name(1.0)	service(1.0)	policy(1.0)	measure(1.0)	option(1.0)	variable(1.0)	item(1.0)	change(1.0)	theme(1.0)	accessory(1.0)	material(1.0)	basic(1.0)	120
+feldspar	mineral(382.0)	material(70.0)	impurity(34.0)	flux(23.0)	silicate(14.0)	ingredient(12.0)	particle(8.0)	filler(8.0)	phase(7.0)	aluminosilicate(7.0)	component(6.0)	accessory(6.0)	rock(6.0)	product(5.0)	term(4.0)	metal(3.0)	aggregate(3.0)	mica(3.0)	phenocrysts(3.0)	porphyroclasts(3.0)	compound(2.0)	item(2.0)	surface(2.0)	system(2.0)	additive(2.0)	commodity(2.0)	grain(2.0)	substance(2.0)	inclusion(2.0)	constituent(2.0)	nlinerals(2.0)	resource(2.0)	crystal(2.0)	word(1.0)	option(1.0)	form(1.0)	source(1.0)	37
+climbing	activity(341.0)	sport(55.0)	skill(36.0)	maneuver(11.0)	ability(11.0)	hobby(10.0)	parameter(9.0)	movement(8.0)	issue(7.0)	magazine(6.0)	exercise(6.0)	manoeuvers(6.0)	pursuit(6.0)	experience(5.0)	subject(4.0)	action(4.0)	trip(4.0)	adventure(4.0)	activites(3.0)	program(3.0)	outdoors(3.0)	area(2.0)	behavior(2.0)	topic(2.0)	position(2.0)	task(2.0)	game(2.0)	attraction(2.0)	category(2.0)	opportunity(2.0)	competition(2.0)	endeavor(2.0)	event(1.0)	type(1.0)	34
+moxifloxacin	fluoroquinolone(322.0)	quinolone(119.0)	fluoroquinolones(64.0)	quinolones(31.0)	agent(25.0)	compound(18.0)	antibiotic(9.0)	flouroquinolone(4.0)	fqs(3.0)	medication(2.0)	prospect(2.0)	11
+malaysia	economy(320.0)	nation(310.0)	market(277.0)	place(173.0)	case(127.0)	jurisdiction(85.0)	state(77.0)	destination(68.0)	area(64.0)	region(56.0)	location(55.0)	exception(47.0)	government(33.0)	culture(31.0)	member(27.0)	neighbor(17.0)	setting(15.0)	instance(14.0)	society(10.0)	delegation(10.0)	monarchy(9.0)	team(8.0)	competitor(8.0)	producer(8.0)	county(7.0)	exporter(7.0)	dvcs(7.0)	claimant(6.0)	territory(6.0)	democracy(6.0)	event(5.0)	system(5.0)	source(5.0)	airline(5.0)	partner(5.0)	player(4.0)	context(4.0)	participant(4.0)	importer(4.0)	episode(4.0)	ountries(4.0)	lcc(4.0)	dmc(4.0)	globalisers(4.0)	reason(3.0)	institution(3.0)	friend(3.0)	buyer(3.0)	geography(3.0)	climate(3.0)	land(3.0)	branch(3.0)	stars(3.0)	autocracy(3.0)	regime(3.0)	neighbour(3.0)	emes(3.0)	amss(3.0)	supplier(3.0)	actor(2.0)	company(2.0)	study(2.0)	donor(2.0)	choice(2.0)	giant(2.0)	client(2.0)	party(2.0)	illness(2.0)	novel(2.0)	nationality(2.0)	candidate(2.0)	rival(2.0)	biomass(2.0)	vulnerability(2.0)	visitor(2.0)	emca(2.0)	federation(2.0)	em(2.0)	counterpart(2.0)	colony(2.0)	contingent(2.0)	coutries(2.0)	protectorate(2.0)	counteries(2.0)	pdcs(2.0)	24countries(2.0)	niedaes(2.0)	locale(2.0)	route(1.0)	option(1.0)	vegetable(1.0)	character(1.0)	material(1.0)	city(1.0)	fund(1.0)	95
+parsnip	vegetable(318.0)	crop(56.0)	root(36.0)	seed(34.0)	food(27.0)	plant(19.0)	item(17.0)	veggie(15.0)	ingredient(14.0)	favorite(9.0)	veg(6.0)	flavor(5.0)	taproot(4.0)	recipe(3.0)	carbohydrate(3.0)	standby(3.0)	soup(3.0)	specie(2.0)	starch(2.0)	waterfowl(2.0)	varietal(2.0)	produce(2.0)	tuber(2.0)	vegies(2.0)	trimming(2.0)	rootcrops(2.0)	variety(2.0)	species(2.0)	28
+epinephrine	catecholamine(317.0)	hormone(312.0)	neurotransmitter(169.0)	medication(146.0)	vasoconstrictor(111.0)	vasopressor(77.0)	agent(68.0)	bronchodilator(42.0)	agonist(36.0)	medicine(35.0)	amine(32.0)	substance(21.0)	vasoconstrictors(21.0)	stimulant(19.0)	chemical(18.0)	sympathomimetic(15.0)	compound(14.0)	monoamine(14.0)	catecholamines(14.0)	factor(13.0)	treatment(13.0)	additive(11.0)	inotrope(9.0)	stimulus(8.0)	adjuvant(6.0)	combination(6.0)	intervention(6.0)	material(5.0)	molecule(5.0)	cathecholamines(5.0)	bronchodilators(5.0)	pharmaceutical(4.0)	agonists(4.0)	biomarker(3.0)	mediator(3.0)	ligand(3.0)	adjunct(3.0)	neurohormones(3.0)	eluates(3.0)	comitogens(3.0)	backgroundcatecholamines(3.0)	measure(2.0)	characteristic(2.0)	vasodilator(2.0)	cation(2.0)	precursor(2.0)	tracer(2.0)	biochemical(2.0)	inducer(2.0)	neurochemical(2.0)	catacholamines(2.0)	symphathomimetics(2.0)	amines(2.0)	electro-chemicals(2.0)	product(1.0)	resource(1.0)	variable(1.0)	item(1.0)	mechanism(1.0)	ingredient(1.0)	60
+imf	institution(290.0)	organization(288.0)	organisation(64.0)	agency(45.0)	source(30.0)	ifis(26.0)	organisations(24.0)	donor(18.0)	igo(14.0)	group(12.0)	policy(11.0)	actor(10.0)	study(10.0)	commentator(9.0)	forecaster(9.0)	factor(8.0)	entity(8.0)	partner(8.0)	case(6.0)	stakeholder(6.0)	forum(6.0)	topic(5.0)	player(5.0)	trait(5.0)	analysis(5.0)	monitor(5.0)	ios(5.0)	term(4.0)	lender(4.0)	intermediary(4.0)	creditor(4.0)	multilateral(4.0)	issue(3.0)	effort(3.0)	variable(3.0)	device(3.0)	mechanism(3.0)	parameter(3.0)	structure(3.0)	venue(3.0)	bank(3.0)	company(2.0)	critic(2.0)	tool(2.0)	meeting(2.0)	exception(2.0)	expert(2.0)	institute(2.0)	constituency(2.0)	funder(2.0)	employment(2.0)	systematic(2.0)	idas(2.0)	technique(1.0)	area(1.0)	resource(1.0)	measure(1.0)	agent(1.0)	program(1.0)	information(1.0)	60
+edge	feature(285.0)	browser(45.0)	information(40.0)	area(29.0)	superstar(24.0)	defect(23.0)	element(22.0)	characteristic(22.0)	item(17.0)	discontinuity(16.0)	model(14.0)	site(14.0)	structure(14.0)	wrestler(14.0)	primitive(14.0)	factor(13.0)	ford(13.0)	domain(12.0)	star(12.0)	cue(12.0)	point(11.0)	publication(10.0)	attribute(10.0)	service(8.0)	term(8.0)	concept(8.0)	property(8.0)	object(8.0)	brand(8.0)	combination(8.0)	hazard(8.0)	poem(8.0)	word(7.0)	program(7.0)	component(7.0)	team(7.0)	vehicle(7.0)	station(7.0)	target(7.0)	guy(7.0)	technique(6.0)	name(6.0)	place(6.0)	company(6.0)	person(6.0)	issue(6.0)	option(6.0)	parameter(6.0)	variety(6.0)	stimulus(6.0)	technology(6.0)	product(5.0)	situation(5.0)	measure(5.0)	equipment(5.0)	mean(5.0)	observation(5.0)	flashing(5.0)	shape(4.0)	type(4.0)	magazine(4.0)	function(4.0)	artist(4.0)	definition(4.0)	imperfection(4.0)	verb(4.0)	zone(4.0)	collection(4.0)	noun(4.0)	singularity(4.0)	microstructure(4.0)	manydifferentfeatures(4.0)	portion(3.0)	criterion(3.0)	variable(3.0)	tool(3.0)	aspect(3.0)	accessory(3.0)	mechanism(3.0)	role(3.0)	purpose(3.0)	development(3.0)	car(3.0)	trim(3.0)	performer(3.0)	reference(3.0)	studio(3.0)	guitarist(3.0)	token(3.0)	crossover(3.0)	programmer(3.0)	anomalies(3.0)	activity(2.0)	organization(2.0)	language(2.0)	application(2.0)	topic(2.0)	device(2.0)	title(2.0)	player(2.0)	character(2.0)	material(2.0)	operation(2.0)	process(2.0)	skill(2.0)	dimension(2.0)	improvement(2.0)	agency(2.0)	restaurant(2.0)	match(2.0)	effect(2.0)	software(2.0)	texture(2.0)	favorite(2.0)	filter(2.0)	geometry(2.0)	great(2.0)	tier(2.0)	fundamental(2.0)	simulator(2.0)	processing(2.0)	diagnostic(2.0)	watch(2.0)	winner(2.0)	ride(2.0)	review(2.0)	impediment(2.0)	irregularity(2.0)	storyline(2.0)	features(2.0)	eventer(2.0)	tuner(2.0)	subobjects(2.0)	entity(2.0)	evidence(1.0)	piece(1.0)	song(1.0)	film(1.0)	datum(1.0)	approach(1.0)	surface(1.0)	theme(1.0)	obstacle(1.0)	network(1.0)	phenomenon(1.0)	game(1.0)	specification(1.0)	case(1.0)	148
+normal	distribution(282.0)	term(66.0)	word(42.0)	datum(35.0)	mode(25.0)	alcohol(24.0)	information(22.0)	property(22.0)	style(21.0)	case(19.0)	topic(17.0)	concept(17.0)	feature(16.0)	model(16.0)	attribute(15.0)	type(14.0)	value(13.0)	antonym(13.0)	setting(11.0)	category(11.0)	option(10.0)	program(9.0)	emotion(9.0)	tone(8.0)	mug(8.0)	element(7.0)	technique(7.0)	attachment(7.0)	parameter(7.0)	name(6.0)	layer(6.0)	component(6.0)	city(6.0)	entry(6.0)	assessment(6.0)	layout(6.0)	ranking(6.0)	function(5.0)	structure(5.0)	indicator(5.0)	label(5.0)	density(5.0)	solvent(4.0)	item(4.0)	animal(4.0)	community(4.0)	level(4.0)	status(4.0)	prefix(4.0)	manipulator(4.0)	area(3.0)	tool(3.0)	reason(3.0)	choice(3.0)	map(3.0)	quantity(3.0)	finding(3.0)	adjective(3.0)	metric(3.0)	image(3.0)	profile(3.0)	family(3.0)	demand(3.0)	pdf(3.0)	activity(2.0)	phrase(2.0)	method(2.0)	factor(2.0)	service(2.0)	book(2.0)	criterion(2.0)	rule(2.0)	format(2.0)	documentation(2.0)	trait(2.0)	operation(2.0)	metal(2.0)	characteristic(2.0)	track(2.0)	class(2.0)	sensor(2.0)	effect(2.0)	force(2.0)	act(2.0)	notion(2.0)	outcome(2.0)	channel(2.0)	assumption(2.0)	scene(2.0)	diagnostic(2.0)	crowd(2.0)	binary(2.0)	workout(2.0)	glycol(2.0)	speed(2.0)	product(2.0)	technology(2.0)	company(1.0)	situation(1.0)	issue(1.0)	variable(1.0)	terminology(1.0)	state(1.0)	form(1.0)	aspect(1.0)	tissue(1.0)	subject(1.0)	approach(1.0)	theme(1.0)	study(1.0)	population(1.0)	condition(1.0)	action(1.0)	movie(1.0)	mechanism(1.0)	basic(1.0)	116
+wireless	technology(275.0)	product(42.0)	connection(41.0)	service(35.0)	application(34.0)	feature(33.0)	account(27.0)	network(20.0)	industry(18.0)	area(18.0)	term(16.0)	option(16.0)	alternative(15.0)	market(15.0)	topic(13.0)	company(12.0)	platform(12.0)	device(11.0)	mean(9.0)	element(8.0)	requirement(8.0)	hardware(8.0)	facility(7.0)	solution(7.0)	festival(7.0)	issue(6.0)	capability(6.0)	channel(6.0)	method(5.0)	sector(5.0)	function(5.0)	innovation(5.0)	link(5.0)	factor(4.0)	amenity(4.0)	tool(4.0)	subject(4.0)	component(4.0)	protocol(4.0)	driver(4.0)	category(4.0)	invention(4.0)	space(4.0)	environment(4.0)	ssid(4.0)	field(3.0)	infrastructure(3.0)	item(3.0)	form(3.0)	approach(3.0)	system(3.0)	case(3.0)	business(3.0)	stakeholder(3.0)	entry(3.0)	provider(3.0)	threat(3.0)	payload(3.0)	style(2.0)	word(2.0)	organization(2.0)	resource(2.0)	type(2.0)	theme(2.0)	specification(2.0)	concept(2.0)	user(2.0)	equipment(2.0)	setting(2.0)	structure(2.0)	carrier(2.0)	interest(2.0)	advantage(2.0)	design(2.0)	setup(2.0)	icts(2.0)	input(2.0)	description(2.0)	division(2.0)	interface(2.0)	transmission(2.0)	telephone(2.0)	radiowave(2.0)	standard(2.0)	need(2.0)	mechanism(2.0)	phrase(1.0)	technique(1.0)	variable(1.0)	mode(1.0)	initiative(1.0)	certificate(1.0)	source(1.0)	93
+lpg	fuel(257.0)	gas(87.0)	product(46.0)	technology(12.0)	item(10.0)	material(8.0)	hydrocarbon(8.0)	alternative(7.0)	liquid(7.0)	solvent(6.0)	source(5.0)	cost(5.0)	fluid(5.0)	forklift(5.0)	option(4.0)	application(3.0)	vehicle(3.0)	commodity(3.0)	lubricant(3.0)	engine(3.0)	area(2.0)	sector(2.0)	solution(2.0)	market(2.0)	equipment(2.0)	fraction(2.0)	way(2.0)	subsidy(2.0)	feedstock(2.0)	phospholipid(2.0)	cargo(2.0)	lysogps(2.0)	by-products(2.0)	byproduct(2.0)	activity(1.0)	service(1.0)	measure(1.0)	model(1.0)	system(1.0)	mechanism(1.0)	40
+multiplication	operation(243.0)	topic(42.0)	procedure(40.0)	function(28.0)	operator(22.0)	concept(19.0)	calculation(19.0)	instruction(14.0)	manipulation(13.0)	chunk(10.0)	application(8.0)	technique(7.0)	skill(7.0)	computation(7.0)	task(6.0)	convolution(6.0)	property(5.0)	essential(5.0)	learning(5.0)	modification(4.0)	activity(3.0)	basic(3.0)	keyword(3.0)	process(3.0)	math(3.0)	method(2.0)	challenge(2.0)	area(2.0)	device(2.0)	component(2.0)	mechanism(2.0)	case(2.0)	arithmetic(2.0)	instance(2.0)	event(1.0)	factor(1.0)	name(1.0)	resource(1.0)	mode(1.0)	theme(1.0)	character(1.0)	problem(1.0)	42
+ammunition	item(237.0)	resource(71.0)	supply(54.0)	factor(40.0)	product(37.0)	equipment(24.0)	flammable(18.0)	cost(14.0)	topic(13.0)	consumable(13.0)	expenditure(9.0)	article(9.0)	expense(8.0)	accessory(7.0)	sector(7.0)	material(7.0)	object(6.0)	commodity(6.0)	necessity(6.0)	area(5.0)	asset(5.0)	basic(5.0)	fee(5.0)	explosive(5.0)	inflammable(5.0)	industry(4.0)	goods(4.0)	business(4.0)	cut(4.0)	part(4.0)	essential(4.0)	gift(4.0)	evidence(3.0)	facility(3.0)	application(3.0)	store(3.0)	load(3.0)	cargo(3.0)	feature(3.0)	issue(2.0)	term(2.0)	song(2.0)	component(2.0)	player(2.0)	incidental(2.0)	munition(2.0)	firearm(2.0)	good(2.0)	branch(2.0)	apps(2.0)	service(1.0)	option(1.0)	variable(1.0)	device(1.0)	datum(1.0)	information(1.0)	case(1.0)	57
+collage	medium(229.0)	technique(199.0)	material(50.0)	item(42.0)	activity(33.0)	mediums(33.0)	project(17.0)	product(16.0)	process(14.0)	method(11.0)	craft(9.0)	media(9.0)	element(8.0)	enlargement(8.0)	form(7.0)	class(7.0)	service(6.0)	have(6.0)	practice(5.0)	task(5.0)	event(4.0)	option(4.0)	work(4.0)	publication(4.0)	skill(4.0)	album(4.0)	activites(4.0)	approach(4.0)	competition(4.0)	style(3.0)	concept(3.0)	image(3.0)	way(3.0)	visual(3.0)	metaphor(3.0)	artwork(3.0)	art(3.0)	discipline(2.0)	name(2.0)	organization(2.0)	device(2.0)	tool(2.0)	documentation(2.0)	institution(2.0)	idea(2.0)	object(2.0)	pattern(2.0)	exercise(2.0)	artifact(2.0)	merchandise(2.0)	editing(2.0)	representation(2.0)	multimedia(2.0)	request(2.0)	expression(2.0)	experience(1.0)	word(1.0)	piece(1.0)	feature(1.0)	field(1.0)	area(1.0)	term(1.0)	amenity(1.0)	topic(1.0)	program(1.0)	format(1.0)	surface(1.0)	case(1.0)	68
+cartier	brand(195.0)	company(50.0)	store(25.0)	name(19.0)	retailer(15.0)	watch(14.0)	boutique(13.0)	shop(12.0)	explorer(12.0)	house(12.0)	manufacturer(10.0)	jeweler(10.0)	client(9.0)	kind(8.0)	jeweller(7.0)	designer(6.0)	pen(5.0)	label(4.0)	tenant(4.0)	advertiser(4.0)	firm(3.0)	trademark(3.0)	rival(3.0)	maker(3.0)	suffering(3.0)	model(3.0)	member(2.0)	exception(2.0)	sponsor(2.0)	tank(2.0)	line(2.0)	timepiece(2.0)	watchmaker(2.0)	collection(2.0)	producer(2.0)	piece(1.0)	person(1.0)	organization(1.0)	drink(1.0)	39
+muffin	item(188.0)	food(178.0)	recipe(71.0)	snack(66.0)	product(65.0)	dessert(33.0)	pastry(28.0)	refreshment(24.0)	grain(18.0)	carbohydrate(18.0)	sweet(15.0)	goodie(12.0)	goods(11.0)	bread(11.0)	option(9.0)	quickbread(8.0)	good(8.0)	solution(7.0)	dish(6.0)	batter(5.0)	staple(4.0)	specialty(4.0)	favorite(4.0)	mixture(4.0)	delicacy(4.0)	word(3.0)	name(3.0)	application(3.0)	carb(3.0)	choice(3.0)	symptom(3.0)	meal(3.0)	side(3.0)	treat(3.0)	quickbreads(3.0)	action(2.0)	case(2.0)	category(2.0)	classic(2.0)	volunteer(2.0)	offering(2.0)	selection(2.0)	pasteries(2.0)	object(2.0)	quick-breads(2.0)	exhibit(2.0)	kitten(2.0)	activity(1.0)	alternative(1.0)	term(1.0)	rule(1.0)	type(1.0)	basic(1.0)	53
+card	game(188.0)	material(177.0)	item(166.0)	activity(106.0)	product(61.0)	tool(38.0)	object(31.0)	device(22.0)	surface(21.0)	project(19.0)	information(19.0)	gift(17.0)	shape(15.0)	document(14.0)	substrate(13.0)	medium(13.0)	study(12.0)	spreader(12.0)	word(11.0)	prop(10.0)	category(10.0)	form(9.0)	accessory(9.0)	article(9.0)	equipment(9.0)	craft(9.0)	identification(9.0)	enclosure(9.0)	curio(9.0)	event(8.0)	documentation(8.0)	resource(7.0)	option(7.0)	author(7.0)	label(7.0)	stuff(7.0)	term(6.0)	researcher(6.0)	requirement(6.0)	symbol(6.0)	command(6.0)	method(5.0)	issue(5.0)	area(5.0)	application(5.0)	component(5.0)	writer(5.0)	technology(5.0)	task(5.0)	record(5.0)	reminder(5.0)	contention(5.0)	keepsake(5.0)	service(4.0)	touch(4.0)	artefact(4.0)	merchandise(4.0)	sheet(4.0)	template(4.0)	donation(4.0)	plaything(4.0)	evidence(3.0)	element(3.0)	facility(3.0)	factor(3.0)	work(3.0)	asset(3.0)	mechanism(3.0)	case(3.0)	solution(3.0)	domain(3.0)	essential(3.0)	credential(3.0)	waste(3.0)	gesture(3.0)	paper(3.0)	loan(3.0)	souvenir(3.0)	inscription(3.0)	sort(3.0)	stiffener(3.0)	dial(3.0)	passtimes(3.0)	motif(3.0)	piece(2.0)	signal(2.0)	feature(2.0)	company(2.0)	situation(2.0)	film(2.0)	genre(2.0)	goods(2.0)	type(2.0)	theme(2.0)	source(2.0)	gadget(2.0)	vehicle(2.0)	supply(2.0)	supplement(2.0)	idea(2.0)	strategy(2.0)	sport(2.0)	mean(2.0)	literature(2.0)	stock(2.0)	carrier(2.0)	creation(2.0)	manipulative(2.0)	modality(2.0)	decoration(2.0)	stationery(2.0)	way(2.0)	advertiser(2.0)	consumable(2.0)	valuable(2.0)	sale(2.0)	amusement(2.0)	recyclable(2.0)	supporter(2.0)	optimization(2.0)	collectible(2.0)	feat(2.0)	insert(2.0)	memorabilia(2.0)	affection(2.0)	swag(2.0)	attenuator(2.0)	recyclates(2.0)	remembrance(2.0)	incidental(2.0)	manipulatives(2.0)	mini-games(2.0)	appreciation(2.0)	target(2.0)	alternative(1.0)	field(1.0)	topic(1.0)	practice(1.0)	layer(1.0)	program(1.0)	title(1.0)	change(1.0)	system(1.0)	operation(1.0)	ingredient(1.0)	145
+display	device(187.0)	application(171.0)	product(154.0)	component(149.0)	feature(93.0)	function(88.0)	item(64.0)	activity(56.0)	setting(49.0)	option(39.0)	element(34.0)	operation(33.0)	event(32.0)	peripheral(31.0)	equipment(26.0)	technology(25.0)	resource(24.0)	factor(22.0)	material(21.0)	area(18.0)	issue(17.0)	task(17.0)	service(16.0)	channel(16.0)	hardware(15.0)	category(15.0)	information(13.0)	accessory(13.0)	limitation(13.0)	stuff(13.0)	topic(12.0)	medium(12.0)	output(12.0)	field(11.0)	barrier(11.0)	project(10.0)	mean(10.0)	part(10.0)	aspect(9.0)	property(9.0)	object(9.0)	module(9.0)	industrial(9.0)	industry(8.0)	technique(8.0)	reason(8.0)	control(8.0)	procedure(7.0)	process(7.0)	preference(7.0)	action(6.0)	interface(6.0)	piece(5.0)	effort(5.0)	tool(5.0)	unit(5.0)	obstruction(5.0)	indicator(5.0)	functionality(5.0)	command(5.0)	vice(5.0)	causals(5.0)	method(4.0)	term(4.0)	establishment(4.0)	behavior(4.0)	time(4.0)	obstacle(4.0)	system(4.0)	article(4.0)	section(4.0)	strategy(4.0)	driver(4.0)	purpose(4.0)	chain(4.0)	duty(4.0)	assessment(4.0)	notion(4.0)	electronic(4.0)	emitter(4.0)	representation(4.0)	merchandising(4.0)	variable(3.0)	program(3.0)	promotion(3.0)	sector(3.0)	occasion(3.0)	concept(3.0)	basic(3.0)	supply(3.0)	characteristic(3.0)	market(3.0)	parameter(3.0)	business(3.0)	stage(3.0)	modality(3.0)	design(3.0)	identifier(3.0)	level(3.0)	invariant(3.0)	load(3.0)	stimulus(3.0)	advertising(3.0)	feedback(3.0)	word(2.0)	signal(2.0)	name(2.0)	practice(2.0)	state(2.0)	initiative(2.0)	change(2.0)	team(2.0)	asset(2.0)	specification(2.0)	case(2.0)	idea(2.0)	class(2.0)	attraction(2.0)	skill(2.0)	scheme(2.0)	landmark(2.0)	matter(2.0)	structure(2.0)	attribute(2.0)	construction(2.0)	sign(2.0)	question(2.0)	effect(2.0)	record(2.0)	apparatus(2.0)	button(2.0)	flaw(2.0)	adjustment(2.0)	calendar(2.0)	menu(2.0)	info(2.0)	photo(2.0)	port(2.0)	spec(2.0)	visual(2.0)	actuator(2.0)	collateral(2.0)	ict(2.0)	deposition(2.0)	mediums(2.0)	alternative(1.0)	facility(1.0)	location(1.0)	measure(1.0)	form(1.0)	datum(1.0)	format(1.0)	goods(1.0)	work(1.0)	phenomenon(1.0)	value(1.0)	problem(1.0)	157
+excavation	activity(185.0)	work(53.0)	service(49.0)	factor(32.0)	item(32.0)	source(30.0)	topic(28.0)	process(26.0)	method(24.0)	operation(23.0)	task(19.0)	ics(14.0)	technology(10.0)	area(9.0)	action(9.0)	hazard(9.0)	issue(8.0)	disturbance(8.0)	project(7.0)	subject(7.0)	job(7.0)	level(6.0)	earthwork(6.0)	technique(5.0)	space(5.0)	alternative(4.0)	field(4.0)	application(4.0)	approach(4.0)	test(4.0)	improvement(4.0)	construction(4.0)	stage(4.0)	trade(4.0)	enclosure(4.0)	permit(4.0)	industry(3.0)	aspect(3.0)	cost(3.0)	skill(3.0)	purpose(3.0)	structure(3.0)	capability(3.0)	impact(3.0)	labor(3.0)	piece(2.0)	feature(2.0)	option(2.0)	variable(2.0)	risk(2.0)	equipment(2.0)	quantity(2.0)	category(2.0)	development(2.0)	step(2.0)	remedy(2.0)	investigation(2.0)	preparation(2.0)	flow(2.0)	event(1.0)	element(1.0)	situation(1.0)	tool(1.0)	obstacle(1.0)	concept(1.0)	problem(1.0)	66
+cobol	language(175.0)	technology(19.0)	name(12.0)	program(4.0)	somelanguages(4.0)	application(3.0)	hlls(3.0)	course(2.0)	acronym(2.0)	environment(2.0)	product(1.0)	topic(1.0)	12
+novell	company(172.0)	vendor(76.0)	organization(12.0)	system(12.0)	firm(11.0)	corporation(11.0)	application(9.0)	client(8.0)	certification(5.0)	player(4.0)	supplier(4.0)	organisations(4.0)	name(3.0)	network(3.0)	software(3.0)	partner(3.0)	leader(3.0)	organiations(3.0)	solution(2.0)	business(2.0)	customer(2.0)	competitor(2.0)	platform(2.0)	organisation(2.0)	tenant(2.0)	distributor(2.0)	account(2.0)	product(1.0)	option(1.0)	tool(1.0)	30
+sightseeing	activity(157.0)	service(44.0)	feature(24.0)	facility(14.0)	information(13.0)	purpose(10.0)	section(9.0)	tour(8.0)	delay(7.0)	direction(7.0)	expense(5.0)	interest(5.0)	industry(4.0)	element(4.0)	outing(4.0)	event(3.0)	opportunity(3.0)	characteristic(3.0)	attraction(3.0)	goal(3.0)	stuff(3.0)	trip(3.0)	prerequisite(3.0)	outdoor(3.0)	excursion(3.0)	option(2.0)	item(2.0)	category(2.0)	way(2.0)	inclusion(2.0)	info(2.0)	tie(2.0)	experience(2.0)	word(1.0)	factor(1.0)	place(1.0)	situation(1.0)	topic(1.0)	type(1.0)	39
+decoration	item(155.0)	service(84.0)	element(23.0)	product(22.0)	accessory(21.0)	purpose(20.0)	task(18.0)	area(17.0)	factor(16.0)	feature(16.0)	matter(16.0)	application(14.0)	field(13.0)	aspect(13.0)	obstruction(13.0)	attribute(13.0)	supply(12.0)	expense(12.0)	topic(10.0)	work(10.0)	cost(10.0)	donation(10.0)	industry(9.0)	information(9.0)	characteristic(9.0)	request(9.0)	domain(9.0)	arrangement(9.0)	project(8.0)	material(8.0)	function(8.0)	object(8.0)	requirement(7.0)	property(7.0)	skill(7.0)	structure(7.0)	touch(7.0)	issue(6.0)	option(6.0)	article(6.0)	attachment(6.0)	category(6.0)	step(6.0)	sign(6.0)	goods(5.0)	activity(4.0)	style(4.0)	place(4.0)	variable(4.0)	shape(4.0)	reason(4.0)	component(4.0)	surface(4.0)	tradition(4.0)	need(4.0)	page(4.0)	committee(4.0)	logistic(4.0)	obligation(4.0)	facility(3.0)	piece(3.0)	technique(3.0)	program(3.0)	change(3.0)	idea(3.0)	upgrade(3.0)	package(3.0)	perk(3.0)	way(3.0)	identification(3.0)	content(3.0)	appurtenance(3.0)	perishable(3.0)	addition(3.0)	everything(3.0)	furnishings(3.0)	rental(3.0)	event(2.0)	incentive(2.0)	criterion(2.0)	resource(2.0)	measure(2.0)	amenity(2.0)	layer(2.0)	obstacle(2.0)	concept(2.0)	basic(2.0)	cause(2.0)	process(2.0)	job(2.0)	repair(2.0)	part(2.0)	decision(2.0)	chore(2.0)	craft(2.0)	design(2.0)	stuff(2.0)	enhancement(2.0)	art(2.0)	gift(2.0)	heading(2.0)	artifact(2.0)	holiday(2.0)	response(2.0)	mark(2.0)	postnominals(2.0)	covering(2.0)	good(2.0)	combustible(2.0)	breakable(2.0)	record(2.0)	finish(2.0)	discipline(1.0)	method(1.0)	term(1.0)	device(1.0)	topping(1.0)	type(1.0)	theme(1.0)	trait(1.0)	prop(1.0)	expenditure(1.0)	ingredient(1.0)	problem(1.0)	124
+projects	word(152.0)	item(18.0)	term(10.0)	object(9.0)	department(7.0)	screen(7.0)	section(5.0)	function(4.0)	entity(4.0)	duty(4.0)	assignment(4.0)	component(3.0)	file(3.0)	board(3.0)	committee(3.0)	vspackages(3.0)	discipline(3.0)	event(2.0)	activity(2.0)	effort(2.0)	option(2.0)	topic(2.0)	program(2.0)	case(2.0)	agency(2.0)	segment(2.0)	table(2.0)	capability(2.0)	industry(1.0)	service(1.0)	feature(1.0)	company(1.0)	area(1.0)	project(1.0)	title(1.0)	initiative(1.0)	36
+daunorubicin	anthracycline(151.0)	anthracyclines(31.0)	antibiotic(20.0)	agent(15.0)	compound(11.0)	chemotherapeutics(7.0)	treatment(4.0)	molecule(3.0)	carcinogen(2.0)	hracyclines(2.0)	medication(1.0)	11
+whisky	spirit(146.0)	drink(53.0)	product(44.0)	beverage(41.0)	alcohol(17.0)	stimulant(9.0)	gift(8.0)	flavoring(7.0)	flavor(5.0)	topic(3.0)	item(3.0)	asset(3.0)	liquid(3.0)	sprit(3.0)	industry(2.0)	word(2.0)	food(2.0)	form(2.0)	accessory(2.0)	investment(2.0)	category(2.0)	chapter(2.0)	club(2.0)	delicacy(2.0)	flow(2.0)	indulgence(2.0)	flavour(2.0)	loanword(2.0)	marmalade(2.0)	place(1.0)	theme(1.0)	31
+chainsaw	tool(144.0)	equipment(112.0)	item(42.0)	machine(34.0)	method(26.0)	machinery(17.0)	product(14.0)	application(9.0)	technology(9.0)	object(8.0)	activity(7.0)	segment(7.0)	training(5.0)	service(4.0)	device(3.0)	aspect(3.0)	sound(3.0)	goods(2.0)	material(2.0)	basic(2.0)	attachment(2.0)	engine(2.0)	acquisition(2.0)	oe(2.0)	accessory(2.0)	trade(2.0)	package(2.0)	feature(1.0)	resource(1.0)	song(1.0)	prop(1.0)	system(1.0)	asset(1.0)	case(1.0)	34
+throughput	metric(136.0)	factor(127.0)	parameter(123.0)	issue(49.0)	information(36.0)	measure(28.0)	aspect(28.0)	criterion(26.0)	characteristic(25.0)	result(23.0)	performance(19.0)	attribute(16.0)	measurement(13.0)	term(12.0)	statistic(11.0)	topic(10.0)	concept(9.0)	kpi(9.0)	objective(9.0)	reason(8.0)	feature(7.0)	datum(7.0)	property(7.0)	requirement(6.0)	consideration(6.0)	revenue(6.0)	benefit(5.0)	indicator(5.0)	variable(4.0)	specification(4.0)	tradeoff(4.0)	quantity(4.0)	decision(4.0)	service(3.0)	area(3.0)	item(3.0)	concern(3.0)	index(3.0)	tool(2.0)	problem(2.0)	function(2.0)	quality(2.0)	output(2.0)	moe(2.0)	qos(2.0)	value(2.0)	challenge(1.0)	condition(1.0)	48
+somatostatin	neuropeptide(135.0)	hormone(101.0)	peptide(83.0)	factor(35.0)	neurotransmitter(34.0)	peptides(22.0)	neuropeptides(21.0)	substance(18.0)	medication(15.0)	neuromodulator(13.0)	vasoconstrictor(12.0)	molecule(10.0)	agent(9.0)	marker(8.0)	inhibitor(7.0)	gpcr(6.0)	receptor(4.0)	gene(3.0)	neuromodulators(3.0)	measure(2.0)	protein(2.0)	relaxant(2.0)	secretagogue(2.0)	name(1.0)	compound(1.0)	impurity(1.0)	case(1.0)	27
+verbal	form(134.0)	skill(59.0)	behavior(44.0)	event(28.0)	issue(28.0)	ability(28.0)	factor(25.0)	topic(25.0)	type(22.0)	domain(21.0)	process(11.0)	aptitude(11.0)	test(10.0)	representation(10.0)	area(9.0)	term(9.0)	aspect(8.0)	problem(8.0)	strategy(8.0)	approach(7.0)	symptom(7.0)	element(6.0)	variable(6.0)	action(6.0)	section(6.0)	way(6.0)	format(5.0)	act(5.0)	activity(4.0)	method(4.0)	mechanism(4.0)	circumstance(4.0)	pathway(4.0)	suggestion(4.0)	mean(4.0)	enhancement(4.0)	intelligence(4.0)	behaviour(4.0)	typology(4.0)	bullying(4.0)	experience(3.0)	style(3.0)	technique(3.0)	idea(3.0)	investigation(3.0)	extreme(3.0)	support(3.0)	interruption(3.0)	habit(2.0)	portion(2.0)	situation(2.0)	item(2.0)	datum(2.0)	reason(2.0)	trait(2.0)	concept(2.0)	instruction(2.0)	incident(2.0)	parameter(2.0)	tactic(2.0)	instrument(2.0)	show(2.0)	thought(2.0)	talent(2.0)	construct(2.0)	threat(2.0)	response(2.0)	conduct(2.0)	disrespect(2.0)	predictor(2.0)	alternative(1.0)	phrase(1.0)	language(1.0)	resource(1.0)	application(1.0)	tool(1.0)	component(1.0)	poet(1.0)	source(1.0)	case(1.0)	basic(1.0)	81
+kiwanis	organization(127.0)	group(48.0)	agency(21.0)	club(15.0)	affiliation(15.0)	park(3.0)	activity(2.0)	facility(2.0)	charity(2.0)	organisation(2.0)	foundation(2.0)	11
+trend	factor(121.0)	information(66.0)	issue(52.0)	topic(47.0)	feature(40.0)	datum(31.0)	element(28.0)	aspect(24.0)	component(20.0)	item(18.0)	concept(18.0)	content(18.0)	pattern(15.0)	analysis(15.0)	area(12.0)	function(11.0)	characteristic(10.0)	evidence(9.0)	variable(9.0)	insight(9.0)	technique(8.0)	term(8.0)	influence(8.0)	criterion(6.0)	subject(6.0)	effect(6.0)	consideration(6.0)	analog(6.0)	report(5.0)	event(4.0)	word(4.0)	company(4.0)	application(4.0)	tool(4.0)	object(4.0)	file(4.0)	boundary(4.0)	indicator(4.0)	result(4.0)	quality(4.0)	activity(3.0)	product(3.0)	parameter(3.0)	pressure(3.0)	vendor(3.0)	regressor(3.0)	convention(3.0)	seat(3.0)	peculiarity(3.0)	method(2.0)	name(2.0)	service(2.0)	program(2.0)	theme(2.0)	solution(2.0)	fact(2.0)	class(2.0)	trigger(2.0)	display(2.0)	driver(2.0)	formula(2.0)	supplier(2.0)	statistic(2.0)	force(2.0)	metric(2.0)	menu(2.0)	query(2.0)	specific(2.0)	abstraction(2.0)	collection(2.0)	inhomogeneity(2.0)	otherissues(2.0)	piece(1.0)	challenge(1.0)	field(1.0)	resource(1.0)	measure(1.0)	change(1.0)	study(1.0)	phenomenon(1.0)	department(1.0)	magazine(1.0)	fund(1.0)	basic(1.0)	84
+priority	information(118.0)	attribute(81.0)	factor(73.0)	parameter(59.0)	issue(46.0)	topic(40.0)	field(36.0)	criterion(29.0)	service(23.0)	property(21.0)	feature(19.0)	value(15.0)	datum(12.0)	concept(12.0)	setting(12.0)	name(11.0)	option(10.0)	variable(9.0)	constraint(9.0)	element(8.0)	aspect(8.0)	characteristic(7.0)	item(6.0)	reason(6.0)	function(6.0)	matter(6.0)	category(6.0)	metadata(6.0)	principle(6.0)	area(5.0)	rule(5.0)	label(5.0)	consideration(5.0)	note(5.0)	gap(5.0)	incentive(4.0)	method(4.0)	dimension(4.0)	upgrade(4.0)	notion(4.0)	scheduler(4.0)	word(3.0)	technique(3.0)	challenge(3.0)	policy(3.0)	term(3.0)	requirement(3.0)	key(3.0)	filter(3.0)	quality(3.0)	resource(2.0)	program(2.0)	component(2.0)	theme(2.0)	specification(2.0)	document(2.0)	interest(2.0)	outcome(2.0)	barrier(2.0)	column(2.0)	stamp(2.0)	nuance(2.0)	challeges(2.0)	ures(2.0)	activity(1.0)	situation(1.0)	measure(1.0)	complication(1.0)	condition(1.0)	department(1.0)	70
+diploma	document(112.0)	qualification(78.0)	proof(45.0)	credential(33.0)	item(31.0)	documentation(28.0)	course(25.0)	program(17.0)	paper(10.0)	report(10.0)	outcome(9.0)	degree(9.0)	requirement(8.0)	memento(7.0)	attachment(6.0)	memorabilia(5.0)	incentive(4.0)	piece(4.0)	certificate(4.0)	material(4.0)	problem(4.0)	object(4.0)	certification(4.0)	award(4.0)	cue(4.0)	evidence(3.0)	factor(3.0)	term(3.0)	development(3.0)	paperwork(3.0)	error(3.0)	route(2.0)	challenge(2.0)	opportunity(2.0)	option(2.0)	aspect(2.0)	information(2.0)	study(2.0)	matter(2.0)	category(2.0)	image(2.0)	level(2.0)	education(2.0)	proofds(2.0)	academicdocuments(2.0)	artifact(2.0)	service(1.0)	company(1.0)	researcher(1.0)	title(1.0)	accessory(1.0)	obstacle(1.0)	52
+lipoxygenase	enzyme(110.0)	oxidant(15.0)	protein(11.0)	gene(6.0)	source(5.0)	actor(4.0)	agent(4.0)	metabolite(3.0)	albumin(3.0)	oxidoreductase(2.0)	10
+akamai	company(108.0)	cdn(59.0)	cdns(17.0)	service(14.0)	client(11.0)	network(8.0)	vendor(7.0)	infrastructure(6.0)	supplier(5.0)	provider(5.0)	case(4.0)	employer(3.0)	player(3.0)	firm(2.0)	solution(2.0)	group(2.0)	business(2.0)	enterprise(2.0)	organization(1.0)	browser(1.0)	system(1.0)	fish(1.0)	22
+viral	factor(106.0)	infection(51.0)	cause(32.0)	condition(30.0)	vector(20.0)	approach(18.0)	problem(9.0)	event(8.0)	tool(7.0)	complication(6.0)	illness(6.0)	stimulus(6.0)	application(5.0)	reason(5.0)	ailment(5.0)	video(5.0)	stimulation(5.0)	hyponym(5.0)	term(4.0)	pathogen(4.0)	trigger(4.0)	pathology(4.0)	method(3.0)	agent(3.0)	disorder(3.0)	biomarker(3.0)	etiology(3.0)	insult(3.0)	hypothesis(3.0)	pneumonia(3.0)	activity(2.0)	word(2.0)	feature(2.0)	stress(2.0)	exposure(2.0)	molecule(2.0)	cell(2.0)	microbe(2.0)	explanation(2.0)	origin(2.0)	superantigen(2.0)	signal(1.0)	measure(1.0)	project(1.0)	type(1.0)	pollutant(1.0)	technology(1.0)	47
+amphipod	crustacean(106.0)	invertebrate(58.0)	taxa(22.0)	specie(18.0)	organism(18.0)	animal(17.0)	group(15.0)	prey(12.0)	mesograzers(12.0)	item(7.0)	grazer(7.0)	herbivore(7.0)	arthropod(5.0)	scavenger(5.0)	form(3.0)	creature(3.0)	shredder(3.0)	detritivore(3.0)	macrozooplankton(3.0)	sample(2.0)	brand(2.0)	macrofauna(2.0)	macroinvertebrate(2.0)	23
+offer	word(104.0)	information(86.0)	concept(34.0)	datum(22.0)	statement(17.0)	circumstance(16.0)	term(13.0)	document(13.0)	factor(12.0)	form(11.0)	content(11.0)	situation(10.0)	service(9.0)	topic(8.0)	writer(8.0)	object(8.0)	incentive(7.0)	issue(7.0)	school(7.0)	way(6.0)	event(5.0)	method(5.0)	feature(5.0)	variable(5.0)	item(5.0)	benefit(5.0)	message(4.0)	letter(4.0)	doctrine(4.0)	technique(3.0)	component(3.0)	task(3.0)	directive(3.0)	record(3.0)	clinician(3.0)	print(3.0)	exclusive(3.0)	element(3.0)	promotion(2.0)	process(2.0)	suggestion(2.0)	category(2.0)	agreement(2.0)	question(2.0)	concern(2.0)	intervention(2.0)	recipe(2.0)	filter(2.0)	report(2.0)	update(2.0)	horse(2.0)	advertisement(2.0)	ivws(2.0)	aspect(2.0)	alternative(1.0)	company(1.0)	option(1.0)	terminology(1.0)	researcher(1.0)	project(1.0)	tool(1.0)	change(1.0)	theme(1.0)	material(1.0)	respect(1.0)	case(1.0)	66
+msm	supplement(104.0)	ingredient(44.0)	nutrient(24.0)	group(20.0)	product(16.0)	term(13.0)	population(12.0)	vitamin(11.0)	compound(8.0)	agent(7.0)	chemical(7.0)	element(6.0)	substance(6.0)	mode(5.0)	subgroup(4.0)	classification(4.0)	nutraceutical(4.0)	name(3.0)	program(3.0)	medication(3.0)	site(3.0)	marps(3.0)	factor(2.0)	technique(2.0)	treatment(2.0)	component(2.0)	antioxidant(2.0)	individual(2.0)	remedy(2.0)	configuration(2.0)	schema(2.0)	sulphur(2.0)	alternative(1.0)	model(1.0)	herb(1.0)	sector(1.0)	network(1.0)	37
+confucianism	religion(98.0)	tradition(28.0)	philosophy(17.0)	school(13.0)	issue(8.0)	concept(6.0)	topic(4.0)	norm(4.0)	subject(3.0)	resource(2.0)	aspect(2.0)	case(2.0)	ideology(2.0)	discipline(1.0)	element(1.0)	term(1.0)	theme(1.0)	17
+optimization	topic(93.0)	technique(91.0)	application(55.0)	service(52.0)	area(48.0)	problem(46.0)	tool(44.0)	concept(41.0)	issue(34.0)	task(18.0)	reason(17.0)	field(16.0)	activity(15.0)	term(13.0)	option(13.0)	study(13.0)	program(12.0)	function(12.0)	operation(11.0)	case(11.0)	domain(11.0)	capability(11.0)	methodology(11.0)	purpose(10.0)	feature(9.0)	aspect(9.0)	journal(9.0)	analytic(9.0)	enhancement(8.0)	method(7.0)	challenge(7.0)	factor(6.0)	project(6.0)	subject(6.0)	theory(6.0)	name(5.0)	theme(5.0)	discipline(4.0)	word(4.0)	form(4.0)	technology(4.0)	advantage(4.0)	module(4.0)	principle(4.0)	component(3.0)	course(3.0)	objective(3.0)	stream(3.0)	transformation(3.0)	computation(3.0)	item(2.0)	system(2.0)	mechanism(2.0)	market(2.0)	category(2.0)	platform(2.0)	goal(2.0)	functionality(2.0)	manipulation(2.0)	department(2.0)	phrase(1.0)	criterion(1.0)	procedure(1.0)	measurement(1.0)	initiative(1.0)	information(1.0)	sector(1.0)	condition(1.0)	action(1.0)	69
+bent	grass(93.0)	case(12.0)	bolt(11.0)	player(10.0)	abnormality(8.0)	shape(7.0)	damage(7.0)	word(6.0)	form(6.0)	defect(6.0)	deformation(5.0)	irregularity(5.0)	cereal(4.0)	style(2.0)	feature(2.0)	area(2.0)	measure(2.0)	song(2.0)	device(2.0)	accessory(2.0)	member(2.0)	instrumentation(2.0)	writer(2.0)	person(1.0)	issue(1.0)	film(1.0)	change(1.0)	component(1.0)	author(1.0)	condition(1.0)	phenomenon(1.0)	problem(1.0)	32
+panama	place(92.0)	jurisdiction(38.0)	nation(28.0)	case(25.0)	destination(21.0)	fabric(11.0)	economy(11.0)	market(10.0)	canal(10.0)	location(9.0)	flag(9.0)	state(8.0)	area(7.0)	conflict(7.0)	cut(6.0)	port(5.0)	importer(5.0)	territory(5.0)	style(4.0)	government(4.0)	region(4.0)	hit(4.0)	culture(4.0)	exception(3.0)	signatory(3.0)	target(3.0)	alternative(2.0)	project(2.0)	city(2.0)	member(2.0)	county(2.0)	scenario(2.0)	war(2.0)	registry(2.0)	domicile(2.0)	team(2.0)	name(1.0)	effort(1.0)	option(1.0)	model(1.0)	program(1.0)	material(1.0)	action(1.0)	43
+concept	topic(91.0)	term(42.0)	element(41.0)	feature(28.0)	information(23.0)	issue(21.0)	word(14.0)	service(13.0)	component(13.0)	activity(12.0)	factor(12.0)	item(12.0)	aspect(11.0)	entity(10.0)	skill(9.0)	notion(9.0)	area(8.0)	object(8.0)	category(8.0)	knowledge(8.0)	focus(7.0)	discipline(6.0)	abstraction(6.0)	alternative(5.0)	name(5.0)	criterion(5.0)	project(5.0)	tool(5.0)	ingredient(5.0)	role(5.0)	suggestion(5.0)	drawing(5.0)	idea(4.0)	course(4.0)	intangible(4.0)	way(4.0)	formulation(4.0)	construct(4.0)	specific(4.0)	noun(4.0)	mathematic(4.0)	application(3.0)	theme(3.0)	department(3.0)	case(3.0)	metadata(3.0)	stage(3.0)	module(3.0)	essential(3.0)	functionality(3.0)	representation(3.0)	guidance(3.0)	engineering(3.0)	company(2.0)	datum(2.0)	material(2.0)	problem(2.0)	strategy(2.0)	nature(2.0)	purpose(2.0)	contribution(2.0)	shortcoming(2.0)	outlet(2.0)	description(2.0)	clinic(2.0)	master(2.0)	instruments(2.0)	input(2.0)	level(2.0)	phase(2.0)	perspective(2.0)	style(1.0)	method(1.0)	product(1.0)	technique(1.0)	option(1.0)	variable(1.0)	form(1.0)	genre(1.0)	change(1.0)	reason(1.0)	subject(1.0)	type(1.0)	approach(1.0)	trait(1.0)	condition(1.0)	phenomenon(1.0)	article(1.0)	88
+ru	metal(91.0)	element(35.0)	material(14.0)	catalyst(9.0)	complex(8.0)	layer(7.0)	impurity(7.0)	promoter(7.0)	nucleus(6.0)	additive(5.0)	probe(4.0)	pgms(3.0)	underlayer(3.0)	term(2.0)	substrate(2.0)	cocatalyst(2.0)	tld(2.0)	adatoms(2.0)	factor(1.0)	19
+astaxanthin	carotenoid(91.0)	antioxidant(51.0)	ketocarotenoids(41.0)	xanthophyll(31.0)	carotenoids(14.0)	pigment(9.0)	supplement(8.0)	ingredient(5.0)	sector(4.0)	nutrient(4.0)	xanthophylls(4.0)	product(3.0)	compound(3.0)	phytochemical(3.0)	chemical(2.0)	element(1.0)	16
+corian	material(90.0)	brand(17.0)	product(15.0)	surface(10.0)	option(5.0)	acrylic(5.0)	countertops(4.0)	countertop(3.0)	word(2.0)	top(2.0)	synthetic(2.0)	alternative(2.0)	name(1.0)	feature(1.0)	company(1.0)	item(1.0)	16
+anhui	province(86.0)	area(24.0)	region(5.0)	place(2.0)	market(2.0)	district(1.0)	6
+prochlorperazine	antiemetic(84.0)	phenothiazine(53.0)	antiemetics(23.0)	medication(22.0)	antihistamine(15.0)	agent(13.0)	medicine(9.0)	anti-emetics(5.0)	neuroleptic(3.0)	antipsychotic(2.0)	neuroleptics(2.0)	11
+grip	accessory(83.0)	basic(67.0)	part(51.0)	item(48.0)	factor(40.0)	fundamental(39.0)	component(28.0)	feature(27.0)	area(19.0)	parameter(19.0)	variable(18.0)	topic(17.0)	equipment(17.0)	attachment(16.0)	tool(14.0)	technique(13.0)	product(10.0)	essential(10.0)	element(9.0)	aspect(7.0)	characteristic(7.0)	role(6.0)	programming(6.0)	album(6.0)	device(5.0)	skill(5.0)	piece(4.0)	subject(4.0)	setting(4.0)	application(4.0)	option(3.0)	foundation(3.0)	fitting(3.0)	modification(3.0)	verb(3.0)	activity(2.0)	style(2.0)	word(2.0)	service(2.0)	measure(2.0)	term(2.0)	reason(2.0)	department(2.0)	problem(2.0)	band(2.0)	supply(2.0)	control(2.0)	property(2.0)	upgrade(2.0)	variant(2.0)	consideration(2.0)	position(2.0)	difference(2.0)	gem(2.0)	electronic(2.0)	criterion(1.0)	issue(1.0)	system(1.0)	phenomenon(1.0)	article(1.0)	60
+ricotta	cheese(82.0)	food(9.0)	product(5.0)	option(5.0)	dish(5.0)	medication(4.0)	ingredient(4.0)	flavor(3.0)	variety(3.0)	pasta(3.0)	item(2.0)	topping(2.0)	choice(2.0)	favorite(2.0)	substitute(2.0)	sfizi(2.0)	diuretic(2.0)	form(1.0)	18
+capitalization	convention(80.0)	factor(63.0)	skill(31.0)	topic(19.0)	element(16.0)	decision(15.0)	error(15.0)	mechanic(12.0)	issue(10.0)	change(9.0)	feature(8.0)	variable(7.0)	device(6.0)	aspect(5.0)	mistake(5.0)	gimmick(5.0)	fundamental(5.0)	character(4.0)	concept(4.0)	benefit(4.0)	option(3.0)	rule(3.0)	matter(3.0)	difference(3.0)	transaction(3.0)	punctuation(3.0)	activity(2.0)	area(2.0)	information(2.0)	case(2.0)	problem(2.0)	basic(2.0)	customization(2.0)	nicety(2.0)	method(1.0)	measure(1.0)	terminology(1.0)	item(1.0)	form(1.0)	condition(1.0)	phenomenon(1.0)	action(1.0)	42
+mtn	company(79.0)	operator(21.0)	organization(14.0)	brand(14.0)	client(11.0)	competitor(10.0)	business(9.0)	player(6.0)	network(6.0)	partner(6.0)	firm(5.0)	multinational(5.0)	sponsor(4.0)	giant(3.0)	customer(3.0)	provider(3.0)	entity(2.0)	rival(2.0)	share(2.0)	telco(2.0)	enterprise(2.0)	name(1.0)	22
+disco	event(76.0)	activity(69.0)	genre(39.0)	music(32.0)	facility(18.0)	entertainment(14.0)	style(13.0)	amenity(12.0)	business(11.0)	theme(10.0)	party(9.0)	service(8.0)	place(8.0)	target(7.0)	venue(6.0)	name(5.0)	work(5.0)	item(4.0)	store(4.0)	merchant(4.0)	sound(4.0)	song(3.0)	form(3.0)	site(3.0)	idea(3.0)	attraction(3.0)	workplace(3.0)	occupancy(3.0)	situation(2.0)	area(2.0)	topic(2.0)	browser(2.0)	influence(2.0)	initiative(2.0)	type(2.0)	equipment(2.0)	favorite(2.0)	ammenities(2.0)	supermarket(2.0)	move(2.0)	dance(2.0)	empire(2.0)	subculture(2.0)	evening(2.0)	playlist(2.0)	shop(2.0)	supplier(2.0)	application(2.0)	line(2.0)	piece(1.0)	factor(1.0)	establishment(1.0)	52
+gcses	qualification(76.0)	course(4.0)	exam(4.0)	performance(3.0)	subject(2.0)	5
+pda's	device(76.0)	item(13.0)	technology(13.0)	gadget(6.0)	electronics(6.0)	tool(5.0)	product(4.0)	environment(2.0)	8
+overeating	habit(75.0)	behavior(72.0)	factor(57.0)	addiction(21.0)	issue(15.0)	symptom(15.0)	activity(12.0)	behaviour(10.0)	problem(9.0)	pattern(8.0)	disorder(7.0)	action(6.0)	reason(5.0)	compulsion(5.0)	overreaction(5.0)	habts(4.0)	condition(3.0)	sense(3.0)	vice(3.0)	excess(3.0)	crutch(3.0)	area(2.0)	aspect(2.0)	change(2.0)	supply(2.0)	cause(2.0)	strategy(2.0)	sign(2.0)	extreme(2.0)	stimulus(2.0)	response(2.0)	indulgence(2.0)	inconveniences(2.0)	event(1.0)	experience(1.0)	topic(1.0)	practice(1.0)	form(1.0)	38
+petronas	company(75.0)	noc(10.0)	client(8.0)	brand(4.0)	giant(3.0)	organization(2.0)	6
+origen	writer(75.0)	man(40.0)	theologian(20.0)	father(14.0)	ancient(14.0)	christians(12.0)	scholar(10.0)	figure(10.0)	source(8.0)	historian(8.0)	author(7.0)	thinker(6.0)	person(5.0)	apologist(5.0)	master(4.0)	interpreter(4.0)	fathers(4.0)	alexandrians(2.0)	name(1.0)	critic(1.0)	team(1.0)	21
+output	variable(74.0)	feature(62.0)	information(60.0)	term(59.0)	factor(43.0)	function(41.0)	indicator(40.0)	datum(29.0)	parameter(26.0)	concept(20.0)	measure(19.0)	activity(15.0)	element(15.0)	device(13.0)	aspect(13.0)	topic(12.0)	input(11.0)	policy(10.0)	area(9.0)	characteristic(9.0)	issue(8.0)	component(7.0)	condition(7.0)	technology(7.0)	problem(7.0)	connection(7.0)	aggregate(7.0)	fundamental(7.0)	wire(7.0)	word(6.0)	disadvantage(6.0)	attribute(6.0)	measurement(5.0)	task(5.0)	objective(5.0)	regressor(5.0)	subassembly(5.0)	process(4.0)	need(4.0)	quantity(4.0)	display(4.0)	advantage(4.0)	explanation(4.0)	breaker(4.0)	technique(3.0)	signal(3.0)	resource(3.0)	specification(3.0)	setting(3.0)	result(3.0)	outcome(3.0)	pin(3.0)	mandate(3.0)	normalisations(3.0)	info(3.0)	criterion(2.0)	option(2.0)	item(2.0)	action(2.0)	value(2.0)	mechanism(2.0)	operation(2.0)	solution(2.0)	section(2.0)	requirement(2.0)	equipment(2.0)	request(2.0)	hardware(2.0)	improvement(2.0)	file(2.0)	series(2.0)	step(2.0)	question(2.0)	metadata(2.0)	window(2.0)	module(2.0)	metric(2.0)	constraint(2.0)	peripheral(2.0)	arrangement(2.0)	algorithm(2.0)	configuration(2.0)	transfer(2.0)	error(2.0)	response(2.0)	node(2.0)	flux(2.0)	adlitions(2.0)	specific(2.0)	event(1.0)	location(1.0)	person(1.0)	situation(1.0)	terminology(1.0)	project(1.0)	approach(1.0)	phenomenon(1.0)	97
+bovine	specie(72.0)	mammal(27.0)	protein(18.0)	species(16.0)	animal(14.0)	material(10.0)	ruminant(10.0)	ungulate(8.0)	eutherians(6.0)	albumin(6.0)	source(5.0)	blocker(5.0)	family(4.0)	nonprimates(4.0)	mammalian(4.0)	term(3.0)	item(3.0)	creature(3.0)	cytokine(3.0)	modification(3.0)	eukaryote(3.0)	somatotropins(3.0)	livestock(2.0)	substitute(2.0)	herbivore(2.0)	25
+consequence	factor(70.0)	concept(29.0)	issue(17.0)	word(16.0)	topic(16.0)	theme(11.0)	term(10.0)	technique(6.0)	skill(5.0)	component(4.0)	game(4.0)	strategy(4.0)	point(4.0)	expectation(4.0)	punishment(4.0)	element(3.0)	aspect(3.0)	section(3.0)	expense(3.0)	notion(3.0)	favorite(3.0)	relation(3.0)	method(2.0)	variable(2.0)	information(2.0)	artist(2.0)	act(2.0)	intervention(2.0)	way(2.0)	consideration(2.0)	evidence(1.0)	activity(1.0)	area(1.0)	device(1.0)	reason(1.0)	phenomenon(1.0)	36
+sintering	process(69.0)	method(29.0)	technology(20.0)	technique(15.0)	step(15.0)	parameter(12.0)	application(11.0)	phenomenon(9.0)	factor(7.0)	property(7.0)	treatment(6.0)	mechanism(5.0)	activity(4.0)	variable(4.0)	experiment(4.0)	drawback(4.0)	issue(3.0)	procedure(3.0)	problem(3.0)	reaction(3.0)	heat-treatment(3.0)	term(2.0)	topic(2.0)	operation(2.0)	defect(2.0)	effect(2.0)	malfunction(2.0)	degradation(2.0)	pyroprocessing(2.0)	item(1.0)	study(1.0)	material(1.0)	32
+distributor	intermediary(66.0)	business(44.0)	stakeholder(30.0)	company(29.0)	outsider(24.0)	person(23.0)	accessory(23.0)	item(22.0)	party(22.0)	partner(22.0)	entity(21.0)	customer(21.0)	factor(20.0)	component(19.0)	industry(17.0)	part(14.0)	firm(12.0)	member(12.0)	organization(11.0)	middleman(11.0)	variable(10.0)	exemption(9.0)	player(8.0)	seller(8.0)	channel(8.0)	product(7.0)	information(7.0)	role(6.0)	station(6.0)	name(5.0)	resource(5.0)	equipment(5.0)	supplier(5.0)	number(5.0)	word(4.0)	service(4.0)	term(4.0)	source(4.0)	actor(3.0)	situation(3.0)	option(3.0)	topic(3.0)	case(3.0)	cost(3.0)	unit(3.0)	user(3.0)	assembly(3.0)	consideration(3.0)	internal(3.0)	exhibitor(3.0)	discipline(2.0)	element(2.0)	location(2.0)	device(2.0)	function(2.0)	group(2.0)	student(2.0)	audit(2.0)	client(2.0)	vendor(2.0)	competitor(2.0)	question(2.0)	publisher(2.0)	buyer(2.0)	position(2.0)	machinery(2.0)	merchant(2.0)	subsystem(2.0)	gatekeeper(2.0)	subheader(2.0)	type(2.0)	resellers(2.0)	activity(1.0)	piece(1.0)	field(1.0)	issue(1.0)	area(1.0)	financier(1.0)	agent(1.0)	documentation(1.0)	complication(1.0)	operation(1.0)	82
+rumba	dance(66.0)	style(14.0)	genre(9.0)	venue(5.0)	rhythm(4.0)	place(3.0)	influence(3.0)	move(3.0)	class(2.0)	dancing(2.0)	form(2.0)	technique(1.0)	name(1.0)	film(1.0)	program(1.0)	technology(1.0)	16
+accent	factor(63.0)	feature(34.0)	character(27.0)	issue(26.0)	characteristic(15.0)	item(14.0)	product(13.0)	aspect(13.0)	diacritic(11.0)	model(10.0)	component(10.0)	element(9.0)	system(9.0)	option(8.0)	information(7.0)	problem(7.0)	technique(6.0)	topic(6.0)	variable(6.0)	cue(6.0)	heading(6.0)	clue(6.0)	concept(5.0)	difference(5.0)	mark(5.0)	term(4.0)	category(4.0)	sign(4.0)	symbol(4.0)	embellishment(4.0)	area(3.0)	fact(3.0)	mean(3.0)	skill(3.0)	machine(3.0)	marking(3.0)	articulation(3.0)	forattributes(3.0)	activity(2.0)	company(2.0)	job(2.0)	idea(2.0)	property(2.0)	attribute(2.0)	index(2.0)	talent(2.0)	notion(2.0)	consideration(2.0)	herbicide(2.0)	disposition(2.0)	diacriticals(2.0)	auto(2.0)	style(1.0)	word(1.0)	name(1.0)	criterion(1.0)	device(1.0)	subject(1.0)	complication(1.0)	phenomenon(1.0)	basic(1.0)	61
+europcar	company(62.0)	supplier(27.0)	provider(20.0)	firm(11.0)	brand(5.0)	name(4.0)	competitor(4.0)	organization(2.0)	client(2.0)	partner(2.0)	agency(2.0)	player(1.0)	team(1.0)	13
+quito	city(62.0)	municipality(20.0)	case(5.0)	work(4.0)	place(3.0)	location(2.0)	area(2.0)	jurisdiction(2.0)	8
+keynes	economist(62.0)	person(15.0)	author(11.0)	writer(8.0)	behavioralist(5.0)	figure(4.0)	thinker(4.0)	character(3.0)	text(2.0)	catchword(2.0)	materialist(2.0)	heretic(2.0)	name(1.0)	study(1.0)	14
+benetton	company(61.0)	brand(55.0)	retailer(25.0)	client(12.0)	store(11.0)	organization(10.0)	firm(8.0)	name(5.0)	outlet(5.0)	competitor(4.0)	label(4.0)	advertiser(4.0)	corporation(3.0)	entrepreneur(3.0)	manufacturer(2.0)	chain(2.0)	multinational(2.0)	customer(2.0)	team(1.0)	19
+friedman	economist(61.0)	author(41.0)	scholar(30.0)	commentator(23.0)	monetarist(22.0)	researcher(20.0)	observer(19.0)	writer(12.0)	marshallians(11.0)	method(9.0)	theorist(9.0)	instrumentalists(8.0)	model(7.0)	neoliberal(7.0)	architect(6.0)	critic(4.0)	study(4.0)	thinker(4.0)	luminary(4.0)	neoliberals(4.0)	person(3.0)	work(3.0)	historian(3.0)	libertarian(3.0)	purist(3.0)	advocate(2.0)	planner(2.0)	paper(2.0)	pioneer(2.0)	analyst(2.0)	academic(2.0)	catchword(2.0)	pundit(2.0)	proponent(2.0)	comparativist(2.0)	striver(2.0)	dingbat(2.0)	instrumentalist(2.0)	technique(1.0)	name(1.0)	investigator(1.0)	source(1.0)	42
+shutter	product(60.0)	setting(52.0)	feature(39.0)	part(32.0)	option(28.0)	material(27.0)	accessory(23.0)	element(21.0)	item(20.0)	screen(18.0)	component(17.0)	supply(17.0)	practical(16.0)	device(13.0)	mechanism(13.0)	peripheral(12.0)	surface(10.0)	mode(9.0)	parameter(9.0)	repair(9.0)	benefit(8.0)	touch(8.0)	obstruction(6.0)	service(5.0)	measure(5.0)	application(5.0)	film(5.0)	function(5.0)	accent(5.0)	issue(4.0)	project(4.0)	section(4.0)	control(4.0)	structure(4.0)	upgrade(4.0)	ornamentation(4.0)	concept(3.0)	basic(3.0)	equipment(3.0)	object(3.0)	appliance(3.0)	button(3.0)	aid(3.0)	covering(3.0)	gt(3.0)	method(2.0)	name(2.0)	effort(2.0)	term(2.0)	treatment(2.0)	aspect(2.0)	system(2.0)	solution(2.0)	mean(2.0)	variety(2.0)	instrument(2.0)	protection(2.0)	capability(2.0)	addition(2.0)	avenue(2.0)	filter(2.0)	custom(2.0)	appurtenance(2.0)	eyewear(2.0)	type(2.0)	embellishment(2.0)	topic(1.0)	variable(1.0)	datum(1.0)	information(1.0)	sound(1.0)	article(1.0)	movie(1.0)	case(1.0)	technology(1.0)	75
+limonite	mineral(59.0)	rock(6.0)	commodity(4.0)	ores(4.0)	component(2.0)	material(2.0)	oxide(2.0)	minerals(2.0)	criterion(1.0)	impurity(1.0)	10
+pomade	product(58.0)	cosmetic(3.0)	item(2.0)	ingredient(2.0)	base(2.0)	option(1.0)	material(1.0)	7
+relish	condiment(57.0)	item(13.0)	topping(9.0)	food(8.0)	fixens(4.0)	ingredient(3.0)	restaurant(2.0)	fixing(2.0)	liberty(2.0)	word(1.0)	product(1.0)	establishment(1.0)	project(1.0)	tool(1.0)	basic(1.0)	15
+soldier	person(56.0)	class(33.0)	group(31.0)	professional(30.0)	occupation(29.0)	role(23.0)	profession(17.0)	individual(15.0)	job(14.0)	euphemism(12.0)	character(11.0)	characterization(11.0)	obstacle(10.0)	synapomorphies(10.0)	inscription(9.0)	category(8.0)	word(7.0)	enabler(6.0)	resource(5.0)	unit(5.0)	user(5.0)	position(5.0)	prisoner(5.0)	term(4.0)	goods(4.0)	asset(4.0)	case(4.0)	man(4.0)	function(4.0)	worker(4.0)	employee(4.0)	level(4.0)	victim(4.0)	score(4.0)	archetype(4.0)	insurgency(4.0)	application(3.0)	critic(3.0)	material(3.0)	official(3.0)	display(3.0)	figure(3.0)	part(3.0)	image(3.0)	waste(3.0)	career(3.0)	sculpture(3.0)	background(3.0)	caste(3.0)	enforcer(3.0)	oath(3.0)	penon(3.0)	activity(2.0)	element(2.0)	phrase(2.0)	factor(2.0)	topic(2.0)	film(2.0)	shape(2.0)	type(2.0)	author(2.0)	population(2.0)	sector(2.0)	action(2.0)	specialist(2.0)	stakeholder(2.0)	reward(2.0)	traveler(2.0)	speciality(2.0)	toy(2.0)	favorite(2.0)	boy(2.0)	answer(2.0)	niche(2.0)	child(2.0)	visitor(2.0)	figurine(2.0)	perpetrator(2.0)	barbarian(2.0)	imagery(2.0)	bystander(2.0)	tasks(2.0)	subject(2.0)	good(2.0)	specie(1.0)	product(1.0)	piece(1.0)	issue(1.0)	mode(1.0)	device(1.0)	item(1.0)	program(1.0)	title(1.0)	theme(1.0)	movie(1.0)	magazine(1.0)	concept(1.0)	97
+craving	symptom(56.0)	topic(21.0)	issue(13.0)	concept(13.0)	problem(13.0)	experience(7.0)	challenge(7.0)	term(6.0)	characteristic(6.0)	affliction(6.0)	factor(5.0)	outcome(5.0)	commonality(5.0)	area(3.0)	theme(3.0)	barrier(3.0)	feeling(3.0)	habit(2.0)	song(2.0)	obstacle(2.0)	track(2.0)	concern(2.0)	emotion(2.0)	defense(2.0)	discomfort(2.0)	defilement(2.0)	condition(2.0)	word(1.0)	variable(1.0)	change(1.0)	reason(1.0)	information(1.0)	32
+bullhead	fish(55.0)	specie(26.0)	species(12.0)	predator(4.0)	group(3.0)	area(2.0)	brand(2.0)	ators(2.0)	8
+thermocouples	sensor(55.0)	device(16.0)	product(14.0)	transducer(9.0)	instrument(9.0)	component(8.0)	item(4.0)	signal(4.0)	accessory(3.0)	part(3.0)	thermometer(3.0)	option(2.0)	mean(2.0)	consumable(2.0)	14
+nis	service(54.0)	implementation(7.0)	database(5.0)	catalyst(5.0)	protocol(4.0)	therapy(4.0)	system(3.0)	gene(3.0)	marker(3.0)	method(2.0)	feature(2.0)	application(2.0)	item(2.0)	program(2.0)	study(2.0)	technology(2.0)	surfactant(2.0)	statutories(2.0)	utility(2.0)	technique(1.0)	organization(1.0)	topic(1.0)	treatment(1.0)	team(1.0)	ingredient(1.0)	25
+yiddish	language(54.0)	topic(5.0)	class(3.0)	3
+gourd	vegetable(54.0)	material(31.0)	item(19.0)	crop(13.0)	fritter(12.0)	plant(10.0)	cucurbit(9.0)	object(5.0)	variety(5.0)	cultigen(5.0)	shape(4.0)	prop(4.0)	fruit(3.0)	decoration(3.0)	food(2.0)	craft(2.0)	gift(2.0)	centerpiece(2.0)	cultigens(2.0)	seed(2.0)	activity(1.0)	piece(1.0)	surface(1.0)	accessory(1.0)	24
+capezio	brand(53.0)	company(11.0)	designer(4.0)	manufacturer(3.0)	name(1.0)	5
+pdms	polymer(53.0)	material(23.0)	elastomer(17.0)	polysiloxane(9.0)	substrate(7.0)	issue(5.0)	setting(3.0)	silicone(3.0)	gel(3.0)	polysiloxanes(3.0)	element(2.0)	elastomers(2.0)	case(1.0)	13
+agribusiness	sector(52.0)	industry(50.0)	area(28.0)	recovery(17.0)	field(10.0)	activity(7.0)	loan(6.0)	division(5.0)	discipline(4.0)	issue(4.0)	subject(3.0)	technology(3.0)	cluster(3.0)	term(2.0)	program(2.0)	mechanism(2.0)	case(2.0)	institution(2.0)	manufacturer(2.0)	investment(2.0)	exception(2.0)	stream(2.0)	farmer(2.0)	subdiscipline(2.0)	topic(2.0)	organization(1.0)	26
+galveston	city(52.0)	area(31.0)	port(20.0)	community(17.0)	place(9.0)	hit(5.0)	district(2.0)	system(2.0)	town(2.0)	option(1.0)	region(1.0)	11
+elastic	material(51.0)	item(24.0)	factor(23.0)	work(16.0)	phenomenon(14.0)	property(14.0)	part(14.0)	element(13.0)	laminate(9.0)	product(8.0)	supply(8.0)	function(8.0)	process(8.0)	mean(8.0)	word(7.0)	component(7.0)	experiment(7.0)	parameter(6.0)	feature(5.0)	equipment(5.0)	topic(4.0)	room(4.0)	term(3.0)	option(3.0)	fabric(3.0)	accessory(3.0)	mechanism(3.0)	case(3.0)	object(3.0)	appliance(3.0)	notion(3.0)	wall(3.0)	method(2.0)	model(2.0)	benefit(2.0)	characteristic(2.0)	substance(2.0)	drive(2.0)	force(2.0)	clause(2.0)	quality(2.0)	curve(2.0)	activity(2.0)	event(1.0)	technique(1.0)	name(1.0)	treatment(1.0)	device(1.0)	prop(1.0)	game(1.0)	value(1.0)	concept(1.0)	52
+plasticine	material(51.0)	toy(7.0)	kind(5.0)	object(2.0)	apparatuses(2.0)	clay(2.0)	product(1.0)	technique(1.0)	approach(1.0)	prop(1.0)	10
+lupin	crop(51.0)	legume(43.0)	company(35.0)	plant(25.0)	specie(14.0)	cover(12.0)	pulse(10.0)	perennial(10.0)	flower(8.0)	share(8.0)	species(8.0)	product(5.0)	variety(5.0)	character(4.0)	friend(4.0)	seed(4.0)	supplement(3.0)	legymes(3.0)	subject(2.0)	major(2.0)	drugmakers(2.0)	facility(1.0)	person(1.0)	player(1.0)	24
+ndvi	index(49.0)	vis(18.0)	factor(12.0)	variable(10.0)	parameter(10.0)	product(6.0)	datum(5.0)	algorithm(4.0)	tool(3.0)	attribute(3.0)	service(2.0)	feature(2.0)	layer(2.0)	band(2.0)	svis(2.0)	treatment(1.0)	trait(1.0)	17
+doubleclick	company(48.0)	platform(10.0)	server(6.0)	event(5.0)	tool(5.0)	acquisition(5.0)	network(4.0)	service(3.0)	business(3.0)	exchange(3.0)	organization(2.0)	pioneer(2.0)	intermediaries(2.0)	firm(1.0)	feature(1.0)	system(1.0)	16
+fipronil	insecticide(48.0)	chemical(12.0)	product(11.0)	compound(10.0)	pesticide(10.0)	adulticide(10.0)	agent(4.0)	molecule(4.0)	substance(3.0)	alternative(2.0)	treatment(2.0)	11
+softener	additive(46.0)	chemical(24.0)	agent(12.0)	product(6.0)	device(4.0)	ingredient(4.0)	process(4.0)	chemistry(4.0)	term(3.0)	treatment(3.0)	material(3.0)	equipment(3.0)	reagent(3.0)	excipient(3.0)	potion(3.0)	compound(2.0)	component(2.0)	vehicle(2.0)	substance(2.0)	precaution(2.0)	filter(2.0)	restriction(2.0)	excipients(2.0)	item(1.0)	24
+cbc	test(45.0)	institution(24.0)	organization(18.0)	cannabinoid(18.0)	mode(17.0)	lab(17.0)	network(14.0)	medium(11.0)	basic(9.0)	examination(9.0)	broadcaster(8.0)	company(7.0)	investigation(6.0)	term(4.0)	site(4.0)	agency(4.0)	team(3.0)	service(2.0)	issue(2.0)	study(2.0)	publication(2.0)	stakeholder(2.0)	client(2.0)	employer(2.0)	reform(2.0)	school(2.0)	show(2.0)	station(2.0)	office(2.0)	laboratory(2.0)	outlet(2.0)	quack(2.0)	method(1.0)	technique(1.0)	website(1.0)	person(1.0)	compound(1.0)	building(1.0)	approach(1.0)	source(1.0)	case(1.0)	41
+rohs	regulation(45.0)	certification(43.0)	standard(11.0)	certificate(8.0)	legislation(8.0)	analysis(6.0)	policy(3.0)	law(3.0)	program(2.0)	requirement(2.0)	directive(2.0)	organisation(2.0)	criterion(1.0)	initiative(1.0)	14
+meniscus	tissue(44.0)	structure(41.0)	cartilage(25.0)	implant(13.0)	injury(10.0)	arena(8.0)	condition(3.0)	pathology(3.0)	area(2.0)	ligament(2.0)	word(1.0)	factor(1.0)	aspect(1.0)	complication(1.0)	problem(1.0)	15
+tort	area(43.0)	field(24.0)	topic(23.0)	subject(9.0)	issue(7.0)	course(7.0)	matter(7.0)	risk(5.0)	context(5.0)	group(4.0)	case(3.0)	principle(3.0)	idea(2.0)	class(2.0)	header(2.0)	felony(2.0)	action(2.0)	alternative(1.0)	term(1.0)	source(1.0)	phenomenon(1.0)	concept(1.0)	22
+george	character(42.0)	name(40.0)	town(31.0)	person(23.0)	author(16.0)	scholar(15.0)	inn(15.0)	area(12.0)	brand(12.0)	event(9.0)	researcher(7.0)	man(7.0)	student(7.0)	lake(7.0)	collector(7.0)	player(6.0)	city(6.0)	composer(6.0)	celebrity(6.0)	friend(6.0)	place(5.0)	building(5.0)	occasion(5.0)	article(5.0)	artist(5.0)	paper(5.0)	reader(5.0)	child(5.0)	case(4.0)	writer(4.0)	role(4.0)	martyr(4.0)	favorite(4.0)	hotel(4.0)	contractor(4.0)	court(4.0)	study(3.0)	magazine(3.0)	participant(3.0)	guy(3.0)	saint(3.0)	airport(3.0)	tutor(3.0)	monster(3.0)	conways(3.0)	gastropub(3.0)	service(2.0)	company(2.0)	publication(2.0)	legend(2.0)	space(2.0)	athlete(2.0)	witness(2.0)	leader(2.0)	theorist(2.0)	teacher(2.0)	great(2.0)	predecessor(2.0)	parent(2.0)	heroe(2.0)	distractor(2.0)	home(2.0)	mariner(2.0)	colonist(2.0)	informant(2.0)	secessionist(2.0)	monopolist(2.0)	duo(2.0)	retailer(2.0)	compound(1.0)	song(1.0)	establishment(1.0)	model(1.0)	critic(1.0)	datum(1.0)	fabric(1.0)	team(1.0)	poet(1.0)	donor(1.0)	79
+allegiant	airline(42.0)	carrier(13.0)	company(2.0)	operation(1.0)	4
+axa	company(40.0)	insurer(25.0)	client(17.0)	firm(6.0)	multinational(5.0)	customer(4.0)	organization(3.0)	player(3.0)	business(3.0)	holding(3.0)	employer(3.0)	sponsor(3.0)	group(3.0)	name(2.0)	fund(2.0)	institution(2.0)	brand(2.0)	contract(2.0)	stock(2.0)	carrier(2.0)	corporation(2.0)	partner(2.0)	account(2.0)	competitor(2.0)	24
+lard	food(40.0)	product(23.0)	oil(23.0)	staple(19.0)	item(15.0)	ingredient(15.0)	material(11.0)	substance(8.0)	by-products(5.0)	lipid(4.0)	triglyceride(4.0)	word(3.0)	byproduct(3.0)	shortening(3.0)	spice(2.0)	goods(2.0)	band(2.0)	supply(2.0)	exception(2.0)	commodity(2.0)	lubricant(2.0)	curative(2.0)	source(2.0)	alternative(1.0)	piece(1.0)	compound(1.0)	article(1.0)	27
+vervain	herb(40.0)	plant(3.0)	flower(3.0)	collection(2.0)	ingredient(1.0)	5
+achilles	heroe(40.0)	tendon(39.0)	name(18.0)	heroes(17.0)	injury(12.0)	character(10.0)	tool(7.0)	figure(7.0)	individual(4.0)	brand(3.0)	demigod(3.0)	company(2.0)	model(2.0)	scheme(2.0)	legend(2.0)	warrior(2.0)	scene(2.0)	demi-gods(2.0)	person(1.0)	work(1.0)	20
+thesaurus	tool(39.0)	resource(37.0)	feature(23.0)	expansion(14.0)	function(7.0)	reference(7.0)	material(6.0)	structure(5.0)	book(4.0)	facility(3.0)	term(3.0)	source(3.0)	aid(3.0)	activity(2.0)	issue(2.0)	aspect(2.0)	skill(2.0)	addition(2.0)	extension(2.0)	ns(2.0)	area(1.0)	program(1.0)	form(1.0)	work(1.0)	information(1.0)	25
+browns	team(39.0)	family(8.0)	lake(7.0)	brand(4.0)	area(3.0)	place(2.0)	retailer(2.0)	restaurant(2.0)	stain(2.0)	franchise(2.0)	shark(2.0)	polygamist(2.0)	club(2.0)	customer(2.0)	boutique(2.0)	gamefish(2.0)	organization(1.0)	17
+easel	item(38.0)	equipment(33.0)	supply(13.0)	material(11.0)	tool(3.0)	accessory(3.0)	object(3.0)	display(3.0)	line(3.0)	resource(2.0)	surface(2.0)	need(2.0)	duty(2.0)	amenity(2.0)	product(2.0)	place(1.0)	application(1.0)	17
+arsenate	anion(38.0)	compound(12.0)	metalloid(7.0)	oxoanions(6.0)	specie(5.0)	ion(5.0)	agent(4.0)	oxyanion(4.0)	inhibitor(3.0)	chemical(3.0)	analyte(3.0)	contaminant(2.0)	mineral(2.0)	oxy-anions(2.0)	form(1.0)	component(1.0)	pollutant(1.0)	17
+somme	battle(38.0)	battlefield(10.0)	name(9.0)	site(7.0)	offensive(4.0)	area(3.0)	place(2.0)	event(1.0)	film(1.0)	river(1.0)	case(1.0)	11
+albertsons	company(37.0)	supermarket(33.0)	store(25.0)	retailer(23.0)	grocer(12.0)	chain(11.0)	brand(8.0)	customer(8.0)	client(5.0)	place(4.0)	project(3.0)	corporation(3.0)	name(2.0)	tenant(2.0)	firm(1.0)	15
+andrographis	herb(37.0)	agent(14.0)	substance(3.0)	plant(2.0)	4
+resorcinol	ingredient(37.0)	diphenols(31.0)	phenol(29.0)	compound(19.0)	agent(13.0)	additive(9.0)	substrate(8.0)	chemical(8.0)	reactant(7.0)	method(6.0)	bisphenol(6.0)	dihydroxybenzene(6.0)	polyhydroxybenzene(6.0)	acid(4.0)	monomer(4.0)	aromatic(4.0)	coupler(4.0)	medication(3.0)	substance(3.0)	adhesive(3.0)	developer(2.0)	constituent(2.0)	keratolytic(2.0)	glue(2.0)	pair(2.0)	hydrotropy(2.0)	specie(1.0)	material(1.0)	inhibitor(1.0)	29
+pokerstars	site(37.0)	operator(30.0)	company(9.0)	website(2.0)	4
+samara	beach(37.0)	region(16.0)	city(7.0)	province(4.0)	place(3.0)	town(2.0)	destination(2.0)	location(2.0)	8
+soweto	township(37.0)	area(26.0)	community(7.0)	node(7.0)	place(4.0)	attraction(4.0)	slum(3.0)	incidence(3.0)	entity(2.0)	environment(2.0)	10
+framework	component(36.0)	term(22.0)	system(22.0)	tool(13.0)	approach(11.0)	issue(9.0)	aspect(9.0)	technology(9.0)	resource(8.0)	document(8.0)	concept(7.0)	element(6.0)	word(6.0)	factor(6.0)	journal(6.0)	structure(6.0)	topic(5.0)	procedure(5.0)	mechanism(5.0)	choice(5.0)	area(4.0)	layer(4.0)	information(4.0)	keyword(4.0)	solution(4.0)	standard(4.0)	part(4.0)	consideration(4.0)	publication(3.0)	entity(3.0)	category(3.0)	package(3.0)	stage(3.0)	outcome(3.0)	description(3.0)	runtime(3.0)	feature(3.0)	industry(2.0)	product(2.0)	policy(2.0)	organization(2.0)	time(2.0)	item(2.0)	project(2.0)	source(2.0)	task(2.0)	instrument(2.0)	goal(2.0)	extension(2.0)	advance(2.0)	support(2.0)	relativizers(2.0)	matter(2.0)	variation(2.0)	activity(1.0)	method(1.0)	technique(1.0)	challenge(1.0)	service(1.0)	application(1.0)	option(1.0)	program(1.0)	form(1.0)	documentation(1.0)	obstacle(1.0)	complication(1.0)	condition(1.0)	city(1.0)	68
+timeout	parameter(36.0)	event(24.0)	option(15.0)	information(13.0)	property(12.0)	extension(12.0)	punishment(12.0)	policy(10.0)	condition(9.0)	setting(9.0)	error(9.0)	mechanism(8.0)	feature(7.0)	topic(7.0)	configuration(7.0)	field(6.0)	issue(6.0)	factor(5.0)	violation(5.0)	request(5.0)	attribute(5.0)	safeguard(5.0)	notion(5.0)	problem(4.0)	exception(4.0)	operator(4.0)	constraint(4.0)	method(3.0)	criterion(3.0)	reason(3.0)	type(3.0)	strategy(3.0)	efficiency(3.0)	punishers(3.0)	discipline(2.0)	alternative(2.0)	technique(2.0)	behavior(2.0)	publication(2.0)	improvement(2.0)	point(2.0)	message(2.0)	consequence(2.0)	functionality(2.0)	signal(1.0)	variable(1.0)	procedure(1.0)	aspect(1.0)	action(1.0)	concept(1.0)	50
+hyoscyamine	anticholinergic(36.0)	antispasmodic(12.0)	medication(10.0)	anticholinergics(9.0)	alkaloid(6.0)	preparation(2.0)	agent(1.0)	7
+blizzard	company(35.0)	disaster(29.0)	client(22.0)	event(17.0)	situation(16.0)	word(15.0)	weather(15.0)	emergency(13.0)	developer(12.0)	spell(12.0)	hazard(12.0)	studio(10.0)	topic(9.0)	condition(8.0)	trouble(6.0)	morph(6.0)	role(5.0)	brand(5.0)	factor(4.0)	server(4.0)	storm(4.0)	name(3.0)	service(3.0)	obstacle(3.0)	card(3.0)	move(3.0)	nuisance(3.0)	incumbent(3.0)	supervillain(3.0)	book(2.0)	variable(2.0)	phenomenon(2.0)	case(2.0)	risk(2.0)	effect(2.0)	corporation(2.0)	antenna(2.0)	advertiser(2.0)	exhibitor(2.0)	quartz(2.0)	product(1.0)	firm(1.0)	organization(1.0)	time(1.0)	information(1.0)	character(1.0)	network(1.0)	problem(1.0)	48
+urethritis	condition(35.0)	infection(27.0)	symptom(14.0)	complication(4.0)	contraindication(4.0)	disorder(3.0)	syndrome(3.0)	stds(3.0)	vds(3.0)	variable(1.0)	form(1.0)	11
+seether	band(35.0)	artist(12.0)	influence(5.0)	single(3.0)	group(2.0)	act(2.0)	6
+amiloride	diuretic(35.0)	inhibitor(13.0)	agent(6.0)	compound(4.0)	pyrazinoylguanidines(4.0)	medication(3.0)	medicine(3.0)	reagent(2.0)	therapy(2.0)	pyrazinecarboxamides(2.0)	10
+georgian	language(34.0)	style(32.0)	term(8.0)	system(6.0)	conservatory(6.0)	feature(3.0)	category(3.0)	type(2.0)	classic(2.0)	design(2.0)	builder(2.0)	newspaper(2.0)	nationality(2.0)	era(2.0)	word(1.0)	15
+alchemy	topic(34.0)	subject(31.0)	word(23.0)	practice(20.0)	profession(15.0)	skill(12.0)	science(12.0)	discipline(6.0)	theme(6.0)	study(5.0)	craft(5.0)	technique(4.0)	feature(4.0)	field(4.0)	pseudoscience(4.0)	book(3.0)	technology(3.0)	process(3.0)	group(3.0)	tradition(3.0)	brand(3.0)	interest(3.0)	cafe(3.0)	product(2.0)	company(2.0)	area(2.0)	influence(2.0)	system(2.0)	source(2.0)	game(2.0)	action(2.0)	case(2.0)	choice(2.0)	class(2.0)	variety(2.0)	apis(2.0)	treasure(2.0)	secret(2.0)	subset(2.0)	tradeskill(2.0)	program(2.0)	idea(2.0)	activity(1.0)	firm(1.0)	name(1.0)	term(1.0)	tool(1.0)	form(1.0)	48
+flammable	item(34.0)	area(12.0)	word(11.0)	material(9.0)	hazard(8.0)	label(6.0)	equipment(5.0)	object(5.0)	catalyst(4.0)	form(3.0)	liquid(3.0)	chemical(3.0)	product(2.0)	characteristic(2.0)	sign(2.0)	waste(2.0)	feature(1.0)	term(1.0)	prop(1.0)	case(1.0)	20
+chives	herb(34.0)	ingredient(3.0)	specie(1.0)	3
+dischord	label(34.0)	1
+madeira	wine(34.0)	cake(17.0)	island(12.0)	cure(8.0)	region(6.0)	area(4.0)	river(4.0)	destination(4.0)	district(3.0)	exception(3.0)	vine(3.0)	or(3.0)	location(2.0)	place(2.0)	brand(2.0)	filling(2.0)	import(1.0)	author(1.0)	article(1.0)	ingredient(1.0)	20
+undo	feature(33.0)	command(30.0)	advisor(20.0)	function(12.0)	option(6.0)	icon(5.0)	action(3.0)	key(3.0)	item(2.0)	operation(2.0)	button(2.0)	powerup(2.0)	aspect(2.0)	tool(1.0)	movie(1.0)	15
+dosbox	emulator(33.0)	tool(3.0)	program(3.0)	software(3.0)	solution(2.0)	item(1.0)	6
+hamsters	term(33.0)	animal(4.0)	mammal(2.0)	pet(2.0)	4
+osmometry	method(32.0)	technique(23.0)	thods(8.0)	technology(1.0)	4
+arnold	author(32.0)	writer(12.0)	researcher(11.0)	theorist(9.0)	brand(8.0)	client(7.0)	manual(7.0)	actor(6.0)	study(6.0)	scholar(6.0)	feminist(5.0)	textbook(4.0)	great(4.0)	name(3.0)	player(3.0)	poet(3.0)	advocate(3.0)	area(3.0)	event(2.0)	firm(2.0)	company(2.0)	book(2.0)	tool(2.0)	character(2.0)	official(2.0)	composer(2.0)	celebrity(2.0)	cartoon(2.0)	engine(2.0)	bodybuilder(2.0)	victorian(2.0)	competition(2.0)	woman(1.0)	time(1.0)	34
+fss	scheme(32.0)	dog(17.0)	application(4.0)	method(3.0)	program(3.0)	player(3.0)	organization(2.0)	database(2.0)	healthcare(2.0)	9
+phospholipids	lipid(32.0)	material(17.0)	molecule(10.0)	emollient(10.0)	nutrient(6.0)	surfactants(6.0)	component(5.0)	compound(5.0)	biomolecules(5.0)	ingredient(3.0)	ligands(3.0)	process(2.0)	agent(2.0)	substance(2.0)	impurity(2.0)	emulsifier(2.0)	amphiphiles(2.0)	17
+aegon	company(31.0)	insurer(7.0)	firm(4.0)	client(3.0)	partner(3.0)	occupier(3.0)	product(2.0)	player(2.0)	brand(2.0)	provider(2.0)	account(2.0)	case(1.0)	12
+vanillin	compound(31.0)	aldehyde(21.0)	phytochemical(18.0)	flavor(16.0)	flavoring(15.0)	phenol(13.0)	ingredient(7.0)	antioxidant(7.0)	phenolic(7.0)	product(6.0)	organic(6.0)	metabolite(4.0)	material(4.0)	additive(4.0)	chemical(4.0)	aldehydes(4.0)	molecule(3.0)	component(2.0)	reagent(2.0)	substance(2.0)	bioproducts(2.0)	fixative(2.0)	catabolites(2.0)	coproduct(2.0)	benzaldehyde(2.0)	agent(1.0)	inhibitor(1.0)	case(1.0)	28
+psg	material(31.0)	layer(17.0)	club(16.0)	team(13.0)	film(5.0)	event(4.0)	company(4.0)	interlayer(3.0)	organization(2.0)	tool(2.0)	game(2.0)	mechanism(2.0)	test(2.0)	business(2.0)	face(2.0)	committee(2.0)	acronym(2.0)	service(1.0)	system(1.0)	19
+l-arginine	ingredient(31.0)	nutrient(10.0)	supplement(8.0)	agent(5.0)	herb(4.0)	treatment(3.0)	substrate(3.0)	therapy(2.0)	8
+pleating	technique(30.0)	skill(3.0)	feature(2.0)	sample(2.0)	concept(2.0)	process(2.0)	flaw(2.0)	ornamentation(2.0)	service(2.0)	method(1.0)	tool(1.0)	11
+surrogacy	option(30.0)	issue(16.0)	procedure(11.0)	alternative(9.0)	topic(9.0)	practice(9.0)	method(6.0)	feature(6.0)	area(6.0)	service(4.0)	technology(4.0)	situation(3.0)	field(3.0)	item(3.0)	solution(3.0)	route(2.0)	technique(2.0)	treatment(2.0)	subject(2.0)	case(2.0)	agreement(2.0)	experience(1.0)	resource(1.0)	23
+phenylalanine	metabolite(30.0)	residue(12.0)	aminoacid(12.0)	nutrient(7.0)	test(7.0)	chemical(7.0)	compound(6.0)	enzyme(5.0)	ingredient(4.0)	fruit(4.0)	gatekeeper(4.0)	supplement(3.0)	instrument(3.0)	analyte(3.0)	attractant(3.0)	precursor(3.0)	lnaas(3.0)	interferrants(3.0)	specie(2.0)	product(2.0)	inhibitor(2.0)	hub(2.0)	substrate(2.0)	xenobiotics(2.0)	aas(2.0)	measure(1.0)	fluorophore(1.0)	agent(1.0)	component(1.0)	29
+lang	study(30.0)	director(22.0)	literature(13.0)	author(12.0)	name(6.0)	researcher(6.0)	case(6.0)	player(4.0)	scholar(4.0)	critic(3.0)	member(2.0)	street(2.0)	paper(2.0)	otherscholars(2.0)	manufacturer(2.0)	firm(1.0)	book(1.0)	work(1.0)	18
+vango	brand(30.0)	company(1.0)	2
+mini-golf	activity(30.0)	attraction(5.0)	amenity(5.0)	facility(4.0)	game(4.0)	sport(3.0)	area(2.0)	entertainment(2.0)	8
+couplers	component(30.0)	device(20.0)	product(19.0)	accessory(12.0)	fitting(12.0)	item(8.0)	part(5.0)	feature(2.0)	8
+lhasa	place(29.0)	city(7.0)	breed(4.0)	influence(1.0)	theme(1.0)	region(1.0)	6
+fill	function(29.0)	material(18.0)	technique(14.0)	attribute(14.0)	aggregate(14.0)	activity(8.0)	feature(8.0)	item(8.0)	operation(8.0)	property(8.0)	encroachment(8.0)	option(7.0)	tool(6.0)	setting(6.0)	method(4.0)	factor(4.0)	verb(4.0)	topsoil(4.0)	facility(3.0)	information(3.0)	matter(3.0)	call(3.0)	word(2.0)	service(2.0)	area(2.0)	condition(2.0)	step(2.0)	effect(2.0)	operator(2.0)	command(2.0)	panel(2.0)	earthwork(2.0)	characteristic(2.0)	product(1.0)	issue(1.0)	measure(1.0)	term(1.0)	researcher(1.0)	project(1.0)	work(1.0)	component(1.0)	theme(1.0)	scholar(1.0)	43
+cafes	term(29.0)	amenity(16.0)	category(16.0)	attraction(12.0)	business(2.0)	industry(1.0)	facility(1.0)	establishment(1.0)	subject(1.0)	9
+tlrs	prr(28.0)	sensor(9.0)	gene(5.0)	receptor(5.0)	prms(4.0)	prrs(4.0)	molecule(3.0)	information(2.0)	8
+3gpp	standard(27.0)	organization(17.0)	group(8.0)	sdo(8.0)	format(2.0)	initiative(2.0)	entity(2.0)	protocol(2.0)	effort(1.0)	application(1.0)	term(1.0)	network(1.0)	technology(1.0)	13
+exide	brand(27.0)	battery(6.0)	company(4.0)	name(3.0)	case(1.0)	5
+machinist	occupation(27.0)	department(16.0)	job(13.0)	craftsmanship(10.0)	position(9.0)	industry(6.0)	profession(5.0)	specialty(5.0)	worker(4.0)	trade(4.0)	person(3.0)	film(3.0)	tool(3.0)	employee(3.0)	post(3.0)	company(2.0)	movie(2.0)	specialist(2.0)	individual(2.0)	professional(2.0)	craft(2.0)	rating(2.0)	associate(2.0)	technician(2.0)	element(1.0)	area(1.0)	title(1.0)	case(1.0)	risk(1.0)	29
+hashish	extract(27.0)	cannabinoid(13.0)	item(7.0)	intoxicant(7.0)	cannabinoids(7.0)	substance(5.0)	hallucinogen(4.0)	decision(3.0)	herb(2.0)	preparation(2.0)	cannabis(2.0)	agent(1.0)	12
+rabbitbrush	shrub(27.0)	specie(9.0)	species(6.0)	plant(4.0)	exception(3.0)	flower(2.0)	item(1.0)	7
+u.k.	market(27.0)	nation(21.0)	jurisdiction(15.0)	place(10.0)	government(7.0)	economy(6.0)	state(4.0)	area(3.0)	case(3.0)	location(2.0)	donor(2.0)	11
+anticoagulation	issue(26.0)	condition(13.0)	factor(10.0)	medication(9.0)	therapy(7.0)	role(6.0)	setting(5.0)	measure(4.0)	treatment(4.0)	service(3.0)	area(3.0)	topic(3.0)	intervention(3.0)	audit(2.0)	event(1.0)	15
+brandon	city(26.0)	area(15.0)	community(10.0)	participant(7.0)	location(5.0)	man(5.0)	student(5.0)	town(5.0)	place(4.0)	device(4.0)	player(4.0)	case(4.0)	name(3.0)	person(3.0)	scholar(3.0)	neighborhood(3.0)	child(3.0)	informant(3.0)	vampire(3.0)	sla(3.0)	burb(3.0)	sense(2.0)	technician(2.0)	author(1.0)	character(1.0)	district(1.0)	26
+fasciculation	symptom(26.0)	process(8.0)	disadvantage(7.0)	effect(4.0)	deficit(4.0)	complication(3.0)	presentation(3.0)	abnormality(2.0)	motorsymptoms(2.0)	risk(1.0)	10
+dreadlock	hairstyle(26.0)	style(4.0)	preference(3.0)	service(1.0)	item(1.0)	5
+telmisartan	arb(26.0)	sartans(8.0)	arbs(7.0)	agent(6.0)	case(3.0)	apis(3.0)	medication(2.0)	compound(1.0)	8
+casuarina	specie(25.0)	species(11.0)	tree(8.0)	plant(6.0)	suburb(4.0)	exotic(2.0)	6
+givaudan	company(25.0)	player(4.0)	peer(4.0)	3
+docking	application(25.0)	operation(9.0)	interaction(9.0)	method(7.0)	activity(6.0)	fee(6.0)	computation(6.0)	feature(5.0)	option(5.0)	function(5.0)	skill(5.0)	event(4.0)	topic(4.0)	procedure(4.0)	condition(4.0)	area(3.0)	rule(3.0)	item(3.0)	study(3.0)	accessory(3.0)	action(3.0)	problem(3.0)	basic(2.0)	incident(2.0)	task(2.0)	requirement(2.0)	control(2.0)	scenario(2.0)	step(2.0)	experiment(2.0)	mission(2.0)	tion(2.0)	situation(1.0)	behavior(1.0)	tool(1.0)	approach(1.0)	technology(1.0)	37
+hats	item(25.0)	accessory(12.0)	song(6.0)	collectible(5.0)	project(4.0)	product(3.0)	expense(2.0)	clothe(2.0)	term(1.0)	prop(1.0)	10
+xp	system(25.0)	methodology(25.0)	os(23.0)	method(14.0)	combination(13.0)	version(9.0)	window(8.0)	ams(8.0)	reward(5.0)	program(4.0)	process(4.0)	software(4.0)	resource(3.0)	item(3.0)	approach(3.0)	case(3.0)	client(3.0)	framework(3.0)	platform(3.0)	computer(3.0)	vms(3.0)	christograms(3.0)	feature(3.0)	technique(2.0)	practice(2.0)	concept(2.0)	engine(2.0)	ideology(2.0)	oss(2.0)	enhancements(2.0)	category(2.0)	alternative(1.0)	purchase(1.0)	model(1.0)	technology(1.0)	35
+atpase	enzyme(25.0)	marker(9.0)	activity(5.0)	fragment(3.0)	4
+madeline	classic(25.0)	show(5.0)	character(3.0)	name(2.0)	standard(2.0)	sweet(2.0)	6
+bankrate.com	website(25.0)	site(15.0)	service(2.0)	tool(2.0)	source(2.0)	5
+epg	feature(24.0)	service(7.0)	application(3.0)	aspect(3.0)	graphic(3.0)	function(2.0)	phosphatidylglycerol(2.0)	datum(2.0)	actor(1.0)	information(1.0)	material(1.0)	case(1.0)	12
+bendamustine	agent(24.0)	therapy(14.0)	treatment(2.0)	compound(1.0)	medication(1.0)	5
+autolink	tool(24.0)	1
+gent	magazine(24.0)	city(6.0)	term(2.0)	scheme(2.0)	place(1.0)	area(1.0)	item(1.0)	project(1.0)	8
+player	object(24.0)	datum(17.0)	field(16.0)	term(13.0)	person(12.0)	role(11.0)	goal(11.0)	word(10.0)	information(10.0)	award(10.0)	factor(9.0)	tool(8.0)	stakeholder(8.0)	mode(7.0)	film(7.0)	item(7.0)	source(7.0)	entity(7.0)	component(6.0)	concept(6.0)	agent(5.0)	device(5.0)	character(5.0)	class(5.0)	party(5.0)	product(4.0)	issue(4.0)	movie(4.0)	equipment(4.0)	image(4.0)	category(4.0)	event(3.0)	element(3.0)	feature(3.0)	model(3.0)	user(3.0)	member(3.0)	expense(3.0)	electronic(3.0)	participant(3.0)	predicate(3.0)	actor(2.0)	name(2.0)	criterion(2.0)	application(2.0)	topic(2.0)	variable(2.0)	theme(2.0)	system(2.0)	game(2.0)	material(2.0)	band(2.0)	idea(2.0)	requirement(2.0)	student(2.0)	commodity(2.0)	attribute(2.0)	individual(2.0)	legend(2.0)	software(2.0)	operator(2.0)	reward(2.0)	definition(2.0)	freebie(2.0)	expansion(2.0)	depiction(2.0)	brand(2.0)	basic(2.0)	unlockables(2.0)	option(2.0)	opportunity(1.0)	area(1.0)	influence(1.0)	title(1.0)	subject(1.0)	obstacle(1.0)	condition(1.0)	asset(1.0)	value(1.0)	79
+paronychia	infection(24.0)	issue(7.0)	condition(2.0)	symptom(2.0)	effect(2.0)	complication(1.0)	6
+unicorn	creature(24.0)	model(10.0)	animal(9.0)	spell(9.0)	brand(6.0)	specie(5.0)	theme(5.0)	character(5.0)	monster(5.0)	image(4.0)	being(4.0)	element(3.0)	item(3.0)	form(3.0)	journal(3.0)	album(3.0)	species(3.0)	piece(2.0)	issue(2.0)	subject(2.0)	concept(2.0)	commission(2.0)	entity(2.0)	figure(2.0)	friend(2.0)	motif(2.0)	venue(2.0)	pet(2.0)	critter(2.0)	keyboard(2.0)	tapestry(2.0)	source(2.0)	word(1.0)	name(1.0)	term(1.0)	option(1.0)	project(1.0)	type(1.0)	38
+sapotaceae	family(24.0)	origination(7.0)	group(4.0)	3
+carotid	artery(24.0)	vessel(22.0)	measurement(4.0)	trial(4.0)	tissue(2.0)	condition(2.0)	concept(2.0)	investigation(2.0)	word(1.0)	service(1.0)	procedure(1.0)	11
+glauber	chemist(24.0)	man(12.0)	2
+generalizability	issue(23.0)	term(9.0)	factor(8.0)	feature(3.0)	criterion(3.0)	aspect(3.0)	consideration(3.0)	concept(2.0)	matter(2.0)	definition(2.0)	measurement(1.0)	approach(1.0)	component(1.0)	value(1.0)	14
+chamois	animal(23.0)	mammal(22.0)	specie(10.0)	trophy(4.0)	ungulate(3.0)	species(3.0)	wildlife(2.0)	28b(2.0)	material(2.0)	option(1.0)	browser(1.0)	item(1.0)	tool(1.0)	fabric(1.0)	game(1.0)	15
+chymopapain	enzyme(23.0)	agent(10.0)	protease(5.0)	treatment(1.0)	4
+surf	move(23.0)	activity(20.0)	sound(16.0)	brand(16.0)	hms(14.0)	option(13.0)	mind(9.0)	sport(8.0)	attraction(8.0)	company(6.0)	word(5.0)	choice(5.0)	function(5.0)	staple(5.0)	industry(4.0)	method(3.0)	product(3.0)	service(3.0)	operator(3.0)	algorithm(3.0)	favorite(3.0)	collection(3.0)	hm(3.0)	taco(3.0)	name(2.0)	place(2.0)	area(2.0)	subject(2.0)	effect(2.0)	environment(2.0)	consumable(2.0)	club(2.0)	mod(2.0)	event(1.0)	style(1.0)	element(1.0)	facility(1.0)	factor(1.0)	term(1.0)	variable(1.0)	influence(1.0)	item(1.0)	tool(1.0)	program(1.0)	form(1.0)	information(1.0)	flavor(1.0)	theme(1.0)	condition(1.0)	source(1.0)	50
+epidendrum	orchid(23.0)	genus(8.0)	2
+secretariat	thoroughbred(23.0)	institution(16.0)	horse(13.0)	organ(7.0)	name(3.0)	subsystem(3.0)	actor(2.0)	movie(2.0)	stakeholder(2.0)	committee(2.0)	film(2.0)	feature(1.0)	organization(1.0)	issue(1.0)	area(1.0)	establishment(1.0)	building(1.0)	aspect(1.0)	department(1.0)	mechanism(1.0)	20
+alm	discipline(22.0)	process(10.0)	certification(4.0)	scenario(3.0)	area(2.0)	application(2.0)	study(2.0)	need(2.0)	acronym(2.0)	tool(1.0)	operation(1.0)	11
+birthright	organization(22.0)	organisation(7.0)	program(5.0)	charity(4.0)	group(3.0)	name(2.0)	book(2.0)	project(2.0)	concept(2.0)	trip(2.0)	resource(1.0)	reason(1.0)	source(1.0)	13
+naval	application(22.0)	industry(11.0)	vessel(9.0)	area(4.0)	official(4.0)	division(4.0)	field(3.0)	medal(3.0)	element(2.0)	place(2.0)	sector(2.0)	department(2.0)	capability(2.0)	exercise(2.0)	factor(1.0)	theme(1.0)	technology(1.0)	17
+immortality	theme(22.0)	feature(10.0)	idea(9.0)	topic(8.0)	power(8.0)	issue(4.0)	subject(3.0)	property(3.0)	ability(3.0)	term(2.0)	phenomenon(2.0)	concept(2.0)	matter(2.0)	restriction(2.0)	poem(2.0)	meme(2.0)	memes(2.0)	datum(1.0)	value(1.0)	case(1.0)	20
+pigmentation	problem(22.0)	concern(21.0)	complication(17.0)	condition(17.0)	factor(16.0)	character(11.0)	change(10.0)	feature(9.0)	area(9.0)	parameter(9.0)	trait(8.0)	case(7.0)	finding(5.0)	imperfection(5.0)	characteristic(4.0)	symptom(4.0)	issue(3.0)	measure(3.0)	role(3.0)	property(3.0)	appearance(3.0)	absorber(3.0)	risk(2.0)	abnormality(2.0)	difference(2.0)	treamets(2.0)	severelyretardedgrowthwithoutanysignofnormaldevelopment(2.0)	technique(1.0)	service(1.0)	criterion(1.0)	variable(1.0)	treatment(1.0)	subject(1.0)	33
+express	store(22.0)	newspaper(14.0)	paper(11.0)	word(3.0)	language(2.0)	brand(2.0)	product(1.0)	title(1.0)	study(1.0)	system(1.0)	movie(1.0)	11
+dondi	contemporary(22.0)	artist(6.0)	writer(3.0)	3
+dentists	professional(22.0)	term(12.0)	organization(8.0)	service(6.0)	stakeholder(4.0)	employee(4.0)	dentist(3.0)	person(2.0)	entity(2.0)	position(2.0)	industry(1.0)	field(1.0)	issue(1.0)	amenity(1.0)	14
+hispaniola	island(22.0)	place(2.0)	2
+rimu	podocarps(22.0)	specie(7.0)	tree(7.0)	timber(2.0)	species(2.0)	5
+operability	factor(21.0)	issue(18.0)	topic(8.0)	capability(6.0)	criterion(3.0)	aspect(3.0)	component(3.0)	benefit(3.0)	feature(2.0)	information(2.0)	parameter(2.0)	property(2.0)	reason(1.0)	specification(1.0)	14
+multiplexing	service(21.0)	function(20.0)	technique(16.0)	feature(12.0)	application(9.0)	approach(4.0)	operation(4.0)	technology(3.0)	concept(2.0)	advantage(2.0)	issue(1.0)	aspect(1.0)	12
+banff	place(21.0)	park(16.0)	town(11.0)	area(6.0)	festival(5.0)	venue(5.0)	resort(5.0)	community(4.0)	destination(3.0)	municipality(3.0)	name(2.0)	city(2.0)	model(1.0)	system(1.0)	case(1.0)	15
+clapham	area(21.0)	accident(10.0)	scholar(5.0)	place(3.0)	researcher(3.0)	incident(2.0)	historian(2.0)	firm(1.0)	author(1.0)	9
+tweet	term(21.0)	word(17.0)	datum(10.0)	information(8.0)	form(7.0)	communication(6.0)	tool(5.0)	medium(5.0)	domain(5.0)	news(5.0)	text(5.0)	update(5.0)	content(5.0)	technology(4.0)	metric(4.0)	evidence(3.0)	method(3.0)	factor(3.0)	resource(3.0)	option(3.0)	item(3.0)	source(3.0)	action(3.0)	artist(3.0)	gimmick(3.0)	channel(3.0)	phrase(2.0)	article(2.0)	tactic(2.0)	category(2.0)	restaurant(2.0)	verb(2.0)	notification(2.0)	newcomer(2.0)	node(2.0)	jargon(2.0)	technique(1.0)	measure(1.0)	asset(1.0)	memory(1.0)	case(1.0)	concept(1.0)	42
+katz	researcher(21.0)	author(21.0)	study(20.0)	scholar(16.0)	writer(16.0)	investigator(7.0)	theorist(7.0)	contribution(6.0)	economist(6.0)	method(5.0)	academic(5.0)	case(4.0)	paper(4.0)	survivor(4.0)	commentator(3.0)	spline(3.0)	firm(2.0)	approach(2.0)	linguist(2.0)	brand(2.0)	act(2.0)	postmodernist(2.0)	human(2.0)	review(2.0)	geographer(2.0)	name(2.0)	critic(1.0)	work(1.0)	poet(1.0)	29
+broach	tool(21.0)	accessory(8.0)	instrument(6.0)	product(6.0)	bit(4.0)	pin(4.0)	jewel(4.0)	item(3.0)	jewellery(3.0)	style(2.0)	application(2.0)	machine(2.0)	touch(2.0)	embellishment(2.0)	information(1.0)	15
+ravenna	city(21.0)	location(5.0)	team(5.0)	battle(3.0)	area(2.0)	neighborhood(2.0)	community(2.0)	attraction(2.0)	technique(1.0)	9
+zma	supplement(21.0)	ingredient(3.0)	compound(2.0)	alternative(1.0)	product(1.0)	5
+munc18	protein(21.0)	1
+shires	brand(21.0)	breed(4.0)	attraction(2.0)	horse(2.0)	name(2.0)	author(1.0)	6
+phaedo	dialogue(21.0)	work(16.0)	place(2.0)	3
+paddington	area(20.0)	suburb(17.0)	place(7.0)	station(7.0)	location(5.0)	film(3.0)	name(2.0)	character(2.0)	choice(2.0)	classic(2.0)	interchange(2.0)	11
+galley	area(20.0)	facility(7.0)	location(7.0)	space(7.0)	system(6.0)	place(5.0)	utility(5.0)	feature(4.0)	room(4.0)	element(3.0)	amenity(3.0)	item(3.0)	datum(3.0)	shape(3.0)	sample(3.0)	monument(3.0)	boat(3.0)	option(2.0)	region(2.0)	keyword(2.0)	equipment(2.0)	artist(2.0)	vessel(2.0)	word(1.0)	term(1.0)	form(1.0)	26
+parana	state(20.0)	river(4.0)	area(1.0)	3
+appendices	material(20.0)	section(13.0)	information(12.0)	document(10.0)	attachment(8.0)	technique(3.0)	resource(3.0)	chapter(3.0)	feature(2.0)	item(2.0)	request(2.0)	display(2.0)	matter(2.0)	page(2.0)	specimen(2.0)	option(1.0)	procedure(1.0)	tool(1.0)	case(1.0)	19
+biltong	snack(20.0)	product(9.0)	food(5.0)	meat(5.0)	favorite(5.0)	item(1.0)	6
+determinacy	property(20.0)	characteristic(8.0)	trait(3.0)	issue(1.0)	4
+danby	village(20.0)	brand(4.0)	author(2.0)	manufacturer(2.0)	township(2.0)	place(1.0)	6
+cerussite	mineral(20.0)	ores(2.0)	2
+culling	technique(19.0)	topic(15.0)	strategy(11.0)	method(8.0)	measure(4.0)	policy(3.0)	event(2.0)	alternative(2.0)	approach(2.0)	task(2.0)	activity(1.0)	word(1.0)	feature(1.0)	term(1.0)	option(1.0)	practice(1.0)	state(1.0)	datum(1.0)	reason(1.0)	concept(1.0)	problem(1.0)	21
+newbury	area(19.0)	town(9.0)	place(5.0)	street(4.0)	location(3.0)	society(3.0)	city(2.0)	store(2.0)	venue(2.0)	centre(2.0)	battle(2.0)	manual(2.0)	racecourse(2.0)	event(1.0)	researcher(1.0)	scholar(1.0)	writer(1.0)	17
+psyllid	insect(19.0)	pest(3.0)	hemipterans(2.0)	specie(1.0)	4
+wick	substrate(19.0)	supply(12.0)	feature(8.0)	device(8.0)	system(5.0)	part(3.0)	method(2.0)	item(2.0)	accessory(2.0)	mean(2.0)	alternative(1.0)	product(1.0)	term(1.0)	variable(1.0)	component(1.0)	material(1.0)	16
+jnana	process(19.0)	concept(3.0)	word(2.0)	system(2.0)	path(2.0)	yoga(2.0)	topic(1.0)	practice(1.0)	8
+schecter	brand(19.0)	manufacturer(6.0)	company(3.0)	powerhouse(2.0)	option(1.0)	5
+hmpa	additive(19.0)	solvent(11.0)	ligand(6.0)	3
+myocyte	cell(19.0)	application(2.0)	tissue(2.0)	migration(2.0)	system(1.0)	5
+deltas	technique(18.0)	ligand(6.0)	rocket(2.0)	feature(1.0)	4
+substr	function(18.0)	1
+embryology	course(18.0)	field(13.0)	technique(9.0)	subject(8.0)	discipline(6.0)	topic(5.0)	theme(4.0)	part(4.0)	method(2.0)	issue(2.0)	area(2.0)	program(2.0)	character(2.0)	class(2.0)	reference(2.0)	elective(2.0)	factor(1.0)	name(1.0)	journal(1.0)	department(1.0)	20
+ssor	scheme(18.0)	preconditioners(4.0)	technique(3.0)	3
+vegemite	brand(18.0)	item(8.0)	food(3.0)	symbol(3.0)	spread(3.0)	class(2.0)	filling(2.0)	word(2.0)	ingredient(1.0)	9
+kenco	brand(18.0)	company(1.0)	2
+gaston	community(18.0)	county(5.0)	place(2.0)	man(2.0)	character(2.0)	technique(1.0)	area(1.0)	7
+hewlett	foundation(18.0)	company(3.0)	leader(3.0)	funder(3.0)	entrepreneur(2.0)	study(1.0)	6
+frovatriptan	triptan(18.0)	treatment(1.0)	2
+tadasana	asana(18.0)	yogasana(4.0)	asanas(2.0)	3
+hungr	word(17.0)	1
+bteq	topic(17.0)	utility(5.0)	2
+phenoxybenzamine	agent(17.0)	haloalkylamines(5.0)	vasodilator(4.0)	medication(3.0)	substance(2.0)	antagonist(2.0)	6
+fung	study(17.0)	author(11.0)	writer(3.0)	state(2.0)	organisation(2.0)	lineage(2.0)	method(1.0)	researcher(1.0)	8
+duality	concept(17.0)	idea(13.0)	property(12.0)	topic(10.0)	argument(8.0)	aspect(5.0)	technique(3.0)	term(3.0)	problem(3.0)	choice(3.0)	variable(2.0)	attribute(2.0)	notion(2.0)	theme(2.0)	song(2.0)	factor(1.0)	subject(1.0)	17
+leafiness	characteristic(17.0)	variable(2.0)	attribute(2.0)	3
+nf1	gene(17.0)	disorder(6.0)	protein(5.0)	factor(1.0)	4
+arabinogalactan	polysaccharide(17.0)	gene(5.0)	extractive(2.0)	polysaccharides(2.0)	4
+beaulieu	brand(17.0)	manufacturer(6.0)	venue(6.0)	area(5.0)	place(4.0)	name(2.0)	artist(2.0)	designer(2.0)	winery(2.0)	settlement(2.0)	monastery(2.0)	city(1.0)	12
+syma	brand(17.0)	company(3.0)	2
+nozick	libertarian(17.0)	thinker(8.0)	philosopher(6.0)	theorist(4.0)	4
+methylalumoxane	alumoxane(17.0)	trialkylaluminium(3.0)	2
+pentylenetetrazol	analeptics(17.0)	compound(8.0)	convulsants(6.0)	chemical(3.0)	stimulant(2.0)	agent(1.0)	6
+texshare	service(16.0)	1
+danisco	company(16.0)	player(11.0)	leader(4.0)	3
+acog	organization(16.0)	expert(7.0)	group(6.0)	optic(4.0)	credit(4.0)	authority(3.0)	institution(2.0)	reference(2.0)	8
+participatory	term(16.0)	concept(4.0)	adjective(4.0)	model(3.0)	tool(3.0)	alternative(2.0)	procedure(2.0)	mechanism(2.0)	characteristic(2.0)	concern(2.0)	form(2.0)	activity(1.0)	method(1.0)	technique(1.0)	initiative(1.0)	aspect(1.0)	16
+disclaimer	information(16.0)	item(15.0)	restriction(12.0)	element(4.0)	issue(4.0)	topic(4.0)	method(3.0)	feature(3.0)	policy(3.0)	tool(3.0)	name(2.0)	document(2.0)	section(2.0)	attachment(2.0)	task(2.0)	notice(2.0)	technique(1.0)	field(1.0)	area(1.0)	practice(1.0)	documentation(1.0)	mechanism(1.0)	22
+cics	system(16.0)	subsystem(11.0)	product(8.0)	application(7.0)	workload(5.0)	environment(4.0)	offering(4.0)	tool(3.0)	technology(3.0)	tpm(3.0)	resource(2.0)	program(2.0)	publication(2.0)	software(2.0)	oltp(2.0)	facility(2.0)	element(1.0)	service(1.0)	measure(1.0)	19
+waco	city(16.0)	place(9.0)	event(7.0)	case(5.0)	incident(5.0)	area(3.0)	psyop(3.0)	group(2.0)	town(2.0)	community(2.0)	location(1.0)	11
+hypoesthesia	symptom(16.0)	complaint(2.0)	2
+dalbavancin	antibiotic(16.0)	glycopeptide(11.0)	antibacterial(2.0)	3
+contac	remedy(16.0)	product(2.0)	medication(2.0)	3
+realtors	professional(16.0)	client(6.0)	resource(4.0)	vendor(4.0)	requestor(4.0)	business(3.0)	industry(2.0)	source(2.0)	case(2.0)	group(2.0)	user(2.0)	profession(2.0)	intermediary(2.0)	disincentives(2.0)	firm(1.0)	company(1.0)	16
+barnardos	charity(16.0)	organisation(15.0)	organisations(12.0)	organization(8.0)	agency(8.0)	client(6.0)	group(5.0)	item(2.0)	service(1.0)	company(1.0)	10
+barings	insolvency(16.0)	case(11.0)	episode(5.0)	event(4.0)	member(4.0)	scandal(4.0)	company(3.0)	firm(2.0)	name(1.0)	9
+nitroso	substituents(16.0)	intermediate(5.0)	2
+israfil	angel(16.0)	1
+elves	foe(16.0)	creature(9.0)	character(6.0)	deck(6.0)	faction(4.0)	story(4.0)	stack(4.0)	subject(2.0)	nation(2.0)	immortal(2.0)	elemental(2.0)	specie(1.0)	film(1.0)	material(1.0)	14
+tsx	exchange(16.0)	market(13.0)	index(12.0)	firm(5.0)	car(3.0)	model(2.0)	group(2.0)	bullet(2.0)	8
+exxon-mobil	company(16.0)	corporation(8.0)	merger(4.0)	major(3.0)	firm(2.0)	investor(2.0)	6
+roan	specie(15.0)	antelope(12.0)	pattern(9.0)	species(5.0)	animal(4.0)	project(3.0)	character(3.0)	mammal(2.0)	herbivore(2.0)	9
+bipolaris	specie(15.0)	species(5.0)	genus(4.0)	3
+workspace	factor(15.0)	item(13.0)	setting(12.0)	function(10.0)	aspect(7.0)	resource(6.0)	limitation(6.0)	string(6.0)	location(5.0)	issue(4.0)	term(4.0)	characteristic(4.0)	property(4.0)	offering(4.0)	url(4.0)	aws(4.0)	product(3.0)	topic(3.0)	component(3.0)	abstraction(3.0)	element(2.0)	feature(2.0)	area(2.0)	condition(2.0)	parameter(2.0)	request(2.0)	window(2.0)	contribution(2.0)	service(2.0)	facility(1.0)	field(1.0)	option(1.0)	amenity(1.0)	tool(1.0)	sector(1.0)	inhibitor(1.0)	concept(1.0)	37
+defragmenter	feature(15.0)	tool(5.0)	utility(4.0)	program(2.0)	service(1.0)	application(1.0)	6
+spotlights	feature(15.0)	practice(2.0)	2
+apologia	area(15.0)	dialogue(10.0)	2
+cqc	area(15.0)	regulator(6.0)	authority(4.0)	organization(3.0)	organisation(3.0)	program(2.0)	domain(2.0)	response(2.0)	inspectorate(2.0)	service(1.0)	field(1.0)	11
+allusion	device(15.0)	technique(14.0)	element(6.0)	term(5.0)	topic(4.0)	feature(3.0)	aspect(3.0)	process(2.0)	pair(2.0)	form(2.0)	notion(2.0)	product(1.0)	variable(1.0)	phenomenon(1.0)	mechanism(1.0)	concept(1.0)	16
+whispers	item(15.0)	artist(4.0)	act(4.0)	group(2.0)	star(2.0)	book(1.0)	device(1.0)	7
+inert	component(15.0)	condition(6.0)	term(2.0)	substance(2.0)	fluid(2.0)	word(1.0)	6
+wye	river(15.0)	phraseology(4.0)	configuration(3.0)	issue(1.0)	4
+ofdma	technology(15.0)	technique(6.0)	concept(2.0)	signal(1.0)	system(1.0)	5
+empty	problem(15.0)	adjective(14.0)	word(11.0)	concept(7.0)	value(4.0)	particle(4.0)	opposite(4.0)	term(3.0)	work(3.0)	gas(3.0)	object(3.0)	feature(2.0)	item(2.0)	information(2.0)	obstacle(2.0)	material(2.0)	operation(2.0)	case(2.0)	site(2.0)	constraint(2.0)	descriptor(2.0)	amount(2.0)	response(2.0)	alternative(1.0)	phrase(1.0)	factor(1.0)	name(1.0)	service(1.0)	option(1.0)	song(1.0)	building(1.0)	title(1.0)	magazine(1.0)	33
+racer	occupation(15.0)	snake(14.0)	reasoner(13.0)	specie(10.0)	genre(4.0)	species(3.0)	horse(2.0)	rollercoaster(2.0)	game(2.0)	name(1.0)	10
+ulva	alga(15.0)	seaweed(9.0)	specie(8.0)	genus(8.0)	opportunist(5.0)	cell(4.0)	macroalgae(3.0)	product(2.0)	species(2.0)	9
+erwinia	bacterium(15.0)	pathogen(10.0)	genus(5.0)	proteobacteria(2.0)	4
+nyabinghi	way(15.0)	order(5.0)	2
+mecamylamine	antagonist(15.0)	agent(14.0)	base(3.0)	3
+banquets	event(14.0)	subseries(3.0)	department(2.0)	3
+apiculture	activity(14.0)	domain(6.0)	topic(3.0)	livelihood(3.0)	event(2.0)	request(2.0)	opportunity(1.0)	project(1.0)	program(1.0)	sector(1.0)	technology(1.0)	concept(1.0)	12
+laboratories	facility(14.0)	project(6.0)	industry(4.0)	area(4.0)	building(4.0)	word(1.0)	service(1.0)	7
+blonde	service(14.0)	category(8.0)	term(7.0)	shade(7.0)	preference(3.0)	colour(3.0)	book(2.0)	option(2.0)	song(2.0)	artist(2.0)	ale(2.0)	hair(2.0)	factor(1.0)	name(1.0)	model(1.0)	film(1.0)	type(1.0)	17
+upjohn	company(14.0)	firm(1.0)	player(1.0)	3
+altruistic	scale(14.0)	goods(4.0)	motive(4.0)	word(3.0)	value(1.0)	5
+tonkatsu	topping(14.0)	dish(8.0)	item(5.0)	entree(3.0)	food(2.0)	sauce(2.0)	6
+carleton	author(14.0)	university(9.0)	college(6.0)	school(5.0)	man(2.0)	institution(2.0)	village(2.0)	variety(2.0)	theorist(2.0)	lac(2.0)	critic(1.0)	subject(1.0)	team(1.0)	13
+choker	accessory(14.0)	item(7.0)	style(6.0)	device(6.0)	supply(6.0)	piece(5.0)	equipment(5.0)	application(4.0)	type(3.0)	necklace(3.0)	jewelry(3.0)	pearl(3.0)	term(2.0)	ornament(2.0)	measure(2.0)	name(1.0)	16
+nanaimo	city(14.0)	community(9.0)	place(4.0)	municipality(4.0)	location(3.0)	centre(3.0)	region(3.0)	stream(2.0)	people(2.0)	area(1.0)	jurisdiction(1.0)	11
+footswitch	mechanism(14.0)	accessory(3.0)	2
+chironomidae	group(14.0)	taxa(10.0)	family(6.0)	collector(3.0)	diptera(3.0)	invertebrate(2.0)	6
+pira	group(14.0)	case(4.0)	organisation(2.0)	3
+gox	enzyme(14.0)	protein(5.0)	2
+gliricidia	tree(14.0)	specie(10.0)	legume(8.0)	species(6.0)	plant(3.0)	material(1.0)	6
+crepis	genus(14.0)	specie(1.0)	2
+grouting	arrangement(14.0)	topic(11.0)	technique(9.0)	measure(8.0)	repair(7.0)	method(6.0)	activity(5.0)	service(4.0)	treatment(4.0)	application(3.0)	material(3.0)	processing(3.0)	alternative(2.0)	job(2.0)	skill(2.0)	admixture(2.0)	option(1.0)	procedure(1.0)	item(1.0)	project(1.0)	component(1.0)	operation(1.0)	22
+corriedale	breed(14.0)	wool(8.0)	2
+neovascularization	pathology(14.0)	complication(9.0)	event(5.0)	disorder(4.0)	tissue(3.0)	finding(3.0)	condition(2.0)	process(2.0)	abnormality(2.0)	term(1.0)	mechanism(1.0)	problem(1.0)	12
+shellshock	vulnerability(14.0)	classic(3.0)	act(3.0)	name(1.0)	term(1.0)	case(1.0)	problem(1.0)	7
+nimh	chemistry(14.0)	item(4.0)	battery(3.0)	resource(2.0)	rechargeable(2.0)	technology(1.0)	6
+stilbite	zeolite(14.0)	mineral(4.0)	zeolites(3.0)	3
+orpheum	theater(14.0)	venue(5.0)	theatre(2.0)	place(1.0)	amenity(1.0)	5
+hypermethylation	epimutations(14.0)	mechanism(5.0)	event(4.0)	factor(3.0)	phenomenon(3.0)	aspect(1.0)	6
+su8	photoresist(14.0)	photoepoxies(4.0)	material(2.0)	3
+bet	word(13.0)	method(5.0)	platform(4.0)	preposition(3.0)	allergen(3.0)	measure(2.0)	connector(2.0)	ntfp(2.0)	company(1.0)	term(1.0)	mode(1.0)	datum(1.0)	sound(1.0)	concept(1.0)	14
+bureaucratic	factor(13.0)	term(9.0)	model(6.0)	concept(4.0)	issue(3.0)	resource(3.0)	notion(3.0)	dimension(2.0)	space(2.0)	element(1.0)	reason(1.0)	11
+creditworthiness	factor(13.0)	information(4.0)	matter(4.0)	activity(3.0)	issue(3.0)	construct(3.0)	reason(2.0)	case(1.0)	8
+moneysupermarket	website(13.0)	site(9.0)	apps(3.0)	brand(2.0)	client(2.0)	5
+opac	service(13.0)	module(9.0)	facility(4.0)	resource(2.0)	program(2.0)	system(1.0)	6
+tocilizumab	agent(13.0)	biologic(3.0)	experiment(2.0)	biological(2.0)	medication(1.0)	5
+cavaglia	article(13.0)	1
+scranton	city(13.0)	area(4.0)	district(4.0)	place(2.0)	institution(2.0)	entity(2.0)	event(1.0)	factor(1.0)	team(1.0)	department(1.0)	10
+hypervisor	process(13.0)	software(13.0)	technology(7.0)	concept(4.0)	administrator(4.0)	controller(3.0)	application(2.0)	topic(2.0)	program(2.0)	component(2.0)	code(2.0)	element(1.0)	factor(1.0)	option(1.0)	14
+mra	test(13.0)	procedure(5.0)	organization(3.0)	datum(3.0)	facility(2.0)	study(2.0)	investigation(2.0)	methodology(2.0)	imaging(2.0)	technique(2.0)	method(1.0)	word(1.0)	issue(1.0)	application(1.0)	14
+hungarians	group(13.0)	nation(4.0)	nationality(4.0)	people(4.0)	white(2.0)	word(1.0)	person(1.0)	7
+maryborough	town(13.0)	centre(8.0)	region(2.0)	place(1.0)	area(1.0)	city(1.0)	6
+eurest	brand(13.0)	company(2.0)	player(1.0)	3
+mascarpone	cheese(13.0)	flavor(3.0)	filling(2.0)	3
+l4	microkernel(13.0)	protein(9.0)	learner(8.0)	system(2.0)	dimension(2.0)	kernel(2.0)	compound(1.0)	case(1.0)	8
+legitimation	subprocesses(13.0)	term(5.0)	concept(4.0)	issue(3.0)	factor(2.0)	function(2.0)	matter(2.0)	7
+coypu	specie(12.0)	rodent(7.0)	case(4.0)	species(3.0)	word(1.0)	5
+polysulfide	product(12.0)	sealant(11.0)	polymer(7.0)	material(6.0)	agent(5.0)	additive(5.0)	candidate(4.0)	adhesive(3.0)	caulking(3.0)	compound(2.0)	crosslinker(2.0)	process(2.0)	specie(1.0)	13
+generality	factor(12.0)	dimension(9.0)	issue(7.0)	quality(7.0)	aspect(5.0)	goal(4.0)	notion(4.0)	element(3.0)	term(2.0)	characteristic(2.0)	property(2.0)	advantage(2.0)	constraint(2.0)	principle(2.0)	word(1.0)	feature(1.0)	reason(1.0)	17
+backblast	feature(12.0)	1
+sunrun	company(12.0)	1
+torso	area(12.0)	part(6.0)	work(5.0)	function(4.0)	factor(3.0)	technique(3.0)	section(3.0)	segment(3.0)	exercise(3.0)	node(3.0)	anatomy(3.0)	zone(2.0)	sectional(2.0)	place(2.0)	element(1.0)	product(1.0)	feature(1.0)	behavior(1.0)	rule(1.0)	film(1.0)	item(1.0)	21
+etruscan	language(12.0)	name(3.0)	category(3.0)	culture(2.0)	term(1.0)	influence(1.0)	6
+woodcarving	item(12.0)	activity(11.0)	craft(8.0)	exhibit(6.0)	skill(6.0)	art(6.0)	element(4.0)	class(4.0)	medium(3.0)	hobby(3.0)	product(2.0)	feature(2.0)	task(2.0)	course(2.0)	occupation(2.0)	handicraft(2.0)	souvenir(2.0)	material(1.0)	18
+ust	program(12.0)	company(4.0)	university(2.0)	organization(1.0)	4
+engle	study(12.0)	paper(12.0)	author(8.0)	model(2.0)	case(2.0)	builder(2.0)	technique(1.0)	researcher(1.0)	device(1.0)	9
+bulemia	condition(12.0)	1
+rme	fuel(12.0)	company(3.0)	alternative(2.0)	product(1.0)	application(1.0)	5
+laminated	material(12.0)	option(6.0)	solution(3.0)	variety(2.0)	packaging(2.0)	trap(2.0)	glass(2.0)	alternative(1.0)	product(1.0)	technique(1.0)	item(1.0)	11
+mints	ingredient(12.0)	place(2.0)	application(2.0)	study(2.0)	herb(2.0)	5
+pde4b	gene(12.0)	1
+saint	show(12.0)	religion(12.0)	title(9.0)	series(9.0)	role(7.0)	person(6.0)	topic(6.0)	figure(6.0)	term(5.0)	word(4.0)	purpose(4.0)	designation(4.0)	music(4.0)	name(3.0)	film(3.0)	system(3.0)	programme(3.0)	creation(3.0)	creature(3.0)	master(3.0)	prefix(3.0)	element(2.0)	theme(2.0)	object(2.0)	category(2.0)	symbol(2.0)	image(2.0)	club(2.0)	icon(2.0)	fresco(2.0)	rebuild(2.0)	theosis(2.0)	program(2.0)	spirit(2.0)	intercessor(2.0)	product(1.0)	song(1.0)	tool(1.0)	subject(1.0)	city(1.0)	movie(1.0)	41
+feral	predator(12.0)	animal(7.0)	adjective(7.0)	company(6.0)	factor(3.0)	word(2.0)	issue(1.0)	term(1.0)	8
+staghound	breed(12.0)	vehicle(6.0)	2
+incivility	construct(12.0)	complaint(11.0)	term(10.0)	behavior(6.0)	euphemism(6.0)	keyword(4.0)	complication(2.0)	pattern(2.0)	topic(1.0)	problem(1.0)	10
+business.com	directory(12.0)	site(2.0)	2
+skeptic	word(11.0)	label(5.0)	magazine(3.0)	term(2.0)	critic(2.0)	poem(2.0)	organization(1.0)	journal(1.0)	8
+geopolitical	factor(11.0)	risk(10.0)	issue(3.0)	influence(2.0)	challenge(1.0)	variable(1.0)	information(1.0)	system(1.0)	8
+hda3	name(11.0)	1
+adrenalectomy	procedure(11.0)	operation(7.0)	intervention(7.0)	surgery(2.0)	indication(2.0)	option(1.0)	6
+q5	model(11.0)	product(2.0)	report(2.0)	output(2.0)	option(1.0)	5
+dambusters	film(11.0)	scene(4.0)	brand(2.0)	3
+tutu	item(11.0)	prop(11.0)	accessory(8.0)	product(3.0)	clothing(3.0)	politician(3.0)	piece(2.0)	person(2.0)	album(2.0)	song(1.0)	author(1.0)	material(1.0)	12
+cohn	author(11.0)	scholar(6.0)	critic(4.0)	researcher(4.0)	group(4.0)	study(3.0)	process(3.0)	name(2.0)	character(2.0)	company(1.0)	10
+bartram	study(11.0)	author(2.0)	worker(2.0)	naturalist(2.0)	researcher(1.0)	5
+skeena	river(11.0)	name(1.0)	2
+agression	band(11.0)	issue(8.0)	symptom(3.0)	behavior(2.0)	emotion(2.0)	symptorns(2.0)	6
+plentyoffish	site(11.0)	company(4.0)	competitor(3.0)	3
+lothal	site(11.0)	world(6.0)	city(2.0)	area(1.0)	4
+iceman	member(11.0)	character(6.0)	x-men(4.0)	word(2.0)	job(2.0)	stalwart(2.0)	name(1.0)	7
+serdica	town(11.0)	city(5.0)	2
+mulberries	fruit(11.0)	line(4.0)	specie(3.0)	food(2.0)	berry(2.0)	5
+transthyretin	protein(11.0)	case(9.0)	app(5.0)	alternative(4.0)	substance(4.0)	5
+integra	brand(11.0)	company(9.0)	model(6.0)	car(4.0)	survivor(2.0)	product(1.0)	name(1.0)	component(1.0)	8
+nia	agency(11.0)	class(4.0)	program(3.0)	favorite(3.0)	activity(2.0)	style(2.0)	organization(2.0)	interest(2.0)	informant(2.0)	project(1.0)	author(1.0)	player(1.0)	12
+alteromonas	bacterium(11.0)	1
+vacuous	explanation(11.0)	descriptor(2.0)	word(1.0)	3
+netezza	mpps(11.0)	company(8.0)	database(8.0)	vendor(5.0)	product(3.0)	technology(3.0)	player(2.0)	7
+powerhaul	tyre(11.0)	1
+mpeg-7	standard(11.0)	technique(2.0)	2
+hptlc	method(10.0)	technique(7.0)	instrument(3.0)	3
+sugared	product(10.0)	1
+selex	technique(10.0)	method(9.0)	study(1.0)	3
+rcm	technique(10.0)	tool(6.0)	model(5.0)	program(5.0)	initiative(4.0)	system(3.0)	process(3.0)	brand(3.0)	methodology(3.0)	element(2.0)	method(2.0)	website(1.0)	company(1.0)	study(1.0)	concept(1.0)	15
+isn	firm(10.0)	operator(2.0)	organization(1.0)	3
+wedgewood	name(10.0)	neighborhood(6.0)	brand(6.0)	company(4.0)	factory(3.0)	potter(3.0)	manufacturer(2.0)	7
+yonder	place(10.0)	area(1.0)	2
+jython	language(10.0)	implementation(6.0)	python(4.0)	technology(3.0)	compiler(3.0)	program(2.0)	option(1.0)	approach(1.0)	8
+feminicide	term(10.0)	1
+walter	researcher(10.0)	paper(10.0)	name(8.0)	character(6.0)	brand(5.0)	study(4.0)	writer(4.0)	operator(3.0)	muppet(3.0)	feature(2.0)	person(2.0)	tool(2.0)	system(2.0)	stakeholder(2.0)	feminist(2.0)	piece(1.0)	organization(1.0)	model(1.0)	program(1.0)	author(1.0)	player(1.0)	21
+precast	item(10.0)	substrate(7.0)	application(6.0)	product(3.0)	form(2.0)	material(2.0)	object(2.0)	trade(2.0)	industry(1.0)	term(1.0)	case(1.0)	11
+ushahidi	initiative(10.0)	organization(9.0)	platform(8.0)	application(4.0)	tool(4.0)	service(3.0)	enterprise(3.0)	forum(3.0)	effort(2.0)	project(2.0)	system(2.0)	organisation(2.0)	website(1.0)	13
+enders	author(10.0)	study(3.0)	scholar(3.0)	researcher(2.0)	literature(2.0)	5
+zuidas	district(10.0)	initiative(2.0)	2
+khotan	city(10.0)	1
+voronezh	city(10.0)	ent(3.0)	region(2.0)	university(2.0)	4
+internet2	technology(10.0)	network(8.0)	application(2.0)	tool(2.0)	alternative(1.0)	organization(1.0)	effort(1.0)	project(1.0)	initiative(1.0)	9
+otherness	concept(10.0)	issue(9.0)	term(8.0)	theme(4.0)	quality(2.0)	word(1.0)	aspect(1.0)	7
+naadis	concept(10.0)	1
+saltwater	liquid(10.0)	habitat(10.0)	electrolyte(6.0)	substance(5.0)	service(4.0)	material(4.0)	river(3.0)	element(2.0)	place(2.0)	condition(2.0)	activity(1.0)	option(1.0)	song(1.0)	item(1.0)	food(1.0)	source(1.0)	16
+tastes	idea(10.0)	characteristic(2.0)	2
+ballymena	town(10.0)	place(4.0)	area(4.0)	district(1.0)	4
+pignut	plant(10.0)	specie(3.0)	flower(2.0)	wildflower(2.0)	4
+cd55	protein(10.0)	molecule(5.0)	marker(4.0)	transgenesis(3.0)	gene(2.0)	regulator(2.0)	gpiaps(2.0)	7
+bind	database(10.0)	project(5.0)	software(4.0)	program(3.0)	application(2.0)	method(1.0)	service(1.0)	initiative(1.0)	system(1.0)	9
+meekness	virtue(10.0)	quality(6.0)	affection(4.0)	trait(3.0)	word(1.0)	term(1.0)	value(1.0)	7
+inferno	offering(10.0)	ninpo(9.0)	name(5.0)	story(5.0)	spell(5.0)	system(4.0)	map(4.0)	work(2.0)	agency(2.0)	platform(2.0)	game(2.0)	book(1.0)	12
+mehran	paper(10.0)	car(2.0)	2
+norpramin	antidepressant(10.0)	anti-depressants(3.0)	medication(2.0)	medicine(2.0)	4
+ept	plastic(10.0)	test(4.0)	brand(3.0)	agency(3.0)	taxa(3.0)	elastomer(3.0)	procedure(2.0)	program(2.0)	index(2.0)	tournament(2.0)	variable(1.0)	material(1.0)	12
+starfall	spell(10.0)	website(8.0)	site(8.0)	program(7.0)	resource(1.0)	5
+mumuye	people(10.0)	peoples(2.0)	2
+helicoprion	relative(10.0)	1
+cebus	bus(10.0)	1
+rhamphosuchus	crocodyliformes(10.0)	1
+structs	type(10.0)	interface(2.0)	2
+eurhythmics	activity(9.0)	musician(2.0)	technique(1.0)	3
+relentless	word(9.0)	term(4.0)	brand(4.0)	product(3.0)	name(2.0)	drink(1.0)	region(1.0)	7
+inefficient	factor(9.0)	issue(4.0)	word(3.0)	challenge(3.0)	element(2.0)	reason(2.0)	method(1.0)	aspect(1.0)	condition(1.0)	problem(1.0)	10
+section1	name(9.0)	1
+twitpic	service(9.0)	site(5.0)	application(2.0)	3
+nainital	place(9.0)	location(5.0)	district(3.0)	attraction(2.0)	town(2.0)	area(2.0)	6
+cadsoft	company(9.0)	1
+palaeobiology	field(9.0)	1
+blight	issue(9.0)	problem(6.0)	factor(5.0)	event(4.0)	area(4.0)	theme(4.0)	pest(4.0)	person(3.0)	term(3.0)	villain(3.0)	barrier(3.0)	malady(3.0)	situation(2.0)	obstacle(2.0)	scholar(2.0)	symptom(2.0)	concern(2.0)	principle(2.0)	consideration(2.0)	melon(2.0)	adversity(2.0)	name(1.0)	topic(1.0)	film(1.0)	player(1.0)	condition(1.0)	26
+wilmslow	area(9.0)	town(4.0)	location(2.0)	village(2.0)	centre(2.0)	5
+possible	term(9.0)	word(2.0)	2
+syb	approach(9.0)	program(1.0)	2
+dunne	study(9.0)	paper(6.0)	author(4.0)	case(3.0)	book(2.0)	pioneer(2.0)	name(2.0)	researcher(1.0)	source(1.0)	9
+exine	character(9.0)	parameter(5.0)	2
+northallerton	district(9.0)	town(2.0)	centre(2.0)	neighbor(2.0)	place(1.0)	5
+whanganui	river(9.0)	area(3.0)	iwi(3.0)	place(2.0)	town(2.0)	policy(1.0)	district(1.0)	city(1.0)	8
+pohang	city(9.0)	1
+mahfouz	writer(9.0)	study(2.0)	researcher(1.0)	3
+manilius	writer(9.0)	poet(2.0)	author(1.0)	3
+scepticism	concept(9.0)	word(3.0)	barrier(2.0)	theory(2.0)	factor(1.0)	issue(1.0)	area(1.0)	term(1.0)	topic(1.0)	obstacle(1.0)	10
+cd95	gene(9.0)	tnfr(7.0)	drs(5.0)	marker(4.0)	pathway(3.0)	molecule(3.0)	stimulus(2.0)	7
+nrf1	gene(9.0)	1
+shaming	tactic(9.0)	consequence(5.0)	sanction(3.0)	technique(2.0)	term(1.0)	action(1.0)	mechanism(1.0)	7
+willaston	village(9.0)	place(2.0)	2
+omo	brand(9.0)	river(3.0)	detergent(3.0)	product(2.0)	group(2.0)	5
+vjc	school(9.0)	1
+avago	supplier(9.0)	company(5.0)	manufacturer(3.0)	offering(3.0)	firm(1.0)	5
+giac	certification(9.0)	company(2.0)	brand(2.0)	organization(1.0)	4
+ndaa	law(9.0)	area(4.0)	bill(4.0)	legislation(3.0)	act(2.0)	policy(1.0)	6
+aristole	theory(9.0)	1
+trpm7	channel(9.0)	1
+menkauhor	pharaoh(9.0)	1
+procida	island(9.0)	1
+7000k	kit(9.0)	1
+sulh	ritual(9.0)	1
+concours	bike(9.0)	event(4.0)	2
+voluptas	vice(9.0)	1
+alaric	barbarian(9.0)	character(4.0)	2
+boxed	cargo(9.0)	feature(5.0)	item(3.0)	food(3.0)	shape(3.0)	product(3.0)	purchase(2.0)	7
+avp1	transgene(9.0)	transgenes(2.0)	2
+chrysippus	stoic(9.0)	1
+doryanthes	asparagoids(9.0)	1
+vlasov	legend(9.0)	result(3.0)	2
+rhyperior	pokemon(9.0)	teammate(6.0)	rock-types(3.0)	3
+blackfin	specie(8.0)	platform(2.0)	species(2.0)	3
+epiphysiodesis	alternative(8.0)	treatment(6.0)	option(1.0)	3
+neft	product(8.0)	facility(5.0)	system(1.0)	3
+rumble	factor(8.0)	champion(5.0)	name(3.0)	pick(2.0)	opportunity(1.0)	5
+connors	name(8.0)	player(4.0)	scholar(3.0)	case(3.0)	researcher(2.0)	great(2.0)	tennis(2.0)	critic(2.0)	author(1.0)	writer(1.0)	10
+kalonji	name(8.0)	spice(2.0)	2
+soiling	issue(8.0)	symptom(8.0)	variable(3.0)	property(3.0)	mark(3.0)	factor(2.0)	term(2.0)	condition(1.0)	8
+pyrazolone	compound(8.0)	coupler(5.0)	2
+dpr	term(8.0)	activity(4.0)	department(2.0)	party(2.0)	contractor(2.0)	agency(2.0)	issue(1.0)	7
+inh	agent(8.0)	substrate(3.0)	degree(2.0)	regimen(2.0)	medication(1.0)	5
+caveman	film(8.0)	costume(5.0)	master(4.0)	diet(3.0)	term(2.0)	work(2.0)	game(2.0)	name(1.0)	effort(1.0)	title(1.0)	10
+skort	item(8.0)	bottom(6.0)	option(2.0)	bottoms(2.0)	4
+scoop	tool(8.0)	neckline(8.0)	utensil(7.0)	equipment(4.0)	device(3.0)	component(3.0)	property(3.0)	organization(2.0)	character(2.0)	store(2.0)	retailer(2.0)	design(2.0)	startup(2.0)	film(2.0)	product(1.0)	feature(1.0)	shape(1.0)	accessory(1.0)	game(1.0)	19
+uefi	tool(8.0)	product(2.0)	option(1.0)	3
+mcn	information(8.0)	mechanoreceptors(3.0)	microlender(3.0)	partner(2.0)	4
+arteta	player(8.0)	study(2.0)	favorite(2.0)	midfielder(2.0)	person(1.0)	5
+salazar	study(8.0)	name(3.0)	case(2.0)	player(1.0)	4
+achaia	region(8.0)	1
+kilinochchi	district(8.0)	area(3.0)	place(1.0)	3
+diamondtouch	system(8.0)	device(2.0)	product(1.0)	technology(1.0)	4
+zoetrope	mechanism(8.0)	machine(5.0)	device(3.0)	website(2.0)	topic(1.0)	5
+beazley	scholar(8.0)	insurer(5.0)	company(2.0)	underwriter(2.0)	4
+eroom	technology(8.0)	tool(2.0)	application(1.0)	3
+wardriving	concept(8.0)	technique(3.0)	2
+eons	site(8.0)	community(2.0)	2
+shinobi	group(8.0)	game(6.0)	classic(6.0)	song(1.0)	4
+speedball	sport(8.0)	activity(6.0)	game(5.0)	manufacturer(2.0)	4
+nullsleep	artist(8.0)	1
+monpazier	town(8.0)	place(1.0)	2
+milesburg	town(8.0)	1
+https	protocol(8.0)	connection(2.0)	2
+covellite	mineral(8.0)	sulfide(7.0)	sulphide(3.0)	3
+steiff	brand(8.0)	company(5.0)	maker(5.0)	manufacturer(3.0)	staple(3.0)	animal(2.0)	6
+acaricide	chemical(8.0)	pesticide(7.0)	product(5.0)	biocide(4.0)	contaminant(3.0)	5
+immigrations	agency(8.0)	case(3.0)	factor(2.0)	recruiter(2.0)	organization(1.0)	5
+sudaan	package(8.0)	software(7.0)	program(2.0)	3
+huayan	school(8.0)	teaching(2.0)	2
+hughleys	show(8.0)	1
+yugioh	show(8.0)	product(4.0)	game(2.0)	card(2.0)	4
+metadate	stimulant(8.0)	preparation(4.0)	medication(3.0)	3
+summerhill	design(8.0)	area(4.0)	neighborhood(2.0)	client(2.0)	suburb(2.0)	5
+foxp3	marker(8.0)	biomarker(6.0)	gene(2.0)	variable(1.0)	4
+klenow	paper(8.0)	evidence(3.0)	study(2.0)	enzyme(2.0)	polymerase(2.0)	5
+chequers	club(8.0)	building(1.0)	2
+colossians	letter(8.0)	book(5.0)	subject(3.0)	epistle(2.0)	work(1.0)	5
+picaxe	controller(8.0)	1
+transvestitism	exemption(8.0)	attraction(7.0)	topic(1.0)	condition(1.0)	4
+phosphoglycerides	phospholipid(8.0)	phospholipids(3.0)	lipid(2.0)	3
+mitosomes	organelle(8.0)	term(3.0)	2
+xvii	commentary(8.0)	1
+hammerstein	songwriter(8.0)	composer(6.0)	model(3.0)	standard(3.0)	name(1.0)	person(1.0)	6
+haematemesis	bleeding(8.0)	symptom(6.0)	feature(1.0)	complication(1.0)	4
+ferroelectrics	material(8.0)	1
+angst	word(7.0)	emotion(7.0)	feeling(7.0)	term(6.0)	theme(4.0)	concept(3.0)	author(2.0)	mood(2.0)	topic(2.0)	issue(2.0)	element(1.0)	state(1.0)	work(1.0)	subject(1.0)	14
+sensational	word(7.0)	adjective(3.0)	term(2.0)	3
+juxtapose	word(7.0)	system(1.0)	2
+glc	technique(7.0)	acronym(4.0)	institution(3.0)	method(2.0)	mechanism(2.0)	artist(2.0)	category(2.0)	organization(1.0)	term(1.0)	9
+largo	location(7.0)	rhythm(7.0)	area(5.0)	city(5.0)	gem(4.0)	piece(3.0)	project(3.0)	municipality(3.0)	firm(2.0)	place(2.0)	company(2.0)	style(1.0)	jurisdiction(1.0)	13
+sawmilling	service(7.0)	industry(5.0)	area(2.0)	business(2.0)	subject(1.0)	sector(1.0)	6
+wd	feature(7.0)	variant(7.0)	company(6.0)	brand(6.0)	institution(4.0)	marking(4.0)	trait(3.0)	oil(2.0)	vendor(2.0)	abbreviation(2.0)	support(2.0)	alternative(1.0)	product(1.0)	13
+caches	feature(7.0)	type(1.0)	2
+rovi	company(7.0)	service(6.0)	client(2.0)	3
+candidate	person(7.0)	term(7.0)	institution(6.0)	word(5.0)	expression(5.0)	supplement(4.0)	factor(3.0)	resource(3.0)	stakeholder(3.0)	party(3.0)	agitator(3.0)	activity(2.0)	element(2.0)	film(2.0)	form(2.0)	work(2.0)	information(2.0)	group(2.0)	dataset(2.0)	way(2.0)	issue(1.0)	measure(1.0)	topic(1.0)	basic(1.0)	24
+controversy	issue(7.0)	information(6.0)	word(4.0)	entry(4.0)	criterion(3.0)	obstacle(3.0)	circumstance(3.0)	factor(2.0)	program(2.0)	aspect(2.0)	emotion(2.0)	trace(2.0)	everything(2.0)	event(1.0)	term(1.0)	item(1.0)	magazine(1.0)	17
+ruislip	area(7.0)	place(2.0)	2
+fcp	application(7.0)	protocol(5.0)	program(3.0)	format(3.0)	tutorial(3.0)	technique(2.0)	apps(2.0)	service(1.0)	model(1.0)	tool(1.0)	system(1.0)	technology(1.0)	12
+basiliximab	agent(7.0)	antibody(2.0)	2
+shaitan	film(7.0)	title(1.0)	2
+shuriken	item(7.0)	projectile(5.0)	tool(4.0)	technique(3.0)	version(2.0)	equipment(2.0)	ability(2.0)	poerups(2.0)	8
+jewellry	item(7.0)	product(2.0)	accessory(2.0)	3
+pixelmator	program(7.0)	apps(4.0)	application(3.0)	option(1.0)	4
+soukous	genre(7.0)	1
+jessop	author(7.0)	scholar(4.0)	writer(3.0)	surname(2.0)	player(1.0)	5
+as04	adjuvant(7.0)	1
+coword	system(7.0)	1
+finkelstein	writer(7.0)	person(5.0)	scholar(4.0)	group(4.0)	exception(2.0)	paper(2.0)	study(1.0)	source(1.0)	8
+mpac	group(7.0)	organization(3.0)	2
+bluebells	plant(7.0)	bulb(3.0)	brand(2.0)	wildlife(2.0)	4
+coconino	county(7.0)	court(3.0)	material(1.0)	3
+crunchyroll	brand(7.0)	site(5.0)	website(4.0)	service(3.0)	exception(2.0)	place(1.0)	company(1.0)	7
+autos	category(7.0)	industry(6.0)	sector(3.0)	channel(3.0)	area(2.0)	unit(2.0)	section(2.0)	7
+clusia	genus(7.0)	tree(4.0)	case(3.0)	specie(2.0)	plant(2.0)	5
+fbt	tax(7.0)	item(4.0)	issue(3.0)	approach(3.0)	speaker(3.0)	brand(2.0)	product(1.0)	measure(1.0)	component(1.0)	9
+winnow	algorithm(7.0)	method(1.0)	technique(1.0)	resource(1.0)	4
+iyer	paper(7.0)	study(4.0)	researcher(1.0)	3
+reif	paper(7.0)	textbook(2.0)	2
+sliced	texture(7.0)	fruit(4.0)	product(3.0)	cut(3.0)	substance(2.0)	descriptor(2.0)	apple(2.0)	food(1.0)	form(1.0)	ingredient(1.0)	10
+mvv	lentiviruses(7.0)	company(1.0)	2
+thanatos	deity(7.0)	journal(2.0)	band(2.0)	character(1.0)	4
+ftsz	protease(7.0)	protein(4.0)	gene(3.0)	3
+pontocaine	anesthetic(7.0)	1
+gokanna	temple(7.0)	1
+mpd	cryoprotectant(7.0)	reagent(3.0)	cosolvent(3.0)	place(2.0)	department(2.0)	brand(2.0)	substance(2.0)	precipitant(2.0)	factor(1.0)	issue(1.0)	application(1.0)	condition(1.0)	operation(1.0)	technology(1.0)	14
+barrenness	misfortune(7.0)	affliction(4.0)	aspect(2.0)	condition(2.0)	problem(2.0)	obstacle(2.0)	information(1.0)	7
+kieserite	sulfate(7.0)	mineral(4.0)	2
+gyraulus	pulmonates(7.0)	gastropod(4.0)	2
+sorgolactone	strigolactones(7.0)	1
+venusaur	grass-types(7.0)	pokemon(4.0)	teammate(2.0)	sweeper(2.0)	attacker(2.0)	5
+seasoned	word(6.0)	alternative(5.0)	product(3.0)	term(2.0)	datum(2.0)	5
+ecigs	product(6.0)	1
+thermometers	product(6.0)	gauge(4.0)	equipment(2.0)	sensor(2.0)	item(1.0)	5
+patchiness	factor(6.0)	1
+rankits	technique(6.0)	1
+sightspeed	service(6.0)	program(2.0)	2
+profnet	service(6.0)	1
+kennametal	company(6.0)	brand(3.0)	manufacturer(2.0)	organization(1.0)	4
+brill	company(6.0)	fish(5.0)	specie(4.0)	investigator(4.0)	flatfish(3.0)	font(2.0)	species(2.0)	track(2.0)	name(1.0)	term(1.0)	author(1.0)	11
+scitex	company(6.0)	technology(1.0)	2
+jeff	person(6.0)	character(4.0)	participant(4.0)	group(3.0)	film(2.0)	student(2.0)	patient(2.0)	pioneer(2.0)	faculty(2.0)	nickname(2.0)	trainer(2.0)	row(2.0)	technique(1.0)	name(1.0)	14
+sior	organization(6.0)	1
+niso	organization(6.0)	1
+tyneside	area(6.0)	place(1.0)	case(1.0)	3
+stockbridge	area(6.0)	city(4.0)	town(3.0)	community(3.0)	soil(3.0)	place(2.0)	club(2.0)	district(1.0)	8
+buckhead	area(6.0)	neighborhood(3.0)	submarket(2.0)	submarkets(2.0)	company(1.0)	5
+ceuta	area(6.0)	location(5.0)	region(3.0)	company(2.0)	city(1.0)	5
+epibatidine	compound(6.0)	agonist(3.0)	toxin(2.0)	substance(2.0)	agonists(2.0)	5
+congolese	resource(6.0)	nationality(2.0)	ethnicity(2.0)	person(1.0)	4
+photobooth	application(6.0)	service(4.0)	program(4.0)	activity(3.0)	technology(2.0)	environment(2.0)	on(2.0)	product(1.0)	song(1.0)	item(1.0)	10
+inebriety	term(6.0)	1
+architectonic	term(6.0)	1
+deviant	term(6.0)	word(4.0)	adjective(2.0)	label(2.0)	binary(2.0)	5
+s06	sample(6.0)	pair(2.0)	2
+tangyflavored	flavor(6.0)	1
+gancia	author(6.0)	brand(6.0)	2
+brittain	study(6.0)	writer(3.0)	author(2.0)	3
+sheppard	study(6.0)	biologist(6.0)	veteran(5.0)	observer(4.0)	brand(3.0)	author(2.0)	system(2.0)	case(2.0)	composer(2.0)	geographer(2.0)	avenue(2.0)	name(1.0)	scholar(1.0)	writer(1.0)	14
+adsw	system(6.0)	1
+genealogical	material(6.0)	organization(3.0)	term(2.0)	information(1.0)	4
+gynogenesis	mechanism(6.0)	technique(2.0)	approach(2.0)	3
+coring	operation(6.0)	service(4.0)	method(3.0)	technique(3.0)	defect(3.0)	proxy(3.0)	option(2.0)	procedure(2.0)	renovation(2.0)	technology(2.0)	task(2.0)	testing(2.0)	tool(2.0)	product(1.0)	feature(1.0)	measurement(1.0)	16
+dudgeon	case(6.0)	project(3.0)	2
+esoterica	concept(6.0)	1
+indolence	problem(6.0)	characteristic(5.0)	word(2.0)	work(2.0)	goal(2.0)	weakness(2.0)	passion(2.0)	7
+waifs	band(6.0)	artist(5.0)	title(3.0)	3
+wmd	unit(6.0)	term(5.0)	case(5.0)	abbreviation(4.0)	word(3.0)	development(3.0)	topic(2.0)	acronym(2.0)	move(2.0)	method(1.0)	challenge(1.0)	issue(1.0)	12
+dbsa	institution(6.0)	dfi(6.0)	entity(3.0)	agency(2.0)	dfis(2.0)	organization(1.0)	initiative(1.0)	7
+manda	site(6.0)	area(1.0)	river(1.0)	3
+mundas	group(6.0)	1
+galatheidae	group(6.0)	1
+furrower	attachment(6.0)	1
+fonio	cereal(6.0)	crop(2.0)	product(1.0)	3
+harbour	track(6.0)	feature(4.0)	funder(4.0)	union(3.0)	site(3.0)	project(2.0)	work(2.0)	brand(2.0)	partner(2.0)	sight(2.0)	system(1.0)	magazine(1.0)	12
+haberdashery	class(6.0)	item(2.0)	store(2.0)	term(2.0)	4
+leixlip	town(6.0)	centre(4.0)	2
+integrase	gene(6.0)	domain(4.0)	arvs(4.0)	element(1.0)	4
+franchisor	business(6.0)	party(4.0)	area(2.0)	agency(2.0)	factor(1.0)	issue(1.0)	6
+speedwell	plant(6.0)	cavern(6.0)	wildflower(4.0)	specie(2.0)	flower(2.0)	firm(1.0)	6
+proprietorship	entity(6.0)	seal(3.0)	criterion(2.0)	business(2.0)	form(1.0)	5
+oligoclase	mineral(6.0)	1
+skydome	landmark(6.0)	1
+nexxus	brand(6.0)	company(4.0)	line(2.0)	organization(1.0)	4
+galvanometer	instrument(6.0)	indicator(6.0)	apparatus(6.0)	device(4.0)	mean(4.0)	technology(3.0)	sensor(3.0)	equipment(2.0)	technique(1.0)	9
+churrasco	dish(6.0)	item(5.0)	2
+journalists	category(6.0)	catagory(2.0)	capacity(2.0)	3
+pukekohe	development(6.0)	area(3.0)	city(3.0)	location(1.0)	4
+swiftness	attribute(6.0)	mastery(5.0)	quality(2.0)	potion(2.0)	tool(1.0)	5
+telerate	vendor(6.0)	firm(5.0)	company(1.0)	3
+stutthof	camp(6.0)	1
+ulothrix	alga(6.0)	form(2.0)	2
+sabroe	oem(6.0)	oems(4.0)	brand(2.0)	3
+mefruside	diuretic(6.0)	1
+imaan	organisation(6.0)	term(2.0)	group(2.0)	3
+metronomy	act(6.0)	artist(5.0)	2
+photogenic	award(6.0)	term(2.0)	option(1.0)	trait(1.0)	4
+rolf	designer(6.0)	man(2.0)	brand(2.0)	character(1.0)	4
+ellul	theorist(6.0)	writer(5.0)	thinker(4.0)	pessimist(4.0)	name(2.0)	critic(2.0)	author(2.0)	case(1.0)	8
+ceratopogonidae	taxa(6.0)	dipterans(6.0)	group(2.0)	3
+armagnac	spirit(6.0)	sample(3.0)	region(3.0)	brandy(3.0)	sauce(2.0)	style(1.0)	item(1.0)	drink(1.0)	8
+pancrase	competition(6.0)	promotion(3.0)	organization(2.0)	3
+lms	content(6.0)	model(3.0)	algorithm(3.0)	feature(2.0)	system(1.0)	5
+costanza	ecologist(6.0)	author(2.0)	2
+zeratul	heroe(6.0)	device(2.0)	2
+konsole	terminal(6.0)	application(2.0)	2
+anipryl	maoi(6.0)	treatment(3.0)	medication(1.0)	3
+hydroxocobalamin	antidote(6.0)	agent(5.0)	vitamin(2.0)	3
+rosavin	phenylpropanoid(6.0)	product(2.0)	substance(2.0)	glycosides(2.0)	4
+tutte	polynomial(6.0)	1
+triphenylphosphane	phosphanes(6.0)	triarylphosphanes(3.0)	parameter(2.0)	3
+prweb	service(6.0)	website(3.0)	site(3.0)	company(1.0)	tool(1.0)	5
+dvd-a	format(6.0)	technology(3.0)	2
+10%	value(6.0)	percentage(6.0)	discount(5.0)	amount(3.0)	figure(2.0)	limit(2.0)	6
+thymocytes	cell(6.0)	leukocyte(3.0)	2
+pargo	specie(5.0)	word(3.0)	species(3.0)	dish(2.0)	location(2.0)	5
+dioecious	specie(5.0)	pfts(2.0)	word(1.0)	3
+ethnoecology	discipline(5.0)	1
+genever	style(5.0)	1
+exalted	word(5.0)	game(5.0)	modifier(2.0)	title(1.0)	4
+fervor	word(5.0)	parameter(2.0)	quality(2.0)	work(1.0)	4
+xpl	product(5.0)	1
+sarcopaenia	factor(5.0)	change(3.0)	2
+orthovanadate	factor(5.0)	vanadate(5.0)	oxyanions(2.0)	3
+kaboose	website(5.0)	site(2.0)	2
+lavabit	service(5.0)	company(2.0)	example(2.0)	3
+megalocornea	feature(5.0)	condition(1.0)	2
+tingtibi	place(5.0)	1
+usj	place(5.0)	township(4.0)	client(3.0)	area(2.0)	4
+oropoi	place(5.0)	1
+chapters	company(5.0)	store(5.0)	bookstore(3.0)	retailer(2.0)	4
+verger	person(5.0)	1
+jk	person(5.0)	event(4.0)	artist(3.0)	acronym(2.0)	player(2.0)	name(1.0)	term(1.0)	game(1.0)	8
+capacitybuilding	issue(5.0)	element(1.0)	2
+connectomics	application(5.0)	1
+clientage	term(5.0)	1
+rhiannon	song(5.0)	hit(5.0)	goddess(5.0)	standard(3.0)	4
+konjac	agent(5.0)	company(4.0)	gum(3.0)	ingredient(2.0)	hydrocolloid(2.0)	product(1.0)	item(1.0)	source(1.0)	8
+antiphonal	device(5.0)	1
+esmf	project(5.0)	document(3.0)	2
+dado	tool(5.0)	name(3.0)	accessory(3.0)	system(2.0)	element(1.0)	place(1.0)	case(1.0)	7
+mcas	datum(5.0)	tool(3.0)	assessment(2.0)	program(1.0)	4
+thn	component(5.0)	1
+gilley	author(5.0)	scholar(1.0)	2
+mazza	author(5.0)	1
+alicia	character(5.0)	fundraiser(3.0)	person(1.0)	3
+suppandi	character(5.0)	1
+raditz	character(5.0)	1
+spiritualist	journal(5.0)	place(3.0)	occult(3.0)	name(2.0)	identity(2.0)	healer(2.0)	philosophy(2.0)	title(1.0)	sector(1.0)	9
+nondeterminism	phenomenon(5.0)	concept(2.0)	issue(1.0)	aspect(1.0)	4
+fluorogold	material(5.0)	tracer(2.0)	2
+peshawur	city(5.0)	1
+piura	city(5.0)	town(2.0)	department(1.0)	3
+0x10001	value(5.0)	1
+tdoa	technology(5.0)	technique(2.0)	method(1.0)	3
+dilemma	concept(5.0)	theme(4.0)	problem(4.0)	word(3.0)	term(3.0)	symptom(3.0)	factor(2.0)	situation(2.0)	issue(2.0)	topic(2.0)	idea(2.0)	hit(2.0)	feeling(2.0)	element(1.0)	film(1.0)	subject(1.0)	game(1.0)	movie(1.0)	18
+clat	strategy(5.0)	1
+beekes	linguist(5.0)	1
+unicycling	skill(5.0)	activity(4.0)	interest(2.0)	hobby(2.0)	4
+gentlemen	artist(5.0)	sign(5.0)	salutation(4.0)	author(3.0)	book(2.0)	song(2.0)	6
+asbolus	object(5.0)	1
+palo	town(5.0)	document(2.0)	practice(1.0)	author(1.0)	4
+hic1	gene(5.0)	1
+ptger4	gene(5.0)	1
+blond	variety(5.0)	adjective(5.0)	shade(4.0)	hair(4.0)	author(2.0)	feature(1.0)	trait(1.0)	7
+glut1	protein(5.0)	candidate(4.0)	transporter(3.0)	isoforms(2.0)	case(1.0)	5
+nai	instrument(5.0)	farmer(3.0)	caste(2.0)	3
+chicharon	dish(5.0)	1
+icefish	organism(5.0)	fish(2.0)	2
+telkomsel	client(5.0)	operator(4.0)	2
+rohtak	university(5.0)	place(2.0)	town(2.0)	district(1.0)	4
+scarabs	classic(5.0)	unit(2.0)	2
+activists	individual(5.0)	phrase(4.0)	2
+amphisbaena	creature(5.0)	piece(1.0)	2
+academies	school(5.0)	institution(2.0)	model(1.0)	initiative(1.0)	subject(1.0)	5
+monal	bird(5.0)	animal(2.0)	pheasant(2.0)	3
+butyrivibrio	genus(5.0)	1
+erode	operator(5.0)	city(4.0)	town(3.0)	place(2.0)	area(1.0)	5
+fethullahci	offshoot(5.0)	1
+nightwolf	fighter(5.0)	character(2.0)	2
+gorditas	specialty(5.0)	1
+enamelware	utensil(5.0)	field(4.0)	item(3.0)	product(2.0)	material(1.0)	5
+elastane	fiber(5.0)	fabric(4.0)	material(4.0)	enzyme(2.0)	4
+floodfill	algorithm(5.0)	basic(1.0)	2
+capra	thinker(5.0)	writer(4.0)	author(3.0)	scholar(2.0)	filmmaker(2.0)	scientist(2.0)	name(1.0)	person(1.0)	8
+desmids	taxa(5.0)	specie(3.0)	2
+intakes	modification(5.0)	1
+rumania	target(5.0)	place(2.0)	state(2.0)	region(2.0)	power(2.0)	location(1.0)	area(1.0)	7
+tuta	locality(5.0)	1
+parkville	suburb(5.0)	area(2.0)	2
+teterboro	airport(5.0)	1
+bcp	crystal(5.0)	company(4.0)	utility(4.0)	product(3.0)	project(3.0)	plan(3.0)	application(2.0)	tool(2.0)	hormone(2.0)	method(1.0)	factor(1.0)	organization(1.0)	operation(1.0)	medication(1.0)	14
+uchl1	dub(5.0)	gene(3.0)	enzyme(2.0)	candidate(2.0)	4
+sholinganallur	node(5.0)	area(2.0)	zone(2.0)	3
+genova	lab(5.0)	area(3.0)	city(1.0)	3
+altrose	hexose(5.0)	monosaccharide(2.0)	aldohexopyranoses(2.0)	3
+evercore	boutique(5.0)	firm(3.0)	2
+sleeptalking	parasomnia(5.0)	exception(2.0)	experience(1.0)	3
+trooper	rocker(5.0)	band(3.0)	song(2.0)	job(2.0)	class(2.0)	artist(2.0)	act(2.0)	rank(2.0)	person(1.0)	model(1.0)	10
+anec	cooperative(5.0)	organization(1.0)	2
+printable	coupon(5.0)	page(4.0)	2
+cytogenetics	factor(5.0)	method(5.0)	topic(3.0)	field(2.0)	testing(2.0)	technique(1.0)	6
+n.h.	company(5.0)	region(4.0)	area(2.0)	city(2.0)	4
+fly-ash	material(5.0)	substance(2.0)	additive(2.0)	waste(2.0)	4
+lappet-faced	species(5.0)	1
+bid-rigging	practice(5.0)	action(2.0)	2
+cognitive-behavioral	therapy(5.0)	technique(4.0)	method(2.0)	approach(2.0)	discipline(2.0)	5
+subluxations	injury(5.0)	1
+ledc	comparison(4.0)	1
+sawsharks	specie(4.0)	species(2.0)	2
+tabonuco	specie(4.0)	1
+inflatables	activity(4.0)	category(2.0)	industry(1.0)	work(1.0)	4
+dfma	method(4.0)	objective(4.0)	acronym(2.0)	technique(1.0)	practice(1.0)	5
+ukf	method(4.0)	algorithm(4.0)	filter(2.0)	technique(1.0)	4
+earthly	word(4.0)	1
+momy	word(4.0)	1
+receptors	word(4.0)	1
+multiprocessing	factor(4.0)	topic(3.0)	technique(2.0)	application(2.0)	4
+gvwr	factor(4.0)	point(4.0)	information(2.0)	3
+wristlock	technique(4.0)	1
+intraosseous	technique(4.0)	route(1.0)	2
+thetis	woman(4.0)	vessel(2.0)	boat(2.0)	character(1.0)	4
+vitae	website(4.0)	group(3.0)	company(2.0)	3
+photoplethysmogram	signal(4.0)	1
+eartha	name(4.0)	1
+centralia	place(4.0)	program(2.0)	station(2.0)	location(1.0)	city(1.0)	case(1.0)	6
+artek	company(4.0)	client(2.0)	2
+eurocom	company(4.0)	manufacturer(2.0)	2
+kemira	company(4.0)	trailblazer(2.0)	2
+apicectomy	situation(4.0)	1
+aocs	organization(4.0)	method(1.0)	2
+nonverbal	issue(4.0)	form(4.0)	factor(2.0)	term(2.0)	skill(2.0)	tactic(2.0)	6
+brm	issue(4.0)	team(3.0)	company(1.0)	treatment(1.0)	4
+rondebosch	area(4.0)	suburb(4.0)	school(2.0)	station(2.0)	place(1.0)	5
+pymatuning	area(4.0)	1
+valletta	area(4.0)	town(3.0)	location(2.0)	city(2.0)	locality(2.0)	estimate(2.0)	6
+dhivehi	language(4.0)	1
+sws	measure(4.0)	parameter(4.0)	stage(3.0)	organization(2.0)	tool(1.0)	program(1.0)	6
+etp	measure(4.0)	regimen(2.0)	component(2.0)	area(1.0)	4
+mcjob	term(4.0)	1
+experts	term(4.0)	topic(2.0)	initiative(2.0)	concept(2.0)	role(2.0)	plural(2.0)	film(1.0)	movie(1.0)	8
+keratometry	variable(4.0)	factor(3.0)	service(3.0)	parameter(3.0)	method(2.0)	application(2.0)	technology(1.0)	7
+frenectomy	procedure(4.0)	1
+autoencoder	model(4.0)	1
+dalrymple	researcher(4.0)	investigator(2.0)	map(2.0)	account(2.0)	study(1.0)	case(1.0)	writer(1.0)	7
+lokris	state(4.0)	1
+budtameez	film(4.0)	1
+meander	device(4.0)	feature(3.0)	stream(3.0)	term(2.0)	river(2.0)	pattern(2.0)	configuration(2.0)	catchment(2.0)	fishery(2.0)	word(1.0)	phenomenon(1.0)	11
+displays	project(4.0)	type(2.0)	application(1.0)	component(1.0)	4
+windwalker	project(4.0)	movie(2.0)	film(2.0)	3
+godep	tool(4.0)	1
+incredimail	program(4.0)	1
+celebdaq	program(4.0)	game(2.0)	website(1.0)	3
+lexion	program(4.0)	1
+jtpa	program(4.0)	1
+foodstamps	program(4.0)	benefit(2.0)	resource(1.0)	3
+vdx	format(4.0)	product(1.0)	2
+aranyakas	work(4.0)	addition(3.0)	text(2.0)	3
+kontakte	work(4.0)	1
+manski	work(4.0)	study(3.0)	author(1.0)	scholar(1.0)	4
+jellyvision	approach(4.0)	1
+n2pc	component(4.0)	1
+levene	author(4.0)	scholar(1.0)	2
+infield	author(4.0)	word(2.0)	skill(2.0)	area(1.0)	topic(1.0)	study(1.0)	6
+cukierman	author(4.0)	paper(3.0)	opponent(3.0)	3
+buchholz	author(4.0)	prospect(2.0)	researcher(1.0)	player(1.0)	scholar(1.0)	5
+acres	player(4.0)	apartment(4.0)	song(2.0)	property(2.0)	name(1.0)	5
+woodhouse	study(4.0)	area(3.0)	reef(3.0)	analyst(2.0)	residence(2.0)	name(1.0)	6
+ehlers	study(4.0)	player(2.0)	author(1.0)	3
+huitfeldt	study(4.0)	1
+cupido	character(4.0)	site(2.0)	2
+bonafide	certificate(4.0)	1
+ee	sound(4.0)	combination(2.0)	digraph(2.0)	interjection(2.0)	syllable(2.0)	term(1.0)	6
+itm	system(4.0)	feature(3.0)	company(3.0)	option(2.0)	component(2.0)	concept(2.0)	organization(1.0)	7
+sfbr	system(4.0)	1
+topicalization	phenomenon(4.0)	form(2.0)	aspect(2.0)	operation(2.0)	case(1.0)	5
+uruguaiana	city(4.0)	1
+classlessness	value(4.0)	1
+wordbook	operation(4.0)	1
+desborough	scholar(4.0)	researcher(1.0)	2
+smothers	scholar(4.0)	1
+razzle	magazine(4.0)	1
+gleim	writer(4.0)	program(3.0)	competitor(2.0)	poet(1.0)	4
+brighouse	band(4.0)	area(1.0)	2
+innerpartysystem	band(4.0)	1
+millimetre	unit(4.0)	prefix(2.0)	term(1.0)	3
+stations	unit(4.0)	subsection(3.0)	practice(2.0)	corporation(2.0)	artist(2.0)	location(1.0)	place(1.0)	situation(1.0)	option(1.0)	item(1.0)	work(1.0)	information(1.0)	12
+sanaa	institution(4.0)	1
+saica	institution(4.0)	1
+chequebook	benefit(4.0)	facility(1.0)	item(1.0)	3
+brw	site(4.0)	area(3.0)	journal(3.0)	medium(2.0)	4
+ncba	group(4.0)	1
+pendet	incident(4.0)	1
+duramax	manufacturer(4.0)	brand(2.0)	system(1.0)	3
+bm1	medium(4.0)	benchmark(2.0)	2
+abenaki	nation(4.0)	club(2.0)	term(1.0)	3
+suffield	town(4.0)	municipality(3.0)	settlement(2.0)	3
+heartless	gene(4.0)	word(3.0)	creature(2.0)	label(2.0)	song(1.0)	film(1.0)	6
+papaver	plant(4.0)	flower(4.0)	genus(2.0)	3
+glyricidia	plant(4.0)	1
+banda	village(4.0)	researcher(3.0)	author(3.0)	place(2.0)	rhythm(2.0)	district(1.0)	6
+bapu	director(4.0)	1
+otwayite	mineral(4.0)	1
+xpa	protein(4.0)	group(2.0)	factor(1.0)	3
+synapsin	protein(4.0)	molecule(4.0)	2
+fountaingrove	neighborhood(4.0)	1
+avirex	brand(4.0)	line(2.0)	2
+blundstone	brand(4.0)	name(1.0)	2
+fiamme	structure(4.0)	1
+flagellates	organism(4.0)	1
+bromelin	enzyme(4.0)	1
+osmanthus	flower(4.0)	evergreen(3.0)	genus(2.0)	shrub(2.0)	4
+stallone	contemporary(4.0)	celebrity(2.0)	luminary(2.0)	3
+unabomber	individual(4.0)	incident(3.0)	event(2.0)	case(1.0)	4
+kobold	creature(4.0)	spirit(3.0)	2
+becton	school(4.0)	developer(3.0)	company(2.0)	manufacturer(2.0)	device(1.0)	5
+pscad	software(4.0)	1
+yelloway	independent(4.0)	1
+cinergy	utility(4.0)	company(2.0)	client(2.0)	commenter(2.0)	4
+etso	association(4.0)	structure(3.0)	2
+isopropenol	alcohol(4.0)	1
+groezrock	festival(4.0)	1
+shapeoko	design(4.0)	1
+complaints	committee(4.0)	pleading(4.0)	policy(3.0)	service(2.0)	area(2.0)	item(2.0)	form(2.0)	keyword(2.0)	section(2.0)	category(2.0)	term(1.0)	topic(1.0)	12
+kampot	province(4.0)	place(1.0)	area(1.0)	option(1.0)	4
+mawun	beach(4.0)	1
+wordstock	venue(4.0)	1
+rotweiler	breed(4.0)	dog(2.0)	2
+traf1	marker(4.0)	1
+mediobanca	bank(4.0)	1
+lm317	regulator(4.0)	case(1.0)	2
+lm340	regulator(4.0)	1
+euhedral	texture(4.0)	1
+k2o	oxide(4.0)	element(3.0)	impurity(2.0)	component(2.0)	4
+kpi	report(4.0)	acronym(4.0)	indicator(3.0)	keyword(2.0)	test(2.0)	quota(2.0)	product(1.0)	service(1.0)	term(1.0)	measurement(1.0)	form(1.0)	11
+eifert	theorist(4.0)	player(1.0)	2
+wormbase	mod(4.0)	resource(1.0)	2
+micr	font(4.0)	device(3.0)	2
+akhar	font(4.0)	1
+ncoic	abbreviation(4.0)	position(3.0)	phrase(1.0)	3
+wintersweet	shrub(4.0)	1
+ccpa	acronym(4.0)	tank(3.0)	organization(1.0)	variable(1.0)	asset(1.0)	5
+solrock	spreader(4.0)	1
+rup	methodology(4.0)	method(2.0)	technique(1.0)	3
+melem	intermediate(4.0)	triazine(2.0)	triazines(2.0)	3
+vtam	subsystem(4.0)	task(3.0)	case(2.0)	job(2.0)	work(1.0)	5
+graptemys	turtle(4.0)	1
+bigloo	benchmark(4.0)	system(2.0)	2
+patriarchal	discourse(4.0)	term(3.0)	factor(2.0)	issue(2.0)	word(1.0)	building(1.0)	6
+rhumba	dance(4.0)	beat(3.0)	rhythm(3.0)	3
+omele	drum(4.0)	component(1.0)	2
+gmelinite	zeolite(4.0)	1
+aberlour	distillery(4.0)	organization(3.0)	town(3.0)	settlement(3.0)	community(2.0)	5
+commd1	prey(4.0)	player(2.0)	2
+narona	intersection(4.0)	1
+welspun	conglomerate(4.0)	investment(2.0)	2
+bustan	garden(4.0)	name(2.0)	2
+sura	verse(4.0)	word(1.0)	name(1.0)	term(1.0)	4
+quadding	outdoor(4.0)	1
+ifi27	isg(4.0)	1
+sulcatas	tortoise(4.0)	1
+ginataan	stew(4.0)	1
+tvb	limiter(4.0)	company(2.0)	medium(2.0)	3
+myophosphorylase	glycogenoses(4.0)	1
+nauli	kriya(4.0)	practice(2.0)	technique(1.0)	3
+cellobiase	disaccharidase(4.0)	1
+indrajeet	rakshyasas(4.0)	1
+seedsman	midpricers(4.0)	1
+add-ons	feature(4.0)	service(4.0)	item(2.0)	information(2.0)	incentive(2.0)	objective(2.0)	6
+tribe.net	site(4.0)	snss(3.0)	2
+practicality	characteristic(4.0)	factor(2.0)	aspect(2.0)	criterion(1.0)	topic(1.0)	5
+right-of-way	cost(4.0)	constraint(4.0)	area(3.0)	permit(3.0)	factor(2.0)	issue(2.0)	6
+roys	celebrity(4.0)	artist(2.0)	woman(1.0)	3
+near-death	phenomenon(4.0)	experience(3.0)	2
+java.lang	package(4.0)	class(2.0)	2
+bergen-belsen	camp(4.0)	1
+nimzo-indian	opening(4.0)	1
+co-codamol	painkiller(4.0)	1
+stoppages	remediation(4.0)	1
+nhb	institution(4.0)	scheme(2.0)	2
+shooters	event(3.0)	person(2.0)	story(2.0)	game(1.0)	4
+dakosaurus	specie(3.0)	1
+pitaya	specie(3.0)	fruit(2.0)	2
+massasauga	specie(3.0)	snake(2.0)	2
+potentiomer	element(3.0)	1
+checkerboarding	method(3.0)	1
+ckf	method(3.0)	company(1.0)	2
+kizuna	word(3.0)	classic(2.0)	2
+shilling	word(3.0)	coin(3.0)	study(2.0)	phenomenon(2.0)	writer(2.0)	term(1.0)	6
+condescending	word(3.0)	term(1.0)	2
+selco	product(3.0)	company(3.0)	organization(3.0)	3
+patency	factor(3.0)	1
+mlondi	name(3.0)	1
+bismuthyl	name(3.0)	1
+dohol	name(3.0)	1
+pao	name(3.0)	author(2.0)	study(2.0)	style(1.0)	investigator(1.0)	5
+karam	name(3.0)	trait(1.0)	2
+chiromancy	name(3.0)	word(2.0)	discipline(1.0)	3
+diginet	service(3.0)	1
+balsham	place(3.0)	1
+murmansk	place(3.0)	region(3.0)	city(2.0)	area(1.0)	4
+outremont	place(3.0)	neighborhood(2.0)	2
+surgutneftegaz	company(3.0)	1
+123	company(3.0)	name(2.0)	system(2.0)	difference(2.0)	method(1.0)	product(1.0)	term(1.0)	7
+panasas	company(3.0)	system(2.0)	2
+bartercard	company(3.0)	organization(1.0)	2
+nuscale	company(3.0)	developer(2.0)	2
+seperation	situation(3.0)	issue(1.0)	song(1.0)	condition(1.0)	4
+fiba	organization(3.0)	partner(2.0)	2
+cnu	organization(3.0)	team(1.0)	2
+hlf	organization(3.0)	source(1.0)	fund(1.0)	3
+petersfield	area(3.0)	1
+pozzuoli	area(3.0)	1
+nunwick	area(3.0)	estate(2.0)	2
+schaefferstown	area(3.0)	1
+nanakuli	area(3.0)	city(1.0)	2
+turramurra	area(3.0)	issue(2.0)	2
+quigney	area(3.0)	1
+pinjarra	area(3.0)	place(1.0)	2
+bajaur	area(3.0)	1
+vidlin	area(3.0)	1
+quinizarin	compound(3.0)	additive(2.0)	2
+relearning	measure(3.0)	1
+multiphysics	application(3.0)	1
+playbook	term(3.0)	asset(3.0)	tablet(3.0)	product(2.0)	device(2.0)	booklet(2.0)	information(1.0)	7
+dbuv	term(3.0)	1
+cerise	term(3.0)	character(3.0)	shade(3.0)	heroe(3.0)	4
+paralysed	song(3.0)	term(1.0)	2
+amusements	topic(3.0)	1
+incipient	topic(3.0)	tumor(3.0)	beginning(3.0)	term(1.0)	4
+cessation	topic(3.0)	1
+mxml	topic(3.0)	1
+ghostface	influence(3.0)	character(2.0)	artist(2.0)	rapper(2.0)	4
+gallamine	agent(3.0)	ligand(2.0)	compound(1.0)	3
+ryanodine	agent(3.0)	compound(2.0)	ryanoids(2.0)	inhibitor(1.0)	4
+lakshadweep	state(3.0)	area(2.0)	region(1.0)	3
+ko	film(3.0)	paper(3.0)	scholar(2.0)	name(1.0)	4
+scummvm	tool(3.0)	1
+aaav	program(3.0)	system(3.0)	2
+oudenodon	form(3.0)	dicynodonts(3.0)	2
+shv	format(3.0)	lactamase(2.0)	2
+cvc2	initiative(3.0)	1
+credo	work(3.0)	element(2.0)	organization(2.0)	document(2.0)	programme(2.0)	piece(1.0)	website(1.0)	term(1.0)	song(1.0)	program(1.0)	10
+floorplan	information(3.0)	item(2.0)	attachment(2.0)	file(2.0)	project(1.0)	5
+portafilter	component(3.0)	1
+climatization	component(3.0)	1
+arber	author(3.0)	master(2.0)	2
+redford	author(3.0)	analyst(3.0)	name(2.0)	newcomer(2.0)	popularatii(2.0)	5
+lytle	author(3.0)	pioneer(3.0)	2
+whitcomb	author(3.0)	case(3.0)	creationist(2.0)	3
+merrychef	player(3.0)	1
+virility	theme(3.0)	characteristic(2.0)	attribute(2.0)	term(1.0)	4
+ellsburg	study(3.0)	1
+chui	study(3.0)	researcher(2.0)	author(1.0)	3
+siebert	study(3.0)	trailblazer(2.0)	2
+parens	character(3.0)	punctuation(3.0)	2
+biron	character(3.0)	castle(2.0)	project(1.0)	3
+hendrick	team(3.0)	group(3.0)	organization(2.0)	scholar(2.0)	name(1.0)	5
+unicoloniality	trait(3.0)	1
+unripe	impurity(3.0)	1
+banaskantha	region(3.0)	district(1.0)	case(1.0)	3
+waterberg	district(3.0)	place(1.0)	area(1.0)	region(1.0)	4
+zoutpansberg	district(3.0)	1
+postmaturity	complication(3.0)	problem(3.0)	2
+brf3	gas(3.0)	1
+registrars	occasion(3.0)	organization(2.0)	2
+trimethoxymethane	fuel(3.0)	1
+funicular	system(3.0)	technology(2.0)	hernia(2.0)	project(1.0)	4
+hspda	system(3.0)	technology(1.0)	2
+bzr	system(3.0)	dvcs(2.0)	program(1.0)	3
+semeni	river(3.0)	1
+balata	material(3.0)	specie(1.0)	form(1.0)	3
+moulage	material(3.0)	prop(2.0)	2
+daguerrotype	material(3.0)	technique(1.0)	2
+yinchuan	city(3.0)	1
+saransk	city(3.0)	1
+freightdynamics	operation(3.0)	1
+hitzig	scholar(3.0)	scientist(3.0)	researcher(1.0)	3
+friedl	scholar(3.0)	1
+odi	case(3.0)	district(1.0)	2
+wheatfield	case(3.0)	locale(3.0)	area(2.0)	place(1.0)	4
+jernigan	case(3.0)	1
+mullaney	case(3.0)	1
+hofstadgroep	case(3.0)	1
+neopost	case(3.0)	company(2.0)	institution(2.0)	corporation(2.0)	4
+jardim	case(3.0)	researcher(2.0)	2
+mcbryde	writer(3.0)	geographer(2.0)	2
+bitcoin	technology(3.0)	area(1.0)	2
+subsonic	technology(3.0)	equipment(2.0)	application(1.0)	tool(1.0)	condition(1.0)	5
+confederalism	concept(3.0)	1
+aphides	insect(3.0)	pest(2.0)	2
+suni	animal(3.0)	1
+verlaines	band(3.0)	1
+assange	man(3.0)	name(1.0)	source(1.0)	3
+approvals	circumstance(3.0)	documentation(2.0)	information(1.0)	3
+borobudor	site(3.0)	1
+ohloh	site(3.0)	organization(1.0)	2
+countif	function(3.0)	1
+eosinophilic	disorder(3.0)	subset(3.0)	leukemia(2.0)	3
+intraarticular	test(3.0)	modality(2.0)	route(2.0)	technique(1.0)	4
+kinsman	group(3.0)	1
+serbians	group(3.0)	immigrant(2.0)	2
+montagnais	group(3.0)	culture(3.0)	option(1.0)	3
+suessiales	group(3.0)	1
+arctiidae	group(3.0)	family(2.0)	2
+heelas	commentator(3.0)	writer(2.0)	theorist(2.0)	scholar(1.0)	4
+mollen	commission(3.0)	1
+agie	manufacturer(3.0)	company(1.0)	2
+detaching	strategy(3.0)	1
+metol	developer(3.0)	1
+datetime	control(3.0)	1
+nycta	property(3.0)	1
+runecrafting	skill(3.0)	1
+frazetta	artist(3.0)	great(3.0)	master(2.0)	3
+saignon	village(3.0)	1
+glanmire	village(3.0)	1
+senia	variety(3.0)	1
+lapin	variety(3.0)	scholar(1.0)	2
+beltrami	exception(3.0)	county(3.0)	lake(3.0)	3
+prbs	scheme(3.0)	feature(2.0)	signal(1.0)	item(1.0)	4
+reoviridae	virus(3.0)	1
+haskap	fruit(3.0)	name(1.0)	2
+yavi	neighborhood(3.0)	1
+ferland	brand(3.0)	company(1.0)	player(1.0)	3
+emachine	brand(3.0)	computer(3.0)	vendor(2.0)	company(1.0)	case(1.0)	5
+tadano	brand(3.0)	product(2.0)	manufacturer(2.0)	3
+fonda	celebrity(3.0)	connection(2.0)	product(1.0)	3
+israj	instrument(3.0)	1
+vina	instrument(3.0)	1
+glenpool	community(3.0)	area(2.0)	2
+westlock	community(3.0)	1
+methol	chemical(3.0)	1
+appositive	structure(3.0)	pattern(3.0)	element(2.0)	material(1.0)	4
+cbmm	agency(3.0)	1
+dgs	agency(3.0)	organization(2.0)	technology(1.0)	3
+slmm	agency(3.0)	1
+spellbinders	apps(3.0)	supply(2.0)	company(2.0)	3
+extensional	category(3.0)	approach(2.0)	2
+millett	feminist(3.0)	scholar(2.0)	thinker(2.0)	option(1.0)	author(1.0)	player(1.0)	writer(1.0)	7
+balantidium	protist(3.0)	ciliate(3.0)	2
+openfoam	package(3.0)	code(3.0)	software(2.0)	3
+parature	vendor(3.0)	1
+apsyrtus	individual(3.0)	1
+nanotoxicity	advantage(3.0)	issue(1.0)	2
+merriment	effect(3.0)	1
+mrcr	indicator(3.0)	1
+galeola	genus(3.0)	specie(1.0)	2
+rajini	star(3.0)	1
+virtualrouter	software(3.0)	1
+lacerte	software(3.0)	program(1.0)	2
+dishtv	operator(3.0)	1
+pepa	association(3.0)	agent(1.0)	2
+michelmas	festival(3.0)	1
+acrivastine	antihistamine(3.0)	1
+collapsibility	consideration(3.0)	factor(2.0)	issue(2.0)	feature(1.0)	4
+buro	tenant(3.0)	1
+stiles	partner(3.0)	project(2.0)	method(1.0)	company(1.0)	scholar(1.0)	5
+udall	award(3.0)	program(2.0)	case(2.0)	exception(2.0)	folk(2.0)	scholarship(2.0)	6
+swinomish	channel(3.0)	1
+sevan	designer(3.0)	company(1.0)	2
+panionios	club(3.0)	1
+rotta	acquisition(3.0)	character(1.0)	2
+2m	alliance(3.0)	response(3.0)	boxes(3.0)	material(3.0)	company(2.0)	5
+argentinian	nationality(3.0)	folksong(3.0)	event(1.0)	style(1.0)	woman(1.0)	initiative(1.0)	player(1.0)	government(1.0)	8
+filovirus	zoonoses(3.0)	1
+isomerisation	reaction(3.0)	process(2.0)	2
+erudition	quality(3.0)	1
+drown	story(3.0)	song(2.0)	2
+murrey	manager(3.0)	1
+hallow	spell(3.0)	word(1.0)	2
+multipactor	instability(3.0)	1
+matriarch	stereotype(3.0)	title(2.0)	novel(2.0)	image(2.0)	term(1.0)	5
+northcliffe	estate(3.0)	area(2.0)	2
+esoterics	ensemble(3.0)	1
+dodges	family(3.0)	vehicle(2.0)	2
+farmfoods	shop(3.0)	retailer(2.0)	2
+ninian	saint(3.0)	field(1.0)	2
+ddvp	insecticide(3.0)	compound(1.0)	2
+lasercast	bullet(3.0)	1
+slax	distribution(3.0)	linux(2.0)	livecds(2.0)	distro(1.0)	4
+schottische	dance(3.0)	name(1.0)	2
+infolink	affiliate(3.0)	site(2.0)	service(1.0)	company(1.0)	4
+7q5	fragment(3.0)	1
+csoh	alkali(3.0)	base(2.0)	specie(1.0)	3
+iansa	coalition(3.0)	1
+rubenstein	jurist(3.0)	soloist(2.0)	company(1.0)	work(1.0)	scholar(1.0)	writer(1.0)	6
+wapl	league(3.0)	1
+phoronids	bioeroders(3.0)	lophophorates(2.0)	2
+chola	dynasty(3.0)	polity(2.0)	term(1.0)	3
+tradecards	ephemera(3.0)	1
+valdiguie	grape(3.0)	1
+praetorians	alien(3.0)	apps(2.0)	2
+poct	outreach(3.0)	technology(1.0)	2
+nichitsu	zaibatsu(3.0)	1
+atchison	precinct(3.0)	company(2.0)	case(2.0)	building(1.0)	4
+casp3	procaspases(3.0)	caspase(2.0)	2
+talas	oblast(3.0)	province(2.0)	city(1.0)	3
+800w	wattage(3.0)	1
+sophists	subjectivist(3.0)	work(1.0)	2
+mimecast	disrupters(3.0)	option(2.0)	solution(2.0)	company(2.0)	product(1.0)	tool(1.0)	6
+keyholders	product(3.0)	1
+ultra-sound	technique(3.0)	therapy(2.0)	modalities(2.0)	3
+enrique	player(3.0)	case(2.0)	study(1.0)	3
+robots.txt	file(3.0)	tool(2.0)	2
+mississippi-missouri	river(3.0)	1
+stainless-steel	metal(3.0)	material(2.0)	component(2.0)	finish(2.0)	4
+ll&p	designation(3.0)	1
+paillet	sculptor(3.0)	1
+ernies	crankbaits(3.0)	diver(2.0)	2
+perhentian	island(3.0)	1
+onmouseover	event(2.0)	1
+bushwhacker	event(2.0)	work(1.0)	2
+birdfair	event(2.0)	1
+ceratophyllum	specie(2.0)	plant(2.0)	genus(2.0)	3
+boccacio	specie(2.0)	1
+cupiennius	specie(2.0)	1
+zabrak	specie(2.0)	1
+charr	specie(2.0)	war(2.0)	fish(1.0)	3
+horopito	specie(2.0)	herb(1.0)	2
+barilius	specie(2.0)	1
+mushrooming	activity(2.0)	variable(2.0)	hobby(2.0)	excursion(2.0)	feature(1.0)	5
+readonly	style(2.0)	attribute(2.0)	option(1.0)	3
+cuirasses	element(2.0)	1
+trosy	method(2.0)	1
+fzw	method(2.0)	1
+bioconversion	method(2.0)	technique(1.0)	2
+setonclicklistener	method(2.0)	1
+tumultuous	word(2.0)	description(2.0)	song(1.0)	3
+kaaba	word(2.0)	place(1.0)	2
+sombre	word(2.0)	trait(1.0)	2
+putera	word(2.0)	1
+hrin	word(2.0)	1
+beinn	word(2.0)	1
+disposer	product(2.0)	1
+sarees	product(2.0)	gift(2.0)	item(1.0)	3
+surfcontrol	product(2.0)	1
+alphanate	product(2.0)	1
+jengkol	product(2.0)	tree(2.0)	2
+celox	product(2.0)	agent(2.0)	item(1.0)	3
+palaeogeomorphology	factor(2.0)	1
+incoherent	factor(2.0)	word(1.0)	2
+microtones	technique(2.0)	1
+neulion	firm(2.0)	company(1.0)	2
+lanyer	woman(2.0)	1
+ardougne	location(2.0)	1
+julesburg	location(2.0)	town(2.0)	place(2.0)	3
+fastline	website(2.0)	isps(2.0)	2
+usccb	website(2.0)	1
+wafoo	website(2.0)	1
+barnwell	name(2.0)	area(2.0)	study(1.0)	3
+bradman	name(2.0)	1
+visnu	name(2.0)	purana(2.0)	puranas(2.0)	3
+gangadhar	name(2.0)	1
+twilio	service(2.0)	1
+couchette	service(2.0)	1
+verifyvoterid	service(2.0)	1
+clenching	habit(2.0)	1
+scrobbling	feature(2.0)	1
+bwer	feature(2.0)	1
+scansion	feature(2.0)	issue(2.0)	element(1.0)	term(1.0)	4
+vetulonia	place(2.0)	1
+cathouse	place(2.0)	1
+kalacherra	place(2.0)	1
+tuamotus	place(2.0)	group(2.0)	island(2.0)	area(1.0)	4
+bestwood	place(2.0)	1
+liling	place(2.0)	county(2.0)	2
+pactiv	company(2.0)	1
+brotherls	company(2.0)	1
+fxpansion	company(2.0)	1
+cvz	company(2.0)	1
+byk	company(2.0)	1
+zmp	company(2.0)	1
+alexion	company(2.0)	player(1.0)	2
+click4warranty	company(2.0)	1
+strides	company(2.0)	project(1.0)	2
+goget	company(2.0)	1
+lbi	company(2.0)	1
+chitty	book(2.0)	1
+cloudstreet	book(2.0)	show(2.0)	play(2.0)	narrative(2.0)	4
+warraq	person(2.0)	1
+wymore	person(2.0)	1
+puah	person(2.0)	midwife(2.0)	organization(1.0)	3
+scv	organization(2.0)	variable(2.0)	2
+judicatory	organization(2.0)	1
+aifs	organization(2.0)	case(2.0)	agency(2.0)	information(1.0)	4
+ocimf	organization(2.0)	organisation(2.0)	2
+definitiveness	issue(2.0)	word(1.0)	2
+pdif	issue(2.0)	1
+justifiable	issue(2.0)	word(2.0)	2
+bowthorpe	area(2.0)	1
+seaburn	area(2.0)	1
+torridge	area(2.0)	district(1.0)	2
+seapoint	area(2.0)	1
+kuranda	area(2.0)	town(2.0)	place(1.0)	3
+stirlingshire	area(2.0)	1
+polouse	area(2.0)	1
+kisarawe	area(2.0)	district(2.0)	2
+ndpc	area(2.0)	1
+kalamassery	area(2.0)	1
+ullagaram	area(2.0)	1
+lurgan	area(2.0)	town(2.0)	place(1.0)	3
+tickles	area(2.0)	1
+coggeshall	area(2.0)	town(2.0)	place(1.0)	3
+kurmali	language(2.0)	1
+snowing	weather(2.0)	band(2.0)	2
+vicnet	application(2.0)	1
+extrados	application(2.0)	1
+thermogenesis	term(2.0)	factor(1.0)	2
+disinfo	term(2.0)	publication(2.0)	2
+creoleness	term(2.0)	1
+zminister	term(2.0)	1
+sanctified	term(2.0)	1
+patria	term(2.0)	word(1.0)	2
+blackouts	term(2.0)	fabric(2.0)	condition(1.0)	3
+molecularity	term(2.0)	1
+calculable	term(2.0)	1
+bowgun	option(2.0)	1
+mitigating	topic(2.0)	circumstance(2.0)	factor(1.0)	3
+beginnings	topic(2.0)	title(2.0)	theme(2.0)	workshop(2.0)	song(1.0)	5
+vermiculture	topic(2.0)	technology(2.0)	demonstration(2.0)	waste(2.0)	biofertilizer(2.0)	option(2.0)	term(1.0)	building(1.0)	8
+concision	procedure(2.0)	element(1.0)	2
+eurasians	influence(2.0)	group(2.0)	community(2.0)	3
+zappa	influence(2.0)	band(2.0)	person(1.0)	study(1.0)	4
+rodi	model(2.0)	woman(1.0)	2
+picanto	model(2.0)	vehicle(2.0)	car(2.0)	3
+wacquant	critic(2.0)	author(2.0)	writer(1.0)	3
+scoville	critic(2.0)	study(2.0)	2
+irlp	mode(2.0)	system(1.0)	2
+colocasis	vegetable(2.0)	1
+joachimsthaler	researcher(2.0)	1
+wadai	state(2.0)	1
+disorderlies	film(2.0)	1
+kiarostami	film(2.0)	filmmaker(2.0)	2
+hooter	device(2.0)	millbrooks(2.0)	activity(1.0)	place(1.0)	character(1.0)	5
+intimates	item(2.0)	category(2.0)	2
+snowsuit	item(2.0)	1
+gyeongui	project(2.0)	1
+inflex	project(2.0)	1
+recoll	tool(2.0)	1
+natsume	tool(2.0)	utensil(2.0)	2
+scrambletext	tool(2.0)	1
+zooomr	tool(2.0)	1
+buymanship	program(2.0)	1
+vlaanderen	program(2.0)	region(1.0)	2
+xiphophorus	form(2.0)	specie(1.0)	fish(1.0)	3
+bisac	format(2.0)	1
+idoru	work(2.0)	name(1.0)	book(1.0)	3
+dida	work(2.0)	project(1.0)	player(1.0)	department(1.0)	4
+peplum	shape(2.0)	1
+baculum	subject(2.0)	study(1.0)	2
+cerr	type(2.0)	1
+refractor	type(2.0)	telescope(2.0)	device(1.0)	3
+cuica	type(2.0)	instrument(2.0)	2
+locarion	information(2.0)	1
+airspring	component(2.0)	1
+libparanoia	component(2.0)	1
+chado	component(2.0)	1
+haendel	author(2.0)	1
+bastin	author(2.0)	1
+tapia	author(2.0)	1
+trousseau	author(2.0)	physician(2.0)	2
+collum	author(2.0)	1
+xue	author(2.0)	developer(2.0)	term(1.0)	researcher(1.0)	4
+mazzola	author(2.0)	1
+lysias	author(2.0)	sophist(2.0)	scholar(1.0)	3
+goda	author(2.0)	character(1.0)	2
+karpov	player(2.0)	name(2.0)	2
+arscott	player(2.0)	1
+larimore	player(2.0)	author(1.0)	2
+feeny	study(2.0)	1
+dunnigan	study(2.0)	1
+jafri	study(2.0)	1
+bandol	character(2.0)	appellation(2.0)	place(1.0)	3
+radula	character(2.0)	1
+ulf	character(2.0)	person(1.0)	2
+wyyc	population(2.0)	1
+peal	accessory(2.0)	word(1.0)	treatment(1.0)	information(1.0)	4
+notoginseng	herb(2.0)	1
+kobresia	herb(2.0)	1
+dioscorea	herb(2.0)	1
+tillabery	region(2.0)	1
+dooars	region(2.0)	1
+ohrid	region(2.0)	lake(2.0)	city(1.0)	3
+andkhoy	district(2.0)	1
+alb	complication(2.0)	vestment(2.0)	item(1.0)	3
+ureterolithiasis	condition(2.0)	1
+dextrocardia	condition(2.0)	anomaly(2.0)	malformation(2.0)	feature(1.0)	term(1.0)	5
+cardial	condition(2.0)	1
+cuprate	system(2.0)	1
+caria	system(2.0)	1
+storyspace	system(2.0)	program(1.0)	2
+kankakee	river(2.0)	county(2.0)	place(1.0)	area(1.0)	4
+bloodvessels	network(2.0)	1
+intervac	network(2.0)	1
+preserver	material(2.0)	product(1.0)	2
+impactresistant	material(2.0)	1
+chontales	department(2.0)	1
+turfan	city(2.0)	name(1.0)	2
+margilan	city(2.0)	1
+falador	city(2.0)	location(1.0)	place(1.0)	3
+solipsism	value(2.0)	philosophy(2.0)	issue(1.0)	concept(1.0)	4
+rightness	value(2.0)	feeling(2.0)	2
+nbap	operation(2.0)	1
+rucker	scholar(2.0)	name(1.0)	2
+dvue	gadget(2.0)	1
+lackey	case(2.0)	term(1.0)	player(1.0)	3
+lucera	case(2.0)	brand(2.0)	2
+deepening	magazine(2.0)	1
+refoto	magazine(2.0)	1
+pickover	writer(2.0)	1
+imrie	writer(2.0)	commentator(2.0)	author(1.0)	system(1.0)	4
+iwms	technology(2.0)	1
+backups	technology(2.0)	1
+naguals	concept(2.0)	1
+jesuitism	concept(2.0)	1
+hanako	animal(2.0)	woman(1.0)	2
+vintersorg	band(2.0)	1
+taake	band(2.0)	1
+paramaecium	band(2.0)	1
+cochlaeus	man(2.0)	1
+caiphas	man(2.0)	1
+haa	keyword(2.0)	1
+zina	solution(2.0)	case(1.0)	2
+semiwiki	publication(2.0)	1
+venere	site(2.0)	website(1.0)	program(1.0)	3
+yealmbridge	site(2.0)	1
+glentress	site(2.0)	forest(2.0)	name(1.0)	3
+bridgeman	process(2.0)	1
+stuttgardt	section(2.0)	1
+80hh	section(2.0)	1
+dryopes	group(2.0)	1
+mauritanians	group(2.0)	1
+shouters	group(2.0)	sect(2.0)	2
+yangban	group(2.0)	1
+henschel	manufacturer(2.0)	company(1.0)	2
+wabco	manufacturer(2.0)	1
+cosourcing	strategy(2.0)	1
+masterbedroom	map(2.0)	1
+afw	parameter(2.0)	brand(2.0)	2
+jsi	parameter(2.0)	organization(1.0)	measure(1.0)	3
+turina	composer(2.0)	1
+lalo	composer(2.0)	1
+dehaven	student(2.0)	1
+watling	member(2.0)	author(1.0)	2
+pasalimani	attraction(2.0)	1
+checked	property(2.0)	1
+busdriver	artist(2.0)	1
+wallumbilla	town(2.0)	settlement(2.0)	2
+prnp	gene(2.0)	1
+cheiridopsis	plant(2.0)	1
+oughterard	plan(2.0)	1
+dongxing	village(2.0)	1
+aldford	village(2.0)	1
+kaingaroa	village(2.0)	area(1.0)	2
+momofuku	exception(2.0)	1
+sainthood	exception(2.0)	1
+llanilar	exception(2.0)	1
+bergendahls	retailer(2.0)	1
+pon2	protein(2.0)	1
+irak4	protein(2.0)	1
+shawano	county(2.0)	city(1.0)	2
+kahala	neighborhood(2.0)	area(2.0)	2
+nokias	brand(2.0)	1
+valleygirl	brand(2.0)	1
+adamas	brand(2.0)	being(2.0)	2
+malco	brand(2.0)	1
+wyler	brand(2.0)	1
+zinsco	brand(2.0)	panel(2.0)	2
+abq	instrument(2.0)	place(1.0)	2
+timila	instrument(2.0)	1
+dfcc	stakeholder(2.0)	1
+openjdk	implementation(2.0)	component(1.0)	problem(1.0)	3
+thukpa	dish(2.0)	1
+sheftalia	dish(2.0)	1
+dnrc	agency(2.0)	1
+gbrmpa	agency(2.0)	1
+spu	agency(2.0)	platform(2.0)	2
+galactokinase	enzyme(2.0)	1
+cordele	hotspot(2.0)	1
+nanoferrites	nanomaterial(2.0)	1
+logum	client(2.0)	1
+neelkanth	client(2.0)	1
+herbfarm	restaurant(2.0)	1
+guadine	series(2.0)	1
+swordsmiths	profession(2.0)	1
+crossmedia	development(2.0)	term(1.0)	2
+clipmarks	attribute(2.0)	service(1.0)	2
+diaphragmatic	sign(2.0)	injury(2.0)	malformation(2.0)	variable(1.0)	4
+cayley	mathematician(2.0)	scientist(2.0)	2
+silkroad	vendor(2.0)	website(1.0)	game(1.0)	3
+subcontractors	vendor(2.0)	1
+super7	car(2.0)	1
+lebkuchen	classic(2.0)	1
+eaglemont	painting(2.0)	1
+savoyard	painting(2.0)	1
+situationists	movement(2.0)	1
+irukandji	creature(2.0)	1
+ejbpassivate	suspect(2.0)	1
+tncm	destination(2.0)	1
+smoketree	tree(2.0)	species(2.0)	2
+jussara	tree(2.0)	1
+huntingdale	school(2.0)	project(1.0)	2
+kyma	show(2.0)	1
+r3000	printer(2.0)	1
+hilt	part(2.0)	1
+prosom	benzodiazepine(2.0)	benzodiazepines(2.0)	2
+stang	symbol(2.0)	resident(2.0)	name(1.0)	3
+ncoes	training(2.0)	1
+muppet	adjective(2.0)	1
+croomia	genus(2.0)	1
+indrella	genus(2.0)	1
+rhagovelia	genus(2.0)	1
+ogive	graph(2.0)	feature(1.0)	2
+fairplex	board(2.0)	location(1.0)	2
+churros	dessert(2.0)	1
+prodrome	stage(2.0)	term(1.0)	2
+lightworks	software(2.0)	1
+machin	therapist(2.0)	author(1.0)	study(1.0)	scholar(1.0)	4
+keti	force(2.0)	1
+qni	organisation(2.0)	1
+studentenwerk	organisation(2.0)	1
+tkinker	module(2.0)	1
+roxas	municipality(2.0)	location(1.0)	area(1.0)	character(1.0)	city(1.0)	5
+dismount	statement(2.0)	1
+1890	record(2.0)	1
+plasencia	chapter(2.0)	author(1.0)	2
+timegrp	constraint(2.0)	1
+fanatical	label(2.0)	word(1.0)	2
+alsamixer	utility(2.0)	1
+xz	utility(2.0)	1
+acsc	association(2.0)	1
+westlink	airline(2.0)	project(1.0)	2
+poulin	text(2.0)	author(1.0)	writer(1.0)	3
+rathayatra	festival(2.0)	occasion(1.0)	2
+rulerships	principle(2.0)	1
+songrequest	stuff(2.0)	1
+tamanaco	stuff(2.0)	1
+camelhair	fiber(2.0)	material(1.0)	2
+pharmhouse	tenant(2.0)	1
+tianjing	province(2.0)	city(1.0)	2
+llafranc	beach(2.0)	1
+malian	philosopher(2.0)	cultivar(2.0)	constitution(2.0)	empire(2.0)	place(1.0)	5
+sharpei	breed(2.0)	1
+blued	finish(2.0)	1
+hotspring	habitat(2.0)	tour(2.0)	2
+wirj	station(2.0)	1
+wndi	station(2.0)	1
+s820	circuit(2.0)	1
+dioc6	dye(2.0)	1
+woohoo	channel(2.0)	song(1.0)	2
+skrein	designer(2.0)	1
+kambo	avenue(2.0)	1
+cerebra	acquisition(2.0)	organization(1.0)	2
+chrissi	favorite(2.0)	1
+bruchetta	favorite(2.0)	appetizer(2.0)	item(1.0)	3
+valjean	lead(2.0)	1
+triphenylstibine	catalyst(2.0)	1
+hammerblow	impact(2.0)	1
+hierachy	construct(2.0)	1
+fedeyoh	notation(2.0)	1
+rmpath	command(2.0)	1
+lumpini	park(2.0)	1
+culiseta	taxa(2.0)	1
+jeholosaurus	taxa(2.0)	1
+barnas	textbook(2.0)	1
+nesokia	rodent(2.0)	1
+cobl	mod(2.0)	1
+kaveripattinam	port(2.0)	1
+swordsmen	card(2.0)	1
+necrophile	stat(2.0)	1
+fenformin	biguanide(2.0)	1
+abercromby	suite(2.0)	critic(1.0)	2
+controverted	claim(2.0)	1
+jorc	code(2.0)	1
+laurus	family(2.0)	1
+nothofagaceae	family(2.0)	1
+shelflife	shop(2.0)	problem(1.0)	2
+champorado	bread(2.0)	1
+hideaways	column(2.0)	1
+kuchma	specific(2.0)	1
+mercaptothiadiazole	azole(2.0)	1
+railworks	contractor(2.0)	1
+noconname	conference(2.0)	1
+yardsticks	reference(2.0)	1
+fanapt	antipsychotic(2.0)	antipsychotics(2.0)	2
+cracklins	delicacy(2.0)	1
+karankawa	people(2.0)	1
+childswickham	settlement(2.0)	1
+lyp	approximation(2.0)	1
+zephyrus	boat(2.0)	1
+panchagavya	preparation(2.0)	1
+introit	music(2.0)	1
+klansmen	extremist(2.0)	1
+prolifik	fan(2.0)	1
+accm	venture(2.0)	1
+twostep	dance(2.0)	1
+arkan	dance(2.0)	1
+charmaine	offender(2.0)	1
+jaebum	korean(2.0)	1
+batrider	heroe(2.0)	heroes(2.0)	2
+akubras	hat(2.0)	1
+muhammadi	migrant(2.0)	1
+barbells	weight(2.0)	1
+flocculus	pseudolesions(2.0)	1
+aschelminths	nematode(2.0)	1
+frf	curve(2.0)	1
+lincolns	suvs(2.0)	option(1.0)	model(1.0)	3
+vigilantism	trope(2.0)	form(1.0)	system(1.0)	3
+codegen	generic(2.0)	1
+pittosporums	hedge(2.0)	1
+dibatag	antelope(2.0)	specie(1.0)	2
+ardal	township(2.0)	1
+coldstone	giveaway(2.0)	place(1.0)	2
+burgher	inhabitant(2.0)	1
+conradt	spelling(2.0)	1
+impregnated	carbon(2.0)	1
+minuteman	missile(2.0)	program(1.0)	2
+affinia	exhibitor(2.0)	1
+malini	wife(2.0)	1
+methanococci	archaea(2.0)	1
+dingell	chair(2.0)	1
+sranan	creole(2.0)	language(1.0)	2
+sibasa	chief(2.0)	1
+countershaft	callout(2.0)	1
+hsa1	chromosome(2.0)	1
+kwft	mfi(2.0)	1
+hederagenin	aglycones(2.0)	1
+hedychium	ginger(2.0)	1
+tmd1	tmd(2.0)	1
+guaifenisin	expectorant(2.0)	1
+kilderry	townland(2.0)	1
+nostratic	superfamily(2.0)	concept(1.0)	2
+tetrapropoxysilane	tetraalkoxysilanes(2.0)	1
+rudram	veda(2.0)	1
+dirndl	waist(2.0)	item(1.0)	2
+makkeh	heih(2.0)	1
+zephyros	elemenians(2.0)	1
+zingara	scow(2.0)	1
+zardoz	movie(2.0)	film(1.0)	2
+tkam	classic(2.0)	1
+suren	tree(2.0)	1
+dermot	presenter(2.0)	1
+wakanohana	rikishi(2.0)	1
+biofilms	factor(2.0)	topic(2.0)	2
+bermunda	product(2.0)	1
+fire-proof	feature(2.0)	1
+coprocessors	feature(2.0)	1
+epilady	item(2.0)	1
+radyr	area(2.0)	1
+triconex	company(2.0)	1
+scott's	company(2.0)	1
+multiple-choice	activity(2.0)	format(2.0)	2
+voicemails	event(2.0)	method(2.0)	notification(2.0)	3
+meetups	event(2.0)	1
+geiom	name(2.0)	1
+copingstones	option(2.0)	1
+nisgua	group(2.0)	1
+levites	group(2.0)	person(1.0)	2
+dixon's	place(2.0)	1
+tugay	player(2.0)	1
+blue-ray	technology(2.0)	device(2.0)	2
+lifedrive	device(2.0)	1
+buchanan's	brand(2.0)	1
+articlesbase	site(2.0)	1
+barlows	accessory(2.0)	1
+wristlets	accessory(2.0)	1
+meetinghouse	facility(2.0)	location(1.0)	occasion(1.0)	3
+harrison&migon	work(2.0)	1
+karens	person(2.0)	1
+ticketline	agency(2.0)	1
+felindre	location(2.0)	place(1.0)	2
+budowitz	band(2.0)	1
+mansbridge	scholar(2.0)	1
+through-hole	type(2.0)	1
+k-fed	celebrity(2.0)	1
+murdo	town(2.0)	1
+ar-rahim	attribute(2.0)	1
+merkava	design(2.0)	1
+nakisa	customer(2.0)	1
+orleanists	competitor(2.0)	1
+muttontown	neighborhood(2.0)	1
+a1gp	series(2.0)	event(1.0)	2
+cardew	composer(2.0)	1
+b-mac	protocol(2.0)	1
+wfan	station(2.0)	term(1.0)	2
+deepak	singer(2.0)	actor(1.0)	mode(1.0)	3
+attract	move(2.0)	1
+pseudogenes	sequence(2.0)	1
+jynx	pokemon(2.0)	1
+n-oxide	metabolite(2.0)	1
+sovereigns	coin(2.0)	topic(1.0)	2
+right-hand	hand(2.0)	1
+cleaningness	irregularity(2.0)	1
+capellini	pasta(2.0)	1
+radiowaves	frequency(2.0)	1
+adipates	plasticizers(2.0)	1
+melick	parish(2.0)	1
+gamma-carotene	phytonutrients(2.0)	1
+marvel's	licence(2.0)	1
+nidularium	bromeliads(2.0)	1
+deiodinases	selenoproteins(2.0)	1
+2-nitrobutane	nitroparaffins(2.0)	1
+erodium	herb(2.0)	1
+chowmein	dish(2.0)	1
+scribners	magazine(2.0)	1
+coleford	settlement(2.0)	1
+corixidae	family(2.0)	1
+xochiquetzal	goddess(2.0)	1
+afterupdate	event(1.0)	1
+intracardiac	route(1.0)	location(1.0)	complication(1.0)	3
+insurence	industry(1.0)	1
+purpurea	specie(1.0)	ingredient(1.0)	2
+sparganium	specie(1.0)	1
+bagassa	specie(1.0)	1
+solenodon	specie(1.0)	1
+nievitas	specie(1.0)	1
+tosakanori	specie(1.0)	1
+gilling	activity(1.0)	1
+wallball	activity(1.0)	1
+pattie	style(1.0)	1
+fallibilism	alternative(1.0)	1
+molybedenum	element(1.0)	1
+editfield	element(1.0)	1
+jaali	element(1.0)	1
+ghe	method(1.0)	1
+addpeople	method(1.0)	1
+getimplementationvendor	method(1.0)	1
+insertbefore	method(1.0)	1
+lapped	method(1.0)	1
+addset	method(1.0)	1
+amable	word(1.0)	1
+imputed	word(1.0)	1
+unappreciated	word(1.0)	song(1.0)	2
+antistrophe	word(1.0)	1
+kilogramme	word(1.0)	variable(1.0)	2
+deconstruct	word(1.0)	1
+vilifying	word(1.0)	1
+barbarity	word(1.0)	book(1.0)	term(1.0)	3
+launched	word(1.0)	1
+tickly	word(1.0)	1
+loafers	word(1.0)	1
+kukan	word(1.0)	1
+colcothar	word(1.0)	1
+robopath	word(1.0)	1
+enterogastrone	word(1.0)	1
+prudent	word(1.0)	option(1.0)	2
+masticate	word(1.0)	1
+effortlessly	word(1.0)	1
+whisperer	word(1.0)	1
+paroxysm	word(1.0)	1
+indexed	product(1.0)	1
+triplexers	product(1.0)	1
+vormetric	product(1.0)	1
+tokwa	product(1.0)	1
+photocd	product(1.0)	format(1.0)	2
+excaliber	product(1.0)	model(1.0)	2
+superspeed	product(1.0)	1
+flosser	product(1.0)	1
+granita	product(1.0)	term(1.0)	2
+klis	factor(1.0)	1
+occuptation	factor(1.0)	1
+baathists	factor(1.0)	1
+geostrategy	factor(1.0)	1
+lny	factor(1.0)	1
+promptitude	factor(1.0)	1
+cineangiography	technique(1.0)	1
+fann	technique(1.0)	1
+hupfeld	firm(1.0)	1
+innogen	firm(1.0)	1
+foulbrood	challenge(1.0)	issue(1.0)	2
+tamora	woman(1.0)	model(1.0)	character(1.0)	3
+dongo	location(1.0)	1
+onetravel	website(1.0)	1
+dicksmith	website(1.0)	place(1.0)	2
+snakebird	name(1.0)	1
+ironwort	name(1.0)	1
+huauzontle	name(1.0)	1
+larko	name(1.0)	1
+stefansson	name(1.0)	1
+brucegould	name(1.0)	1
+mashie	name(1.0)	1
+hoddle	name(1.0)	player(1.0)	2
+jadayu	name(1.0)	1
+antahakarana	name(1.0)	1
+inpulse	name(1.0)	1
+karpa	name(1.0)	1
+muleshoe	name(1.0)	1
+infoset	name(1.0)	1
+biokineticist	service(1.0)	1
+colourisation	service(1.0)	1
+datawarehousing	service(1.0)	1
+socialisers	service(1.0)	1
+cloudbow	feature(1.0)	1
+expandable	feature(1.0)	1
+espagnolette	feature(1.0)	1
+gnarl	feature(1.0)	system(1.0)	2
+onsen	feature(1.0)	option(1.0)	2
+ncrnas	feature(1.0)	1
+soundbites	feature(1.0)	material(1.0)	2
+altstadt	feature(1.0)	1
+maibaum	feature(1.0)	1
+chackmore	place(1.0)	1
+asthenosphere	place(1.0)	region(1.0)	source(1.0)	3
+diekirch	place(1.0)	1
+kitzbuhl	place(1.0)	1
+51st	place(1.0)	1
+fourka	place(1.0)	1
+bugaloe	place(1.0)	1
+kumano	place(1.0)	researcher(1.0)	2
+shwedagon	place(1.0)	1
+buka	place(1.0)	1
+bunaken	place(1.0)	1
+thuringen	place(1.0)	1
+pachattiri	place(1.0)	1
+chhotu	company(1.0)	1
+radman	company(1.0)	1
+robo	company(1.0)	character(1.0)	2
+orbita	company(1.0)	1
+kerbango	company(1.0)	1
+horize	company(1.0)	1
+netcomm	company(1.0)	1
+doordash	company(1.0)	1
+formfactor	company(1.0)	1
+lipmann	company(1.0)	1
+hagebau	company(1.0)	1
+screenvision	company(1.0)	1
+worthpoint	company(1.0)	1
+tressa	company(1.0)	1
+multimatic	company(1.0)	organization(1.0)	2
+toaplan	company(1.0)	1
+ifund	company(1.0)	1
+kafda	person(1.0)	1
+zamar	person(1.0)	1
+quadratus	person(1.0)	1
+thaksin	person(1.0)	1
+diedrich	person(1.0)	1
+aswj	organization(1.0)	1
+camft	organization(1.0)	1
+giproplast	organization(1.0)	1
+acevo	organization(1.0)	1
+redballoon	organization(1.0)	1
+wintech	organization(1.0)	1
+ciec	organization(1.0)	1
+osisa	organization(1.0)	1
+proletarianization	issue(1.0)	1
+tonnetz	issue(1.0)	1
+boru	area(1.0)	1
+hoora	area(1.0)	1
+hidd	area(1.0)	1
+sowcarpet	area(1.0)	1
+suakin	area(1.0)	1
+sepetiba	area(1.0)	1
+davyhulme	area(1.0)	1
+luddington	area(1.0)	1
+pineridge	area(1.0)	1
+wallula	area(1.0)	1
+sulaibikhat	area(1.0)	1
+writting	area(1.0)	topic(1.0)	2
+waga	area(1.0)	1
+aldabra	area(1.0)	1
+breechings	area(1.0)	1
+kanwal	area(1.0)	1
+barriere	area(1.0)	1
+hathern	area(1.0)	1
+demra	area(1.0)	1
+sprs	area(1.0)	scale(1.0)	2
+dongcheng	area(1.0)	district(1.0)	2
+odorkor	area(1.0)	1
+winterswijk	area(1.0)	1
+gicumbi	area(1.0)	1
+bithlo	area(1.0)	1
+kuriathy	area(1.0)	1
+koguryo	language(1.0)	1
+dzonkha	language(1.0)	1
+chiyao	language(1.0)	1
+troff	language(1.0)	system(1.0)	2
+yukatek	language(1.0)	1
+napier88	language(1.0)	1
+timp	compound(1.0)	inhibitor(1.0)	2
+lorcainide	compound(1.0)	1
+njp	measure(1.0)	1
+multilevel	application(1.0)	1
+acroread	application(1.0)	tool(1.0)	program(1.0)	3
+ralplayer	application(1.0)	1
+multiplan	application(1.0)	program(1.0)	2
+psms	application(1.0)	1
+upwardly	term(1.0)	1
+isochoric	term(1.0)	1
+merchantable	term(1.0)	1
+triglyphs	term(1.0)	1
+matriliny	term(1.0)	1
+catman	term(1.0)	1
+hemeroby	term(1.0)	1
+miseducation	term(1.0)	1
+lnkexclv	option(1.0)	1
+kppp	option(1.0)	tool(1.0)	2
+p4000	option(1.0)	1
+monsaraz	option(1.0)	1
+nandralone	option(1.0)	1
+partyman	song(1.0)	1
+gcel	establishment(1.0)	1
+suitablity	topic(1.0)	1
+nume	variable(1.0)	1
+contemplative	practice(1.0)	trait(1.0)	2
+cholescintigraphy	procedure(1.0)	1
+trapidil	agent(1.0)	1
+peeka	agent(1.0)	1
+obsess	model(1.0)	1
+18tl	model(1.0)	1
+lajeunesse	critic(1.0)	1
+gath	researcher(1.0)	city(1.0)	2
+caligiuri	researcher(1.0)	author(1.0)	2
+penrod	researcher(1.0)	1
+cleasby	researcher(1.0)	1
+guney	researcher(1.0)	study(1.0)	2
+rolfe	researcher(1.0)	author(1.0)	writer(1.0)	3
+scythia	state(1.0)	1
+udo	film(1.0)	1
+mesrine	film(1.0)	1
+meare	film(1.0)	1
+honeydripper	film(1.0)	movie(1.0)	2
+bashira	film(1.0)	1
+prateeksha	film(1.0)	1
+nightwatch	film(1.0)	title(1.0)	work(1.0)	3
+tricola	device(1.0)	1
+cadences	device(1.0)	1
+truegold	item(1.0)	1
+grayc	item(1.0)	1
+graym	item(1.0)	1
+opgw	item(1.0)	1
+daifuku	item(1.0)	1
+warmer	item(1.0)	1
+tubetops	item(1.0)	1
+kinnoull	project(1.0)	1
+karamba	project(1.0)	1
+conventus	project(1.0)	1
+hafencity	project(1.0)	1
+znet	project(1.0)	1
+tomales	food(1.0)	1
+kande	food(1.0)	1
+nicenet	tool(1.0)	1
+xemacs	tool(1.0)	1
+wikimapia	tool(1.0)	initiative(1.0)	2
+aimster	program(1.0)	1
+weechat	program(1.0)	1
+masterpieces	program(1.0)	1
+mas90	program(1.0)	1
+inlingua	program(1.0)	1
+ccaf	program(1.0)	1
+06	form(1.0)	1
+astrup	investigator(1.0)	1
+radnitz	investigator(1.0)	1
+doubanjiang	spice(1.0)	1
+binhex	format(1.0)	system(1.0)	2
+mitto	initiative(1.0)	1
+ajol	initiative(1.0)	1
+ppaf	initiative(1.0)	1
+eurogentest	initiative(1.0)	1
+chewning	work(1.0)	1
+khazri	work(1.0)	player(1.0)	2
+sacha	work(1.0)	1
+mizusashi	work(1.0)	1
+octogon	shape(1.0)	1
+tradecraft	aspect(1.0)	1
+mhrv	aspect(1.0)	1
+tegument	tissue(1.0)	1
+metanephros	tissue(1.0)	1
+cloten	subject(1.0)	1
+ezan	type(1.0)	1
+nd6	type(1.0)	1
+unobservable	information(1.0)	1
+macrofauna	information(1.0)	1
+tddft	approach(1.0)	1
+suda	approach(1.0)	source(1.0)	2
+cryptographic	approach(1.0)	1
+falsificationism	approach(1.0)	1
+trichromatic	approach(1.0)	1
+catelogs	documentation(1.0)	1
+daiichi	component(1.0)	1
+hatchway	component(1.0)	1
+thermosyphons	component(1.0)	1
+manca	author(1.0)	1
+luza	author(1.0)	1
+wragg	author(1.0)	1
+loewy	author(1.0)	1
+klaic	author(1.0)	1
+sveiby	author(1.0)	1
+menochius	author(1.0)	1
+schillinger	player(1.0)	case(1.0)	2
+mattiace	player(1.0)	1
+halebop	player(1.0)	1
+voiletbag	player(1.0)	1
+jangles	player(1.0)	1
+kudrin	player(1.0)	1
+kalana	drink(1.0)	1
+villani	study(1.0)	1
+wakabayashi	study(1.0)	1
+strobl	study(1.0)	1
+mamedova	study(1.0)	1
+shug	character(1.0)	1
+hanzo	character(1.0)	1
+ryuuki	character(1.0)	1
+winky	character(1.0)	1
+spiv	character(1.0)	1
+ambrosius	character(1.0)	1
+kaori	character(1.0)	1
+hughie	character(1.0)	1
+canes	team(1.0)	prop(1.0)	2
+olvents	pollutant(1.0)	1
+flashings	accessory(1.0)	1
+vaheguru	sound(1.0)	1
+zaporizhia	region(1.0)	1
+horowhenua	region(1.0)	district(1.0)	2
+hedgefunds	sector(1.0)	1
+epilepsia	journal(1.0)	1
+ctos	system(1.0)	1
+erector	system(1.0)	1
+swiki	system(1.0)	1
+gurupura	river(1.0)	1
+myntdu	river(1.0)	1
+meenachil	river(1.0)	1
+vossler	source(1.0)	1
+dw3	game(1.0)	1
+mov2o8	material(1.0)	1
+dpko	department(1.0)	1
+thorburn	department(1.0)	1
+lucena	city(1.0)	1
+rampurhat	city(1.0)	1
+villefranche	city(1.0)	1
+pylesville	city(1.0)	1
+pulan	city(1.0)	1
+alberquerque	city(1.0)	1
+kerkuk	city(1.0)	1
+408	action(1.0)	1
+katta	fish(1.0)	1
+bullheads	fish(1.0)	1
+dreamquest	movie(1.0)	1
+lajja	movie(1.0)	1
+akayla	movie(1.0)	1
+bartholomae	scholar(1.0)	1
+meir	scholar(1.0)	writer(1.0)	2
+benington	scholar(1.0)	1
+sainty	scholar(1.0)	1
+lnmma	inhibitor(1.0)	1
+ciprofloxin	medication(1.0)	1
+chapelton	case(1.0)	1
+flook	case(1.0)	1
+micromasters	case(1.0)	1
+prsv	case(1.0)	1
+tibbets	case(1.0)	1
+crago	magazine(1.0)	1
+modelmodele	magazine(1.0)	1
+enroute	magazine(1.0)	1
+seyssel	writer(1.0)	1
+schoenfeldt	writer(1.0)	1
+sambrook	writer(1.0)	1
+kazantzakis	writer(1.0)	1
+smp2	technology(1.0)	1
+phakic	technology(1.0)	1
+uhplc	technology(1.0)	1
+reactjs	technology(1.0)	1
+regexp	technology(1.0)	1
+photoirradiation	technology(1.0)	1
+lask	concept(1.0)	1
+sentimiento	concept(1.0)	1
+rowanberry	ingredient(1.0)	1
+glowplugs	problem(1.0)	1
+delilium	problem(1.0)	1
