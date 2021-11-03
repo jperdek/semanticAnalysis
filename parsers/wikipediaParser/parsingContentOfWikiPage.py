@@ -1,8 +1,6 @@
 import xml.sax
 import json
 import re
-import copy
-import token_indexing as indexing
 
 
 class XMLHandler(xml.sax.ContentHandler):
@@ -35,7 +33,7 @@ class XMLHandler(xml.sax.ContentHandler):
             self.on_page_to_do = True
             self.text_content = ""
 
-            if self.occurences == 1000:
+            if False and self.occurences == 1000:
                 with open(self.doc_end_file, "w") as f:
                     f.write(json.dumps(self.doc_freq_index))  # FINAL DUMPING
                 with open(self.term_end_file, "w") as f:
@@ -58,10 +56,12 @@ class XMLHandler(xml.sax.ContentHandler):
                             self.categories[category]["records"] = list()
                         filtered_content = self.filter_page_content(self.text_content)
                         if filtered_content != "":
-                            indexing.index_words_term_freq_doc_freq_for_category(self.indexes, self.doc_freq_index, filtered_content, category)
+                            pass
+                            #indexing.index_words_term_freq_doc_freq_for_category(self.indexes, self.doc_freq_index, filtered_content, category)
                             #self.categories[category]["records"].append(filtered_content)
                     if filtered_content != "":
-                        indexing.index_words_term_freq_doc_freq_tfidf(self.indexes, self.doc_freq_index, filtered_content, self.title)
+                        pass
+                        #indexing.index_words_term_freq_doc_freq_tfidf(self.indexes, self.doc_freq_index, filtered_content, self.title)
         self.currentData = ""
 
     def remove_casual_headings(self, line) -> bool:
