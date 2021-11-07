@@ -1,0 +1,41 @@
+from flask import Blueprint, g, request
+import json
+
+from middlewares import login_required
+
+from serverParts.apis.http.api.automatization.automatization_tools import verify_html
+from serverParts.apis.http.api.segmentationAnalysis.pageAnalyser import cetdExtractor
+from serverParts.apis.http.api.textUnderstanding.guessedWord.conceptGuessWord import count_tf_idf, get_texts_from_range
+from serverParts.apis.http.api.textUnderstanding.textUnderstandingApi import categories_classification
+
+automatization_api = Blueprint('automatization_api', __name__, template_folder='templates')
+
+
+def json_response(payload, status=200):
+    return json.dumps(payload), status, {'content-type': 'application/json' }
+
+
+@automatization_api.route("/automatization", methods=["POST"])
+@login_required
+def automatic_analysis():
+    text = request.get_data().decode('utf-8', errors='ignore')
+
+    if verify_html(text):
+        text = cetdExtractor.apply_segmentation(text, "normal")
+
+    tfidf_test = g.text_categories_tfidf_pickle.transform([text.lower()])
+    result = g.text_categories_svc_pickle.predict(tfidf_test)
+
+    print(verify_html(text))
+    print(result)
+    category = ""
+    for category_name, value in categories_classification.items():
+        if value == result[0]:
+            category = category_name
+            break
+
+    category = category.lower()
+    maximum = count_tf_idf(text, g.indexed_guesses, category)
+    results = get_texts_from_range(text, g.indexed_guesses, category, maximum)
+
+    return json_response({"category": category, "results": results})

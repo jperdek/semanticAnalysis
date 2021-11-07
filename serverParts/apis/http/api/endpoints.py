@@ -5,6 +5,7 @@ from senseAnalysis.senseAnalysisApi import sense_api, load_local_json_file
 from readabilityAnalysis.readabilityAnalysisApi import readability_api
 from segmentationAnalysis.segmentationAnalysisApi import segmentation_api
 from keywordAnalysis.keywordAnalysisApi import keywords_api
+from serverParts.apis.http.api.automatization.automatizationApi import automatization_api
 from serverParts.apis.http.api.textUnderstanding import clustersFile
 from serverParts.apis.http.api.textUnderstanding.affinity import AffinityHelper
 from textUnderstanding.textUnderstandingApi import text_understanding_api, load_local_picle_file
@@ -20,6 +21,7 @@ app.register_blueprint(readability_api)
 app.register_blueprint(segmentation_api)
 app.register_blueprint(keywords_api)
 app.register_blueprint(text_understanding_api)
+app.register_blueprint(automatization_api)
 
 
 @app.before_first_request

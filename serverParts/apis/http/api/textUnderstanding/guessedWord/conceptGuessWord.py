@@ -46,7 +46,7 @@ def count_tf_idf(text: str, index: dict, category: str, window: int = 20):
 
 
 def get_texts_from_range(text: str, index: dict, category: str,
-                         tf_idf_maximum: float, tf_idf_range: float = 2.0, window: int = 20):
+                         tf_idf_maximum: float, tf_idf_range: float = 1.0, window: int = 20):
     n = index[category]["_count"]
     maximum = 0
     results = []
