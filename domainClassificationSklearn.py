@@ -12,6 +12,8 @@ from nltk.stem import WordNetLemmatizer
 from nltk import pos_tag
 import json
 import random
+import re
+import pickle
 
 
 def separate_with_space(array):
@@ -98,17 +100,16 @@ def classify(train_file, test_file, no_unexpected_values=False):
                 print("Error: unexpected key: " + key)
 
     print(count_cat_dict)
-
+    print(category_dict)
     # trainingLemmatizedData = apply_lemmatization_with_pos_tagging(training_data)
     # testLemmatizedData = apply_lemmatization_with_pos_tagging(test_data)
 
-    # training_data = [re.sub(r'[^0-9a-zA-Z ]+', '', result.lower()) for result in training_data]
-    # test_data = [re.sub(r'[^0-9a-zA-Z ]+', '', result.lower()) for result in test_data]
+    training_data = [re.sub(r'[^0-9a-zA-Z ]+', '', str(result).lower()) for result in training_data]
+    test_data = [re.sub(r'[^0-9a-zA-Z ]+', '', str(result).lower()) for result in test_data]
 
-    training_data = [result.lower() for result in training_data]
-    test_data = [result.lower() for result in test_data]
+    training_data = [str(result).lower() for result in training_data]
+    test_data = [str(result).lower() for result in test_data]
 
-    print('here')
     count_vectorizer = CountVectorizer(stop_words="english")
     coun_train = count_vectorizer.fit_transform(training_data)
     count_test = count_vectorizer.transform(test_data)
@@ -116,6 +117,9 @@ def classify(train_file, test_file, no_unexpected_values=False):
     tfidf_vectorizer = TfidfVectorizer(stop_words="english", max_df=0.7)
     tfidf_train = tfidf_vectorizer.fit_transform(training_data)
     tfidf_test = tfidf_vectorizer.transform(test_data)
+
+    with open("tfidf_text_categories.pickle", "wb") as file_to_store:
+        pickle.dump(tfidf_vectorizer, file_to_store)
 
     multinomial_nb_count = MultinomialNB(alpha=0.9)
     multinomial_nb_count.fit(coun_train, training_labels)
@@ -141,13 +145,16 @@ def classify(train_file, test_file, no_unexpected_values=False):
     print("Accuracy score Linear SVC multinomial count: ", score_count_linear_svc)
     print("F1 score Linear SVC multinomial count: ", score_count_linear_svcf)
 
-    linear_svc_tfidf = LinearSVC()
+    linear_svc_tfidf = LinearSVC(max_iter=7600)
     linear_svc_tfidf.fit(tfidf_train, training_labels)
     pred_linear_svc_tfidf = linear_svc_tfidf.predict(tfidf_test)
     score_linear_svc_tfidf = metrics.accuracy_score(test_labels, pred_linear_svc_tfidf)
     score_linear_svc_tfidf_f = metrics.f1_score(test_labels, pred_linear_svc_tfidf, average="micro")
     print("Accuracy score LinearSVC multinomial tfidf: ", score_linear_svc_tfidf)
     print("F1 score LinearSVC multinomial tfidf: ", score_linear_svc_tfidf_f)
+
+    with open("linear_svc_text_categories.pickle", "wb") as file_to_store:
+        pickle.dump(linear_svc_tfidf, file_to_store)
 
     passive_aggresive_count = PassiveAggressiveClassifier()
     passive_aggresive_count.fit(coun_train, training_labels)
@@ -233,8 +240,16 @@ def analyse_weir():
     analyse_weir_plain_files()
 
 
+def analyze_text_categories():
+    classify("text_categories_train.json",
+             "text_categories_test.json",
+             no_unexpected_values=True)
+
+
 if __name__ == "__main__":
     # classify("./pageAnalyser/train_beautifulsoup.json", "./pageAnalyser/test_beautifulsoup.json",
     #         no_unexpected_values=False)
     #analyse_weir()
-    analyse_swde_som_files()
+    #analyse_swde_som_files()
+    #analyse_weir()
+    analyze_text_categories()

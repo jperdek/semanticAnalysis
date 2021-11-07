@@ -1,6 +1,5 @@
 import math
 import json
-from typing import Optional
 
 
 class ConceptVectorNormalizationTools:

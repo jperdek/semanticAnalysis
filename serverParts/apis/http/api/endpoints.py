@@ -1,22 +1,25 @@
 from senseAnalysis.categorization.senseTextProcess import SemcorAnalyser
-from flask import Flask, json, g
+from flask import Flask, g
 import flask_cors
 from senseAnalysis.senseAnalysisApi import sense_api, load_local_json_file
 from readabilityAnalysis.readabilityAnalysisApi import readability_api
 from segmentationAnalysis.segmentationAnalysisApi import segmentation_api
 from keywordAnalysis.keywordAnalysisApi import keywords_api
-
+from serverParts.apis.http.api.textUnderstanding import clustersFile
+from serverParts.apis.http.api.textUnderstanding.affinity import AffinityHelper
+from textUnderstanding.textUnderstandingApi import text_understanding_api, load_local_picle_file
 
 app = Flask(__name__, static_url_path='',
             static_folder='web/static',
             template_folder='web/templates')
 
 flask_cors.CORS(app)
-#app.register_blueprint(sense_api, url_prefix="/api/senseAnalysis")
+# app.register_blueprint(sense_api, url_prefix="/api/senseAnalysis")
 app.register_blueprint(sense_api, url_prefix="/")
 app.register_blueprint(readability_api)
 app.register_blueprint(segmentation_api)
 app.register_blueprint(keywords_api)
+app.register_blueprint(text_understanding_api)
 
 
 @app.before_first_request
@@ -24,6 +27,12 @@ def startup():
     print('Preparing for requests execution...')
     domain_parts = load_local_json_file('domain-parts.json')
     semcor_frequencies = load_local_json_file('semcor_frequencies.json')
+    g.indexed_guesses = load_local_json_file('indexed-guesses.json')
+    sample_normalized_values_dict = load_local_json_file('data-concept-instance-relations-remake-normalized.json')
+
+    g.text_categories_svc_pickle = load_local_picle_file('linear_svc_text_categories.pickle')
+    g.text_categories_tfidf_pickle = load_local_picle_file('tfidf_text_categories.pickle')
+    g.affinity_helper = AffinityHelper(clustersFile.clusters, sample_normalized_values_dict)
     g.semcorAnalyser = SemcorAnalyser(domain_parts, semcor_frequencies, True)
     print('preparation completed successfully!')
 

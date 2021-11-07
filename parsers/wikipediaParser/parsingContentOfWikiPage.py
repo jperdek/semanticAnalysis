@@ -18,7 +18,7 @@ class XMLHandler(xml.sax.ContentHandler):
         self.text_content = ""
         self.indexes = dict()
         self.doc_freq_index = dict()
-        self.title = ""
+        self.titles = []
 
     def setJSON(self, language_shortening, term_end_file, doc_end_file):
         self.language_shortening = language_shortening
@@ -33,12 +33,12 @@ class XMLHandler(xml.sax.ContentHandler):
             self.on_page_to_do = True
             self.text_content = ""
 
-            if False and self.occurences == 1000:
-                with open(self.doc_end_file, "w") as f:
-                    f.write(json.dumps(self.doc_freq_index))  # FINAL DUMPING
-                with open(self.term_end_file, "w") as f:
-                    f.write(json.dumps(self.indexes))  # FINAL DUMPING
-                exit(0)
+            #if False and self.occurences == 1000:
+            #    with open(self.doc_end_file, "w") as f:
+            #        f.write(json.dumps(self.doc_freq_index))  # FINAL DUMPING
+            #    with open(self.term_end_file, "w") as f:
+            #        f.write(json.dumps(self.indexes))  # FINAL DUMPING
+            #    exit(0)
 
             if self.occurences % 100 == 0:
                 print(self.occurences)
@@ -46,23 +46,23 @@ class XMLHandler(xml.sax.ContentHandler):
     def endElement(self, tag):
         if tag == 'page':
             self.prepared_for_indexing = False
-            if self.text_content != "":
-                search_result = re.search(r"\[\[Category:([^\]]*)\]\]", self.text_content)
-                if search_result:
-                    categories_list = search_result.groups()
-                    for category in categories_list:
-                        if category not in self.categories:
-                            self.categories[category] = dict()
-                            self.categories[category]["records"] = list()
-                        filtered_content = self.filter_page_content(self.text_content)
-                        if filtered_content != "":
-                            pass
+            #if self.text_content != "":
+                #search_result = re.search(r"\[\[Category:([^\]]*)\]\]", self.text_content)
+                #if search_result:
+                    #categories_list = search_result.groups()
+                    #for category in categories_list:
+                        #if category not in self.categories:
+                        #    self.categories[category] = dict()
+                        #    self.categories[category]["records"] = list()
+                        #filtered_content = self.filter_page_content(self.text_content)
+                        #if filtered_content != "":
+                        #    pass
                             #indexing.index_words_term_freq_doc_freq_for_category(self.indexes, self.doc_freq_index, filtered_content, category)
                             #self.categories[category]["records"].append(filtered_content)
-                    if filtered_content != "":
-                        pass
+                    #if filtered_content != "":
+                    #   pass
                         #indexing.index_words_term_freq_doc_freq_tfidf(self.indexes, self.doc_freq_index, filtered_content, self.title)
-        self.currentData = ""
+        #self.currentData = ""
 
     def remove_casual_headings(self, line) -> bool:
         if re.search(r"==\s*References\s*==", line):
@@ -125,10 +125,12 @@ class XMLHandler(xml.sax.ContentHandler):
 
     def characters(self, content):
         if self.currentData == "title" and self.on_page_to_do \
-                and re.search("^MediaWiki:", content) == None:
+                and re.search("^MediaWiki:", content) is None:
             self.lang_document_identifier = self.language_shortening
             self.prepared_for_indexing = True
-            self.title = content
+            content = content.strip()
+            if content != "" and len(content) > 5:
+                self.titles.append(content.strip())
 
         if self.currentData == 'text' and self.prepared_for_indexing:
             # print(self.document_identifier+ "< >"+str(len(content)))
@@ -138,14 +140,16 @@ class XMLHandler(xml.sax.ContentHandler):
     def endDocument(self):
         print("Occurences: " + str(self.occurences))
 
-        for category in self.categories.keys():
-            print(category)
+        #for category in self.categories.keys():
+        #    print(category)
 
         # SAVE AS JSON FILE
-        with open(self.doc_end_file, "w") as f:
-            f.write(json.dumps(self.doc_freq_index))  # FINAL DUMPING
-        with open(self.term_end_file, "w") as f:
-            f.write(json.dumps(self.indexes))  # FINAL DUMPING
+        #with open(self.doc_end_file, "w") as f:
+        #    f.write(json.dumps(self.doc_freq_index))  # FINAL DUMPING
+        #with open(self.term_end_file, "w") as f:
+        #    f.write(json.dumps(self.indexes))  # FINAL DUMPING
+        with open("phrases.json", "w") as f:
+            f.write(json.dumps(self.titles))  # FINAL DUMPING
 
 
 def prepare_titles(mapping_file, file_language_shortening, dest_language_shortenings):

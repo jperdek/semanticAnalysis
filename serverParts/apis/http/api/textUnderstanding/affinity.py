@@ -39,7 +39,7 @@ class AffinityScore:
             return AffinityScore.evaluate_cosine_weight(coherence_concept_cluster, concept_cluster_y)
         else:
             whole_coherence_value = 0.0
-            #coherence_concept_cluster = normalized_values_dict[typed_term1]  # direct association
+            # coherence_concept_cluster = normalized_values_dict[typed_term1]  # direct association
             print(normalized_values_dict)
             concept_cluster_vectors = AffinityScore.evaluate_concept_cluster_vector_for_cluster_using_concept(
                 typed_term1, normalized_values_dict, clusters)
@@ -68,6 +68,8 @@ class AffinityScore:
 
         bottom_value_vector1 = math.sqrt(bottom_value_vector1)
         bottom_value_vector2 = math.sqrt(bottom_value_vector2)
+        if bottom_value_vector1 * bottom_value_vector2 == 0:
+            return 0.0
         return upper_value / (0.0 + bottom_value_vector1 * bottom_value_vector2)
 
     @staticmethod
@@ -76,25 +78,37 @@ class AffinityScore:
                                                                   clusters: dict) -> Optional[dict]:
         if concept not in normalized_values_dict:
             return None
-        result = dict()
-        result_name = dict()
         concept_cluster_vector = dict()
         for typed_word in normalized_values_dict[concept].keys():
-            if typed_word in clusters.values():
+            if typed_word in clusters.keys():
                 cluster_name = clusters[typed_word]
-                if cluster_name not in result:
-                    result[cluster_name] = 0.0
-                    result_name[cluster_name] = ""
+                if cluster_name not in concept_cluster_vector:
+                    concept_cluster_vector[cluster_name] = 0.0
                 # sum normalized value for every cluster
-                result[cluster_name] = result[cluster_name] + normalized_values_dict[
+                concept_cluster_vector[cluster_name] = concept_cluster_vector[cluster_name] + normalized_values_dict[
                     concept][typed_word]
-                if result_name[cluster_name] == "":
-                    result_name[cluster_name] = typed_word
-                else:
-                    result_name[cluster_name] = result_name[cluster_name] + typed_word
-        for cluster_name, value in result.items():
-            concept_cluster_vector[cluster_name] = value
         return dict(sorted(concept_cluster_vector.items(), key=lambda x: x[1]))
+
+    @staticmethod
+    def evaluate_concept_cluster_vector_for_text(
+            text: str, normalized_values_dict: dict, clusters: dict) -> (Optional[dict], Optional[dict]):
+        concept_cluster_vector = dict()
+        concept_of_concepts_vector = dict()
+        for concept in text.split():
+            if concept not in normalized_values_dict:
+                continue
+            for typed_word in normalized_values_dict[concept].keys():
+                if typed_word in clusters.keys():
+                    cluster_name = clusters[typed_word]
+                    if cluster_name not in concept_cluster_vector:
+                        concept_cluster_vector[cluster_name] = 0.0
+                        concept_of_concepts_vector[cluster_name] = dict()
+                        concept_of_concepts_vector[cluster_name][cluster_name] = cluster_name
+                    # sum normalized value for every cluster
+                    concept_of_concepts_vector[cluster_name][typed_word] = concept
+                    concept_cluster_vector[cluster_name] = \
+                        concept_cluster_vector[cluster_name] + normalized_values_dict[concept][typed_word]
+        return dict(sorted(concept_cluster_vector.items(), key=lambda x: x[1])), concept_of_concepts_vector
 
     @staticmethod
     def evaluate_edge_between_clusters(cluster1: str, cluster2: str,
@@ -128,6 +142,17 @@ class AffinityScore:
         return processed
 
 
+class AffinityHelper:
+
+    def __init__(self, sample_clusters: dict, sample_normalized_values_dict: dict):
+        self.processed_clusters = AffinityScore.process_clusters(sample_clusters)
+        self.sample_normalized_values_dict = sample_normalized_values_dict
+
+    def get_concept_vector(self, text):
+        return AffinityScore.evaluate_concept_cluster_vector_for_text(text, self.sample_normalized_values_dict,
+                                                                      self.processed_clusters)
+
+
 if __name__ == '__main__':
     given_typed_term1 = 'law'
     given_typed_term2 = 'study'
@@ -135,7 +160,8 @@ if __name__ == '__main__':
     processed_clusters = AffinityScore.process_clusters(sample_clusters)
     sample_normalized_values_dict = AffinityScore.load_json('data-concept-instance-relations-remake-normalized.json')
     similarity = AffinityScore.evaluate_similarity_between_typed_terms(given_typed_term1, given_typed_term2,
-                                                                       sample_normalized_values_dict, processed_clusters)
+                                                                       sample_normalized_values_dict,
+                                                                       processed_clusters)
     coherence = AffinityScore.evaluate_coherence_between_typed_terms(given_typed_term1, given_typed_term2,
                                                                      sample_normalized_values_dict, processed_clusters)
     affinity = AffinityScore.evaluate_affinity_score(similarity, coherence)

@@ -50,15 +50,18 @@ def index_words_term_freq_doc_freq_tfidf(index, doc_freq_index, text, document_i
             index[word]['doc'][document_identifier] = 1
 
 
-def index_words_term_freq_doc_freq_for_category(index, doc_freq_index, text, category):
+def index_words_term_freq_doc_freq_for_category(index, text, category, window: int = 20):
     tokenized_text = [word.lower() for word in word_tokenize(text) if check(word)]
-    doc_freq_index[category] = len(tokenized_text)
 
     tokenized_text_length = len(tokenized_text)
     if category not in index:
         index[category] = dict()
     for position_word1 in range(0, tokenized_text_length):
-        for position_word2 in range(position_word1 + 1, tokenized_text_length):
+        window_range = position_word1 + 1 + window
+        if window_range > tokenized_text_length:
+            window_range = tokenized_text_length
+
+        for position_word2 in range(position_word1 + 1, window_range):
             word1 = str(tokenized_text[position_word1])
             word2 = str(tokenized_text[position_word2])
             if word1 not in index[category]:
