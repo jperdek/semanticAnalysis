@@ -6,7 +6,8 @@ from middlewares import login_required
 from serverParts.apis.http.api.automatization.automatization_tools import verify_html
 from serverParts.apis.http.api.segmentationAnalysis.pageAnalyser import cetdExtractor
 from serverParts.apis.http.api.textUnderstanding.guessedWord.conceptGuessWord import count_tf_idf, get_texts_from_range
-from serverParts.apis.http.api.textUnderstanding.textUnderstandingApi import categories_classification
+from serverParts.apis.http.api.textUnderstanding.textUnderstandingApi import categories_classification, \
+    load_local_picle_file, load_local_json_file
 
 automatization_api = Blueprint('automatization_api', __name__, template_folder='templates')
 
@@ -21,7 +22,14 @@ def automatic_analysis():
     text = request.get_data().decode('utf-8', errors='ignore')
 
     if verify_html(text):
-        text = cetdExtractor.apply_segmentation(text, "normal")
+        result_text = cetdExtractor.apply_segmentation(text, ["normal"])["normal"]
+        if result_text[0:6] != 'Error:':
+            text = result_text
+
+    if 'text_categories_svc_pickle' not in g or 'text_categories_tfidf_pickle' not in g:
+        g.text_categories_svc_pickle = load_local_picle_file('linear_svc_text_categories.pickle')
+        g.text_categories_tfidf_pickle = load_local_picle_file('tfidf_text_categories.pickle')
+        g.indexed_guesses = load_local_json_file('indexed-guesses.json')
 
     tfidf_test = g.text_categories_tfidf_pickle.transform([text.lower()])
     result = g.text_categories_svc_pickle.predict(tfidf_test)

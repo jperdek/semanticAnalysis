@@ -1,9 +1,7 @@
-
 import json
 import pickle
 from flask import Blueprint, send_from_directory
 from flask import g, request
-from sklearn.feature_extraction.text import TfidfVectorizer
 
 from serverParts.apis.http.api.middlewares import login_required
 from serverParts.apis.http.api.textUnderstanding.affinity import AffinityHelper
