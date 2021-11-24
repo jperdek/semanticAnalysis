@@ -29,7 +29,7 @@ def load_local_picle_file(file_name):
 
 
 def json_response(payload, status=200):
-    return json.dumps(payload), status, {'content-type': 'application/json' }
+    return json.dumps(payload), status, {'content-type': 'application/json'}
 
 
 @text_understanding_api.route("/textUnderstanding/textUnderstandingMethods", methods=["GET"])

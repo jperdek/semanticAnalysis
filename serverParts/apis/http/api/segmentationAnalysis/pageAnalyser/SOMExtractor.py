@@ -48,7 +48,7 @@ class SOMBeautifulSoup:
                     except RecursionError:
                         continue
                     whole_count = whole_count + 1
-                    # save_as_json(root, path_final_tree)
+                    #save_as_json(root, path_final_tree)
                     # return
             if domain_only:
                 root['whole_count'] = whole_count

@@ -14,7 +14,7 @@ def load_local_json_file(file_name):
 
 
 def json_response(payload, status=200):
-    return json.dumps(payload), status, {'content-type': 'application/json' }
+    return json.dumps(payload), status, {'content-type': 'application/json'}
 
 
 segmentation_api = Blueprint('segmentation_api', __name__, template_folder='templates')
@@ -60,7 +60,7 @@ def check_and_add_error(response, page_tree, page_name):
 @segmentation_api.route("/segmentationAnalysis/SOM/createTree", methods=["POST"])
 @login_required
 def create_som_three():
-    html_pages = request.get_data().decode('utf-8', errors='ignore').\
+    html_pages = request.get_data().decode('utf-8', errors='ignore'). \
         split('<----------DIVISION_OF_MANY_PAGES----------->')
     page_names = request.args.get('names')
     if page_names is not None:
@@ -74,9 +74,9 @@ def create_som_three():
             page_name = page_names[index]
 
         response = SOMExtractor.SOMBeautifulSoup.parse_tree_beautiful_soup(html_page, page_name=page_name,
-                                                                                         root=som_tree)
+                                                                           root=som_tree)
         if str(response).startswith('Error:'):
-            check_and_add_error(response, page_tree, page_name)
+            check_and_add_error(response, som_tree, page_name)
         else:
             som_tree = response
             if 'whole_count' not in som_tree:
@@ -89,11 +89,11 @@ def create_som_three():
 @segmentation_api.route("/segmentationAnalysis/SOM/updateTree", methods=["POST"])
 @login_required
 def update_som_three():
-    pages_and_tree = request.get_data().decode('utf-8', errors='ignore').\
+    pages_and_tree = request.get_data().decode('utf-8', errors='ignore'). \
         split('<----------DIVISION_OF_MANY_PAGES_AND_SOM_THREE----------->')
     html_pages = pages_and_tree[not -1].split('<----------DIVISION_OF_MANY_PAGES----------->')
     som_tree = json.loads(pages_and_tree[-1])  # obtaining SOM tree
-    page_names = request.args.get('names')     # get names for files if are specified
+    page_names = request.args.get('names')  # get names for files if are specified
     if page_names is not None:
         page_names = page_names.split(',')
 

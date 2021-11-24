@@ -1,9 +1,9 @@
-from flask import Blueprint, g, request
+from flask import Blueprint, g, request, send_from_directory
 import json
 
 from middlewares import login_required
 
-from serverParts.apis.http.api.automatization.automatization_tools import verify_html
+from serverParts.apis.http.api.automatization.automatization_tools import verify_html, SOMTools
 from serverParts.apis.http.api.segmentationAnalysis.pageAnalyser import cetdExtractor
 from serverParts.apis.http.api.textUnderstanding.guessedWord.conceptGuessWord import count_tf_idf, get_texts_from_range
 from serverParts.apis.http.api.textUnderstanding.textUnderstandingApi import categories_classification, \
@@ -16,12 +16,20 @@ def json_response(payload, status=200):
     return json.dumps(payload), status, {'content-type': 'application/json' }
 
 
+def load_local_file(file_name):
+    stream = send_from_directory('web/static', file_name)
+    stream.direct_passthrough = False
+    return stream.get_data().decode('utf-8', 'ignore')
+
+
 @automatization_api.route("/automatization", methods=["POST"])
 @login_required
 def automatic_analysis():
-    text = request.get_data().decode('utf-8', errors='ignore')
+    text = request.get_data().decode('utf-8', 'ignore')
 
     if verify_html(text):
+        text = str(request.get_data())  # for text data it must be not loaded as binary data
+        res = SOMTools.analyze_som_comparisons(text)
         result_text = cetdExtractor.apply_segmentation(text, ["normal"])["normal"]
         if result_text[0:6] != 'Error:':
             text = result_text
