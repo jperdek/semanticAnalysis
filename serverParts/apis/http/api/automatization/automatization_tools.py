@@ -22,7 +22,7 @@ class SOMTools:
             domain_json: dict, file_content: dict, page_file_path: Optional[str],
             file_name: str, domain_name: str, category: str,
             analyzed_trees: dict = None, file_tree_soup: BeautifulSoup = None,
-            evaluate_validity: bool = False) -> Union[dict, bool]:
+            evaluate_validity: bool = False) -> (Optional[bool], dict):
         if category not in file_content:
             file_content[category] = dict()
         if domain_name not in file_content[category]:
@@ -45,9 +45,9 @@ class SOMTools:
                                     file_content[category][domain_name], file_name, analyzed_trees_domain)
         if evaluate_validity:
             if file_content[category][domain_name][file_name]["count"] > analyzed_trees_domain["domain_average"]:
-                return True
-            return False
-        return candidate_json_tree
+                return True, candidate_json_tree
+            return False, candidate_json_tree
+        return None, candidate_json_tree
 
     @staticmethod
     def parse_tree_extract(domain_tree_json: dict, file_json_tree: dict,
@@ -78,8 +78,7 @@ class SOMTools:
                                 only_one_domain: bool = True,
                                 som_files: list = ["nbaplayer-foxsports(425).json", "nbaplayer-msnca(434).json",
                                                    "nbaplayer-si(515).json"]) \
-            -> dict:
-
+            -> (Optional[str], dict, Optional[dict]):
         analysis_results = SOMTools.load_local_json_file(analysis_dict_file_path)
         candidate_results = dict()
         candidate_file_name = "analyzed_file"
@@ -88,14 +87,36 @@ class SOMTools:
             domain_json_tree = SOMTools.load_local_json_file(path_to_json_tree)
 
             category_name, domain_name = som_file_name[:som_file_name.find('.json')].split('-')
-            if only_one_domain and SOMTools.analyze_SOM_tree(
-                    domain_json_tree, candidate_results, None, candidate_file_name,
-                    domain_name, category_name, analyzed_trees=analysis_results,
-                    file_tree_soup=BeautifulSoup(html_file, "html.parser"), evaluate_validity=True):
-                print("DONE")
-                return som_file_name
-            #print(analysis_results)
-        return candidate_results
+            domain_match, candidate_tree = SOMTools.analyze_SOM_tree(
+                domain_json_tree, candidate_results, None, candidate_file_name,
+                domain_name, category_name, analyzed_trees=analysis_results,
+                file_tree_soup=BeautifulSoup(html_file, "html.parser"), evaluate_validity=True)
+            if only_one_domain and domain_match:
+                return path_to_json_tree, domain_json_tree, candidate_tree
+        return None, candidate_results, None
+
+    @staticmethod
+    def get_unique_content_from_list(content_list: list, unique_content: dict, clear_spaces: bool = False) -> None:
+        for content_string in content_list:
+            analyzed_text = content_string.strip()
+            if clear_spaces:
+                analyzed_text = ' '.join(analyzed_text.split())
+            unique_content[analyzed_text] = ""
+
+    @staticmethod
+    def concatenate_list_content(extracted_data: list, clear_spaces=True) -> str:
+        unique_content = dict()
+        SOMTools.get_unique_content_from_list(extracted_data, unique_content, clear_spaces=clear_spaces)
+        return " ".join(unique_content.keys())
+
+    @staticmethod
+    def extract_unique_strings(extracted_data: dict, clear_spaces: bool = False) -> list:
+        unique_content = dict()
+        for file_name, file_content in extracted_data.items():
+            for content_name, content in file_content.items():
+                if content_name == "text":
+                    SOMTools.get_unique_content_from_list(content, unique_content, clear_spaces)
+        return list(unique_content.keys())
 
 
 class OfflineSOMTools:
@@ -156,7 +177,7 @@ class OfflineSOMTools:
         }
 
     @staticmethod
-    def analyze_som_comparisons(analysis_dict: dict, toleration: float = 0.3) -> dict:
+    def analyze_som_comparisons(analysis_dict: dict, toleration: float = 0.5) -> dict:
         category_results = dict()
         for category_name, category_content in analysis_dict.items():
             category_results[category_name] = dict()

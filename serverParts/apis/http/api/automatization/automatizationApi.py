@@ -4,7 +4,7 @@ import json
 from middlewares import login_required
 
 from serverParts.apis.http.api.automatization.automatization_tools import verify_html, SOMTools
-from serverParts.apis.http.api.segmentationAnalysis.pageAnalyser import cetdExtractor
+from serverParts.apis.http.api.segmentationAnalysis.pageAnalyser import cetdExtractor, SOMExtractor
 from serverParts.apis.http.api.textUnderstanding.guessedWord.conceptGuessWord import count_tf_idf, get_texts_from_range
 from serverParts.apis.http.api.textUnderstanding.textUnderstandingApi import categories_classification, \
     load_local_picle_file, load_local_json_file
@@ -28,11 +28,26 @@ def automatic_analysis():
     text = request.get_data().decode('utf-8', 'ignore')
 
     if verify_html(text):
-        text = str(request.get_data())  # for text data it must be not loaded as binary data
-        res = SOMTools.analyze_som_comparisons(text)
-        result_text = cetdExtractor.apply_segmentation(text, ["normal"])["normal"]
-        if result_text[0:6] != 'Error:':
-            text = result_text
+        som_text = str(request.get_data())  # for text data it must be not loaded as binary data
+        som_tree_path, domain_som_tree_or_statistics, candidate_tree = SOMTools.analyze_som_comparisons(som_text)
+        if som_tree_path:
+            extracted_data = dict()
+            print("Identified SOM tree: " + som_tree_path)
+            SOMExtractor.ExtractFromFile.extract_info_from_domain(
+                domain_som_tree_or_statistics, 0.5, candidate_tree, extracted_data)
+            results = text = SOMTools.concatenate_list_content(extracted_data["text"], clear_spaces=True)
+            print(text)
+            category = som_tree_path
+
+            return json_response({"category": category, "results": results})
+        else:
+            print("Som tree has not been identified. Printing statistics:")
+            print(domain_som_tree_or_statistics)
+            text = som_text
+
+    result_text = cetdExtractor.apply_segmentation(text, ["normal"])["normal"]
+    if result_text[0:6] != 'Error:':
+        text = " ".join(result_text.replace("\\r", " ").replace("\\n", " ").replace("\\t", " ").split())
 
     if 'text_categories_svc_pickle' not in g or 'text_categories_tfidf_pickle' not in g:
         g.text_categories_svc_pickle = load_local_picle_file('linear_svc_text_categories.pickle')
@@ -42,8 +57,6 @@ def automatic_analysis():
     tfidf_test = g.text_categories_tfidf_pickle.transform([text.lower()])
     result = g.text_categories_svc_pickle.predict(tfidf_test)
 
-    print(verify_html(text))
-    print(result)
     category = ""
     for category_name, value in categories_classification.items():
         if value == result[0]:

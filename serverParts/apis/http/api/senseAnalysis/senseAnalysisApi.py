@@ -23,7 +23,7 @@ semcorAnalyser = None
 
 @sense_api.route("/api/senseAnalysis", methods=["GET"])
 @login_required
-def sense_analysis():
+def sense_analysis_get():
     global semcorAnalyser
     if semcorAnalyser is not None:
         g.semcorAnalyser = semcorAnalyser
@@ -36,6 +36,26 @@ def sense_analysis():
         semcorAnalyser = g.semcorAnalyser
 
     text = request.args.get('text')
+    k = int(request.args.get('k'))
+    result = g.semcorAnalyser.analyse_text_semcor_results(text, k, return_results=True)
+    return json_response(result)
+
+
+@sense_api.route("/api/senseAnalysis", methods=["POST"])
+@login_required
+def sense_analysis_post():
+    global semcorAnalyser
+    if semcorAnalyser is not None:
+        g.semcorAnalyser = semcorAnalyser
+    if 'semcorAnalyser' not in g:
+        print("Loads for each request")
+        domain_parts = load_local_json_file('domain-parts.json')
+        semcor_frequencies = load_local_json_file('semcor_frequencies.json')
+        semcorAnalyser = g.semcorAnalyser = SemcorAnalyser(domain_parts, semcor_frequencies, True)
+    else:
+        semcorAnalyser = g.semcorAnalyser
+
+    text = request.get_data().decode('utf-8', "ignore")
     k = int(request.args.get('k'))
     result = g.semcorAnalyser.analyse_text_semcor_results(text, k, return_results=True)
     return json_response(result)

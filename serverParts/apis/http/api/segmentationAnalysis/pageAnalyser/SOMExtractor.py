@@ -441,6 +441,32 @@ class PreprocessDataset:
     #    array = re.findall(r"\<\s*[^abiph][1-6]?\s*\\?\s*\>", string)
 
 
+class ExtractFromFile:
+    @staticmethod
+    def extract_info_from_domain(domain_json: dict, percentage_chosen: float,
+                                 file_json_tree: dict, file_content: dict):
+        whole_count = domain_json['whole_count']
+        treshold = int(whole_count * percentage_chosen)
+        ExtractFromFile.parse_tree_extract(domain_json, file_json_tree, file_content, treshold)
+
+    @staticmethod
+    def extract_info_for_file(content: dict, content_file_tree: dict, file_content: dict, treshold: float):
+        # get first set content
+        if content['count'] < treshold:
+            if "text" not in file_content:
+                file_content["text"] = list()
+            file_content["text"].append(content_file_tree["text"])
+
+    @staticmethod
+    def parse_tree_extract(domain_tree_json: dict, file_json_tree: dict, file_content: dict, treshold: float):
+        for name_domain_tree, content_domain_tree in domain_tree_json.items():
+            for name_file_tree, content_file_tree in file_json_tree.items():
+                if name_file_tree == name_domain_tree and isinstance(content_domain_tree, dict):
+                    if 'flag' in content_file_tree and content_file_tree['flag']:
+                        ExtractFromFile.extract_info_for_file(content_domain_tree, content_file_tree, file_content, treshold)
+                    ExtractFromFile.parse_tree_extract(content_domain_tree, content_file_tree, file_content, treshold)
+
+
 class ExtractFromTree:
 
     @staticmethod

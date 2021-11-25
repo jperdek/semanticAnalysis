@@ -179,6 +179,8 @@ class ReadabilityAnalyser:
                 record['grade_level'] = smog.grade_level
                 content['smog'] = record
         except ReadabilityException as e:
+            print(e)
+            print(error_ignore)
             if not error_ignore:
                 if all_sentences:
                     content['smog_all'] = str(e)
@@ -235,25 +237,25 @@ class ReadabilityAnalyser:
     def check_readability(self, use_methods=None, errors_included=True):
         result_analysis = dict()
         if use_methods is None or 'flesch_kincaid' in use_methods:
-            self.flesch_kincaid(result_analysis, not errors_included)
+            self.flesch_kincaid(result_analysis, error_ignore=not errors_included)
         if use_methods is None or 'flesch_ease' in use_methods:
-            self.flesch_ease(result_analysis, not errors_included)
+            self.flesch_ease(result_analysis, error_ignore=not errors_included)
         if use_methods is None or 'dale_chall' in use_methods:
-            self.dale_chall(result_analysis, not errors_included)
+            self.dale_chall(result_analysis, error_ignore=not errors_included)
         if use_methods is None or 'ari' in use_methods:
-            self.automated_readability_index(result_analysis, not errors_included)
+            self.automated_readability_index(result_analysis, error_ignore=not errors_included)
         if use_methods is None or 'cli' in use_methods:
-            self.coleman_liau_index(result_analysis, not errors_included)
+            self.coleman_liau_index(result_analysis, error_ignore=not errors_included)
         if use_methods is None or 'gunning_fog' in use_methods:
-            self.gunning_fog_index(result_analysis, not errors_included)
+            self.gunning_fog_index(result_analysis, error_ignore=not errors_included)
         if use_methods is None or 'smog' in use_methods:
-            self.smog(result_analysis, not errors_included)
+            self.smog(result_analysis, error_ignore=not errors_included)
         if use_methods is None or 'smog_all' in use_methods:
-            self.smog(result_analysis, True, not errors_included)
+            self.smog(result_analysis, True, error_ignore=not errors_included)
         if use_methods is None or 'spache' in use_methods:
-            self.spache_readability_formula(result_analysis, not errors_included)
+            self.spache_readability_formula(result_analysis, error_ignore=not errors_included)
         if use_methods is None or 'linsear_write' in use_methods:
-            self.linsear_write(result_analysis, not errors_included)
+            self.linsear_write(result_analysis, error_ignore=not errors_included)
         return result_analysis
 
     @staticmethod

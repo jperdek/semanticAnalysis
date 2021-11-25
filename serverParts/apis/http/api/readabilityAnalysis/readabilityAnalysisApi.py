@@ -20,7 +20,7 @@ def list_avalable_methods():
 
 @readability_api.route("/readabilityAnalysis/<string:methods>", methods=["GET"])
 @login_required
-def analyze_readability(methods):
+def analyze_readability_get(methods):
     text = request.args.get('text')
     if methods == "" or methods == 'all':
         analyze_methods = None
@@ -28,6 +28,18 @@ def analyze_readability(methods):
         analyze_methods = methods.split(',')
 
     readability_analyzer = ReadabilityAnalyser(text)
-    return json_response(readability_analyzer.check_readability(analyze_methods))
+    return json_response(readability_analyzer.check_readability(analyze_methods, errors_included=True))
 
 
+@readability_api.route("/readabilityAnalysis/<string:methods>", methods=["POST"])
+@login_required
+def analyze_readability_post(methods):
+    text = str(request.get_data())
+
+    if methods == "" or methods == 'all':
+        analyze_methods = None
+    else:
+        analyze_methods = methods.split(',')
+
+    readability_analyzer = ReadabilityAnalyser(text)
+    return json_response(readability_analyzer.check_readability(analyze_methods, errors_included=True))
