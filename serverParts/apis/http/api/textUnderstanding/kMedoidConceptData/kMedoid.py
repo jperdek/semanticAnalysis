@@ -196,6 +196,7 @@ def try_swap_medoids_randomized(random_k_sample_keys: list, result_dict: dict, r
     min_distance = distance['previous']
     min_value = distance['previous']
     for iteration, array_value in enumerate(array):
+        # counter = 0
         point_to_associate_key = list(result_dict.keys())[int(array_value / k)]
         chosen_medoid_key = random_k_sample_keys[array_value % k]
         value = recompute_swap_for_medoid(point_to_associate_key, chosen_medoid_key,
