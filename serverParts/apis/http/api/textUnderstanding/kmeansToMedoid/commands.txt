@@ -1,0 +1,15 @@
+
+# Cleaning data - removing unnecessary parts
+python clean_data.py
+
+
+# Whole process
+python mapper.py < data0.txt | sort | reducer.py | cluster_updater.py
+python mapper.py < data0.txt | sort | reducer.py | cluster_updater.py > clusters1.txt
+
+
+# Only mapper
+python mapper.py < data0.txt | sort
+
+# From mapper to reducer
+python mapper.py < data0.txt | sort | reducer.py

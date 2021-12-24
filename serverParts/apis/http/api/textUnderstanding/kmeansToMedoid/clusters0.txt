@@ -1,0 +1,100 @@
+gender	{"factor": 14230.0, "variable": 4594.0, "characteristic": 2547.0, "issue": 1817.0, "information": 1635.0, "demographic": 950.0, "topic": 707.0}	{"factor": 14230.0, "variable": 4594.0, "characteristic": 2547.0, "issue": 1817.0, "information": 1635.0, "demographic": 950.0, "topic": 707.0}
+stress	{"factor": 6433.0, "issue": 849.0, "condition": 807.0}	{"factor": 6433.0, "issue": 849.0, "condition": 807.0}
+ibm	{"company": 5494.0, "vendor": 1036.0}	{"company": 5494.0, "vendor": 1036.0}
+location	{"factor": 5247.0, "information": 3746.0, "variable": 770.0}	{"factor": 5247.0, "information": 3746.0, "variable": 770.0}
+firefox	{"browser": 4369.0}	{"browser": 4369.0}
+methanol	{"alcohol": 4092.0, "solvent": 1923.0}	{"alcohol": 4092.0, "solvent": 1923.0}
+anticipates	{"word": 3774.0}	{"word": 3774.0}
+water	{"liquid": 3542.0, "fluid": 2506.0, "utility": 2502.0, "service": 2181.0, "resource": 1836.0, "material": 1106.0, "solvent": 988.0, "item": 839.0, "substance": 829.0, "factor": 819.0, "sector": 709.0}	{"liquid": 3542.0, "fluid": 2506.0, "utility": 2502.0, "service": 2181.0, "resource": 1836.0, "material": 1106.0, "solvent": 988.0, "item": 839.0, "substance": 829.0, "factor": 819.0, "sector": 709.0}
+heart	{"organ": 3505.0, "tissue": 925.0}	{"organ": 3505.0, "tissue": 925.0}
+london	{"city": 3210.0}	{"city": 3210.0}
+birthday	{"occasion": 2879.0, "event": 1892.0}	{"occasion": 2879.0, "event": 1892.0}
+plumbing	{"service": 2674.0, "solution": 2001.0}	{"service": 2674.0, "solution": 2001.0}
+pear	{"fruit": 2567.0}	{"fruit": 2567.0}
+healthcare	{"industry": 2455.0, "sector": 1112.0}	{"industry": 2455.0, "sector": 1112.0}
+intend	{"word": 2444.0}	{"word": 2444.0}
+chocolate	{"food": 2401.0, "flavor": 912.0}	{"food": 2401.0, "flavor": 912.0}
+peach	{"fruit": 2347.0}	{"fruit": 2347.0}
+rubber	{"material": 2310.0}	{"material": 2310.0}
+christmas	{"holiday": 2217.0, "occasion": 1053.0}	{"holiday": 2217.0, "occasion": 1053.0}
+lifestyle	{"factor": 2177.0}	{"factor": 2177.0}
+canoeing	{"activity": 2080.0}	{"activity": 2080.0}
+television	{"medium": 2033.0, "item": 875.0}	{"medium": 2033.0, "item": 875.0}
+transportation	{"service": 1880.0, "industry": 1386.0, "sector": 812.0, "issue": 810.0}	{"service": 1880.0, "industry": 1386.0, "sector": 812.0, "issue": 810.0}
+pressure	{"parameter": 1798.0, "factor": 1058.0, "variable": 758.0}	{"parameter": 1798.0, "factor": 1058.0, "variable": 758.0}
+antibiotic	{"medication": 1777.0}	{"medication": 1777.0}
+garlic	{"food": 1759.0, "spice": 874.0, "ingredient": 748.0, "herb": 723.0}	{"food": 1759.0, "spice": 874.0, "ingredient": 748.0, "herb": 723.0}
+estrogen	{"hormone": 1743.0}	{"hormone": 1743.0}
+christianity	{"religion": 1742.0}	{"religion": 1742.0}
+blueberry	{"fruit": 1705.0, "berry": 1054.0}	{"fruit": 1705.0, "berry": 1054.0}
+privacy	{"issue": 1691.0}	{"issue": 1691.0}
+oklahoma	{"state": 1629.0}	{"state": 1629.0}
+nylon	{"material": 1606.0}	{"material": 1606.0}
+psychology	{"discipline": 1605.0, "field": 795.0}	{"discipline": 1605.0, "field": 795.0}
+rat	{"animal": 1603.0, "specie": 983.0, "rodent": 913.0}	{"animal": 1603.0, "specie": 983.0, "rodent": 913.0}
+gas	{"utility": 1596.0, "industry": 1340.0}	{"utility": 1596.0, "industry": 1340.0}
+detroit	{"city": 1550.0}	{"city": 1550.0}
+tea	{"beverage": 1519.0, "drink": 1259.0}	{"beverage": 1519.0, "drink": 1259.0}
+rugby	{"sport": 1471.0}	{"sport": 1471.0}
+laptop	{"device": 1409.0}	{"device": 1409.0}
+bolt	{"fastener": 1395.0}	{"fastener": 1395.0}
+europe	{"region": 1392.0}	{"region": 1392.0}
+shanghai	{"city": 1359.0}	{"city": 1359.0}
+antihistamine	{"medication": 1328.0}	{"medication": 1328.0}
+muscle	{"tissue": 1309.0}	{"tissue": 1309.0}
+circle	{"shape": 1302.0}	{"shape": 1302.0}
+counseling	{"service": 1295.0}	{"service": 1295.0}
+tungsten	{"metal": 1274.0}	{"metal": 1274.0}
+bank	{"institution": 1224.0, "organization": 872.0, "business": 821.0, "lender": 803.0, "amenity": 730.0}	{"institution": 1224.0, "organization": 872.0, "business": 821.0, "lender": 803.0, "amenity": 730.0}
+australia	{"jurisdiction": 1206.0, "nation": 1085.0, "place": 842.0, "market": 790.0}	{"jurisdiction": 1206.0, "nation": 1085.0, "place": 842.0, "market": 790.0}
+polypropylene	{"material": 1179.0, "polyolefin": 818.0, "plastic": 755.0}	{"material": 1179.0, "polyolefin": 818.0, "plastic": 755.0}
+siemens	{"company": 1140.0}	{"company": 1140.0}
+accelerometer	{"sensor": 1133.0}	{"sensor": 1133.0}
+beet	{"vegetable": 1121.0}	{"vegetable": 1121.0}
+car	{"vehicle": 1112.0, "item": 939.0}	{"vehicle": 1112.0, "item": 939.0}
+softball	{"sport": 1103.0}	{"sport": 1103.0}
+fructose	{"sugar": 1101.0}	{"sugar": 1101.0}
+gujarat	{"state": 1083.0}	{"state": 1083.0}
+sorghum	{"crop": 1066.0}	{"crop": 1066.0}
+festival	{"event": 1054.0}	{"event": 1054.0}
+mississippi	{"state": 1050.0}	{"state": 1050.0}
+houston	{"city": 1038.0}	{"city": 1038.0}
+hurricane	{"disaster": 1036.0}	{"disaster": 1036.0}
+height	{"factor": 1025.0}	{"factor": 1025.0}
+amphetamine	{"stimulant": 1022.0}	{"stimulant": 1022.0}
+hawaii	{"state": 1014.0}	{"state": 1014.0}
+concentration	{"factor": 1009.0, "parameter": 716.0}	{"factor": 1009.0, "parameter": 716.0}
+linkedin	{"site": 1009.0}	{"site": 1009.0}
+blackjack	{"game": 961.0}	{"game": 961.0}
+pencil	{"item": 957.0}	{"item": 957.0}
+blog	{"tool": 926.0}	{"tool": 926.0}
+unilever	{"company": 910.0}	{"company": 910.0}
+research	{"activity": 907.0}	{"activity": 907.0}
+pvc	{"material": 901.0}	{"material": 901.0}
+money	{"resource": 890.0}	{"resource": 890.0}
+timing	{"factor": 884.0}	{"factor": 884.0}
+easter	{"holiday": 882.0}	{"holiday": 882.0}
+hemorrhage	{"complication": 878.0}	{"complication": 878.0}
+denver	{"city": 878.0}	{"city": 878.0}
+camera	{"item": 871.0, "device": 817.0}	{"item": 871.0, "device": 817.0}
+elderly	{"group": 858.0}	{"group": 858.0}
+preservative	{"additive": 843.0}	{"additive": 843.0}
+memory	{"resource": 836.0}	{"resource": 836.0}
+hospitality	{"industry": 820.0}	{"industry": 820.0}
+cortisol	{"hormone": 809.0}	{"hormone": 809.0}
+olive	{"oil": 804.0}	{"oil": 804.0}
+terrain	{"factor": 784.0}	{"factor": 784.0}
+handout	{"material": 784.0}	{"material": 784.0}
+allergy	{"condition": 777.0}	{"condition": 777.0}
+psychologist	{"professional": 774.0}	{"professional": 774.0}
+rajasthan	{"state": 771.0}	{"state": 771.0}
+city	{"municipality": 767.0}	{"municipality": 767.0}
+nursing	{"profession": 760.0}	{"profession": 760.0}
+cr	{"element": 755.0}	{"element": 755.0}
+bing	{"engine": 751.0}	{"engine": 751.0}
+carbamazepine	{"anticonvulsant": 744.0}	{"anticonvulsant": 744.0}
+inflammation	{"factor": 740.0}	{"factor": 740.0}
+ether	{"solvent": 727.0}	{"solvent": 727.0}
+austin	{"city": 724.0}	{"city": 724.0}
+picture	{"item": 719.0}	{"item": 719.0}
+lacrosse	{"sport": 714.0}	{"sport": 714.0}

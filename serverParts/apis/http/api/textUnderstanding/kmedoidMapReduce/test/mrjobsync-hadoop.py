@@ -8,10 +8,11 @@ import sys
 import os
 save_path = os.getcwd()
 
+
 class KMedoid(MRJob):
     MRJob.SORT_VALUES = True
 
-    #FILES = ['clusteronly1.txt', 'dataonly1.txt']
+    # FILES = ['clusteronly1.txt', 'dataonly1.txt']
     FILES = [sys.argv[index + 1] for index, file_name in enumerate(sys.argv) if file_name == '--clusters' or file_name == '--datafile']
 
     def configure_args(self):

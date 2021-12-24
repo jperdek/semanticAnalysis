@@ -1,0 +1,100 @@
+gender	{"factor": 14230.0, "variable": 4594.0, "characteristic": 2547.0, "issue": 1817.0, "information": 1635.0, "demographic": 950.0, "topic": 707.0}	{"factor": 5105.583333333333, "variable": 1273.5833333333333, "characteristic": 710.4166666666666, "information": 485.1666666666667, "datum": 152.83333333333334, "demographic": 131.08333333333334, "parameter": 214.66666666666666, "covariate": 89.25, "area": 358.25, "issue": 222.33333333333334, "sector": 178.75, "service": 167.91666666666666, "field": 101.41666666666667, "topic": 504.5, "industry": 89.25, "skill": 95.91666666666667, "emotion": 100.41666666666667, "theme": 60.166666666666664, "department": 74.66666666666667, "feature": 146.58333333333334, "property": 74.75}
+stress	{"factor": 6433.0, "issue": 849.0, "condition": 807.0}	{"factor": 2244.8, "issue": 861.3, "consideration": 72.3, "topic": 195.6, "area": 92.2, "condition": 284.5}
+ibm	{"company": 5494.0, "vendor": 1036.0}	{"company": 6189.0, "vendor": 898.0}
+location	{"factor": 5247.0, "information": 3746.0, "variable": 770.0}	{"information": 2367.785714285714, "datum": 181.07142857142858, "factor": 441.14285714285717, "parameter": 92.57142857142857, "resource": 86.35714285714286}
+firefox	{"browser": 4369.0}	{"browser": 1951.0}
+methanol	{"alcohol": 4092.0, "solvent": 1923.0}	{"alcohol": 2075.75, "solvent": 466.5, "biofuel": 212.0, "fuel": 179.75}
+anticipates	{"word": 3774.0}	{"word": 3774.0}
+water	{"liquid": 3542.0, "fluid": 2506.0, "utility": 2502.0, "service": 2181.0, "resource": 1836.0, "material": 1106.0, "solvent": 988.0, "item": 839.0, "substance": 829.0, "factor": 819.0, "sector": 709.0}	{"gas": 1896.0, "fluid": 1128.0}
+heart	{"organ": 3505.0, "tissue": 925.0}	{"organ": 1805.0, "tissue": 580.2}
+london	{"city": 3210.0}	{"city": 3210.0}
+birthday	{"occasion": 2879.0, "event": 1892.0}	{"occasion": 2377.0, "event": 3180.0}
+plumbing	{"service": 2674.0, "solution": 2001.0}	{"service": 1358.0, "solution": 1044.5}
+pear	{"fruit": 2567.0}	{"fruit": 2567.0}
+healthcare	{"industry": 2455.0, "sector": 1112.0}	{"sector": 1412.0, "industry": 2239.6923076923076, "area": 246.92307692307693, "activity": 125.46153846153847, "service": 65.3076923076923, "commodity": 88.15384615384616, "contaminant": 73.07692307692308, "product": 66.3076923076923, "material": 65.15384615384616, "liquid": 64.15384615384616, "fluid": 63.0, "resource": 55.30769230769231}
+intend	{"word": 2444.0}	{"word": 2998.3333333333335}
+chocolate	{"food": 2401.0, "flavor": 912.0}	{"food": 1967.4074074074074, "crop": 141.44444444444446, "legume": 42.851851851851855, "vegetable": 114.0, "meat": 104.25925925925925, "carbohydrate": 57.111111111111114, "item": 60.74074074074074, "technology": 36.51851851851852, "ingredient": 29.185185185185187, "animal": 96.33333333333333, "product": 90.62962962962963, "liquid": 28.11111111111111, "fish": 138.25925925925927, "flavor": 29.22222222222222}
+peach	{"fruit": 2347.0}	{"fruit": 2086.6315789473683, "company": 229.10526315789474, "food": 135.6315789473684, "brand": 40.21052631578947, "crop": 42.1578947368421, "flavor": 45.578947368421055, "berry": 40.526315789473685}
+rubber	{"material": 2310.0}	{"material": 2310.0}
+christmas	{"holiday": 2217.0, "occasion": 1053.0}	{"holiday": 2217.0, "occasion": 1053.0}
+lifestyle	{"factor": 2177.0}	{"factor": 2177.0}
+canoeing	{"activity": 2080.0}	{"activity": 3011.3333333333335, "sport": 984.0, "application": 243.0}
+television	{"medium": 2033.0, "item": 875.0}	{"medium": 1247.142857142857, "technology": 381.0, "network": 181.42857142857142, "source": 104.85714285714286, "item": 102.85714285714286, "file": 131.71428571428572, "resource": 128.42857142857142, "datum": 112.57142857142857, "application": 110.0, "material": 107.57142857142857}
+transportation	{"service": 1880.0, "industry": 1386.0, "sector": 812.0, "issue": 810.0}	{"cost": 769.5, "industry": 723.5, "expense": 529.0, "service": 836.5, "sector": 1026.5}
+pressure	{"parameter": 1798.0, "factor": 1058.0, "variable": 758.0}	{"parameter": 1798.0, "factor": 1058.0, "variable": 758.0}
+antibiotic	{"medication": 1777.0}	{"medication": 1777.0}
+garlic	{"food": 1759.0, "spice": 874.0, "ingredient": 748.0, "herb": 723.0}	{"herb": 702.9411764705883, "spice": 555.4705882352941, "ingredient": 135.47058823529412, "food": 80.70588235294117, "carbohydrate": 43.23529411764706}
+estrogen	{"hormone": 1743.0}	{"hormone": 1743.0}
+christianity	{"religion": 1742.0}	{"religion": 1414.75}
+blueberry	{"fruit": 1705.0, "berry": 1054.0}	{"fruit": 1705.0, "berry": 1054.0}
+privacy	{"issue": 1691.0}	{"issue": 1473.4285714285713, "symptom": 344.57142857142856, "emotion": 96.78571428571429, "factor": 510.7857142857143, "condition": 252.57142857142858, "problem": 222.07142857142858, "disorder": 135.5, "skill": 160.5, "topic": 283.64285714285717, "area": 453.35714285714283, "sector": 120.57142857142857, "service": 209.85714285714286}
+oklahoma	{"state": 1629.0}	{"state": 3566.0, "city": 1093.0}
+nylon	{"material": 1606.0}	{"material": 1242.0, "element": 1019.0}
+psychology	{"discipline": 1605.0, "field": 795.0}	{"discipline": 871.2, "field": 387.8, "profession": 151.0, "subject": 430.8, "topic": 145.0}
+rat	{"animal": 1603.0, "specie": 983.0, "rodent": 913.0}	{"animal": 1732.5, "pet": 171.04166666666666, "livestock": 115.5, "specie": 181.08333333333334, "wildlife": 32.083333333333336, "mammal": 103.66666666666667, "predator": 67.875, "reptile": 30.0}
+gas	{"utility": 1596.0, "industry": 1340.0}	{"utility": 1990.0, "service": 1381.0}
+detroit	{"city": 1550.0}	{"city": 1550.0}
+tea	{"beverage": 1519.0, "drink": 1259.0}	{"beverage": 1380.0, "drink": 742.5, "stimulant": 576.0, "food": 535.5, "product": 451.5, "liquid": 435.5}
+rugby	{"sport": 1471.0}	{"sport": 1471.0}
+laptop	{"device": 1409.0}	{"device": 1289.25, "mammal": 71.0, "equipment": 78.58333333333333, "peripheral": 75.08333333333333}
+bolt	{"fastener": 1395.0}	{"fastener": 1395.0}
+europe	{"region": 1392.0}	{"region": 869.0}
+shanghai	{"city": 1359.0}	{"city": 1359.0}
+antihistamine	{"medication": 1328.0}	{"medication": 1340.4285714285713, "nsaid": 479.85714285714283, "medicine": 100.0, "painkiller": 109.0}
+muscle	{"tissue": 1309.0}	{"tissue": 1319.0}
+circle	{"shape": 1302.0}	{"shape": 1075.0}
+counseling	{"service": 1295.0}	{"service": 1180.3333333333333, "information": 68.83333333333333, "cost": 97.66666666666667, "treatment": 81.41666666666667, "therapy": 78.5, "factor": 176.83333333333334, "agency": 84.0, "issue": 91.83333333333333, "activity": 88.08333333333333, "area": 62.583333333333336}
+tungsten	{"metal": 1274.0}	{"metal": 2857.0833333333335, "material": 723.2083333333334, "mineral": 479.875, "element": 372.7916666666667, "commodity": 42.958333333333336, "nutrient": 155.29166666666666, "micronutrient": 68.95833333333333}
+bank	{"institution": 1224.0, "organization": 872.0, "business": 821.0, "lender": 803.0, "amenity": 730.0}	{"amenity": 802.75, "facility": 574.375, "institution": 686.5, "organization": 451.875, "building": 203.875, "setting": 190.25, "place": 295.625, "business": 370.375, "service": 92.125}
+australia	{"jurisdiction": 1206.0, "nation": 1085.0, "place": 842.0, "market": 790.0}	{"market": 1113.6363636363637, "economy": 828.5454545454545, "nation": 1150.909090909091, "place": 1052.6363636363637, "jurisdiction": 77.0, "state": 64.54545454545455, "amenity": 98.72727272727273}
+polypropylene	{"material": 1179.0, "polyolefin": 818.0, "plastic": 755.0}	{"polyolefin": 1037.0, "material": 922.0, "polymer": 810.0}
+siemens	{"company": 1140.0}	{"company": 3737.0, "manufacturer": 253.33333333333334, "engine": 1347.0, "brand": 409.6666666666667}
+accelerometer	{"sensor": 1133.0}	{"sensor": 1133.0}
+beet	{"vegetable": 1121.0}	{"vegetable": 1918.2222222222222, "food": 449.6111111111111, "green": 92.94444444444444, "ingredient": 39.27777777777778, "spice": 42.72222222222222, "crop": 86.77777777777777, "plant": 70.16666666666667}
+car	{"vehicle": 1112.0, "item": 939.0}	{"vehicle": 1143.25}
+softball	{"sport": 1103.0}	{"sport": 6333.5, "activity": 1036.0}
+fructose	{"sugar": 1101.0}	{"sugar": 1402.5}
+gujarat	{"state": 1083.0}	{"state": 1083.0}
+sorghum	{"crop": 1066.0}	{"grain": 898.3333333333334, "crop": 1915.111111111111, "cereal": 319.77777777777777, "food": 415.1111111111111, "vegetable": 87.11111111111111, "plant": 81.55555555555556, "material": 138.0, "fabric": 116.22222222222223}
+festival	{"event": 1054.0}	{"event": 1172.25, "issue": 88.375, "activity": 103.75}
+mississippi	{"state": 1050.0}	{"state": 1050.0}
+houston	{"city": 1038.0}	{"city": 1038.0}
+hurricane	{"disaster": 1036.0}	{"disaster": 1702.0, "event": 1064.0}
+height	{"factor": 1025.0}	{"factor": 4604.0, "variable": 865.0}
+amphetamine	{"stimulant": 1022.0}	{"stimulant": 2212.0}
+hawaii	{"state": 1014.0}	{"state": 1014.0}
+concentration	{"factor": 1009.0, "parameter": 716.0}	{"property": 339.6, "factor": 4440.0, "parameter": 3116.2, "variable": 803.6, "condition": 763.2, "information": 164.6, "datum": 161.4}
+linkedin	{"site": 1009.0}	{"site": 2300.4, "company": 842.0, "website": 919.2, "platform": 682.4, "service": 179.0, "tool": 151.0}
+blackjack	{"game": 961.0}	{"game": 1147.5}
+pencil	{"item": 957.0}	{"item": 900.5, "accessory": 374.0, "appliance": 1269.5}
+blog	{"tool": 926.0}	{"tool": 967.6666666666666}
+unilever	{"company": 910.0}	{"company": 1339.904761904762, "site": 49.666666666666664, "retailer": 35.04761904761905, "service": 36.04761904761905, "brand": 192.9047619047619, "manufacturer": 37.0}
+research	{"activity": 907.0}	{"activity": 1477.638888888889, "subject": 77.80555555555556, "technique": 29.083333333333332, "practice": 48.166666666666664, "file": 20.5, "improvement": 21.444444444444443, "service": 20.75, "sport": 99.58333333333333, "exercise": 70.44444444444444, "event": 25.27777777777778, "class": 26.77777777777778}
+pvc	{"material": 901.0}	{"material": 3080.0, "surface": 774.0}
+money	{"resource": 890.0}	{"resource": 890.0}
+timing	{"factor": 884.0}	{"factor": 817.5, "service": 423.0, "property": 387.0}
+easter	{"holiday": 882.0}	{"holiday": 1051.0}
+hemorrhage	{"complication": 878.0}	{"complication": 1909.3333333333333, "factor": 270.6666666666667, "condition": 194.33333333333334, "problem": 129.0, "infection": 135.0}
+denver	{"city": 878.0}	{"city": 878.0}
+camera	{"item": 871.0, "device": 817.0}	{"item": 1836.0, "device": 1718.0, "equipment": 1692.0, "technology": 1021.0, "electronic": 925.0}
+elderly	{"group": 858.0}	{"group": 1127.0}
+preservative	{"additive": 843.0}	{"additive": 1914.3333333333333}
+memory	{"resource": 836.0}	{"resource": 836.0}
+hospitality	{"industry": 820.0}	{"industry": 1489.1818181818182, "vehicle": 105.0909090909091, "item": 114.45454545454545, "expense": 77.36363636363636}
+cortisol	{"hormone": 809.0}	{"hormone": 1082.0}
+olive	{"oil": 804.0}	{"oil": 804.0}
+terrain	{"factor": 784.0}	{"factor": 1370.8, "topic": 440.8, "symptom": 1241.2, "subject": 250.8, "circumstance": 164.4}
+handout	{"material": 784.0}	{"material": 2017.8, "metal": 141.4, "item": 110.14285714285714, "surface": 21.17142857142857, "product": 27.285714285714285, "industry": 105.62857142857143, "object": 34.8, "obstacle": 21.6, "fabric": 30.742857142857144}
+allergy	{"condition": 777.0}	{"condition": 1714.4545454545455, "factor": 339.1818181818182, "illness": 137.45454545454547, "comorbidity": 160.45454545454547}
+psychologist	{"professional": 774.0}	{"professional": 1555.6666666666667}
+rajasthan	{"state": 771.0}	{"state": 2756.897435897436}
+city	{"municipality": 767.0}	{"municipality": 733.0}
+nursing	{"profession": 760.0}	{"profession": 2064.0, "field": 1276.0, "area": 433.0, "discipline": 360.5}
+cr	{"element": 755.0}	{"mineral": 1300.4, "nutrient": 1204.8, "element": 1034.6, "material": 155.6, "gas": 1063.2, "electrolyte": 172.0}
+bing	{"engine": 751.0}	{"engine": 1260.0, "company": 1014.0}
+carbamazepine	{"anticonvulsant": 744.0}	{"anticonvulsant": 744.0}
+inflammation	{"factor": 740.0}	{"factor": 1323.014705882353, "discipline": 17.544117647058822, "field": 10.485294117647058, "activity": 11.176470588235293, "topic": 23.044117647058822, "symptom": 66.07352941176471, "habit": 26.191176470588236}
+ether	{"solvent": 727.0}	{"solvent": 1343.1818181818182, "substance": 193.72727272727272, "factor": 131.45454545454547, "chemical": 78.0909090909091, "ether": 102.81818181818181}
+austin	{"city": 724.0}	{"city": 1371.7894736842106}
+picture	{"item": 719.0}	{"item": 1481.642857142857, "accessory": 156.53571428571428, "resource": 121.14285714285714, "material": 43.214285714285715, "product": 116.42857142857143, "food": 26.285714285714285, "asset": 31.75, "industry": 80.92857142857143, "service": 40.714285714285715, "expense": 39.67857142857143, "topic": 28.357142857142858, "necessity": 28.178571428571427, "sector": 27.642857142857142, "valuable": 60.035714285714285, "object": 27.107142857142858}
+lacrosse	{"sport": 714.0}	{"therapy": 8.256637168141593, "treatment": 17.623893805309734, "brand": 22.20353982300885, "province": 10.747787610619469, "protein": 3.2831858407079646, "antibiotic": 26.924778761061948, "enzyme": 13.495575221238939, "emotion": 49.92035398230089, "feeling": 6.663716814159292, "insect": 49.31858407079646, "language": 79.86283185840708, "gas": 27.805309734513273, "feature": 15.699115044247788, "microorganism": 23.734513274336283, "organism": 16.738938053097346, "pathogen": 11.938053097345133, "microbe": 3.4734513274336285, "sport": 121.8716814159292, "fixture": 36.269911504424776, "pollinator": 3.5707964601769913, "accessory": 11.084070796460177, "biofuel": 3.2920353982300883, "subject": 23.91592920353982, "asset": 25.756637168141594, "investment": 6.823008849557522, "security": 3.146017699115044, "structure": 10.376106194690266, "component": 21.057522123893804, "fuel": 8.283185840707965, "symptom": 165.7212389380531, "document": 22.548672566371682, "entity": 3.4469026548672566, "product": 8.517699115044248, "predator": 3.234513274336283, "airline": 3.101769911504425, "benzodiazepine": 9.597345132743364, "ether": 3.150442477876106, "antihistamine": 3.2831858407079646, "appliance": 30.871681415929203, "neurotransmitter": 11.0929203539823, "bird": 7.039823008849558, "stakeholder": 3.756637168141593, "program": 11.853982300884956, "input": 4.415929203539823, "cell": 7.9734513274336285, "injury": 3.349557522123894, "person": 3.424778761061947, "derivative": 10.287610619469026, "activity": 25.02212389380531, "technology": 3.814159292035398, "instrument": 15.535398230088495, "property": 9.81858407079646, "anticoagulant": 3.7964601769911503, "value": 19.358407079646017, "bank": 3.5442477876106193, "infection": 7.34070796460177, "anion": 3.34070796460177, "chemical": 10.81858407079646, "disorder": 6.738938053097345, "filler": 9.93362831858407, "room": 3.331858407079646, "area": 3.225663716814159, "cost": 12.176991150442477, "debris": 4.066371681415929, "legume": 4.349557522123894, "facility": 4.960176991150442, "system": 7.429203539823009, "fish": 22.376106194690266, "hardwood": 8.690265486725664, "statistic": 3.6106194690265485, "grain": 20.190265486725664, "nutrient": 26.194690265486727, "organelle": 5.0265486725663715, "opioid": 6.451327433628318, "opiate": 4.110619469026549, "object": 7.730088495575221, "nsaid": 4.070796460176991, "protocol": 4.0265486725663715, "shellfish": 3.269911504424779, "painkiller": 5.747787610619469, "mineral": 16.0, "file": 3.1238938053097347, "philosopher": 3.2610619469026547, "allergen": 4.345132743362832, "polymer": 5.964601769911504, "meat": 7.522123893805309, "corticosteroid": 6.402654867256637, "biomolecule": 4.411504424778761, "macromolecule": 4.212389380530974, "molecule": 4.185840707964601, "shop": 7.628318584070796, "equipment": 11.530973451327434, "flavonoid": 4.902654867256637, "expense": 14.02212389380531, "infrastructure": 3.2123893805309733, "flower": 3.756637168141593, "bacterium": 5.278761061946903, "seafood": 3.1283185840707963, "electrolyte": 3.827433628318584, "polyamine": 3.4424778761061945, "exercise": 5.225663716814159, "retailer": 9.464601769911505, "store": 4.707964601769912, "charge": 3.185840707964602, "skill": 4.951327433628318, "obstruction": 3.243362831858407, "obstacle": 3.106194690265487, "modality": 4.774336283185841, "term": 3.4513274336283186, "magazine": 3.1371681415929205}

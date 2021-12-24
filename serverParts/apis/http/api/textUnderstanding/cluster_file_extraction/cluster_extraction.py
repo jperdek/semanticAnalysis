@@ -25,12 +25,17 @@ def load_as_json(filename):
 
 def load_clusters(clusters_file_name: str) -> dict:
     clusters_dict = dict()
+    line_number = 0
     with open(clusters_file_name, "r") as file:
         for line in file:
             (sign, first_cluster, data, cluster_name, empty) = \
-                line.replace("\\n\"", "").replace("\n", "").split(
+                line.replace("\\n\"", "").replace("\n", "").replace("\\n", "").split(
                     '\t')
-            clusters_dict[cluster_name] = json.loads(data)
+            line_number = line_number + 1
+            if line_number > 200:
+                break
+            elif line_number > 100:
+                clusters_dict[cluster_name] = json.loads(data)
     return clusters_dict
 
 
@@ -43,7 +48,7 @@ def load_data(data_file_name: str) -> dict:
     return data_dict
 
 
-def k_medoid_algorithm(file_name: str = "groups.json") -> None:
+def k_medoid_algorithm(file_name: str = "groups1.json") -> None:
     distance = dict()
     clusters = load_clusters("C:\\Users\\perde\\clusters57.txt")
     random_k_medoids_keys = list(clusters.keys())
@@ -58,5 +63,5 @@ def k_medoid_algorithm(file_name: str = "groups.json") -> None:
 
 if __name__ == '__main__':
     #k_medoid_algorithm()
-    associations = load_as_json("groups.json")
+    associations = load_as_json("groups1.json")
     print(analyze(associations))
