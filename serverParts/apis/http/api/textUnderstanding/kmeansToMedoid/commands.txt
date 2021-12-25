@@ -19,3 +19,16 @@ python mapper.py < data0.txt | sort
 
 # From mapper to reducer
 python mapper.py < data0.txt | sort | reducer.py
+
+
+# OPTIMIZATION
+- set name for your clusters.txt file and optimize it using dictionary_manager.py script!:
+
+usage:
+cd serverParts\apis\http\api\textUnderstanding\kmeansToMedoid\optimization
+python dictionary_manager.py
+fc de-optimized_clusters.txt ../clusters0.txt
+
+result:
+Comparing files de-optimized_clusters.txt and ../CLUSTERS0.TXT
+FC: no differences encountered

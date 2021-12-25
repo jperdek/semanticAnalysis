@@ -32,10 +32,7 @@ def load_clusters(clusters_file_name: str) -> dict:
                 line.replace("\\n\"", "").replace("\n", "").replace("\\n", "").split(
                     '\t')
             line_number = line_number + 1
-            if line_number > 200:
-                break
-            elif line_number > 100:
-                clusters_dict[cluster_name] = json.loads(data)
+            clusters_dict[cluster_name] = json.loads(data)
     return clusters_dict
 
 
@@ -62,6 +59,6 @@ def k_medoid_algorithm(file_name: str = "groups1.json") -> None:
 
 
 if __name__ == '__main__':
-    # k_medoid_algorithm()
+    k_medoid_algorithm()
     associations = load_as_json("groups1.json")
     print(analyze(associations))
