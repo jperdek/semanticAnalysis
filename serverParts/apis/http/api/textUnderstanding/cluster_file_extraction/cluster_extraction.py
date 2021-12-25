@@ -7,7 +7,7 @@ from serverParts.apis.http.api.textUnderstanding.kMedoidConceptData.kMedoid impo
 def analyze(data_associations: dict) -> dict:
     statistics = dict()
     for cluster_name, data_names in data_associations.items():
-        #print(cluster_name + " " + str(len(data_names)))
+        print(cluster_name + " " + str(len(data_names)))
         count = str(len(data_names))
         if count not in statistics:
             statistics[count] = 0
@@ -62,6 +62,6 @@ def k_medoid_algorithm(file_name: str = "groups1.json") -> None:
 
 
 if __name__ == '__main__':
-    k_medoid_algorithm()
+    # k_medoid_algorithm()
     associations = load_as_json("groups1.json")
     print(analyze(associations))
