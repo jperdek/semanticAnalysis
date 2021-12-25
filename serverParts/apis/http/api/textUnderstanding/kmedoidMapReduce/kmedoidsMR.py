@@ -1,6 +1,7 @@
 import os
 
-def file_data_are_same(cluster_file1: str, cluster_file2: str) -> None:
+
+def file_data_are_same(cluster_file1: str, cluster_file2: str) -> bool:
     comparison_dict1: dict = dict()
     comparison_dict2: dict = dict()
     with open(cluster_file1, "r", encoding="utf-8") as cluster_file1:
@@ -14,7 +15,8 @@ def file_data_are_same(cluster_file1: str, cluster_file2: str) -> None:
             comparison_dict2[parsed_cluster_file2[3]] = parsed_cluster_file2[2]
 
     return comparison_dict1 == comparison_dict2
-    
+
+
 def divide_result_file(result_file: str,
                        iteration: int,
                        cluster_file_name='clusters1.txt',
@@ -30,11 +32,13 @@ def divide_result_file(result_file: str,
                     else:
                         print(line[1])
                         # print("Error: unknown line: " + line)
-    
+
+
 def test_of_similarity():
     print(file_data_are_same('clusteronly.txt', 'clusteronly1.txt'))
     print(file_data_are_same('clusteronly.txt', 'clusters1.txt'))
-    
+
+
 if __name__ == '__main__':
     iteration = 1
     cleaning = True

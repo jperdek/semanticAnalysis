@@ -1,5 +1,3 @@
-#!/usr/bin/env python
-"""mapper.py"""
 
 __authors__ = "Vaggelis Malandrakis, KLeio Fragkedaki + Applying to Probase addition by Jakub Perdek"
 
@@ -32,7 +30,7 @@ def evaluate_cosine_weight(dict_vector1: dict, dict_vector2: dict) -> float:
 def get_cluster_centroids(filepath: str) -> list:
     clusters = []
 
-    with open(filepath) as fp:
+    with open(filepath, "r") as fp:
         line = fp.readline()
         while line:
             if line:
