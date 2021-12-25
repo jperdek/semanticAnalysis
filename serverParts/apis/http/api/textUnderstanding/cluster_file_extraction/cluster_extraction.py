@@ -62,6 +62,6 @@ def k_medoid_algorithm(file_name: str = "groups1.json") -> None:
 
 
 if __name__ == '__main__':
-    #k_medoid_algorithm()
+    k_medoid_algorithm()
     associations = load_as_json("groups1.json")
     print(analyze(associations))

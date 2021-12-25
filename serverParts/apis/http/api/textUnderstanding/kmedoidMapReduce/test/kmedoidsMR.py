@@ -1,7 +1,7 @@
 import os
 
 
-def file_data_are_same(cluster_file1: str, cluster_file2: str) -> None:
+def file_data_are_same(cluster_file1: str, cluster_file2: str) -> bool:
     comparison_dict1: dict = dict()
     comparison_dict2: dict = dict()
     with open(cluster_file1, "r", encoding="utf-8") as cluster_file1:

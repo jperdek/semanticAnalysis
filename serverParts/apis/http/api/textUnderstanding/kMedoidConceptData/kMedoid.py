@@ -79,7 +79,7 @@ def associate_medoids_to_closest_one(random_k_sample_keys: list, result_dict: di
 
                 distance['previous'] = distance['previous'] + calculated_value
 
-                if minimal_distance is None or minimal_distance < calculated_value:
+                if minimal_distance is None or minimal_distance > calculated_value:
                     minimal_distance = calculated_value
                     closest_medoid_key = chosen_medoid_key
 
@@ -117,7 +117,7 @@ def recompute_swap_for_medoid(chosen_sample_key: str, chosen_medoid_sample_key: 
                         calculated_value = evaluate_cosine_weight(result_dict[point_to_associate_key],
                                                                   result_dict[chosen_medoid_key])
 
-                        if minimal_distance is None or minimal_distance < calculated_value:
+                        if minimal_distance is None or minimal_distance > calculated_value:
                             minimal_distance = calculated_value
                             closest_medoid_key = chosen_medoid_key
 

@@ -81,5 +81,9 @@ def create_clusters(clusters: list) -> None:
 
 
 if __name__ == "__main__":
-    clusters_data = get_cluster_centroids('clusters0.txt')
+    if len(sys.argv) == 2:
+        cluster_file = sys.argv[1]
+    else:
+        cluster_file = "clusters0.txt"
+    clusters_data = get_cluster_centroids(cluster_file)
     create_clusters(clusters_data)

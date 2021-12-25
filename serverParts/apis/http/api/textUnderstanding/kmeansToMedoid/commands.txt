@@ -3,10 +3,16 @@
 python clean_data.py
 
 
-# Whole process
+# Whole process - hadoop
+start-all.sh
+python3 kmeans_hadoop.py
+
+
+# Whole process - locally
 python mapper.py < data0.txt | sort | reducer.py | cluster_updater.py
 python mapper.py < data0.txt | sort | reducer.py | cluster_updater.py > clusters1.txt
 
+python mapper.py clusters0.txt < data0.txt | sort | reducer.py | cluster_updater.py
 
 # Only mapper
 python mapper.py < data0.txt | sort

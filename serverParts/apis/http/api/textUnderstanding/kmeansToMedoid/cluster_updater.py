@@ -18,5 +18,6 @@ def update_clusters(old_cluster_filename: str) -> None:
             else:
                 print(cluster_name + "\t" + initial_data + "\t" + means_data)
 
+
 if __name__ == "__main__":
     update_clusters("clusters0.txt")
