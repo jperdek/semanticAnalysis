@@ -19,9 +19,9 @@ def load_values(file_name: str, result_dict: dict):
                 print(1000000)
 
             # uncomment for testing purposes - set number clusters to 100 for example
-            if len(result_dict) > 200000:
-                result_dict[text2][text1] = float(value)
-                break
+            #if len(result_dict) > 200000:
+            #    result_dict[text2][text1] = float(value)
+            #    break
 
             result_dict[text2][text1] = float(value)
     print("Whole length: " + str(len(result_dict)))
@@ -139,7 +139,7 @@ if __name__ == "__main__":
         save_values_for_kmedoid_and_clusters(main_result_dict, chosen_clusters, 'test/algorithmDevelopment/data.txt',
                                              'test/algorithmDevelopment/clusters.txt')
         save_values_for_kmedoid_and_clusters_json(main_result_dict, chosen_clusters,
-                                                  'test/data1.txt', 'test/clusters1.txt')
+                                                  'test/data0.txt', 'test/clusters1.txt')
         save_values_for_kmedoid_and_clusters_json_typed(main_result_dict, chosen_clusters,
                                                         'test/algorithmDevelopment/typed/typdata.txt')
 
