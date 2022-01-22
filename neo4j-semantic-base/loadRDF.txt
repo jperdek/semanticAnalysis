@@ -1,0 +1,133 @@
+START DB
+"C:\neo4j\bin\neo4j.bat" console
+
+DUMP DB
+"C:\neo4j\bin\neo4j-admin.bat" dump --database=neo4j --to=C://neo4j/dumps/neo4j-yago-dump.dump
+"C:\neo4j\bin\neo4j-admin.bat" dump --database=neo4j --to=C://neo4j/dumps/neo4j-yago-dump2.dump
+"C:\neo4j\bin\neo4j-admin.bat" dump --database=neo4j --to=C://neo4j/dumps/neo4j-yago-dump3.dump
+"C:\neo4j\bin\neo4j-admin.bat" dump --database=neo4j --to=C://neo4j/dumps/neo4j-yago-dump4.dump
+
+
+LOAD DB
+"C:\neo4j\bin\neo4j-admin.bat" load --database=neo4j --from=C://neo4j/dumps/neo4j-yago-dump.dump
+
+SHOW TRANSACTIONS
+TERMINATE TRANSACTION "transaction-id"
+
+bin/neo4j-admin dump --database=neo4j --to=/dumps/neo4j/neo4j-<timestamp>.dump
+https://github.com/neo4j-labs/neosemantics/releases
+https://freesoft.dev/program/54412018
+
+
+python read100.py yagoLabels3.ttl
+
+
+
+CREATE CONSTRAINT n10s_unique_uri ON (r:Resource) ASSERT r.uri IS UNIQUE;
+CALL n10s.graphconfig.init();
+
+
+# YAGO BASE
+call n10s.rdf.import.fetch("file:///D:\yago\yagoSchema.ttl", "Turtle");
+
+
+# large file
+call n10s.rdf.import.fetch("file:///D:\yago\yagoLabels.ttl", "Turtle");
+call n10s.rdf.import.fetch("file:///D:\yago\yagoTypesSources.ttl", "Turtle");
+call n10s.rdf.import.fetch("file:///D:\yago\yagoRedirectLabels_en2.ttl", "Turtle");
+call n10s.rdf.import.fetch("file:///D:\yago\yagoPreferredMeanings.ttl", "Turtle");
+call n10s.rdf.import.fetch("file:///D:\yago\yagoFacts.ttl", "Turtle");
+call n10s.rdf.import.fetch("file:///D:\yago\yagoDateFacts.ttl", "Turtle");
+call n10s.rdf.import.fetch("file:///D:\yago\yagoLiteralFacts.ttl", "Turtle");
+call n10s.rdf.import.fetch("file:///D:\yago\yagoMetaFacts.ttl", "Turtle");
+
+# veri large file
+call n10s.rdf.import.fetch("file:///D:\yago\yagoTransitiveType.ttl", "Turtle");
+
+# YAGO INFOBOXES
+call n10s.rdf.import.fetch("file:///D:\yago\yagoInfoboxTemplates_en.ttl", "Turtle");
+call n10s.rdf.import.fetch("file:///D:\yago\yagoInfoboxTemplateAttributes_en.ttl", "Turtle");
+# large file
+call n10s.rdf.import.fetch("file:///D:\yago\yagoInfoboxAttributes_en.ttl", "Turtle");
+
+
+# ADDITIONAL
+call n10s.rdf.import.fetch("file:///D:\yago\yagoDateFacts.ttl", "Turtle");
+
+
+
+# OTHER - NOT USEFUL
+call n10s.rdf.import.fetch("file:///D:\yago\yagoStatistics.ttl", "Turtle");
+call n10s.rdf.import.fetch("file:///D:\yago\yagoInfoboxTemplateSources_en.ttl", "Turtle");
+
+
+# CONNECTION TO WORDNET AND WIKIPEDIA
+call n10s.rdf.import.fetch("file:///D:\yago\yagoTaxonomy2.ttl", "Turtle");
+call n10s.rdf.import.fetch("file:///D:\yago\yagoSimpleTaxonomy2.ttl", "Turtle");
+call n10s.rdf.import.fetch("file:///D:\yago\yagoTypes.ttl", "Turtle");
+call n10s.rdf.import.fetch("file:///D:\yago\yagoSimpleTypes.ttl", "Turtle");
+
+# WORDNET
+call n10s.rdf.import.fetch("file:///D:\yago\yagoWordnetDomainHierarchy.ttl", "Turtle");
+call n10s.rdf.import.fetch("file:///D:\yago\yagoWordnetDomains.ttl", "Turtle");
+call n10s.rdf.import.fetch("file:///D:\yago\yagoWordnetIds.ttl", "Turtle");
+
+
+call n10s.rdf.import.fetch("file:///G:\yago\\ttl-turtle\yagoSources.ttl", "Turtle")
+
+
+# DB PEDIA
+call n10s.rdf.import.fetch("file:///D:\yago\yagoDBpediaClasses3.ttl", "Turtle")
+call n10s.rdf.import.fetch("file:///D:\yago\yagoDBpediaInstances.ttl", "Turtle")
+
+
+# WIKIPEDIA
+call n10s.rdf.import.fetch("file:///D:\yago\yagoTaxonomy.ttl", "Turtle"); # connection with wikicategories
+call n10s.rdf.import.fetch("file:///D:\yago\yagoWikipediaInfo_en.ttl", "Turtle")
+call n10s.rdf.import.fetch("file:///D:\yago\yagoWikidataInstances.ttl", "Turtle")
+
+# GEO
+call n10s.rdf.import.fetch("file:///D:\yago\yagoGeonamesClasses.ttl", "Turtle");
+call n10s.rdf.import.fetch("file:///D:\yago\yagoGeonamesClassIds.ttl", "Turtle");
+call n10s.rdf.import.fetch("file:///D:\yago\yagoGeonamesEntityIds.ttl", "Turtle");
+call n10s.rdf.import.fetch("file:///D:\yago\yagoGeonamesGlosses.ttl", "Turtle");
+call n10s.rdf.import.fetch("file:///D:\yago\yagoGeonamesOnlyData.ttl", "Turtle");
+call n10s.rdf.import.fetch("file:///D:\yago\yagoGeonamesTypes.ttl", "Turtle");
+
+// USAGE - solution for Error: IRI includes string escapes: '\92' [line 419140]"
+python cleaningttl2.py yagoLabels.ttl yagoLabels3.ttl
+python cleaningttl2.py yagoRedirectLabels_en.ttl yagoRedirectLabels_en2.ttl
+python cleaningttl3.py yagoSimpleTaxonomy.ttl yagoSimpleTaxonomy2.ttl
+python cleaningttl3.py yagoTaxonomy.ttl yagoTaxonomy2.ttl
+python cleaningttl4.py yagoTaxonomy2.ttl yagoTaxonomy3.ttl
+python cleaningttl2.py yagoDBpediaClasses.ttl yagoDBpediaClasses2.ttl
+python cleaningttl5.py yagoDBpediaClasses2.ttl yagoDBpediaClasses3.ttl
+python cleaningttl2.py yagoDBpediaInstances.ttl yagoDBpediaInstances2.ttl
+python cleaningttl2.py yagoFacts.ttl yagoFacts2.ttl
+python cleaningttl2.py yagoDateFacts.ttl yagoDateFacts2.ttl
+python cleaningttl2.py yagoTypes.ttl yagoTypes2.ttl
+
+
+processed:
+call n10s.rdf.import.fetch("file:///D:\yago\yagoLabels.ttl", "Turtle");
+call n10s.rdf.import.fetch("file:///D:\yago\yagoRedirectLabels_en2.ttl", "Turtle");
+call n10s.rdf.import.fetch("file:///D:\yago\yagoPreferredMeanings.ttl", "Turtle");
+call n10s.rdf.import.fetch("file:///D:\yago\yagoWordnetDomainHierarchy.ttl", "Turtle");
+call n10s.rdf.import.fetch("file:///D:\yago\yagoWordnetDomains.ttl", "Turtle");
+call n10s.rdf.import.fetch("file:///D:\yago\yagoWordnetIds.ttl", "Turtle");
+call n10s.rdf.import.fetch("file:///D:\yago\yagoSimpleTaxonomy2.ttl", "Turtle");
+call n10s.rdf.import.fetch("file:///D:\yago\yagoTaxonomy3.ttl", "Turtle");
+call n10s.rdf.import.fetch("file:///D:\yago\yagoDBpediaClasses3.ttl", "Turtle");
+call n10s.rdf.import.fetch("file:///D:\yago\yagoFacts2.ttl", "Turtle");
+call n10s.rdf.import.fetch("file:///D:\yago\yagoDBpediaInstances2.ttl", "Turtle");
+call n10s.rdf.import.fetch("file:///D:\yago\yagoDateFacts2.ttl", "Turtle");
+call n10s.rdf.import.fetch("file:///D:\yago\yagoLiteralFacts.ttl", "Turtle");
+call n10s.rdf.import.fetch("file:///D:\yago\yagoMetaFacts.ttl", "Turtle");
+
+call n10s.rdf.import.fetch("file:///D:\yago\yagoTypes2.ttl", "Turtle");
+
+
+
+call n10s.rdf.import.fetch("file:///D:\yago\yago\\type1.ttl", "Turtle");
+call n10s.rdf.import.fetch("file:///D:\yago\yago\\type2.ttl", "Turtle");
+call n10s.rdf.import.fetch("file:///D:\yago\yago\\type3.ttl", "Turtle");

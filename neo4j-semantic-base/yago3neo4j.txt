@@ -1,0 +1,56 @@
+// initialization of semantic graph db
+CREATE CONSTRAINT n10s_unique_uri ON (r:Resource) ASSERT r.uri IS UNIQUE;
+CALL n10s.graphconfig.init();
+
+// YAGO BASE
+// init schema and tyoes
+//call n10s.rdf.import.fetch("file:///D:\yago\yagoSchema.ttl", "Turtle");
+
+// connection to wordnet and wikipedia with JAGO
+call n10s.rdf.import.fetch("file:///D:\yago\yagoTaxonomy2.ttl", "Turtle");
+call n10s.rdf.import.fetch("file:///D:\yago\yagoSimpleTaxonomy2.ttl", "Turtle");
+call n10s.rdf.import.fetch("file:///D:\yago\yagoTypes.ttl", "Turtle");
+call n10s.rdf.import.fetch("file:///D:\yago\yagoSimpleTypes.ttl", "Turtle");
+
+// init basic information
+call n10s.rdf.import.fetch("file:///D:\yago\yagoLabels3.ttl", "Turtle"); // has invalid chars: call n10s.rdf.import.fetch("file:///D:\yago\yagoLabels.ttl", "Turtle");
+call n10s.rdf.import.fetch("file:///D:\yago\yagoRedirectLabels_en2.ttl", "Turtle"); // meanings from redirrects
+call n10s.rdf.import.fetch("file:///D:\yago\yagoPreferredMeanings.ttl", "Turtle"); // main meanings 
+call n10s.rdf.import.fetch("file:///D:\yago\yagoMetaFacts.ttl", "Turtle"); // id to other information mapping
+call n10s.rdf.import.fetch("file:///D:\yago\yagoLiteralFacts.ttl", "Turtle"); // numerical information, such as poverty level, latitude, longitude ,...
+call n10s.rdf.import.fetch("file:///D:\yago\yagoFacts.ttl", "Turtle"); // facts - most important !!! - medium size!!!
+
+
+// additional - only to recommend
+//call n10s.rdf.import.fetch("file:///D:\yago\yagoTypesSources.ttl", "Turtle"); // links to sources, e. g. wikipedia
+
+// INFOBOXY
+call n10s.rdf.import.fetch("file:///D:\yago\yagoInfoboxTemplateSources_en.ttl", "Turtle");
+call n10s.rdf.import.fetch("file:///D:\yago\yagoInfoboxTemplates_en.ttl", "Turtle");
+call n10s.rdf.import.fetch("file:///D:\yago\yagoInfoboxTemplateAttributes_en.ttl", "Turtle");
+// large file
+call n10s.rdf.import.fetch("file:///D:\yago\yagoInfoboxAttributes_en.ttl", "Turtle");
+
+
+// DB PEDIA
+call n10s.rdf.import.fetch("file:///D:\yago\yagoDBpediaClasses.ttl", "Turtle")
+call n10s.rdf.import.fetch("file:///D:\yago\yagoDBpediaInstances.ttl", "Turtle")
+
+// WORDNET
+call n10s.rdf.import.fetch("file:///D:\yago\yagoWordnetDomainHierarchy.ttl", "Turtle");
+call n10s.rdf.import.fetch("file:///D:\yago\yagoWordnetDomains.ttl", "Turtle");
+call n10s.rdf.import.fetch("file:///D:\yago\yagoWordnetIds.ttl", "Turtle");
+
+// WIKIPEDIA
+call n10s.rdf.import.fetch("file:///D:\yago\yagoTaxonomy.ttl", "Turtle"); // connection to wikicategories
+call n10s.rdf.import.fetch("file:///D:\yago\yagoWikipediaInfo_en.ttl", "Turtle");
+call n10s.rdf.import.fetch("file:///D:\yago\yagoWikidataInstances.ttl", "Turtle");
+
+// GEO
+call n10s.rdf.import.fetch("file:///D:\yago\yagoGeonamesClasses.ttl", "Turtle");
+call n10s.rdf.import.fetch("file:///D:\yago\yagoGeonamesClassIds.ttl", "Turtle");
+call n10s.rdf.import.fetch("file:///D:\yago\yagoGeonamesEntityIds.ttl", "Turtle");
+call n10s.rdf.import.fetch("file:///D:\yago\yagoGeonamesGlosses.ttl", "Turtle");
+call n10s.rdf.import.fetch("file:///D:\yago\yagoGeonamesOnlyData.ttl", "Turtle");
+call n10s.rdf.import.fetch("file:///D:\yago\yagoGeonamesTypes.ttl", "Turtle");
+
