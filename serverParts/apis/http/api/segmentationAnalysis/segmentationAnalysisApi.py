@@ -3,7 +3,7 @@ import json
 from segmentationAnalysis.pageAnalyser import cetdExtractor
 from segmentationAnalysis.pageAnalyser import textExtractor
 from segmentationAnalysis.pageAnalyser import SOMExtractor
-from serverParts.apis.http.api.middlewares import login_required
+from middlewares import login_required
 import uuid
 
 

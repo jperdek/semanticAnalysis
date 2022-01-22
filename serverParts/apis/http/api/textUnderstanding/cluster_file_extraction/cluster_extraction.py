@@ -1,7 +1,11 @@
 import json
 
-from serverParts.apis.http.api.textUnderstanding.kMedoidConceptData.kMedoid import associate_medoids_to_closest_one, \
-    save_results
+try:
+    from textUnderstanding.kMedoidConceptData.kMedoid \
+        import associate_medoids_to_closest_one, save_results
+except ImportError:
+    from serverParts.apis.http.api.textUnderstanding.kMedoidConceptData.kMedoid \
+        import associate_medoids_to_closest_one, save_results
 
 
 def analyze(data_associations: dict) -> dict:

@@ -1,11 +1,14 @@
 import os
 import json
-from typing import Optional, Union
+from typing import Optional
 
 from bs4 import BeautifulSoup
 from flask import send_from_directory
 
-from serverParts.apis.http.api.segmentationAnalysis.pageAnalyser.SOMExtractor import SOMBeautifulSoup
+try:
+    from serverParts.apis.http.api.segmentationAnalysis.pageAnalyser.SOMExtractor import SOMBeautifulSoup
+except ImportError:
+    from segmentationAnalysis.pageAnalyser.SOMExtractor import SOMBeautifulSoup
 
 
 def verify_html(text):

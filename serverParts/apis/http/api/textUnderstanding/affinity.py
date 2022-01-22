@@ -1,10 +1,12 @@
 from typing import Optional
-
 import numpy as np
 import math
 import json
 
-from serverParts.apis.http.api.textUnderstanding.textPreprocessing import POSTagging
+try:
+    from textUnderstanding.textPreprocessing import POSTagging
+except ImportError:
+    from serverParts.apis.http.api.textUnderstanding.textPreprocessing import POSTagging
 
 
 class AffinityScore:

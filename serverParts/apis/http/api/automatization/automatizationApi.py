@@ -3,10 +3,10 @@ import json
 
 from middlewares import login_required
 
-from serverParts.apis.http.api.automatization.automatization_tools import verify_html, SOMTools
-from serverParts.apis.http.api.segmentationAnalysis.pageAnalyser import cetdExtractor, SOMExtractor
-from serverParts.apis.http.api.textUnderstanding.guessedWord.conceptGuessWord import count_tf_idf, get_texts_from_range
-from serverParts.apis.http.api.textUnderstanding.textUnderstandingApi import categories_classification, \
+from automatization.automatization_tools import verify_html, SOMTools
+from segmentationAnalysis.pageAnalyser import cetdExtractor, SOMExtractor
+from textUnderstanding.guessedWord.conceptGuessWord import count_tf_idf, get_texts_from_range
+from textUnderstanding.textUnderstandingApi import categories_classification, \
     load_local_picle_file, load_local_json_file
 
 automatization_api = Blueprint('automatization_api', __name__, template_folder='templates')

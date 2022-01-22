@@ -2,8 +2,7 @@ from flask import Blueprint, request, send_from_directory
 import json
 from senseAnalysis.categorization.senseTextProcess import SemcorAnalyser
 from flask import g
-
-from serverParts.apis.http.api.middlewares import login_required
+from middlewares import login_required
 
 
 def load_local_json_file(file_name):

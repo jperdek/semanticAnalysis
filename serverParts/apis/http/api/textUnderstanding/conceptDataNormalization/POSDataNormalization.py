@@ -1,6 +1,11 @@
-from serverParts.apis.http.api.textUnderstanding.conceptDataNormalization.conceptVectorNormalizationTools import \
-    ConceptVectorNormalizationTools
-from serverParts.apis.http.api.textUnderstanding.textPreprocessing import POSTagging
+try:
+    from textUnderstanding.conceptDataNormalization.conceptVectorNormalizationTools import \
+        ConceptVectorNormalizationTools
+    from textUnderstanding.textPreprocessing import POSTagging
+except ImportError:
+    from serverParts.apis.http.api.textUnderstanding.conceptDataNormalization.conceptVectorNormalizationTools import \
+        ConceptVectorNormalizationTools
+    from serverParts.apis.http.api.textUnderstanding.textPreprocessing import POSTagging
 
 
 def load_values(file_name: str, result_dict: dict):

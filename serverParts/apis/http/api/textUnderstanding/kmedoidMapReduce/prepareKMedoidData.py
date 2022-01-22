@@ -1,4 +1,9 @@
-from serverParts.apis.http.api.textUnderstanding.conceptDataNormalization.conceptVectorNormalizationTools import ConceptVectorNormalizationTools
+try:
+    from textUnderstanding.conceptDataNormalization.conceptVectorNormalization.conceptVectorNormalizationTools \
+        import ConceptVectorNormalizationTools
+except ImportError:
+    from serverParts.apis.http.api.textUnderstanding.conceptDataNormalization.conceptVectorNormalizationTools \
+        import ConceptVectorNormalizationTools
 import random
 import json
 
@@ -19,7 +24,7 @@ def load_values(file_name: str, result_dict: dict):
                 print(1000000)
 
             # uncomment for testing purposes - set number clusters to 100 for example
-            #if len(result_dict) > 200000:
+            # if len(result_dict) > 200000:
             #    result_dict[text2][text1] = float(value)
             #    break
 

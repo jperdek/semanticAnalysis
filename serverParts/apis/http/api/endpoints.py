@@ -5,9 +5,9 @@ from senseAnalysis.senseAnalysisApi import sense_api, load_local_json_file
 from readabilityAnalysis.readabilityAnalysisApi import readability_api
 from segmentationAnalysis.segmentationAnalysisApi import segmentation_api
 from keywordAnalysis.keywordAnalysisApi import keywords_api
-from serverParts.apis.http.api.automatization.automatizationApi import automatization_api
-from serverParts.apis.http.api.textUnderstanding import clustersFile
-from serverParts.apis.http.api.textUnderstanding.affinity import AffinityHelper
+from automatization.automatizationApi import automatization_api
+from textUnderstanding import clustersFile
+from textUnderstanding.affinity import AffinityHelper
 from textUnderstanding.textUnderstandingApi import text_understanding_api, load_local_picle_file
 
 app = Flask(__name__, static_url_path='',

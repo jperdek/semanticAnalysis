@@ -1,8 +1,15 @@
-from serverParts.apis.http.api.textUnderstanding.kmeansToMedoid.clean_data import clean_output_data
-from serverParts.apis.http.api.textUnderstanding.kmeansToMedoid.optimization.dictionary_manager import \
-    create_dict_clusters, create_dict_data, de_mapping_clusters, de_mapping_data
-from serverParts.apis.http.api.textUnderstanding.kmedoidMapReduce.prepareKMedoidData import load_values, \
-    save_values_for_kmedoid_and_clusters_json, create_random_array
+try:
+    from textUnderstanding.kmeansToMedoid.clean_data import clean_output_data
+    from textUnderstanding.kmeansToMedoid.optimization.dictionary_manager import \
+        create_dict_clusters, create_dict_data, de_mapping_clusters, de_mapping_data
+    from textUnderstanding.kmedoidMapReduce.prepareKMedoidData import load_values, \
+        save_values_for_kmedoid_and_clusters_json, create_random_array
+except ImportError:
+    from serverParts.apis.http.api.textUnderstanding.kmeansToMedoid.clean_data import clean_output_data
+    from serverParts.apis.http.api.textUnderstanding.kmeansToMedoid.optimization.dictionary_manager import \
+        create_dict_clusters, create_dict_data, de_mapping_clusters, de_mapping_data
+    from serverParts.apis.http.api.textUnderstanding.kmedoidMapReduce.prepareKMedoidData import load_values, \
+        save_values_for_kmedoid_and_clusters_json, create_random_array
 
 
 def optimize():
