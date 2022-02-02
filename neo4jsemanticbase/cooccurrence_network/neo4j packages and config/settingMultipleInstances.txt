@@ -1,0 +1,19 @@
+1. downloading neo4j community from https://neo4j.com/download-center/#community
+2. copying twice to C:// folder, first rename as neo4j and second as neo4j2
+3. managing config in dict C://neo4j/conf/neo4j.conf
+	a. adding line for second instance:
+		dbms.pagecache.memory=1g
+	b. changing following lines:
+		dbms.connector.bolt.enabled=true
+		#dbms.connector.bolt.tls_level=DISABLED
+		dbms.connector.bolt.listen_address=:7688
+		dbms.connector.bolt.advertised_address=:7688
+
+		# HTTP Connector. There can be zero or one HTTP connectors.
+		dbms.connector.http.enabled=true
+		dbms.connector.http.listen_address=:7475
+		dbms.connector.http.advertised_address=:7475
+4. copy plugins folder to neo4j root for both instances
+5. start both instances:
+	"C:\neo4j\bin\neo4j.bat" console
+	"C:\neo4j2\bin\neo4j.bat" console
