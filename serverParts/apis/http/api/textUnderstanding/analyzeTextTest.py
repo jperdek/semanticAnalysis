@@ -2,7 +2,6 @@
 from textPreprocessing import POSTagging
 import json
 import string
-import nltk
 
 
 def load_json(file):
