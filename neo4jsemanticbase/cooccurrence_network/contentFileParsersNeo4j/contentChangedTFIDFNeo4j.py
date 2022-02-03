@@ -81,3 +81,4 @@ if __name__ == "__main__":
     except Exception as e:
         with open("error.txt", "w", encoding="utf-8") as file:
             file.write(str(e))
+            raise e

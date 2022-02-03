@@ -1,3 +1,5 @@
+import types
+
 import neo4j
 
 
@@ -49,6 +51,16 @@ class CoOccurrenceManager:
     def _list_relations(tx, db_name):
         result = tx.run("USE {name} MATCH (n) RETURN n LIMIT 5".format(name=db_name))
         return result
+
+
+def get_properties(self):
+    return self._properties
+
+
+def set_properties(node):
+    if node:
+        node.get_properties = types.MethodType(get_properties, node)
+    return node
 
 
 if __name__ == "__main__":
