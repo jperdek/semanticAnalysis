@@ -34,10 +34,10 @@ def parse_save_text(text,
             if use_pos:
                 pos_token1 = pos_tagging.pos_of_word(word1)
                 pos_token2 = pos_tagging.pos_of_word(word2)
-            co_occurrence_network.process_data_transaction((word1, pos_token1), _create_token_if_not_exists, db_name)
-            co_occurrence_network.process_data_transaction((word2, pos_token2), _create_token_if_not_exists, db_name)
+            co_occurrence_network.process_data_transaction((word1, pos_token1), create_token_if_not_exists, db_name)
+            co_occurrence_network.process_data_transaction((word2, pos_token2), create_token_if_not_exists, db_name)
             connection = co_occurrence_network.process_data_transaction(
-                (word1, word2, pos_token1, pos_token2), _get_token_connection, db_name)
+                (word1, word2, pos_token1, pos_token2), get_token_connection, db_name)
             previous_sum = connection.get('_sum')
             previous_doc = connection.get('_doc')
             if not previous_sum:
@@ -51,7 +51,7 @@ def parse_save_text(text,
                                                            _update_sum_doc_for_token_connection, db_name)
 
 
-def _create_token_if_not_exists(tx, token: str, pos_token: Optional[str], db_name: str) -> None:
+def create_token_if_not_exists(tx, token: str, pos_token: Optional[str], db_name: str) -> None:
     if not pos_token:
         tx.run("""
             USE """ + db_name + """
@@ -64,7 +64,7 @@ def _create_token_if_not_exists(tx, token: str, pos_token: Optional[str], db_nam
         """)
 
 
-def _get_token_connection(tx,
+def get_token_connection(tx,
                           token1: str, token2: str,
                           pos_token1: Optional[str],
                           pos_token2: Optional[str],
@@ -99,7 +99,7 @@ def _update_sum_doc_for_token_connection(tx,
         result = tx.run("""
             USE """ + db_name + """
             MATCH (a:Token {name: '""" + token1 + """'})-[conn:OCCUR]->(b:Token {name: '""" + token2 + """'})
-            SET conn += {_doc:""" + str(doc) + """, _score_sum:""" + str(score_sum) + """}
+            SET conn += {_doc:""" + str(doc) + """, _sum:""" + str(score_sum) + """}
             RETURN True
         """)
     else:

@@ -54,3 +54,9 @@ call n10s.rdf.import.fetch("file:///D:\yago\yagoGeonamesGlosses.ttl", "Turtle");
 call n10s.rdf.import.fetch("file:///D:\yago\yagoGeonamesOnlyData.ttl", "Turtle");
 call n10s.rdf.import.fetch("file:///D:\yago\yagoGeonamesTypes.ttl", "Turtle");
 
+
+
+//index for name - probase
+CREATE BTREE INDEX idx_name IF NOT EXISTS
+FOR (n:Token)
+ON (n.name)

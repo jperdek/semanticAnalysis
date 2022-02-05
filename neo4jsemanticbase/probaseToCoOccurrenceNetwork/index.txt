@@ -1,0 +1,17 @@
+index for text properties:
+CREATE TEXT INDEX idx_name1 IF NOT EXISTS
+FOR (n:Token)
+ON (n.name)
+
+
+
+CREATE BTREE INDEX idx_name IF NOT EXISTS
+FOR (n:Token)
+ON (n.name)
+
+
+load DUMP:
+"C:\neo4j2\bin\neo4j-admin.bat" load --database=neo4j --from=C://neo4j2/dumps/probase-entities.dump
+
+SAVE DUMP:
+"C:\neo4j2\bin\neo4j-admin.bat" dump --database=neo4j --to=C://neo4j2/dumps/probase-entities.dump
