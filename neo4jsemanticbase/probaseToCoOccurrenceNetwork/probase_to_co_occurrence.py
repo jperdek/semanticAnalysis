@@ -6,10 +6,15 @@ from serverParts.apis.http.api.textUnderstanding.textPreprocessing import POSTag
 
 def load_probase_to_network(optimized_probase_file_path: str,
                             co_occurrence_network: CoOccurrenceManager,
-                            update_frequency=1000,
-                            db_name="neo4j") -> None:
+                            update_frequency=500,
+                            db_name="neo4j",
+                            from_index=None, to_index=1000000) -> None:
     with open(optimized_probase_file_path, "r", encoding="utf-8") as file:
         for index, line in enumerate(file):
+            if from_index and index < from_index:
+                continue
+            if to_index and index > to_index:
+                continue
             connections = ""
             concept_name, raw_concept_data = line.split('\t')
             concept_data = json.loads(raw_concept_data)
@@ -18,7 +23,7 @@ def load_probase_to_network(optimized_probase_file_path: str,
 
             for typed_word_index, (typed_word_name, value) in enumerate(concept_data.items()):
                 if typed_word_index % update_frequency == 0 and typed_word_index != 0:
-                    print("update")
+                    print("Updated for: " + str(index))
                     matches = matches[:-1]
                     connections = connections[:-1]
                     co_occurrence_network.process_data_transaction((matches, connections), _create_with_match_data,
@@ -33,7 +38,7 @@ def load_probase_to_network(optimized_probase_file_path: str,
                 matches = matches[:-1]
                 connections = connections[:-1]
                 co_occurrence_network.process_data_transaction((matches, connections), _create_with_match_data, db_name)
-                if index % 10 == 0:
+                if index % 1000 == 0:
                     print("Inserted: " + str(index))
 
 

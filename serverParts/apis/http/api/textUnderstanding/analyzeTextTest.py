@@ -12,6 +12,7 @@ def load_json(file):
 if __name__ == "__main__":
     pos_tagger = POSTagging()
     for record in load_json('D://dipldatasets/datasety/CETD/extractor.json'):
-        list_of_words = [word.strip(string.punctuation) for word in record['text'].split() if word.strip(string.punctuation) != '']
+        list_of_words = [word.strip(string.punctuation) for word in record['text'].split() if word.strip(
+            string.punctuation) != '']
         print(list_of_words)
         pos_tagger.lemmatization_and_stop_words_removal(list_of_words, 'english')

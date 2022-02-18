@@ -26,6 +26,14 @@ class CoOccurrenceManager:
             creation = session.write_transaction(used_function, *data, db_name)
         return creation
 
+    def process_data_transaction_without_arguments(self, used_function: any, db_name=None):
+        if not db_name:
+            db_name = self.database_name
+        with self.driver.session() as session:
+            creation = session.read_transaction(used_function, db_name)
+            print(creation)
+        return creation
+
     def process_data_transactions(self, data: list, used_function: any, db_name=None):
         if not db_name:
             db_name = self.database_name

@@ -29,7 +29,8 @@ def load_text_categories_to_json(co_occurrence_network: CoOccurrenceManager, db_
                     co_occurrence_network.process_data_transaction(
                         (concept_name, count_concept_name, typed_word_data), _insert_attribute, db_name)
                     continue
-                co_occurrence_network.process_data_transaction(tuple([typed_word_name]), _create_token_if_not_exists, db_name)
+                co_occurrence_network.process_data_transaction(tuple([typed_word_name]), _create_token_if_not_exists,
+                                                               db_name)
                 co_occurrence_network.process_data_transaction((concept_name, typed_word_name, typed_word_data),
                                                                _insert_relation_if_not_exists, db_name)
 

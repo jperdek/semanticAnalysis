@@ -70,6 +70,14 @@ class POSTagging:
         # print(lemmatized_data)
         return lemmatized_data
 
+    def lemmatization_and_stop_words_removal_batch_pairs(self, tokenized_text, stop_words_language):
+        word_lemmatized = WordNetLemmatizer()
+
+        for word, tag in pos_tag(tokenized_text):
+            if word not in stopwords.words(stop_words_language) and len(word) > 2 and word.isalpha():
+                word_final = word_lemmatized.lemmatize(word, self.tag_map[tag[0]])
+                yield word_final, self.tag_map[tag[0]]
+
     # Lemmatization with loading stop words from file before lemmatization
     # tokenized_text            - text which is tokenize and prepared for lemmatization
     # stop_words_language_file  - file name which contains  stop words
