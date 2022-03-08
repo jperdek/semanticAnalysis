@@ -94,7 +94,7 @@ def calculate_actual_score(scores: dict, position_word1: int, result_sum: float 
 
 
 def append_result_word(result_list: list, result_word: str, actual_score: float):
-    result_list.append("<i score=\"{score}\">{word}</i>".format(score=actual_score, word=result_word))
+    result_list.append("<p score=\"{score}\" class=\"relevant_word\">{word}</p>".format(score=actual_score, word=result_word))
 
 
 def get_texts_from_range_html_marks(text: str, index: dict, category: str,
