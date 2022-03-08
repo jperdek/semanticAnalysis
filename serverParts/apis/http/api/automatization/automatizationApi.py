@@ -9,6 +9,8 @@ from textUnderstanding.guessedWord.conceptGuessWord import count_tf_idf, get_tex
 from textUnderstanding.textUnderstandingApi import categories_classification, \
     load_local_picle_file, load_local_json_file
 
+from serverParts.apis.http.api.textUnderstanding.guessedWord.conceptGuessWord import get_texts_from_range_html_marks
+
 automatization_api = Blueprint('automatization_api', __name__, template_folder='templates')
 
 
@@ -26,7 +28,10 @@ def load_local_file(file_name):
 @login_required
 def automatic_analysis():
     text = request.get_data().decode('utf-8', 'ignore')
-
+    if "use_html_tags" in request.headers:
+        use_html_tags = request.headers.get("use_html_tags").lower() == "true"
+    else:
+        use_html_tags = None
     if verify_html(text):
         som_text = str(request.get_data())  # for text data it must be not loaded as binary data
         som_tree_path, domain_som_tree_or_statistics, candidate_tree = SOMTools.analyze_som_comparisons(som_text)
@@ -36,7 +41,6 @@ def automatic_analysis():
             SOMExtractor.ExtractFromFile.extract_info_from_domain(
                 domain_som_tree_or_statistics, 0.5, candidate_tree, extracted_data)
             results = text = SOMTools.concatenate_list_content(extracted_data["text"], clear_spaces=True)
-            print(text)
             category = som_tree_path
 
             return json_response({"category": category, "results": results})
@@ -65,6 +69,9 @@ def automatic_analysis():
 
     category = category.lower()
     maximum = count_tf_idf(text, g.indexed_guesses, category)
-    results = get_texts_from_range(text, g.indexed_guesses, category, maximum)
+    if not use_html_tags:
+        results = get_texts_from_range(text, g.indexed_guesses, category, maximum)
+    else:
+        results = get_texts_from_range_html_marks(text, g.indexed_guesses, category, maximum)
 
     return json_response({"category": category, "results": results})
