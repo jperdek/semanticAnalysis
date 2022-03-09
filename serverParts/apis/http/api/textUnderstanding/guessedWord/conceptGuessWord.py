@@ -45,7 +45,8 @@ def count_tf_idf(text: str, index: dict, category: str, window: int = 20):
 
 
 def get_texts_from_range(text: str, index: dict, category: str,
-                         tf_idf_maximum: float, tf_idf_range: float = 1.0, window: int = 20):
+                         tf_idf_maximum: float, tf_idf_range: float = 1.0,
+                         window: int = 20, merge: bool = True):
     n = index[category]["_count"]
     results = []
 
@@ -76,6 +77,8 @@ def get_texts_from_range(text: str, index: dict, category: str,
                     if focus >= tokenized_text_length:
                         break
                     result.append(text_words[focus])
+                if merge:
+                    result = " ".join(result)
                 results.append(result)
     return results
 
@@ -94,7 +97,8 @@ def calculate_actual_score(scores: dict, position_word1: int, result_sum: float 
 
 
 def append_result_word(result_list: list, result_word: str, actual_score: float):
-    result_list.append("<p score=\"{score}\" class=\"relevant_word\">{word}</p>".format(score=actual_score, word=result_word))
+    result_list.append("<p score=\"{score}\" class=\"relevant-word\">{word}</p>".format(
+        score=actual_score, word=result_word))
 
 
 def get_texts_from_range_html_marks(text: str, index: dict, category: str,

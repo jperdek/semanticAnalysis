@@ -5,11 +5,11 @@ from middlewares import login_required
 
 from automatization.automatization_tools import verify_html, SOMTools
 from segmentationAnalysis.pageAnalyser import cetdExtractor, SOMExtractor
-from textUnderstanding.guessedWord.conceptGuessWord import count_tf_idf, get_texts_from_range
+from textUnderstanding.guessedWord.conceptGuessWord import count_tf_idf, get_texts_from_range, get_texts_from_range_html_marks
 from textUnderstanding.textUnderstandingApi import categories_classification, \
     load_local_picle_file, load_local_json_file
+from senseAnalysis.senseAnalysisApi import apply_sense_analysis
 
-from serverParts.apis.http.api.textUnderstanding.guessedWord.conceptGuessWord import get_texts_from_range_html_marks
 
 automatization_api = Blueprint('automatization_api', __name__, template_folder='templates')
 
@@ -32,6 +32,9 @@ def automatic_analysis():
         use_html_tags = request.headers.get("use_html_tags").lower() == "true"
     else:
         use_html_tags = None
+    result_response_data = dict()
+    result_response_data["fileName"] = request.args.get("fileName")
+
     if verify_html(text):
         som_text = str(request.get_data())  # for text data it must be not loaded as binary data
         som_tree_path, domain_som_tree_or_statistics, candidate_tree = SOMTools.analyze_som_comparisons(som_text)
@@ -40,10 +43,10 @@ def automatic_analysis():
             print("Identified SOM tree: " + som_tree_path)
             SOMExtractor.ExtractFromFile.extract_info_from_domain(
                 domain_som_tree_or_statistics, 0.5, candidate_tree, extracted_data)
-            results = text = SOMTools.concatenate_list_content(extracted_data["text"], clear_spaces=True)
-            category = som_tree_path
+            result_response_data["analyzed_text"] = text = SOMTools.concatenate_list_content(extracted_data["text"], clear_spaces=True)
+            result_response_data["category"] = som_tree_path
 
-            return json_response({"category": category, "results": results})
+            return json_response(result_response_data)
         else:
             print("Som tree has not been identified. Printing statistics:")
             print(domain_som_tree_or_statistics)
@@ -62,16 +65,21 @@ def automatic_analysis():
     result = g.text_categories_svc_pickle.predict(tfidf_test)
 
     category = ""
+    result_response_data["categories_with_scores"] = apply_sense_analysis(text, k=8)["results"]
     for category_name, value in categories_classification.items():
         if value == result[0]:
             category = category_name
-            break
+            continue
 
     category = category.lower()
     maximum = count_tf_idf(text, g.indexed_guesses, category)
-    if not use_html_tags:
-        results = get_texts_from_range(text, g.indexed_guesses, category, maximum)
-    else:
-        results = get_texts_from_range_html_marks(text, g.indexed_guesses, category, maximum)
+    result_response_data["category"] = category
 
-    return json_response({"category": category, "results": results})
+    if not use_html_tags:
+        result_response_data["interesting_parts"] = get_texts_from_range(
+            text, g.indexed_guesses, category, maximum, merge=True)
+    else:
+        result_response_data["analyzed_text"] = " ".join(get_texts_from_range_html_marks(
+            text, g.indexed_guesses, category, maximum))
+
+    return json_response(result_response_data)
