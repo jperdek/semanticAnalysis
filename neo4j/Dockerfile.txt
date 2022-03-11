@@ -1,0 +1,5 @@
+FROM neo4j:4.4.3
+
+COPY db.dump /db.dump
+COPY extension-script.sh /extension-script.sh
+ENV EXTENSION_SCRIPT=/extension-script.sh

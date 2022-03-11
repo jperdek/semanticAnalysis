@@ -1,0 +1,7 @@
+conda activate semanticWeb
+python ./serverParts/apis/http/api/endpoints.py
+
+or if venv is used:
+
+
+"./venv/Scripts/python.exe" ./serverParts/apis/http/api/endpoints.py

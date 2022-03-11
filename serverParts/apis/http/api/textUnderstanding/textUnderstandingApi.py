@@ -42,11 +42,15 @@ guess_words_file = None
 text_categorie_pickle = None
 
 
-@text_understanding_api.route("/textUnderstanding/clustersAnalyzer", methods=["POST"])
-@login_required
-def associate_clusters():
+def convert_concept_cluster_vector_to_array_of_records(concept_cluster_vector):
+    records = []
+    for vector_item_name, vector_item_value in concept_cluster_vector.items():
+        records.append({"category": vector_item_name, "value": vector_item_value})
+    return records
+
+
+def evaluate_concept_cluster_vector_and_cluster_words(sample_text, convert_to_records=False):
     global affinity_helper
-    sample_text = request.get_data().decode('utf-8', errors='ignore')
 
     if affinity_helper is not None:
         g.affinity_helper = affinity_helper
@@ -57,6 +61,17 @@ def associate_clusters():
     else:
         affinity_helper = g.affinity_helper
     concept_cluster_vector, cluster_words = affinity_helper.get_concept_vector(sample_text)
+
+    if convert_to_records:
+        return convert_concept_cluster_vector_to_array_of_records(concept_cluster_vector), cluster_words
+    return concept_cluster_vector, cluster_words
+
+
+@text_understanding_api.route("/textUnderstanding/clustersAnalyzer", methods=["POST"])
+@login_required
+def associate_clusters():
+    sample_text = request.get_data().decode('utf-8', errors='ignore')
+    concept_cluster_vector, cluster_words = evaluate_concept_cluster_vector_and_cluster_words(sample_text)
 
     result = dict()
     result["result"] = concept_cluster_vector

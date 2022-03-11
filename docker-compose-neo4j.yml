@@ -1,0 +1,40 @@
+version: "3.8"
+services:
+  app:
+    build: .
+    command: python apis/http/api/endpoints.py
+    ports:
+      - "5000:5000"
+    extra_hosts:
+        - "hostname1  localhost:127.0.0.1"
+    networks:
+      - buildernet
+  cooccurrenceNetwork: 
+    build:
+       context: ./neo4j
+       dockerfile: Dockerfile
+    hostname: neo4j
+    container_name: neo4j
+    ports:
+      - "7475:7475"
+      - "7688:7688"
+    volumes:
+      - ./neo4j/plugins:/plugins
+    environment:
+      NEO4J_AUTH: neo4j/streams
+      NEO4J_dbms_logs_debug_level: DEBUG
+  semanticFrontend:
+    build:
+      context: ./frontend/semanticAspects
+      dockerfile: Dockerfile
+    ports:
+      - "4200:4200"
+    container_name: semanticAspects
+    depends_on:
+      - spring-cyran
+    networks:
+      - buildernet
+networks:
+  buildernet:
+    driver: "bridge"
+    

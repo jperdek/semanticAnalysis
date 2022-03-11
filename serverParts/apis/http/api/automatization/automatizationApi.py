@@ -2,13 +2,13 @@ from flask import Blueprint, g, request, send_from_directory
 import json
 
 from middlewares import login_required
-
 from automatization.automatization_tools import verify_html, SOMTools
 from segmentationAnalysis.pageAnalyser import cetdExtractor, SOMExtractor
 from textUnderstanding.guessedWord.conceptGuessWord import count_tf_idf, get_texts_from_range, get_texts_from_range_html_marks
 from textUnderstanding.textUnderstandingApi import categories_classification, \
     load_local_picle_file, load_local_json_file
 from senseAnalysis.senseAnalysisApi import apply_sense_analysis
+from textUnderstanding.textUnderstandingApi import evaluate_concept_cluster_vector_and_cluster_words
 
 
 automatization_api = Blueprint('automatization_api', __name__, template_folder='templates')
@@ -81,5 +81,9 @@ def automatic_analysis():
     else:
         result_response_data["analyzed_text"] = " ".join(get_texts_from_range_html_marks(
             text, g.indexed_guesses, category, maximum))
+
+    concept_cluster_array, cluster_words = evaluate_concept_cluster_vector_and_cluster_words(text, True)
+    result_response_data["mappings"] = cluster_words
+    result_response_data["concepts_with_scores"] = concept_cluster_array
 
     return json_response(result_response_data)
