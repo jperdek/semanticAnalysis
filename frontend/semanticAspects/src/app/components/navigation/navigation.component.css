@@ -1,0 +1,17 @@
+.menu-spacer {
+    flex: 1 1 auto;
+  }
+
+.mat-drawer{
+    width: 20%;   
+}
+
+.mat-drawer-container {
+    position: static;
+}
+
+.menu-component-item {
+    width: auto;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}

@@ -1,0 +1,9 @@
+.error-info {
+  color: #bb0000;
+  font-size: x-large;
+  line-height: 32px;
+  text-align: center;
+  font-weight: bold;
+  border-radius: 50px;
+  border: 2px dashed #880000;
+}

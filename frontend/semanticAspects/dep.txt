@@ -1,0 +1,13 @@
+
+npm install @ngrx/store --save
+npm install @ngrx/effects --save
+npm install @ngrx/entity --save
+npm install @ngrx/store-devtools --save
+
+ng add @angular/material
+ng generate module app-routing --flat --module=app
+
+
+npm install path
+npm install text-readability
+

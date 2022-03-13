@@ -1,12 +1,28 @@
 version: "3.8"
 services:
-  app:
+  semanticServices:
     build: .
     command: python apis/http/api/endpoints.py
+    image: jperdek/semantic-aspects-services
     ports:
       - "5000:5000"
     extra_hosts:
         - "hostname1  localhost:127.0.0.1"
+    container_name: semanticServices
+    environment:
+      FLASK_ENV: development
+    networks:
+      - buildernet
+  semanticFrontend:
+    build:
+      context: ./frontend/semanticAspects
+      dockerfile: Dockerfile
+    image: jperdek/semantic-aspects-frontend
+    ports:
+      - "4200:80"
+    container_name: semanticAspects
+    environment:
+      FLASK_ENV: development
     networks:
       - buildernet
 networks:

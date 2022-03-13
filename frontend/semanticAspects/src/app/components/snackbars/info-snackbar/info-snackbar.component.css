@@ -1,0 +1,11 @@
+.info-info {
+  color: #00a0ee;
+  font-size: x-large;
+  line-height: 32px;
+  text-align: center;
+  font-weight: bold;
+  border-radius: 50px;
+  border: 2px dashed #00a0bb;
+  padding-left: 32px;
+  padding-right: 32px;
+}

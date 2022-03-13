@@ -1,0 +1,55 @@
+.box {
+    font-size: 1.25rem;
+    background-color: #c8dadf;
+    position: relative;
+    padding: 100px 20px;
+    text-align: center;
+    outline: 2px dashed #92b0b3;
+    outline-offset: -10px;
+    transition: outline-offset .15s ease-in-out, background-color .15s linear;
+}
+
+.file-on-drag {
+    background-color: #666655 !important;
+}
+
+.box .box_icon {
+    width: 100%;
+    height: 80px;
+    fill: #92b0b3;
+    display: block;
+    margin-bottom: 40px;
+}
+
+.box_button {
+    font-weight: 700;
+    color: #e5edf1;
+    background-color: #39bfd3;
+    display: none;
+    padding: 8px 16px;
+    margin: 40px auto 0;
+}
+
+.box_file {
+    width: 0.1px; 
+    height: 0.1px; 
+    opacity: 0; 
+    overflow: hidden; 
+    position: absolute;
+    z-index: -1;
+}
+
+.box.is-dragover {
+    background-color: grey;
+}
+
+.box .box_dragndrop {
+    display: inline;
+}
+
+.box_dragndrop,
+.box_uploading,
+.box_success,
+.box_error {
+  display: none;
+}

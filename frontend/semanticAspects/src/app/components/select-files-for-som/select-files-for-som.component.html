@@ -1,0 +1,24 @@
+<div>
+    <h1 class="main-heading" *ngIf="files.length != 0">Choose files to apply SOM segmentation</h1>
+    <div class="method-for-file-decision">
+        <div *ngFor="let loadedFile of files; let index = index">
+            <form (ngSubmit)="updateRecord($event, loadedFile)">
+                <div class="main-settings-som-content">
+                    <span>{{ loadedFile.name }}</span>
+                    <span class="spacer"></span>
+                    <mat-checkbox matInput name="applyMethod{{index}}" checked="true" id="somCheckbox{{index}}"
+                    (change)="updateApply($event, loadedFile)">Apply {{ segmentationMethodName }} segmentation</mat-checkbox>
+                </div>
+                <div class="additional-som-settings-content">
+                    <label id="additional-som-group-label" class="additional-som-group-label">Choose SOM file application</label>
+                    <mat-radio-group matInput
+                        aria-labelledby="additional-som-group-label"
+                        class="som-chooser-radio-group">
+                        <mat-radio-button matInput (change)="updateSOMType($event, loadedFile)" name="domainOrSegmentation{{index}}" class="som-radio-button" value="domainRepresentant" selected>Domain representant</mat-radio-button>
+                        <mat-radio-button matInput (change)="updateSOMType($event, loadedFile)" name="domainOrSegmentation{{index}}" class="som-radio-button" value="segmentation">For segmentation</mat-radio-button>
+                    </mat-radio-group>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,33 @@
+.main-som-block {
+  .som-template-content-field {
+    width: 100%;
+    min-height: 8rem;
+
+    .record-content-field {
+      border: 2px solid silver;
+      min-height: 8rem;
+    }
+
+    .record-content-field:hover {
+      border: 2px solid grey;
+    }
+  }
+
+  .update-extracted-information-span {
+    display: inline-block;
+    margin-left: 32px;
+    margin-top: 16px;
+
+    .update-extracted-information-button {
+      display: block;
+      width: 100%;
+    }
+  }
+}
+
+.sub-heading {
+  display: block;
+  font-weight: bold;
+  margin-top: 16px;
+  margin-bottom: 8px;
+}

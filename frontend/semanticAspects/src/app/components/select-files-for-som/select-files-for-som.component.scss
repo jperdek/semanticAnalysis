@@ -1,0 +1,44 @@
+.method-for-file-decision {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  justify-content: center;
+  width: 100%;
+
+  .spacer {
+    flex: 1 1 auto;
+    padding-top: 16px;
+    border-bottom: 1px dotted silver;
+  }
+
+  .main-settings-som-content {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .additional-som-settings-content {
+    display: block;
+    margin-top: 20px;
+    margin-left: 40px;
+
+    .som-chooser-radio-group {
+      display: flex;
+      flex-direction: column;
+      margin: 15px 0;
+      margin-left: 25px;
+
+      .som-radio-button {
+        margin: 5px;
+      }
+    }
+
+    .additional-som-group-label {
+      font-weight: bold;
+    }
+  }
+}

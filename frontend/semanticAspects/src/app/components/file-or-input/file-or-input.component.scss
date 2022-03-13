@@ -1,0 +1,118 @@
+.loaded-files-wrapper {
+  margin-left: 40px;
+  margin-bottom: 40px;
+
+  .main-heading {
+    font-weight: bold;
+    font-size: 3rem;
+    text-align: center;
+    font-family: Georgia, "Times New Roman", Times, serif;
+  }
+
+  .is-html-field {
+    display: block;
+    margin-top: 8px;
+    margin-bottom: 16px;
+  }
+
+  .divider-block {
+    display: none;
+  }
+
+  .loaded-file-block + .divider-block {
+    display: block;
+    margin-bottom: 32px;
+    margin-top: 16px;
+    border-width: 8px;
+  }
+
+  .update-extracted-information-span {
+    display: inline-block;
+    margin-left: 32px;
+    margin-top: 16px;
+
+    .update-extracted-information-button {
+      display: block;
+      width: 100%;
+    }
+  }
+
+  .file-content-field {
+    width: 100%;
+    min-height: 8rem;
+
+    .record-content-field {
+      border: 2px solid silver;
+      min-height: 8rem;
+    }
+
+    .record-content-field:hover {
+      border: 2px solid grey;
+    }
+
+    .sub-heading {
+      display: block;
+      font-weight: bold;
+      margin-top: 16px;
+      margin-bottom: 8px;
+    }
+  }
+}
+
+.add-file-wrapper {
+  border: 3px dashed silver;
+  padding: 40px;
+  padding-bottom: 56px;
+
+  .file-content-field {
+    width: 100%;
+    min-height: 8rem;
+
+    .record-content-field {
+      border: 2px solid silver;
+      min-height: 8rem;
+    }
+
+    .record-content-field:hover {
+      border: 2px solid grey;
+    }
+
+    .sub-heading {
+      display: block;
+      font-weight: bold;
+      margin-top: 16px;
+      margin-bottom: 8px;
+    }
+  }
+
+  .main-heading {
+    font-weight: bold;
+    font-size: 3rem;
+    text-align: center;
+    font-family: Georgia, "Times New Roman", Times, serif;
+  }
+
+  .is-html-field {
+    display: block;
+    margin-top: 8px;
+    margin-bottom: 16px;
+  }
+
+  .add-text-to-record-button-block {
+    .add-content-to-records {
+      display: flex;
+      float: right;
+      align-items: center;
+      align-content: center;
+      border-radius: 25px;
+      height: 2.5rem;
+    }
+
+    .add-text-to-record-text {
+      display: block;
+      text-align: right;
+      word-wrap: break-word;
+      margin-left: 16px;
+    }
+  }
+}

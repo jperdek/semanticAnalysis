@@ -1,0 +1,9 @@
+<div>
+    <h1 class="main-heading" *ngIf="files.length != 0">Choose files to apply segmentation</h1>
+    <div *ngFor="let loadedFile of files; let index = index" class="methodForFileDecision">
+        <span>{{ loadedFile.name }}</span>
+        <span class="spacer"></span>
+        <mat-checkbox matInput class="isHtmlField" checked="true" 
+        (change)="updateApply($event, loadedFile)">Apply {{ segmentationMethodName }} segmentation</mat-checkbox>
+    </div>
+</div>

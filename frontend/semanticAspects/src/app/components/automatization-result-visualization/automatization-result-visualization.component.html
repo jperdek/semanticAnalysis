@@ -1,0 +1,15 @@
+<div class="visualization-component">
+    <mat-card class="senseAnalysisResult" *ngIf="automatizationResult.categories_with_scores">
+        <table matSort (matSortChange)="sortedData = sortData($event, automatizationResult.categories_with_scores)">
+            <tr>
+                <th mat-sort-header="category">Category</th>
+                <th mat-sort-header="value">Rating</th>
+            </tr>
+        
+            <tr *ngFor="let result of (sortedData === undefined)? automatizationResult.categories_with_scores: sortedData">
+                <td>{{result.category}}</td>
+                <td>{{result.value}}</td>
+            </tr>
+        </table>
+        </mat-card>
+</div>

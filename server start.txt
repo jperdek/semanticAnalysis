@@ -1,4 +1,5 @@
 conda activate semanticWeb
+cd repository
 python ./serverParts/apis/http/api/endpoints.py
 
 or if venv is used:

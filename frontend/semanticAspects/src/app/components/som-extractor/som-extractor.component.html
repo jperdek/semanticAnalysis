@@ -1,0 +1,16 @@
+<div class="main-som-block">
+    <form  [formGroup]="somTemplateFormGroup"  (ngSubmit)="updateSOMTemplateFile()">
+        <div class="som-template-content-field" appearance="outline">
+            <h1 class="main-heading" >SOM template</h1>
+            <textarea class="record-content-field" matInput name="somTemplateFormControl" formControlName="somTemplateFormControl"
+            placeholder='Ex. {"1/[document]": {"tag": "[document]", "count": 1, "flag": false, "children": {"0/html"'>{{somTemplateFile?.textResult}}</textarea>
+        </div>
+        <span class="update-extracted-information-span">
+            <button class="update-extracted-information-button" mat-icon-button color="primary"
+            aria-label="submit text" type="submit">
+            <mat-icon>update</mat-icon>
+                Update extracted information
+            </button>
+        </span>
+    </form>
+</div>

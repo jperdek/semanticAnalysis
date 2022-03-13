@@ -1,0 +1,63 @@
+.segmentatin-method-radio-button {
+  padding-top: 1rem;
+}
+
+.cetd-options-block {
+  display: flex;
+  flex-direction: column;
+  margin-left: 32px;
+}
+
+.apply-som-button-part {
+  display: flex;
+  justify-content: end;
+  justify-items: end;
+
+  .add-content-to-records {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    border-radius: 25px;
+    height: 2.5rem;
+
+    .add-text-to-record {
+      display: block;
+      text-align: right;
+      word-wrap: break-word;
+      margin-left: 16px;
+    }
+  }
+}
+
+.analyze-som-template {
+  display: flex;
+  flex-direction: column;
+
+  .to-right-button {
+    display: flex;
+    justify-content: end;
+    justify-items: end;
+
+    .add-content-to-records {
+      display: flex;
+      align-items: center;
+      align-content: center;
+      border-radius: 25px;
+      height: 2.5rem;
+      width: 50%;
+
+      .add-text-to-record {
+        display: block;
+        text-align: right;
+        word-wrap: break-word;
+        margin-left: 16px;
+      }
+    }
+  }
+
+  .percentage-slider {
+    display: flex;
+    float: left;
+    width: 50%;
+  }
+}

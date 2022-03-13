@@ -1,0 +1,44 @@
+.visualization-component {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  table,
+  th,
+  td {
+    border: 1px solid grey;
+  }
+
+  table {
+    border-collapse: collapse;
+    td {
+      padding-left: 32px;
+      padding-right: 32px;
+    }
+
+    .table-data {
+      font-size: x-large;
+      height: 35px;
+    }
+
+    .values-data {
+      text-align: right;
+    }
+
+    .table-heading {
+      font-size: xx-large;
+      background-color: #00bbee;
+      height: 60px;
+      padding-left: 32px;
+      padding-right: 32px;
+    }
+
+    tr:nth-child(odd) {
+      background-color: #aaa;
+    }
+
+    tr:nth-child(even) {
+      background-color: #999;
+    }
+  }
+}

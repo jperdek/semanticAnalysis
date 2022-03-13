@@ -1,0 +1,15 @@
+<div class="user-feedback-popup">
+    <form [formGroup]="userFeedbackFormGroup" (ngSubmit)="sendResponse(data.loggingService, data.fileModel)">
+        <div class="top-feedback-header">
+            <ngx-star-rating class="star-rating"  matInput name="starRating"  [total]="5" [rating]="starRating" [type]="'hollow'" [readonly]="false" (rated)="onRate($event)"></ngx-star-rating>
+            <button mat-icon-button (click)="sbRef.dismiss(); $event.preventDefault(); $event.stopPropagation()" class="dismiss-button">
+                <mat-icon>close</mat-icon>
+            </button>
+        </div>
+        <div class="feedback-field" appearance="outline">
+            <mat-label class="sub-heading">Your notes / opinions</mat-label>
+            <textarea class="feedback-content-field" matInput name="userFeedbackTextArea" formControlName="userFeedbackFormControl" placeholder="Ex. Your opinion"></textarea>
+        </div>
+        <button mat-button class="submit-feedback" type="submit">Submit</button>
+    </form>
+</div>

@@ -1,0 +1,15 @@
+.methodForFileDecision {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  align-items: center;
+  justify-items: center;
+  justify-content: center;
+  width: 50%;
+}
+
+.spacer {
+  flex: 1 1 auto;
+  padding-top: 16px;
+  border-bottom: 1px dotted silver;
+}

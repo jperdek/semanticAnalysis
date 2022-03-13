@@ -1,0 +1,11 @@
+.success-info {
+  color: #00ff00;
+  font-size: x-large;
+  line-height: 32px;
+  text-align: center;
+  font-weight: bold;
+  border-radius: 20px;
+  border: 2px dashed #00ff00;
+  padding-left: 32px;
+  padding-right: 32px;
+}

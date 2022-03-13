@@ -1,0 +1,57 @@
+<div class="visualization-component">
+    <mat-card class="senseAnalysisResult" *ngIf="readabilityIndexes">
+        <table matSort>
+            <tr>
+                <th mat-sort-header="methodReadability" class="table-heading">Method</th>
+                <th mat-sort-header="scoreReadability" class="table-heading">Score</th>
+                <th mat-sort-header="descriptionRedability" class="table-heading">Description</th>
+            </tr>
+        
+            <tr *ngIf="readabilityIndexes.fleschReadingEase">
+                <td class="table-data">Flesch reading ease</td>
+                <td class="table-data table-data-score">{{readabilityIndexes.fleschReadingEase.score}}</td>
+                <td class="table-data">{{readabilityIndexes.fleschReadingEase.fleschReadingCategory}}</td>
+            </tr>
+            <tr *ngIf="readabilityIndexes.fleschKincaidGrade">
+                <td class="table-data">Flesch Kincaid Grade score</td>
+                <td class="table-data table-data-score">{{readabilityIndexes.fleschKincaidGrade.score}}</td>
+                <td class="table-data">{{readabilityIndexes.fleschKincaidGrade.fleschKincaidGradeCategory}}</td>
+            </tr>
+            <tr *ngIf="readabilityIndexes.colemanLiauIndex">
+                <td class="table-data">Coleman Liau index score</td>
+                <td class="table-data table-data-score">{{readabilityIndexes.colemanLiauIndex.score}}</td>
+                <td class="table-data">{{readabilityIndexes.colemanLiauIndex.colemanLiauIndexCategory}}</td>
+            </tr>
+            <tr *ngIf="readabilityIndexes.automatedReadabilityIndex">
+                <td class="table-data">Automated readability index</td>
+                <td class="table-data table-data-score">{{readabilityIndexes.automatedReadabilityIndex.score}}</td>
+                <td class="table-data">{{readabilityIndexes.automatedReadabilityIndex.automatedReadabilityIndexCategory}}</td>
+            </tr>
+            <tr *ngIf="readabilityIndexes.daleChallReadabilityScore">
+                <td class="table-data">Dale Chall readability score</td>
+                <td class="table-data table-data-score">{{readabilityIndexes.daleChallReadabilityScore.score}}</td>
+                <td class="table-data">{{readabilityIndexes.daleChallReadabilityScore.daleChallReadabilityCategory}}</td>
+            </tr>
+            <tr *ngIf="readabilityIndexes.linsearWriteFormula">
+                <td class="table-data">Linsear write formula</td>
+                <td class="table-data table-data-score">{{readabilityIndexes.linsearWriteFormula.score}}</td>
+                <td class="table-data">{{readabilityIndexes.linsearWriteFormula.linsearWriteFormulaCategory}}</td>
+            </tr>
+            <tr *ngIf="readabilityIndexes.gunningFog">
+                <td class="table-data">Gunning Fog readability score</td>
+                <td class="table-data table-data-score">{{readabilityIndexes.gunningFog.score}}</td>
+                <td class="table-data">{{readabilityIndexes.gunningFog.gunningFogCategory}}</td>
+            </tr>
+            <tr *ngIf="readabilityIndexes.textStandard !== ''">
+                <td class="table-data">Text standard score</td>
+                <td class="table-data table-data-score"></td>
+                <td class="table-data">{{readabilityIndexes.textStandard}}</td>
+            </tr>
+            <tr *ngIf="readabilityIndexes.difficultWords !== -1">
+                <td class="table-data">Difficult words metrics</td>
+                <td class="table-data table-data-score">{{readabilityIndexes. difficultWords}}</td>
+                <td class="table-data"></td>
+            </tr>
+        </table>
+        </mat-card>
+</div>

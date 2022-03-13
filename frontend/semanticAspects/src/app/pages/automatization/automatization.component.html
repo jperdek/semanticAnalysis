@@ -1,0 +1,109 @@
+
+<mat-tab-group class="whole-tab-group">
+  <mat-tab label="Files insertion"> 
+    <mat-vertical-stepper [linear]="isLinear" class="insert-file-tab" #stepper>
+      <mat-step [stepControl]="fileFormGroup">
+          <form [formGroup]="fileFormGroup" method="post" action="" enctype="multipart/form-data" class="form-group">
+            <ng-template matStepLabel><p class="step-part-title">Insert files for analysis</p></ng-template>
+            <app-file-upload>
+            </app-file-upload>
+          </form>
+          <app-file-or-input [files]="getUploadedFiles()"></app-file-or-input>
+      </mat-step>
+      
+      <mat-step>
+        <ng-template matStepLabel><p class="step-part-title">Start analysis</p></ng-template>
+          
+        <div class="management-buttons">
+          <button mat-button matStepperPrevious class="back-button" [routerLink]="'/'" >Back</button>
+          <button mat-button (click)="stepper.reset()" class="reset-button">Reset</button>
+        </div>
+        <button mat-button (click)="applyAutomatization()" class="analyze-button">Analyze</button>
+      </mat-step>
+    </mat-vertical-stepper>
+  </mat-tab>
+  <mat-tab label="{{automatizationResult.fileName}}" *ngFor="let automatizationResult of getAutomatizationResults(); let automatizedResultIndex = index">
+    <div class="result-tab">
+    
+        <div class="main-category-block" *ngIf="automatizationResult.category">
+          <div class="main-category-heading">Main category:</div>
+          <div class="main-category-heading main-category-heading-category">{{automatizationResult.category}}</div>
+        </div>
+
+        <mat-accordion>
+          <mat-expansion-panel hideToggle>
+            <mat-expansion-panel-header>
+              <mat-panel-title class="expansion-panel-title">
+                Analysis results
+              </mat-panel-title>
+              <mat-panel-description class="expansion-panel-description">
+                Collected content based on file
+              </mat-panel-description>
+            </mat-expansion-panel-header>
+            <div class="relevancy-settings">
+              <div class="main-category-heading">Choose relevancy threshold:</div>
+              <mat-slider #scoreThreshold class="slider-relevancy"
+                  thumbLabel
+                  [displayWith]="formatScoreLabel"
+                  tickInterval="1000"
+                  step="0.01"
+                  [min]="getMinScore(automatizationResult.analyzed_text)"
+                  [max]="getMaxScore(automatizationResult.analyzed_text)"
+                  (slideend)="scoreOnSlideChange(scoreThreshold.value, automatizationResult)"
+                  (pointerup)="scoreOnSlideChange(scoreThreshold.value, automatizationResult)"
+                  aria-label="units">
+              </mat-slider>
+            </div>
+            <div [innerHTML]="automatizationResult.analyzed_text | sanitizeHtml" class="analyzed-text"></div>
+            
+
+          </mat-expansion-panel>
+          <mat-expansion-panel (opened)="panelOpenState = true"
+                              (closed)="panelOpenState = false">
+              <mat-expansion-panel-header>
+              <mat-panel-title class="expansion-panel-title">
+                Identified categories
+              </mat-panel-title>
+              <mat-panel-description class="expansion-panel-description">
+                Abstractly describes content, mainly from sense analysis
+              </mat-panel-description>
+            </mat-expansion-panel-header>
+            <app-table-categories-visualization [categoryRating]="automatizationResult.categories_with_scores">
+            </app-table-categories-visualization>
+          </mat-expansion-panel>
+          <mat-expansion-panel (opened)="panelOpenState = true"
+                              (closed)="panelOpenState = false">
+              <mat-expansion-panel-header>
+              <mat-panel-title class="expansion-panel-title">
+                Identified clusters
+              </mat-panel-title>
+              <mat-panel-description class="expansion-panel-description">
+                Shows main representant of clusters with identified members
+              </mat-panel-description>
+            </mat-expansion-panel-header>
+            <app-table-clusters-visualization 
+              [categoryRating]="automatizationResult.concepts_with_scores" 
+              [mappings]="automatizationResult.mappings">
+            </app-table-clusters-visualization>
+          </mat-expansion-panel>
+          <mat-expansion-panel (opened)="panelOpenState = true"
+                              (closed)="panelOpenState = false">
+              <mat-expansion-panel-header>
+              <mat-panel-title class="expansion-panel-title">
+                Readability metrics
+              </mat-panel-title>
+              <mat-panel-description class="expansion-panel-description">
+                Information about text complexity
+              </mat-panel-description>
+            </mat-expansion-panel-header>
+            <app-readability-visualization [readabilityIndexes]="automatizationResult.readability_indexes"></app-readability-visualization>
+          </mat-expansion-panel>
+        </mat-accordion>
+        <button mat-button color="warn" class="delete-button" (click)="deleteAutomatizedResult(automatizedResultIndex)">Delete result</button>
+      </div>
+  </mat-tab>
+</mat-tab-group>
+
+
+
+

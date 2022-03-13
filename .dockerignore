@@ -1,0 +1,4 @@
+node_modules
+frontend/semanticAspects/node_modules
+dist
+.vscode
