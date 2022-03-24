@@ -14,6 +14,15 @@
 7.    Waiting for response and clicking on new tab with arrived results from response. For the first time loading is slower.
 
 
+# Run services using deployment uwsgi nginx with docker  
+
+## Run  
+`docker run -p 5000:5000 jperdek/semantic-aspects-app-nginx`  
+
+## Possible to build again 
+`docker build -f DockerfileNginx -t jperdek/semantic-aspects-app-nginx .`
+
+
 # Architecture before recreation using REST API
 Repository for master thesis with orientation to semantic aspects of web documents
 
