@@ -2,8 +2,12 @@ try:
     from textUnderstanding.conceptDataNormalization.conceptVectorNormalization.conceptVectorNormalizationTools \
         import ConceptVectorNormalizationTools
 except ImportError:
-    from serverParts.apis.http.api.textUnderstanding.conceptDataNormalization.conceptVectorNormalizationTools \
-        import ConceptVectorNormalizationTools
+    try:
+        from apis.http.api.textUnderstanding.conceptDataNormalization.conceptVectorNormalizationTools \
+            import ConceptVectorNormalizationTools
+    except ImportError:
+        from serverParts.apis.http.api.textUnderstanding.conceptDataNormalization.conceptVectorNormalizationTools \
+            import ConceptVectorNormalizationTools
 import random
 import json
 

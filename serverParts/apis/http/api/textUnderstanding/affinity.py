@@ -6,7 +6,10 @@ import json
 try:
     from textUnderstanding.textPreprocessing import POSTagging
 except ImportError:
-    from serverParts.apis.http.api.textUnderstanding.textPreprocessing import POSTagging
+    try:
+        from apis.http.api.textUnderstanding.textPreprocessing import POSTagging
+    except ImportError:
+        from serverParts.apis.http.api.textUnderstanding.textPreprocessing import POSTagging
 
 
 class AffinityScore:

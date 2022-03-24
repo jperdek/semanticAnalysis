@@ -1,14 +1,27 @@
-from senseAnalysis.categorization.senseTextProcess import SemcorAnalyser
+import sys
+
 from flask import Flask, g
 import flask_cors
-from senseAnalysis.senseAnalysisApi import sense_api, load_local_json_file
-from readabilityAnalysis.readabilityAnalysisApi import readability_api
-from segmentationAnalysis.segmentationAnalysisApi import segmentation_api
-from keywordAnalysis.keywordAnalysisApi import keywords_api
-from automatization.automatizationApi import automatization_api
-from textUnderstanding import clustersFile
-from textUnderstanding.affinity import AffinityHelper
-from textUnderstanding.textUnderstandingApi import text_understanding_api, load_local_picle_file
+try:
+    from senseAnalysis.categorization.senseTextProcess import SemcorAnalyser
+    from senseAnalysis.senseAnalysisApi import sense_api, load_local_json_file
+    from readabilityAnalysis.readabilityAnalysisApi import readability_api
+    from segmentationAnalysis.segmentationAnalysisApi import segmentation_api
+    from keywordAnalysis.keywordAnalysisApi import keywords_api
+    from automatization.automatizationApi import automatization_api
+    from textUnderstanding import clustersFile
+    from textUnderstanding.affinity import AffinityHelper
+    from textUnderstanding.textUnderstandingApi import text_understanding_api, load_local_picle_file
+except ImportError:
+    from apis.http.api.senseAnalysis.categorization.senseTextProcess import SemcorAnalyser
+    from apis.http.api.senseAnalysis.senseAnalysisApi import sense_api, load_local_json_file
+    from apis.http.api.readabilityAnalysis.readabilityAnalysisApi import readability_api
+    from apis.http.api.segmentationAnalysis.segmentationAnalysisApi import segmentation_api
+    from apis.http.api.keywordAnalysis.keywordAnalysisApi import keywords_api
+    from apis.http.api.automatization.automatizationApi import automatization_api
+    from apis.http.api.textUnderstanding import clustersFile
+    from apis.http.api.textUnderstanding.affinity import AffinityHelper
+    from apis.http.api.textUnderstanding.textUnderstandingApi import text_understanding_api, load_local_picle_file
 
 app = Flask(__name__, static_url_path='',
             static_folder='web/static',
@@ -39,5 +52,12 @@ def startup():
     print('preparation completed successfully!')
 
 
+def launch():
+    app.run(host="0.0.0.0", debug=False)
+
+
 if __name__ == "__main__":
-    app.run(host="0.0.0.0", debug=True)
+    if len(sys.argv) > 1 and sys.argv[1] == "production":
+        app.run(host="0.0.0.0", debug=False, port=8080)
+    else:
+        app.run(host="0.0.0.0", debug=True)

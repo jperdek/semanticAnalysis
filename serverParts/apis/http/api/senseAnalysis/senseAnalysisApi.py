@@ -1,8 +1,13 @@
 from flask import Blueprint, request, send_from_directory
 import json
-from senseAnalysis.categorization.senseTextProcess import SemcorAnalyser
+try:
+    from senseAnalysis.categorization.senseTextProcess import SemcorAnalyser
+    from middlewares import login_required
+except ImportError:
+    from apis.http.api.senseAnalysis.categorization.senseTextProcess import SemcorAnalyser
+    from apis.http.api.middlewares import login_required
 from flask import g
-from middlewares import login_required
+
 
 
 def load_local_json_file(file_name):

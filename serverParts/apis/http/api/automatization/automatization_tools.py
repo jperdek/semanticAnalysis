@@ -6,9 +6,9 @@ from bs4 import BeautifulSoup
 from flask import send_from_directory
 
 try:
-    from serverParts.apis.http.api.segmentationAnalysis.pageAnalyser.SOMExtractor import SOMBeautifulSoup
+    from apis.http.api.segmentationAnalysis.pageAnalyser.SOMExtractor import SOMBeautifulSoup
 except ImportError:
-    from segmentationAnalysis.pageAnalyser.SOMExtractor import SOMBeautifulSoup
+    from serverParts.apis.http.api.segmentationAnalysis.pageAnalyser.SOMExtractor import SOMBeautifulSoup
 
 
 def verify_html(text):

@@ -1,4 +1,7 @@
-from segmentationAnalysis.pageAnalyser.CETD.extractor import Extractor, EDGARExtractor, VariantExtractor
+try:
+    from segmentationAnalysis.pageAnalyser.CETD.extractor import Extractor, EDGARExtractor, VariantExtractor
+except ImportError:
+    from apis.http.api.segmentationAnalysis.pageAnalyser.CETD.extractor import Extractor, EDGARExtractor, VariantExtractor
 import os
 import json
 

@@ -1,9 +1,15 @@
 from flask import Blueprint, request, send_from_directory
 import json
-from segmentationAnalysis.pageAnalyser import cetdExtractor
-from segmentationAnalysis.pageAnalyser import textExtractor
-from segmentationAnalysis.pageAnalyser import SOMExtractor
-from middlewares import login_required
+try:
+    from segmentationAnalysis.pageAnalyser import cetdExtractor
+    from segmentationAnalysis.pageAnalyser import textExtractor
+    from segmentationAnalysis.pageAnalyser import SOMExtractor
+    from middlewares import login_required
+except ImportError:
+    from apis.http.api.segmentationAnalysis.pageAnalyser import cetdExtractor
+    from apis.http.api.segmentationAnalysis.pageAnalyser import textExtractor
+    from apis.http.api.segmentationAnalysis.pageAnalyser import SOMExtractor
+    from apis.http.api.middlewares import login_required
 import uuid
 
 

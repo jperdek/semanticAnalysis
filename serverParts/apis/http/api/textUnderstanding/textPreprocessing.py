@@ -12,7 +12,10 @@ try:
     from textUnderstanding.wordInfo import WordInfo
 except ImportError:
     # Separate array with spaces
-    from serverParts.apis.http.api.textUnderstanding.wordInfo import WordInfo
+    try:
+        from apis.http.api.textUnderstanding.wordInfo import WordInfo
+    except ImportError:
+        from serverParts.apis.http.api.textUnderstanding.wordInfo import WordInfo
 
 
 def separate_with_space(array):

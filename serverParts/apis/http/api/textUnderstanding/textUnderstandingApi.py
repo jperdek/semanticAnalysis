@@ -2,11 +2,16 @@ import json
 import pickle
 from flask import Blueprint, send_from_directory
 from flask import g, request
-
-from middlewares import login_required
-from textUnderstanding.affinity import AffinityHelper
-from textUnderstanding.guessedWord.conceptGuessWord import get_texts_from_range, count_tf_idf
-from textUnderstanding import clustersFile
+try:
+    from middlewares import login_required
+    from textUnderstanding.affinity import AffinityHelper
+    from textUnderstanding.guessedWord.conceptGuessWord import get_texts_from_range, count_tf_idf
+    from textUnderstanding import clustersFile
+except ImportError:
+    from apis.http.api.middlewares import login_required
+    from apis.http.api.textUnderstanding.affinity import AffinityHelper
+    from apis.http.api.textUnderstanding.guessedWord.conceptGuessWord import get_texts_from_range, count_tf_idf
+    from apis.http.api.textUnderstanding import clustersFile
 
 text_understanding_api = Blueprint('text_understanding_api', __name__, template_folder='templates')
 categories_classification = {'Computer_Science': 0, 'Crime': 1, 'Science': 2,
