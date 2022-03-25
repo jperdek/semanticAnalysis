@@ -1,3 +1,9 @@
+Repository for master thesis with orientation to semantic aspects of web documents
+
+# Architecture for automatization of semantic analysis - REST API (in development)
+![Layer architecture with services](architecture/servicesArchitecture.png)
+
+
 # Run with Docker
 
 1.    Download docker-compose.yml file from project repository to created directory (can be empty).
@@ -27,4 +33,4 @@
 Repository for master thesis with orientation to semantic aspects of web documents
 
 
-![Architecture](architektura.png)
+![Old architecture](architecture/architekturaOld.png)
