@@ -1,7 +1,11 @@
 import string
 
-from neo4jsemanticbase.cooccurrence_network.network_creation import CoOccurrenceManager, get_properties
-from serverParts.apis.http.api.textUnderstanding.textPreprocessing import POSTagging
+try:
+    from apis.http.api.graphProcessing.network_manager import get_properties, NetworkManager
+    from apis.http.api.textUnderstanding.textPreprocessing import POSTagging
+except ImportError:
+    from serverParts.apis.http.api.graphProcessing.network_manager import get_properties, NetworkManager
+    from serverParts.apis.http.api.textUnderstanding.textPreprocessing import POSTagging
 
 
 def aggregate_from_given_meaning(tx, typed_word_list: list, db_name: str):
@@ -39,7 +43,7 @@ def get_full_text_results(tx, typed_word_list: list, db_name="neo4j") -> list:
     return result
 
 
-def aggregate_from_given_meaning_full_text(tx, typed_word_list: list, db_name: str, mix: bool=False):
+def aggregate_from_given_meaning_full_text(tx, typed_word_list: list, db_name: str, mix: bool = False):
     typed_word_string = ""
     for name, score in get_full_text_results(tx, typed_word_list):
         typed_word_string = typed_word_string + ", '" + name.strip().replace("'", "\\'") + "'"
@@ -114,7 +118,7 @@ def preprocess_text(text: str):
 
 if __name__ == "__main__":
     database_name = "neo4j"
-    network = CoOccurrenceManager("bolt://localhost:7688", "neo4j", "neo4j1", "neo4j")
+    network = NetworkManager("bolt://localhost:7688", "neo4j", "neo4j1", "neo4j")
     network.initialize_additional_indexes()
     text_for_analysis = """To Americans of the 1920s and ‘30s, he was the notorious gangster Scarface Al, Public Enemy 
                        No. 1. But when he arrived at Alcatraz in late August of 1934, Alphonse “Al” Capone took on a 

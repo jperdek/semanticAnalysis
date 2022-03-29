@@ -131,3 +131,14 @@ call n10s.rdf.import.fetch("file:///D:\yago\yagoTypes2.ttl", "Turtle");
 call n10s.rdf.import.fetch("file:///D:\yago\yago\\type1.ttl", "Turtle");
 call n10s.rdf.import.fetch("file:///D:\yago\yago\\type2.ttl", "Turtle");
 call n10s.rdf.import.fetch("file:///D:\yago\yago\\type3.ttl", "Turtle");
+
+
+DUMP DATA TXT:
+CALL apoc.export.cypher.all("all.cypher", {
+    format: "cypher-shell",
+    useOptimizations: {type: "UNWIND_BATCH", unwindBatchSize: 20}
+});
+
+type C:\neo4j2\import\all.cypher | C:/neo4j3/bin/cypher-shell.bat -a bolt://localhost:7687 -u neo4j -p neo4j --format verbose
+
+ADD myfile.tar.gz /some/folder

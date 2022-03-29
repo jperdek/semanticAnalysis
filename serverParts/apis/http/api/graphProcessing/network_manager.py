@@ -3,7 +3,7 @@ import types
 import neo4j
 
 
-class CoOccurrenceManager:
+class NetworkManager:
 
     def __init__(self, uri, user, password, database_name='CoOccurence'):
         self.driver = neo4j.GraphDatabase.driver(uri, auth=(user, password))
