@@ -20,6 +20,33 @@ Repository for master thesis with orientation to semantic aspects of web documen
 7.    Waiting for response and clicking on new tab with arrived results from response. For the first time loading is slower.
 
 
+## Run with Docker + co-occurence network functionality   
+
+Follow steps from section above called Run with Docker except:  
+1.  In 1th step you should use file https://github.com/jperdek/semanticAnalysis/blob/master/docker-compose-neo4j.yml  
+2.  In step 3 call:  
+    `docker compose -f docker-compose-neo4j.yml pull`  
+3.  In step 4 call:   
+    `docker compose -f docker-compose-neo4j.yml up --no-build`  
+4.  Additionaly you can open neo4j console for co-occurence network - majority of Probase:  
+    `localhost:7475`
+
+
+## Run with Docker + co-occurence network functionality + Yago knowledge base main part  
+
+Follow steps from section above called Run with Docker except:  
+1.  In 1th step you should use file https://github.com/jperdek/semanticAnalysis/blob/master/docker-compose-neo4j-all.yml  
+2.  In step 3 call:  
+   `docker compose -f docker-compose-neo4j-all.yml pull`    
+3.  In step 4 call:  
+   `docker compose -f docker-compose-neo4j-all.yml up --no-build`    
+4.  Additionaly you can open:
+      - neo4j console for co-occurence network - majority of Probase:  
+          `localhost:7475`  
+      - neo4j console for main part of Yago semantic base:    
+          `localhost:7474`  
+       
+       
 # Run services using deployment uwsgi nginx with docker  
 
 ## Run  
