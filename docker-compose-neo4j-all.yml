@@ -30,8 +30,8 @@ services:
        context: ./neo4j/co-occurrence-network
        dockerfile: Dockerfile
     image: jperdek/co-occurrence-network
-    hostname: neo4j
-    container_name: neo4j
+    hostname: neo4j_co_occurrence
+    container_name: neo4j_co_occurrence
     ports:
       - "7475:7475"
       - "7688:7688"
@@ -39,6 +39,21 @@ services:
       - ./neo4j/plugins:/plugins
     environment:
       NEO4J_AUTH: neo4j/neo4j1
+      NEO4J_dbms_logs_debug_level: DEBUG
+  semanticBaseYago: 
+    build:
+       context: ./neo4j/semantic-base-yago
+       dockerfile: Dockerfile
+    image: jperdek/semantic_base_yago
+    hostname: neo4j_yago
+    container_name: neo4j_yago
+    ports:
+      - "7474:7474"
+      - "7687:7687"
+    volumes:
+      - ./neo4j/plugins:/plugins
+    environment:
+      NEO4J_AUTH: neo4j/perdekj
       NEO4J_dbms_logs_debug_level: DEBUG
 networks:
   buildernet:
