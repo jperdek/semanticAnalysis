@@ -1,8 +1,8 @@
 from flask import Blueprint
 from flask import g, request
 import json
-
 from neo4j.exceptions import ServiceUnavailable
+
 
 try:
     from apis.http.api.middlewares import login_required
@@ -18,6 +18,12 @@ except ImportError:
         get_concepts_with_aggregated_meanings, get_meanings_with_aggregated_concepts
     
 meaning_aggregation_api = Blueprint('meaning_aggregation_api', __name__, template_folder='templates')
+
+
+@meaning_aggregation_api.route("/textUnderstanding/meaningAggregationMethods", methods=["GET"])
+def list_available_methods():
+    return json_response({"available_methods": ["concepts_with_aggregated_meanings",
+                                                "meanings_with_aggregated_concepts"]})
 
 
 def json_response(payload, status=200):

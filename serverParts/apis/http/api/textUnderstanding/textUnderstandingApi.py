@@ -39,7 +39,7 @@ def json_response(payload, status=200):
 
 
 @text_understanding_api.route("/textUnderstanding/textUnderstandingMethods", methods=["GET"])
-def list_avalable_methods():
+def list_available_methods():
     return json_response({'available_methods': ['categoryFinder', 'relatedTextFinder', 'clustersAnalyzer']})
 
 
