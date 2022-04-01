@@ -8,6 +8,18 @@ except ImportError:
     from serverParts.apis.http.api.textUnderstanding.textPreprocessing import POSTagging
 
 
+def aggregate_meaning_to_dict(returned_meanings: any) -> list:
+    aggregated_meanings = []
+    for concept, priority, meanings in returned_meanings:
+        aggregated_meaning = {
+            "meaning": get_properties(concept)["name"],
+            "priority": priority,
+            "matched": meanings
+        }
+        aggregated_meanings.append(aggregated_meaning)
+    return aggregated_meanings
+
+
 def aggregate_from_given_meaning(tx, typed_word_list: list, db_name: str):
     typed_word_string = ""
     for typed_word in typed_word_list:
@@ -21,10 +33,7 @@ def aggregate_from_given_meaning(tx, typed_word_list: list, db_name: str):
             apoc.map.mergeList(COLLECT(apoc.map.fromValues([typed_word.name, apoc.convert.toString(connection._doc)])))
             ORDER BY priority DESC
             LIMIT 25""")
-    for concept, priority, meanings in result:
-        print("Meaning: " + get_properties(concept)["name"] +
-              ", priority: " + str(priority) + ", matched: " + str(meanings))
-    return result
+    return aggregate_meaning_to_dict(result)
 
 
 def get_full_text_results(tx, typed_word_list: list, db_name="neo4j") -> list:
@@ -60,10 +69,7 @@ def aggregate_from_given_meaning_full_text(tx, typed_word_list: list, db_name: s
             apoc.map.mergeList(COLLECT(apoc.map.fromValues([typed_word.name, apoc.convert.toString(connection._doc)])))
             ORDER BY priority DESC
             LIMIT 25""")
-    for concept, priority, meanings in result:
-        print("Meaning: " + get_properties(concept)["name"] +
-              ", priority: " + str(priority) + ", matched: " + str(meanings))
-    return result
+    return aggregate_meaning_to_dict(result)
 
 
 def aggregate_meanings_from_concept(tx, concept_word_list: list, db_name: str):
@@ -79,10 +85,7 @@ def aggregate_meanings_from_concept(tx, concept_word_list: list, db_name: str):
                 apoc.map.mergeList(COLLECT(apoc.map.fromValues([concept.name, apoc.convert.toString(connection._doc)])))
                 ORDER BY priority DESC
                 LIMIT 25""")
-    for concept, priority, meanings in result:
-        print("Meaning: " + get_properties(concept)["name"] +
-              ", priority: " + str(priority) + ", matched: " + str(meanings))
-    return result
+    return aggregate_meaning_to_dict(result)
 
 
 def aggregate_meanings_from_concept_full_text(tx, concept_word_list: list, db_name: str):
@@ -99,10 +102,7 @@ def aggregate_meanings_from_concept_full_text(tx, concept_word_list: list, db_na
                 apoc.map.mergeList(COLLECT(apoc.map.fromValues([concept.name, apoc.convert.toString(connection._doc)])))
                 ORDER BY priority DESC
                 LIMIT 25""")
-    for concept, priority, meanings in result:
-        print("Meaning: " + get_properties(concept)["name"] +
-              ", priority: " + str(priority) + ", matched: " + str(meanings))
-    return result
+    return aggregate_meaning_to_dict(result)
 
 
 def preprocess_text(text: str):
@@ -114,6 +114,30 @@ def preprocess_text(text: str):
         if pos_tag == 'n':
             concept_candidate_list.append(word.lower())
     return concept_candidate_list
+
+
+def get_concepts_with_aggregated_meanings(text_to_analyze: str,
+                                          co_occurrence_network: NetworkManager,
+                                          use_full_text_search: bool = True,
+                                          db_name: str = "neo4j") -> any:
+    analyzed_concepts = preprocess_text(text_to_analyze)
+    if use_full_text_search:
+        return co_occurrence_network.process_data_transaction(tuple([analyzed_concepts]),
+                                                              aggregate_from_given_meaning_full_text, db_name)
+    return co_occurrence_network.process_data_transaction(tuple([analyzed_concepts]),
+                                                          aggregate_from_given_meaning, db_name)
+
+
+def get_meanings_with_aggregated_concepts(text_to_analyze: str,
+                                          co_occurrence_network: NetworkManager,
+                                          use_full_text_search: bool = True,
+                                          db_name: str = "neo4j") -> any:
+    analyzed_concepts = preprocess_text(text_to_analyze)
+    if use_full_text_search:
+        return co_occurrence_network.process_data_transaction(tuple([analyzed_concepts]),
+                                                              aggregate_meanings_from_concept_full_text, db_name)
+    return co_occurrence_network.process_data_transaction(tuple([analyzed_concepts]),
+                                                          aggregate_meanings_from_concept, db_name)
 
 
 if __name__ == "__main__":

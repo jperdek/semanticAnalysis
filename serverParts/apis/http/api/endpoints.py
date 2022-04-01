@@ -3,16 +3,6 @@ import sys
 from flask import Flask, g
 import flask_cors
 try:
-    from senseAnalysis.categorization.senseTextProcess import SemcorAnalyser
-    from senseAnalysis.senseAnalysisApi import sense_api, load_local_json_file
-    from readabilityAnalysis.readabilityAnalysisApi import readability_api
-    from segmentationAnalysis.segmentationAnalysisApi import segmentation_api
-    from keywordAnalysis.keywordAnalysisApi import keywords_api
-    from automatization.automatizationApi import automatization_api
-    from textUnderstanding import clustersFile
-    from textUnderstanding.affinity import AffinityHelper
-    from textUnderstanding.textUnderstandingApi import text_understanding_api, load_local_picle_file
-except ImportError:
     from apis.http.api.senseAnalysis.categorization.senseTextProcess import SemcorAnalyser
     from apis.http.api.senseAnalysis.senseAnalysisApi import sense_api, load_local_json_file
     from apis.http.api.readabilityAnalysis.readabilityAnalysisApi import readability_api
@@ -22,6 +12,19 @@ except ImportError:
     from apis.http.api.textUnderstanding import clustersFile
     from apis.http.api.textUnderstanding.affinity import AffinityHelper
     from apis.http.api.textUnderstanding.textUnderstandingApi import text_understanding_api, load_local_picle_file
+    from apis.http.api.textUnderstanding.meaningAggregationApi import meaning_aggregation_api
+except ImportError:
+    from senseAnalysis.categorization.senseTextProcess import SemcorAnalyser
+    from senseAnalysis.senseAnalysisApi import sense_api, load_local_json_file
+    from readabilityAnalysis.readabilityAnalysisApi import readability_api
+    from segmentationAnalysis.segmentationAnalysisApi import segmentation_api
+    from keywordAnalysis.keywordAnalysisApi import keywords_api
+    from automatization.automatizationApi import automatization_api
+    from textUnderstanding import clustersFile
+    from textUnderstanding.affinity import AffinityHelper
+    from textUnderstanding.textUnderstandingApi import text_understanding_api, load_local_picle_file
+    from textUnderstanding.meaningAggregationApi import meaning_aggregation_api
+
 
 app = Flask(__name__, static_url_path='',
             static_folder='web/static',
@@ -35,6 +38,7 @@ app.register_blueprint(segmentation_api)
 app.register_blueprint(keywords_api)
 app.register_blueprint(text_understanding_api)
 app.register_blueprint(automatization_api)
+app.register_blueprint(meaning_aggregation_api)
 
 
 @app.before_first_request

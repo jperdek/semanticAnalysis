@@ -1,11 +1,10 @@
 import types
-
 import neo4j
 
 
 class NetworkManager:
 
-    def __init__(self, uri, user, password, database_name='CoOccurence'):
+    def __init__(self, uri, user, password, database_name='neo4j'):
         self.driver = neo4j.GraphDatabase.driver(uri, auth=(user, password))
         self.database_name = database_name
 
@@ -102,8 +101,8 @@ def set_properties(node):
 
 
 if __name__ == "__main__":
-    network = CoOccurrenceManager("bolt://localhost:7687", "neo4j", "perdekj", "neo4j")
-    # network = CoOccurrenceManager("bolt://localhost:7688", "neo4j", "neo4j1", "neo4j")
+    network = NetworkManager("bolt://localhost:7687", "neo4j", "perdekj", "neo4j")
+    # network = NetworkManager("bolt://localhost:7688", "neo4j", "neo4j1", "neo4j")
     # network.create_db_for_network()
     network.get_data()
     network.close()
