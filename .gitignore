@@ -6,6 +6,7 @@
 !serverParts/apis/http/api/web/static/*
 !serverParts/apis/http/api/textUnderstanding/group.json
 !serverParts/apis/http/api/textUnderstanding/kmeansToMedoid/optimization/*.json
+!Flask*.json
 neo4j/co-occurrence-network/dumps/*
 neo4j/semantic-base-yago/dumps/*
 
