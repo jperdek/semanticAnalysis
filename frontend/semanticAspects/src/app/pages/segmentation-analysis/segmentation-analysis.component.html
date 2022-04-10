@@ -13,19 +13,22 @@
             <app-select-files-for-given-operation [files]="files" [segmentation]="true" segmentationMethodName="CETD"></app-select-files-for-given-operation>
             <div class="chooseMethod">
                 <h1>Choose methods which should be used!</h1>
-                <form [formGroup]="cetdFormGroup" (ngSubmit)="useCETDSegmentation()">
+                <form [formGroup]="cetdFormGroup" (ngSubmit)="useCETDSegmentation()" class="segmentation-options-form">
                     <div class="cetd-options-block">
                         <mat-checkbox formControlName="cetdNormalMethod" name="CETDNormal" class="checkboxField" checked="true">Normal extractor</mat-checkbox>
                         <mat-checkbox formControlName="cetdEdgareMethod" name="CETDEdgare" class="checkboxField" checked="true">Edgare extractor</mat-checkbox>
                         <mat-checkbox formControlName="cetdVariantMethod" name="CETDVariant" class="checkboxField" checked="true">Variant extractor</mat-checkbox>
                     </div>
-                    <button class="add-content-to-records" color="accent" aria-label="submit text" type="submit">
-                        <mat-icon class="add-text-to-record">add_circle_outline</mat-icon>
-                        <span class="add-text-to-record-text">Apply cetd segmentation on files</span>
-                    </button>
+                    <div class="segmentation-options-buttons">
+                        <button class="add-content-to-records" color="accent" aria-label="submit text" type="submit">
+                            <mat-icon class="add-text-to-record">add_circle_outline</mat-icon>
+                            <span class="add-text-to-record-text">Apply cetd segmentation on files</span>
+                        </button>
+                    </div>
                 </form>
             </div>
         </mat-expansion-panel>
+        <app-spinner *ngIf="spinnerVisibility"></app-spinner>
         <mat-expansion-panel>
             <mat-expansion-panel-header>
                 <mat-panel-title>
@@ -37,7 +40,6 @@
                         
                 </mat-panel-description>
             </mat-expansion-panel-header>
-            
             <app-som-extractor [somTemplateFile]="somTemplateFileReference"></app-som-extractor>
             <app-select-files-for-som [files]="files" [segmentation]="true" segmentationMethodName="SOM"></app-select-files-for-som>
             <div class="apply-som-button-part">
@@ -61,7 +63,7 @@
                         max="1"
                         aria-label="units">
                     </mat-slider>
-                    <div class="to-right-button">
+                    <div class="segmentation-options-buttons">
                         <button class="add-content-to-records" color="accent" aria-label="submit text" 
                             type="submit">
                             <mat-icon class="add-text-to-record">add_circle_outline</mat-icon>
@@ -83,10 +85,12 @@
                 </mat-panel-description>
             </mat-expansion-panel-header>
             <app-select-files-for-given-operation [files]="files" [segmentation]="true" segmentationMethodName="all_text"></app-select-files-for-given-operation>
-            <button class="add-content-to-records" color="accent" aria-label="submit text" type="button" (click)="useTextSegmentation()">
-                <mat-icon class="add-text-to-record">add_circle_outline</mat-icon>
-                <span class="add-text-to-record-text">Get text from documents</span>
-            </button>
+            <div class="segmentation-options-buttons">
+                <button class="add-content-to-records" color="accent" aria-label="submit text" type="button" (click)="useTextSegmentation()">
+                    <mat-icon class="add-text-to-record">add_circle_outline</mat-icon>
+                    <span class="add-text-to-record-text">Get text from documents</span>
+                </button>
+            </div>
         </mat-expansion-panel>
     </mat-accordion>
 </mat-radio-group>

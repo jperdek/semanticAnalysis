@@ -1,9 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { MatSnackBar } from '@angular/material/snack-bar';
 import { Sort } from '@angular/material/sort';
 import { from } from 'rxjs';
 import { Observable } from 'rxjs';
-import { map } from 'rxjs/operators';
+import { catchError, map } from 'rxjs/operators';
+import { ErrorSnackbarComponent } from 'src/app/components/snackbars/error-snackbar/error-snackbar.component';
+import { InfoSnackbarComponent } from 'src/app/components/snackbars/info-snackbar/info-snackbar.component';
 import { SenseRating, SenseResult } from '../../models/senseRating';
 import { SenseApiManagerService } from '../../services/senseAnalysis/sense-api-manager.service';
 
@@ -19,7 +22,9 @@ export class SenseAnalysisComponent implements OnInit {
   private analyzedCategories: Observable<SenseResult>;
   sortedData: SenseRating[];
 
-  constructor(private formBuilder: FormBuilder, private senseApiManagerService: SenseApiManagerService) { }
+  constructor(private formBuilder: FormBuilder,
+              private matSnackBar: MatSnackBar,
+              private senseApiManagerService: SenseApiManagerService) { }
 
   public ngOnInit(): void {
     this.senseFormGroup = this.formBuilder.group({
@@ -39,24 +44,25 @@ export class SenseAnalysisComponent implements OnInit {
   public startSenseAnalysis(text: string, window: number): void {
    // this._senseApiManagerService.senseAnalysis(text, window).then(result => console.log(result)).catch(error => console.log(error));
    this.analyzedCategories = from(this.senseApiManagerService.senseAnalysis(text, window))
-   .pipe(map(results => results as SenseResult));
+   .pipe(map(results => results as SenseResult), catchError(error => {
+      ErrorSnackbarComponent.openSnackBar(this.matSnackBar, 'Error occurred during sense analysis!');
+      throw error;
+   } ));
   }
 
   public onSubmit($event: Event): void {
     if (this.senseFormGroup.valid){
       const text = this.senseFormGroup.controls.textAreaFormControl.value;
       const window = this.senseFormGroup.controls.windowFormControl.value;
-      console.log(text);
-      console.log(window);
 
+      InfoSnackbarComponent.openSnackBar(this.matSnackBar, 'Text has been send to sense analysis!');
       this.startSenseAnalysis(text, window);
     } else {
-      console.log('Error: sense analysis form is invalid!');
+      ErrorSnackbarComponent.openSnackBar(this.matSnackBar, 'Error: please fill form correctly!');
     }
   }
 
   public sortData(sort: Sort, ratings: SenseRating[]): void {
-    console.log(ratings);
     const data = ratings.slice();
     if (!sort.active || sort.direction === '') {
       this.sortedData = data;

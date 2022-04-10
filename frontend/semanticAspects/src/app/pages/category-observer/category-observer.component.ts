@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { ReadabilityAnalysisService } from '../../semanticAspects/readability/readability-analysis.service';
 
 @Component({
@@ -6,12 +6,7 @@ import { ReadabilityAnalysisService } from '../../semanticAspects/readability/re
   templateUrl: './category-observer.component.html',
   styleUrls: ['./category-observer.component.css']
 })
-export class CategoryObserverComponent implements OnInit {
+export class CategoryObserverComponent {
 
   constructor(private readabilityAnalysisService: ReadabilityAnalysisService) { }
-
-  ngOnInit(): void {
-    this.readabilityAnalysisService.test();
-  }
-
 }

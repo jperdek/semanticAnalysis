@@ -1,6 +1,8 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
+import { MatSnackBar } from '@angular/material/snack-bar';
 import { FileModel } from '../../models/fileModel';
+import { ErrorSnackbarComponent } from '../snackbars/error-snackbar/error-snackbar.component';
 
 @Component({
   selector: 'app-som-extractor',
@@ -14,7 +16,7 @@ export class SomExtractorComponent implements OnInit {
 
   somTemplateFormGroup: FormGroup;
 
-  constructor(private formBuilder: FormBuilder) { }
+  constructor(private matSnackBar: MatSnackBar, private formBuilder: FormBuilder) { }
 
   public ngOnInit(): void {
     this.somTemplateFormGroup = this.formBuilder.group({
@@ -29,12 +31,11 @@ export class SomExtractorComponent implements OnInit {
         if (this.somTemplateFile.textResult === '') {
           this.somTemplateFile.textResult = undefined;
         }
-        console.log(this.somTemplateFile);
       } else {
-        console.log('Error: som template is undefined!');
+        ErrorSnackbarComponent.openSnackBar(this.matSnackBar, 'Error: som template is undefined!');
       }
     } else {
-      console.log('Error: form for SOM template is invalid!');
+      ErrorSnackbarComponent.openSnackBar(this.matSnackBar, 'Error: please fill SOM template form correctly!');
     }
   }
 }

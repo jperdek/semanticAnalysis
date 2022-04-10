@@ -2,20 +2,11 @@ from flask import Blueprint
 from flask import g, request
 import json
 from neo4j.exceptions import ServiceUnavailable
-
-
-try:
-    from apis.http.api.middlewares import login_required
-    from apis.http.api.graphProcessing.network_manager import NetworkManager
-    from apis.http.api.database_management.init_database_drivers import CoOccurrenceNetworkManager
-    from apis.http.api.graphProcessing.co_occurrence_networks.meaning_analysis import \
-        get_concepts_with_aggregated_meanings, get_meanings_with_aggregated_concepts
-except ImportError:
-    from serverParts.apis.http.api.middlewares import login_required
-    from serverParts.apis.http.api.graphProcessing.network_manager import NetworkManager
-    from serverParts.apis.http.api.database_management.init_database_drivers import CoOccurrenceNetworkManager
-    from serverParts.apis.http.api.graphProcessing.co_occurrence_networks.meaning_analysis import \
-        get_concepts_with_aggregated_meanings, get_meanings_with_aggregated_concepts
+from middlewares import login_required
+from graphProcessing.network_manager import NetworkManager
+from database_management.init_database_drivers import CoOccurrenceNetworkManager
+from graphProcessing.co_occurrence_networks.meaning_analysis import \
+    get_concepts_with_aggregated_meanings, get_meanings_with_aggregated_concepts
     
 meaning_aggregation_api = Blueprint('meaning_aggregation_api', __name__, template_folder='templates')
 

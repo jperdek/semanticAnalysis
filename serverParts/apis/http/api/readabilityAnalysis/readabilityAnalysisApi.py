@@ -1,10 +1,6 @@
 from flask import Blueprint, request
-try:
-    from readabilityAnalysis.readability.readabilityAnalysis import ReadabilityAnalyser
-    from middlewares import login_required
-except ImportError:
-    from apis.http.api.readabilityAnalysis.readability.readabilityAnalysis import ReadabilityAnalyser
-    from apis.http.api.middlewares import login_required
+from readabilityAnalysis.readability.readabilityAnalysis import ReadabilityAnalyser
+from middlewares import login_required
 import json
 
 readability_api = Blueprint('readability_api', __name__, template_folder='templates')

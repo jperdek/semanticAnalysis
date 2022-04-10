@@ -1,6 +1,12 @@
+@media(min-width: 1000px) {
+  .visualization-component {
+    justify-content: center;
+  }
+}
+
 .visualization-component {
   display: flex;
-  justify-content: center;
+  overflow-x: scroll;
   align-items: center;
 
   table,

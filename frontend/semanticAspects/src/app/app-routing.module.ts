@@ -4,17 +4,12 @@ import { CategoryObserverComponent } from './pages/category-observer/category-ob
 import { LoginComponent } from './pages/login/login.component';
 import { Role } from './models/role';
 import { RegisterComponent } from './pages/register/register.component';
-import { OktaCallbackComponent, OktaAuthGuard } from '@okta/okta-angular';
+import { OktaCallbackComponent } from '@okta/okta-angular';
 import { SenseAnalysisComponent } from './pages/sense-analysis/sense-analysis.component';
 import { SegmentationAnalysisComponent } from './pages/segmentation-analysis/segmentation-analysis.component';
 import { AutomatizationComponent } from './pages/automatization/automatization.component';
+import { AuthGuardService } from './services/authentification/auth-guard.service';
 
-const oktaConfig = {
-  issuer: 'https://dev-03853854.okta.com',
-  clientId: '0oa19wfjhrBoVLqSw5d7',
-  redirectUri: window.location.origin + '/lcallback',
-  scope: 'openid profile email'
-};
 
 const routes: Routes = [
   {
@@ -27,8 +22,8 @@ const routes: Routes = [
   },
   {
     path: 'analyser',
-    canLoad: [OktaAuthGuard],
-    canActivate: [OktaAuthGuard],
+    canLoad: [AuthGuardService],  // OktaAuthGuard can be used => import { OktaAuthGuard } from '@okta/okta-angular';
+    canActivate: [AuthGuardService],
     data: {
       roles: [
         Role.Admin,
@@ -49,8 +44,6 @@ const routes: Routes = [
   },
   {
     path: 'automatization',
-    //canLoad: [OktaAuthGuard],
-    //canActivate: [OktaAuthGuard],
     data: {
       roles: [
         Role.Admin,
@@ -67,8 +60,8 @@ const routes: Routes = [
   },
   {
     path: 'segmentation',
-    canLoad: [OktaAuthGuard],
-    canActivate: [OktaAuthGuard],
+    canLoad: [AuthGuardService],
+    canActivate: [AuthGuardService],
     data: {
       roles: [
         Role.Admin,

@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { ReadabilityIndexes } from 'src/app/models/readability';
 
 
@@ -7,13 +7,8 @@ import { ReadabilityIndexes } from 'src/app/models/readability';
   templateUrl: './readability-visualization.component.html',
   styleUrls: ['./readability-visualization.component.scss']
 })
-export class ReadabilityVisualizationComponent implements OnInit {
+export class ReadabilityVisualizationComponent {
 
   @Input()
   readabilityIndexes: ReadabilityIndexes;
-
-  constructor() { }
-
-  ngOnInit(): void {
-  }
 }

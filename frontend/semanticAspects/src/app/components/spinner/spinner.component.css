@@ -1,0 +1,22 @@
+.spinner-outer-part {
+  position: relative;
+}
+
+.spinner-window {
+  display: grid;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  justify-items: center;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw !important;
+  height: 100vh !important;
+  z-index: 100;
+  background: rgba(169, 169, 169, 0.7);
+}
+
+.spinner-progress {
+}

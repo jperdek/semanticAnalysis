@@ -1,4 +1,4 @@
-import { ReadabilityIndexes } from "./readability";
+import { ReadabilityIndexes } from './readability';
 
 export interface AutomatizationResult {
     fileName: string;
@@ -13,4 +13,5 @@ export interface AutomatizationResult {
     mappings: any[];
     readability_metrics: any;
     readability_indexes: ReadabilityIndexes;
+    co_occurrence_aggregations: any;
 }

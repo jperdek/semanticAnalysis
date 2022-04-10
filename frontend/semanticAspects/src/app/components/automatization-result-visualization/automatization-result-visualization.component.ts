@@ -19,7 +19,6 @@ export class AutomatizationResultVisualizationComponent implements OnInit {
   }
 
   public sortData(sort: Sort, ratings: SenseRating[]): SenseRating[] {
-    console.log(ratings);
     const data = ratings.slice();
     if (!sort.active || sort.direction === '') {
       const newData1 = data;

@@ -1,8 +1,5 @@
 import os
-try:
-    from apis.http.api.graphProcessing.network_manager import NetworkManager
-except ImportError:
-    from serverParts.apis.http.api.graphProcessing.network_manager import NetworkManager
+from graphProcessing.network_manager import NetworkManager
 
 
 class CoOccurrenceNetworkManager(NetworkManager):

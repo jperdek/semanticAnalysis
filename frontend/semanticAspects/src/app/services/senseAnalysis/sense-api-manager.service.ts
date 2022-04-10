@@ -15,7 +15,7 @@ export class SenseApiManagerService {
     const httpParameters = new HttpParams()
       .set('text', analyzedText)
       .set('k', window.toString());
-    console.log(httpParameters.toString());
+
     return this.authManagerService.perform('get', this.senseApiPart, httpParameters);
   }
 }

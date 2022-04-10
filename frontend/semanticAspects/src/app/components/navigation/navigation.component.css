@@ -2,10 +2,6 @@
     flex: 1 1 auto;
   }
 
-.mat-drawer{
-    width: 20%;   
-}
-
 .mat-drawer-container {
     position: static;
 }
@@ -14,4 +10,32 @@
     width: auto;
     margin-left: 0.5rem;
     margin-right: 0.5rem;
+}
+
+span.header {
+    margin-left: 20px;
+}
+
+.mat-drawer{
+    width: 350px;   
+}
+
+@media(min-width: 900px) {  
+    .menu-buttons {
+        display: block;
+    }
+
+    .burger-menu-part {
+        display: none;
+    }
+}
+
+@media(max-width: 900px){
+    .menu-buttons {
+        display: none;
+    }
+
+    .burger-menu-part {
+        display: block;
+    }
 }

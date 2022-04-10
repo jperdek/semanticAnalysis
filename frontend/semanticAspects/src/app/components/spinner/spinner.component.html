@@ -1,0 +1,14 @@
+<div class="spinner-outer-part" *ngIf="visibility">
+    <mat-card class="spinner-window">
+        <mat-card-content>
+        <h2 class="example-h2">Please wait...</h2>
+    
+        <mat-progress-spinner
+            class="spinner-progress"
+            color="primary"
+            mode="indeterminate"
+            value="50">
+        </mat-progress-spinner>
+        </mat-card-content>
+    </mat-card>
+</div>

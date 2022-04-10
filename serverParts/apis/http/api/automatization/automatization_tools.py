@@ -4,11 +4,7 @@ from typing import Optional
 
 from bs4 import BeautifulSoup
 from flask import send_from_directory
-
-try:
-    from apis.http.api.segmentationAnalysis.pageAnalyser.SOMExtractor import SOMBeautifulSoup
-except ImportError:
-    from serverParts.apis.http.api.segmentationAnalysis.pageAnalyser.SOMExtractor import SOMBeautifulSoup
+from segmentationAnalysis.pageAnalyser.SOMExtractor import SOMBeautifulSoup
 
 
 def verify_html(text):

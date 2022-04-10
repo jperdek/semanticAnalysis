@@ -29,6 +29,27 @@
   }
 }
 
+.segmentation-options-buttons {
+  display: flex;
+  justify-content: right;
+  justify-items: right;
+
+  .add-content-to-records {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    border-radius: 25px;
+    height: 2.5rem;
+
+    .add-text-to-record {
+      display: block;
+      text-align: right;
+      word-wrap: break-word;
+      margin-left: 16px;
+    }
+  }
+}
+
 .analyze-som-template {
   display: flex;
   flex-direction: column;

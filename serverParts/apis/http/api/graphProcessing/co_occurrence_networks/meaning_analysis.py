@@ -1,11 +1,6 @@
 import string
-
-try:
-    from apis.http.api.graphProcessing.network_manager import get_properties, NetworkManager
-    from apis.http.api.textUnderstanding.textPreprocessing import POSTagging
-except ImportError:
-    from serverParts.apis.http.api.graphProcessing.network_manager import get_properties, NetworkManager
-    from serverParts.apis.http.api.textUnderstanding.textPreprocessing import POSTagging
+from graphProcessing.network_manager import get_properties, NetworkManager
+from textUnderstanding.textPreprocessing import POSTagging
 
 
 def aggregate_meaning_to_dict(returned_meanings: any) -> list:

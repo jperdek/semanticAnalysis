@@ -1,4 +1,3 @@
-
 from nltk.tokenize import sent_tokenize
 from readability import Readability
 from readability.exceptions import ReadabilityException

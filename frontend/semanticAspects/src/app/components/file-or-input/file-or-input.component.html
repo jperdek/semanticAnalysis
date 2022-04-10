@@ -5,11 +5,11 @@
       <mat-divider class="divider-block">{{index}}</mat-divider>
       <div class="loaded-file-block">
         <form  (ngSubmit)="updateRecord($event, index, loadedFile)">
-          <mat-form-field class="example-full-width" appearance="fill">
-            <mat-label>Record name</mat-label>
-            <input  matInput  name="recordName{{index}}" placeholder="Ex. ecommerce.txt" value="{{loadedFile.name}}"/>
-          </mat-form-field>
-        
+            <mat-form-field class="record-file-name" appearance="fill">
+              <mat-label>Record name</mat-label>
+              <input  matInput  name="recordName{{index}}" placeholder="Ex. ecommerce.txt" value="{{loadedFile.name}}"/>
+            </mat-form-field>
+  
           <span>{{loadedFile.size}}</span>
 
           <button mat-icon-button color="primary" aria-label="submit text" type="button" (click)="processShowingFile(loadedFile);" >

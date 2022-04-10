@@ -1,28 +1,29 @@
-<div class="wholesenseAnalysisPanel">
-  <mat-card class="senseAnalysisCard">
+<div class="whole-sense-analysis-panel">
+  <div class="sense-analysis-card-wrapper">
+  <mat-card class="sense-analysis-card">
     <mat-card-header>
       <div mat-card-avatar class="example-header-image"></div>
-      <mat-card-title class="senseAnalysisTitle">Sense analysis</mat-card-title>
+      <mat-card-title class="sense-analysis-title">Sense analysis</mat-card-title>
       <mat-card-subtitle class="senseAnalysisSubtitle">probable meaning of this text</mat-card-subtitle>
-      <img class="senseAnalysisExample" src="/assets/images/senseAnalysisImage.svg" alt="sense analysis example" />
+      <img class="sense-analysis-image" src="/assets/images/senseAnalysisImage.svg" alt="sense analysis example" />
     </mat-card-header>
     <mat-card-content>
       <form [formGroup]="senseFormGroup" (ngSubmit)="onSubmit($event)">
-          <div class="fullTextPanel" appearance="fill">
+          <div class="full-text-panel" appearance="fill">
             <textarea class="inputTextSenseAnalysis" matInput
               formControlName="textAreaFormControl"
               placeholder="Ex. This text is good to process for many reasons"></textarea>
           </div>
-          <div class="senseAnalyzerConfigurablePart">
-            <div class="senseAnalyzerHint">
-              <span class="hintText">Hint</span><br/>
-              <ul class="hintTextContent">
+          <div class="sense-analyzer-configurable-part">
+            <div class="sense-analyzer-hint">
+              <span class="hint-text">Hint</span><br/>
+              <ul class="hint-text-content">
                 <li>Text should be written in english.</li>
                 <li>Use low windows values for short text and hight for longer text.</li>
                 <li>For longer texts, result should be more accurate.</li>
               </ul>
             </div>
-            <div class="senseAnalyzerWindows">
+            <div class="sense-analyzer-windows">
               <div class="senseAnalyzerWindowSliderText">Number words which should be analyzed:</div>
               <mat-slider class="senseAnalysisSlider"
                   formControlName="windowFormControl"
@@ -37,11 +38,12 @@
             </div>
           </div>
           
-          <button mat-button class="submitButtonSenseAnalysis" type="submit">Analyze text!</button>
+          <button mat-button class="submit-button-sense-analysis" type="submit">Analyze text!</button>
         </form>
     </mat-card-content>
   </mat-card>
-  <mat-card class="senseAnalysisResult" *ngIf="(getAnalyzedCategories() | async) as analyzedCategories">
+</div>
+  <mat-card class="sense-analysis-result" *ngIf="(getAnalyzedCategories() | async) as analyzedCategories">
     <table matSort (matSortChange)="sortData($event, analyzedCategories.results)">
       <tr>
         <th mat-sort-header="category">Category</th>

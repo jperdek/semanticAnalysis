@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { MatSnackBar } from '@angular/material/snack-bar';
+import { ErrorSnackbarComponent } from 'src/app/components/snackbars/error-snackbar/error-snackbar.component';
 import { FileModel } from 'src/app/models/fileModel';
 import { SharedFilesForAnalysisService } from 'src/app/services/shared-files-for-analysis.service';
 
@@ -13,7 +15,7 @@ export class FileUploadComponent implements OnInit {
   filesToUpload: FileList | null = null;
   uploadedFiles: any[] = [];
 
-  constructor() { }
+  constructor(private matSnackBar: MatSnackBar) { }
 
   public ngOnInit(): void {
     SharedFilesForAnalysisService.setReference(this.uploadedFiles);
@@ -21,21 +23,17 @@ export class FileUploadComponent implements OnInit {
 
   public handleFileInput(files: FileList): void {
       this.filesToUpload = files;
-      this.printContent(files);
+      this.printContent();
 
       this.uploadFilesSimulator(0);
   }
 
-  public printContent(files: FileList): void{
+  public printContent(): void{
     for (let i = 0; i < this.filesToUpload.length; i++){
       const processedFile: FileModel = this.filesToUpload.item(i) as FileModel;
       processedFile.progress = 0;
       processedFile.showed = false;
       this.uploadedFiles.push(processedFile);
-      console.log(processedFile.type); // obtain type - not available
-      // console.log(processedFile.text().then(value=> { console.log(value)})); // obtain content
-      console.log(processedFile.name); // obtain name
-      // console.log(processedFile.arrayBuffer().then(value => { console.log(value)})); // obtain buffer with data
     }
   }
 
@@ -49,7 +47,7 @@ export class FileUploadComponent implements OnInit {
 
   public deleteFile(index: number): void {
     if (this.uploadedFiles[index].progress < 100) {
-      console.log('Erro: Cannot delete file, because upload is in progress.');
+      ErrorSnackbarComponent.openSnackBar(this.matSnackBar, 'Error: Cannot delete file, because upload is in progress.');
       return;
     }
     this.uploadedFiles.splice(index, 1);
@@ -81,7 +79,6 @@ export class FileUploadComponent implements OnInit {
       processedFile.progress = 0;
       this.uploadedFiles.push(processedFile);
     }
-   // this.fileDropEl.nativeElement.value = "";
     this.uploadFilesSimulator(0);
   }
 

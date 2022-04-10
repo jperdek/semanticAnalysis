@@ -60,7 +60,6 @@ export class UserFeedbackComponent implements OnInit {
   }
 
   public onRate(rating: number): void {
-    console.log(rating);
     this.starRating = rating;
   }
 }

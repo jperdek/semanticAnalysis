@@ -1,29 +1,17 @@
 import sys
-
 from flask import Flask, g
 import flask_cors
-try:
-    from apis.http.api.senseAnalysis.categorization.senseTextProcess import SemcorAnalyser
-    from apis.http.api.senseAnalysis.senseAnalysisApi import sense_api, load_local_json_file
-    from apis.http.api.readabilityAnalysis.readabilityAnalysisApi import readability_api
-    from apis.http.api.segmentationAnalysis.segmentationAnalysisApi import segmentation_api
-    from apis.http.api.keywordAnalysis.keywordAnalysisApi import keywords_api
-    from apis.http.api.automatization.automatizationApi import automatization_api
-    from apis.http.api.textUnderstanding import clustersFile
-    from apis.http.api.textUnderstanding.affinity import AffinityHelper
-    from apis.http.api.textUnderstanding.textUnderstandingApi import text_understanding_api, load_local_picle_file
-    from apis.http.api.textUnderstanding.meaningAggregationApi import meaning_aggregation_api
-except ImportError:
-    from senseAnalysis.categorization.senseTextProcess import SemcorAnalyser
-    from senseAnalysis.senseAnalysisApi import sense_api, load_local_json_file
-    from readabilityAnalysis.readabilityAnalysisApi import readability_api
-    from segmentationAnalysis.segmentationAnalysisApi import segmentation_api
-    from keywordAnalysis.keywordAnalysisApi import keywords_api
-    from automatization.automatizationApi import automatization_api
-    from textUnderstanding import clustersFile
-    from textUnderstanding.affinity import AffinityHelper
-    from textUnderstanding.textUnderstandingApi import text_understanding_api, load_local_picle_file
-    from textUnderstanding.meaningAggregationApi import meaning_aggregation_api
+
+from senseAnalysis.categorization.senseTextProcess import SemcorAnalyser
+from senseAnalysis.senseAnalysisApi import sense_api, load_local_json_file
+from readabilityAnalysis.readabilityAnalysisApi import readability_api
+from segmentationAnalysis.segmentationAnalysisApi import segmentation_api
+from keywordAnalysis.keywordAnalysisApi import keywords_api
+from automatization.automatizationApi import automatization_api
+from textUnderstanding import clustersFile
+from textUnderstanding.affinity import AffinityHelper
+from textUnderstanding.textUnderstandingApi import text_understanding_api, load_local_picle_file
+from textUnderstanding.meaningAggregationApi import meaning_aggregation_api
 
 
 app = Flask(__name__, static_url_path='',
@@ -53,7 +41,7 @@ def startup():
     g.text_categories_tfidf_pickle = load_local_picle_file('tfidf_text_categories.pickle')
     g.affinity_helper = AffinityHelper(clustersFile.clusters, sample_normalized_values_dict)
     g.semcorAnalyser = SemcorAnalyser(domain_parts, semcor_frequencies, True)
-    print('preparation completed successfully!')
+    print('Preparation completed successfully!')
 
 
 def launch():

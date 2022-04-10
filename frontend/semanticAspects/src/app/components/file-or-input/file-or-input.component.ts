@@ -1,6 +1,8 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { FormArray, FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { MatSnackBar } from '@angular/material/snack-bar';
 import { FileModel } from '../../models/fileModel';
+import { ErrorSnackbarComponent } from '../snackbars/error-snackbar/error-snackbar.component';
 
 @Component({
   selector: 'app-file-or-input',
@@ -15,7 +17,7 @@ export class FileOrInputComponent implements OnInit {
   addFileFormGroup: FormGroup;
   updateFileFormGroup: FormArray;
 
-  constructor(private formBuilder: FormBuilder) {}
+  constructor(private formBuilder: FormBuilder, private matSnackBar: MatSnackBar) {}
 
   public ngOnInit(): void {
     this.addFileFormGroup = this.formBuilder.group({
@@ -53,7 +55,7 @@ export class FileOrInputComponent implements OnInit {
       this.files.push(fileModel);
       this.addFileFormGroup.reset();
     } else {
-      console.log('Error: form for adding file is invalid!');
+      ErrorSnackbarComponent.openSnackBar(this.matSnackBar, 'Error: form for adding file is invalid!');
     }
 
     this.files.forEach(file => console.log(file.name));
@@ -64,7 +66,7 @@ export class FileOrInputComponent implements OnInit {
 
   public updateRecord($event: Event, index: number, fileModel: FileModel): void {
     if (fileModel.textResult === undefined) {
-      console.log('Please load content of file before saving hiting eye button');
+      ErrorSnackbarComponent.openSnackBar(this.matSnackBar, 'Please load content of file before saving hiting eye button');
       return;
     }
 
@@ -104,14 +106,14 @@ export class FileOrInputComponent implements OnInit {
   }
 
   public processShowingFile(loadedFile: FileModel): void {
-    console.log(loadedFile.type);
     if (loadedFile.progress === 100 && (loadedFile.type === 'text/plain' || loadedFile.type === 'text/html')){
       this.getFileContent(loadedFile);
       loadedFile.showed = true;
     } else if (loadedFile.progress !== 100) {
-      console.log('Error: files are not loaded');
+      ErrorSnackbarComponent.openSnackBar(this.matSnackBar, 'Error: files are not loaded');
     } else if (loadedFile.type !== 'text/plain') {
-      console.log('Error: type of content is not plain text! Type of content is: ' + loadedFile.type);
+      ErrorSnackbarComponent.openSnackBar(this.matSnackBar,
+        'Error: type of content is not plain text! Type of content is: ' + loadedFile.type);
     }
   }
 }

@@ -7,10 +7,14 @@ import { AutomatizationResult } from 'src/app/models/automatizationResult';
 import { ReadabilityAnalysisService } from 'src/app/semanticAspects/readability/readability-analysis.service';
 import { ReadabilityIndexes } from 'src/app/models/readability';
 import { LoggingService } from 'src/app/services/logging/logging.service';
-import { SuccessSnackbarComponent } from 'src/app/components/snackbars/success-snackbar/success-snackbar.component';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { InfoSnackbarComponent } from 'src/app/components/snackbars/info-snackbar/info-snackbar.component';
 import { UserFeedbackComponent } from 'src/app/components/snackbars/user-feedback/user-feedback.component';
+import { ErrorSnackbarComponent } from 'src/app/components/snackbars/error-snackbar/error-snackbar.component';
+import { environment } from 'src/environments/environment';
+import { SuccessSnackbarComponent } from 'src/app/components/snackbars/success-snackbar/success-snackbar.component';
+import { CategoryRating } from 'src/app/models/category';
+import { Aggregation, AggregationRepresentants } from 'src/app/models/aggregation';
 
 
 @Component({
@@ -28,6 +32,7 @@ export class AutomatizationComponent implements OnInit {
               private matSnackBar: MatSnackBar) {}
 
   isLinear = false;
+  spinnerVisibility = false;
   senseFormGroup: FormGroup;
   fileFormGroup: FormGroup;
   automatizationResults: AutomatizationResult[] = [];
@@ -46,9 +51,6 @@ export class AutomatizationComponent implements OnInit {
   }
 
   public deleteAutomatizedResult(automatizedResultIndex: number): void {
-    console.log(automatizedResultIndex);
-    console.log(this.automatizationResults[automatizedResultIndex]);
-
     this.automatizationResults = this.automatizationResults.splice(automatizedResultIndex + 1, 1);
   }
 
@@ -86,27 +88,36 @@ export class AutomatizationComponent implements OnInit {
       links: automatizationResultData.links,
       mappings: automatizationResultData.mappings,
       readability_metrics: automatizationResultData.readability_metrics,
-      readability_indexes: automatizationResultData.readability_indexes
+      readability_indexes: automatizationResultData.readability_indexes,
+      co_occurrence_aggregations: automatizationResultData.co_occurrence_aggregations
     };
   }
 
   public applyAutomatization(): void {
     InfoSnackbarComponent.openSnackBar(this.matSnackBar, 'Started processing files. Please wait!');
-    console.log(SharedFilesForAnalysisService.getUploadedFiles()[0]);
     if (SharedFilesForAnalysisService.getUploadedFiles()[0] !== undefined) {
+        this.spinnerVisibility = true;
         SharedFilesForAnalysisService.getUploadedFilesAsync(this.matSnackBar).then(uploadedFiles => {
           uploadedFiles.forEach((uploadedFile: FileModel, index: number) => {
             this.automatizationService.automatizationRequest(
               uploadedFile.textResult, uploadedFile.name).then((automatizationResultData: AutomatizationResult) => {
                 const automatizationResult: AutomatizationResult = this.copyAutomatizationResultData(automatizationResultData);
-                // automatizationResult.unprocessed_text = uploadedFile.textResult;
+                if (automatizationResult.co_occurrence_aggregations !== null && automatizationResult.co_occurrence_aggregations !== undefined) {
+                  automatizationResult.co_occurrence_aggregations = this.getAggregationsStructure(
+                    automatizationResult.co_occurrence_aggregations);
+                }
                 automatizationResult.readability_indexes = this.analyzeReadabilityMetris(uploadedFile.textResult);
-                console.log(automatizationResult);
+                if (environment.debug){ console.log(automatizationResult); }
                 this.automatizationResults.push(automatizationResult);
                 SuccessSnackbarComponent.openSnackBar(this.matSnackBar, 'File: ' + uploadedFile.name + ' has been loaded!');
+                this.spinnerVisibility = false;
                 if (index === uploadedFiles.length - 1) {
                   setTimeout(() => this.getFeedback(uploadedFile), 1000);
                 }
+            }).catch(error => {
+              this.spinnerVisibility = false;
+              if (environment.debug){ console.log(error); }
+              ErrorSnackbarComponent.openSnackBar(this.matSnackBar, 'Error occurred while loading file: ' + uploadedFile.name + '! Try again!');
             });
           });
         });
@@ -116,71 +127,32 @@ export class AutomatizationComponent implements OnInit {
   private getFeedback(fileModel: FileModel): void {
     UserFeedbackComponent.openSnackBar(this.feedbackBar, 'Provide your feedback', this.loggingeService, fileModel);
   }
-  public formatScoreLabel(value: number): number {
-    return AutomatizationComponent.roundNumberToPlaces(value, 2);
+
+  private capitalize(word: string): string {
+    return word[0].toUpperCase() + word.slice(1).toLowerCase();
   }
 
-  public getMinScore(text: string): number {
-    let minScore = 10000000;
-    const scores = text.match(/score=([\"\'][^\"\']+[\"\'])/g);
-    if (scores !== null) {
-      for (const scoreString of scores){
-          const score = Number(scoreString.split('"')[1]);
-          if (minScore > score) {
-              minScore = score;
-          }
+  public getAggregationsStructure(aggregationsDictionary: any): any[] {
+    let key: string;
+    let value: any;
+    const aggregationsStructure: any[] = [];
+    for ([key, value] of Object.entries(aggregationsDictionary)) {
+      aggregationsStructure.push({name: this.capitalize(key.split('_').join(' ')), data: this.convertAggregation(value)});
+    }
+    return aggregationsStructure;
+  }
+
+  private convertAggregation(aggregations: Aggregation[]): AggregationRepresentants[] {
+    let category: string;
+    let value: any;
+    const aggregationRepresentants: AggregationRepresentants[] = [];
+    aggregations.forEach(aggregation => {
+      const categoryRatings: CategoryRating[] = [];
+      for ([category, value] of Object.entries(aggregation.matched)) {
+        categoryRatings.push({category, value: Number(value)});
       }
-    }
-    return minScore;
-  }
-
-  public getMaxScore(text: string): number {
-    let maxScore = 0.0;
-    const scores = text.match(/score=([\"\'][^\"\']+[\"\'])/g);
-
-    if (scores !== null) {
-      for (const scoreString of scores){
-          const score = Number(scoreString.split('"')[1]);
-          if (maxScore < score) {
-              maxScore = score;
-          }
-      }
-    }
-    return maxScore;
-  }
-
-  public scoreOnSlideChange1(threshold: number, automatizationResult: AutomatizationResult): void {
-    let finalString = '';
-    const tagParts = automatizationResult.analyzed_text.match(
-      /([^<])+<\s*p\s+score=[\"\'][^\"\']+[\"\']\s+class=[\"\'][^\"\']+[\"\']\s*>[^<]+<\s*\/p\s*>/g);
-    console.log(tagParts);
-    for (const tagPart of tagParts){
-        const score = Number(tagPart.split('score="')[1].split('"')[0]);
-        console.log(tagPart);
-        if (score >= threshold) {
-            finalString = finalString + tagPart.replace(/class=[\"\'][^\"\']+[\"\']/, 'class="relevant-word chosen-relevant-word"');
-        } else {
-          finalString = finalString + tagPart.replace(/class=[\"\'][^\"\']+[\"\']/, 'class="relevant-word deny-relevant-word"');
-        }
-    }
-    automatizationResult.analyzed_text = finalString;
-  }
-
-  public scoreOnSlideChange(threshold: number, automatizationResult: AutomatizationResult): void {
-    const domParser = new DOMParser();
-    const htmlElement = domParser.parseFromString('<div id="DOMWRAP">' + automatizationResult.analyzed_text + '</div>', 'text/html');
-    const relevantElements = htmlElement.getElementsByClassName('relevant-word');
-
-    Array.from(relevantElements).forEach((relevantElement: Element) => {
-        const score = Number(relevantElement.getAttribute('score'));
-        if (score >= threshold) {
-          relevantElement.classList.add('chosen-relevant-word');
-          relevantElement.classList.remove('deny-relevant-word');
-        } else {
-          relevantElement.classList.add('deny-relevant-word');
-          relevantElement.classList.remove('chosen-relevant-word');
-        }
+      aggregationRepresentants.push({meaning: aggregation.meaning, representants: categoryRatings});
     });
-    automatizationResult.analyzed_text = htmlElement.getElementById('DOMWRAP').innerHTML;
+    return aggregationRepresentants;
   }
 }

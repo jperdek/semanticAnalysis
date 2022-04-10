@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { Sort } from '@angular/material/sort';
 import { CategoryRating } from 'src/app/models/category';
 
@@ -8,18 +8,14 @@ import { CategoryRating } from 'src/app/models/category';
   templateUrl: './table-categories-visualization.component.html',
   styleUrls: ['./table-categories-visualization.component.scss']
 })
-export class TableCategoriesVisualizationComponent implements OnInit {
+export class TableCategoriesVisualizationComponent {
 
   @Input()
   categoryRating: CategoryRating[];
 
   constructor() { }
 
-  ngOnInit(): void {
-  }
-
   public sortData(sort: Sort, ratings: CategoryRating[]): CategoryRating[] {
-    console.log(ratings);
     const data = ratings.slice();
     if (!sort.active || sort.direction === '') {
       const newData1 = data;

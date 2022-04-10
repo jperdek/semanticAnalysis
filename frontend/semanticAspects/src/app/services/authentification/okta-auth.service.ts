@@ -2,6 +2,8 @@ import { Observable, Observer } from 'rxjs';
 import { Injectable } from '@angular/core';
 import { Router } from '@angular/router';
 import { OktaAuth, IDToken, AccessToken } from '@okta/okta-auth-js';
+import { environment } from 'src/environments/environment';
+
 
 // https://developer.okta.com/blog/2019/03/25/build-crud-app-with-python-flask-angular
 // https://developer.okta.com/code/angular/okta_angular_auth_js/#create-an-authentication-service
@@ -15,10 +17,10 @@ export class OktaAuthService {
   // Replace {yourOktaDomain} with your actual Okta domain
   // If using a custom authorization server, ISSUER should be 'https://{yourOktaDomain}/oauth2/${authServerId}'
 
-  CLIENT_ID = '0oa19wfjhrBoVLqSw5d7';
-  ISSUER = 'https://dev-03853854.okta.com';
-  LOGIN_REDIRECT_URI = 'http://localhost:4200/lcallback';
-  LOGOUT_REDIRECT_URI = 'http://localhost:4200/';
+  CLIENT_ID = environment.octa_data.client_id;
+  ISSUER = environment.octa_data.issuer;
+  LOGIN_REDIRECT_URI = environment.octa_data.login_redirect_uri;
+  LOGOUT_REDIRECT_URI = environment.octa_data.logout_redirect_uri;
 
   oktaAuth = new OktaAuth({
     clientId: this.CLIENT_ID,
@@ -43,12 +45,12 @@ export class OktaAuthService {
     return !!(await this.oktaAuth.tokenManager.get('accessToken'));
   }
 
-  public login(originalUrl: string): void {
+  public login(originalUrl: string): Promise<void> {
     // Save current URL before redirect
     sessionStorage.setItem('okta-app-url', originalUrl || this.router.url);
 
     // Launches the login redirect.
-    this.oktaAuth.token.getWithRedirect({
+    return this.oktaAuth.token.getWithRedirect({
       scopes: ['openid', 'email', 'profile']
     });
   }
@@ -65,7 +67,7 @@ export class OktaAuthService {
 
     // Retrieve the saved URL and navigate back
     const url = sessionStorage.getItem('okta-app-url') as string;
-    console.log(url);
+
     this.router.navigateByUrl(url);
   }
 

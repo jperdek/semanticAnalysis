@@ -26,7 +26,7 @@ import { MatStepperModule } from '@angular/material/stepper';
 import { CdkStepperModule } from '@angular/cdk/stepper';
 import { MatSortModule } from '@angular/material/sort';
 import { MatRadioModule } from '@angular/material/radio';
-
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 
 
 const MaterialComponents = [
@@ -60,6 +60,7 @@ const MaterialComponents = [
   MatStepperModule,
   MatSortModule,
   MatRadioModule,
+  MatProgressSpinnerModule
 ];
 
 @NgModule({

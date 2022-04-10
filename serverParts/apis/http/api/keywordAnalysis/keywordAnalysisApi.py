@@ -1,10 +1,6 @@
 from flask import Blueprint, request
-try:
-    from keywordAnalysis.keywordExtraction import keywordExtractionMethods
-    from middlewares import login_required
-except ImportError:
-    from apis.http.api.keywordAnalysis.keywordExtraction import keywordExtractionMethods
-    from apis.http.api.middlewares import login_required
+from keywordAnalysis.keywordExtraction import keywordExtractionMethods
+from middlewares import login_required
 import json
 
 keywords_api = Blueprint('keyword_analysis_api', __name__, template_folder='templates')

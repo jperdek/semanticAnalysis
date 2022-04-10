@@ -16,6 +16,7 @@ export class AutomatizationService {
     const additionalHeaders = { use_html_tags: 'true'};
     const httpParameters = new HttpParams().set('fileName', fileName);
 
-    return this.authManagerService.perform('post', this.automatizationApiPart, httpParameters, content, additionalHeaders);
+    return this.authManagerService.perform(
+      'post', this.automatizationApiPart, httpParameters, content, additionalHeaders, true);
   }
 }

@@ -2,7 +2,7 @@
     <form  [formGroup]="somTemplateFormGroup"  (ngSubmit)="updateSOMTemplateFile()">
         <div class="som-template-content-field" appearance="outline">
             <h1 class="main-heading" >SOM template</h1>
-            <textarea class="record-content-field" matInput name="somTemplateFormControl" formControlName="somTemplateFormControl"
+            <textarea class="record-content-field" matInput name="somTemplateFormControl" formControlName="somTemplateFormControl" [(ngModel)]="somTemplateFile.textResult"
             placeholder='Ex. {"1/[document]": {"tag": "[document]", "count": 1, "flag": false, "children": {"0/html"'>{{somTemplateFile?.textResult}}</textarea>
         </div>
         <span class="update-extracted-information-span">

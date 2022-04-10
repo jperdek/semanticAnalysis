@@ -1,0 +1,19 @@
+<div>
+    <div class="aggregation-header">
+        <h2 class="aggregation-name">{{aggregationName}}</h2>
+    </div>
+    <mat-accordion class="aggregation-content">
+        <mat-expansion-panel hideToggle  *ngFor="let aggregationRepresentant of aggregationRepresentants">
+            <mat-expansion-panel-header>
+                <mat-panel-title class="expansion-panel-title">
+                    {{aggregationRepresentant.meaning}}
+                </mat-panel-title>
+                <mat-panel-description class="expansion-panel-description">
+                    
+                </mat-panel-description>
+            </mat-expansion-panel-header>
+            <app-table-categories-visualization [categoryRating]="aggregationRepresentant.representants"></app-table-categories-visualization>
+        </mat-expansion-panel>
+    </mat-accordion>
+</div>
+

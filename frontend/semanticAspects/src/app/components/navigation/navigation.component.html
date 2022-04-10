@@ -1,19 +1,21 @@
 <mat-toolbar color="primary">
     <mat-toolbar-row>
-        <button mat-icon-button (click)="sidenav.toggle()" fxShow="true" fxHide.gt-sm>
-            <mat-icon>menu</mat-icon>
-        </button>
-        <span>Semantic aspects</span>
+        <span class="header">Semantic aspects</span>
 
         <span class="menu-spacer"></span>
-        <div fxShow="true" fxHide.lt-md>
+        <div class="menu-buttons">
+            <button class="menu-component-item" color="accent" mat-icon-button id="register" 
+                [routerLink]="'/register'" *ngIf="useOcta && !isLogged()">
+                <mat-icon>account_circle</mat-icon>
+                <span>Register</span>
+            </button>
             <button class="menu-component-item" color="accent" mat-icon-button id="login" 
-                [routerLink]="'/login'">
+                [routerLink]="'/login'" *ngIf="useOcta && !isLogged()">
                 <mat-icon>account_circle</mat-icon>
                 <span>Login</span>
             </button>
             <button class="menu-component-item" color="accent" mat-icon-button id="logout"
-                (click)="logout()">
+                (click)="logout()" *ngIf="useOcta && isLogged()">
                 <mat-icon>account_circle</mat-icon>
                 <span>Logout</span>
             </button>
@@ -32,16 +34,26 @@
                 <span>Text analyser</span>
             </button>
         </div>
+        <span class="menu-spacer burger-menu-part"></span>
+        <button mat-icon-button (click)="sidenav.toggle()" fxShow="true" fxHide.gt-sm class="burger-menu-part">
+            <mat-icon>menu</mat-icon>
+        </button>
     </mat-toolbar-row>
 </mat-toolbar>
 <mat-sidenav-container fxFlexFill>
     <mat-sidenav #sidenav>
         <mat-nav-list>
             <a (click)="sidenav.toggle()"
-            [routerLink]="'/login'" mat-list-item><mat-icon>account_circle</mat-icon>
+            [routerLink]="'/register'" *ngIf="useOcta && !isLogged()" mat-list-item><mat-icon>account_circle</mat-icon>
+            <span>Register</span></a>
+            <a (click)="sidenav.toggle()"
+            [routerLink]="'/login'" *ngIf="useOcta && !isLogged()" mat-list-item><mat-icon>account_circle</mat-icon>
             <span>Login</span></a>
-            <a (click)="sidenav.toggle(); logout()" mat-list-item><mat-icon>account_circle</mat-icon>
+            <a (click)="sidenav.toggle(); logout()" *ngIf="useOcta && isLogged()" mat-list-item><mat-icon>account_circle</mat-icon>
             <span>Logout</span></a>
+            <a (click)="sidenav.toggle()"
+            [routerLink]="'/automatization'" mat-list-item><mat-icon>account_circle</mat-icon>
+            <span>Automatization</span></a>
             <a (click)="sidenav.toggle();" mat-list-item [routerLink]="'/analyser/senseAnalysis'"><mat-icon>edit</mat-icon>
                 <span>Sense analysis</span></a>
             <a (click)="sidenav.toggle()"
