@@ -26,7 +26,7 @@ export class RegisterComponent implements OnInit {
     this.form = new FormGroup({
       name: new FormControl('', [Validators.required]),
       password: new FormControl('', [Validators.required]),
-      email: new FormControl('', [Validators.required]),
+      email: new FormControl('', [Validators.required, Validators.email]),
       confirmPassword: new FormControl('', [Validators.required]),
     });
   }
@@ -47,7 +47,12 @@ export class RegisterComponent implements OnInit {
         role: Role.User,
      };
       InfoSnackbarComponent.openSnackBar(this.matSnackBar, 'Registering...');
-      this.oktaRegisterService.registerUser(user, password);
+      try{
+        this.oktaRegisterService.registerUser(user, password);
+      } catch (error) {
+        ErrorSnackbarComponent.openSnackBar(this.matSnackBar, error);
+        return;
+      }
       this.router.navigate(['/login']);
     }
     else {

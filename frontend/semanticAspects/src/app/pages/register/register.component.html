@@ -5,26 +5,26 @@
         <form [formGroup]="form" (ngSubmit)="registerUser()">
             <p>
                 <mat-form-field class="full-width">
-                    <mat-label>Full Name</mat-label>
-                    <input type="text" matInput placeholder="Full Name" formControlName="name">
+                    <mat-label>Full Name (Only informational, not be used)</mat-label>
+                    <input type="text" matInput placeholder="Ferko Mrkvicka" formControlName="name">
                 </mat-form-field>
             </p>
             <p>
                 <mat-form-field class="full-width">
-                    <mat-label>Email</mat-label>
-                    <input type="email" matInput placeholder="Email" formControlName="email">
+                    <mat-label>Email (For login)</mat-label>
+                    <input type="email" matInput placeholder="ferko@mrkvicka.com" formControlName="email">
                 </mat-form-field>
             </p>
             <p>
                 <mat-form-field class="full-width">
                     <mat-label>Password</mat-label>
-                    <input type="password" matInput placeholder="Password" formControlName="password">
+                    <input type="password" matInput placeholder="******" formControlName="password">
                 </mat-form-field>
             </p>
             <p>
                 <mat-form-field class="full-width">
                     <mat-label>Confirm Password</mat-label>
-                    <input type="password" matInput placeholder="Confirm Password" formControlName="confirmPassword"
+                    <input type="password" matInput placeholder="******" formControlName="confirmPassword"
                         >
                 </mat-form-field>
             </p>

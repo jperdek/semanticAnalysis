@@ -3,6 +3,7 @@ import { Injectable } from '@angular/core';
 import { User } from 'src/app/models/user';
 import { environment } from 'src/environments/environment';
 import * as bcrypt from 'bcryptjs';
+import { addExceptionMechanism } from '@sentry/utils';
 
 @Injectable({
   providedIn: 'root'
@@ -21,18 +22,17 @@ export class OktaRegisterService {
     const nameParts = user.name.split(' ');
     let firstName: string;
     let lastName: string;
-    if (nameParts.length > 1){
-      firstName = user.name;
-      lastName = '';
-    } else {
+    if (nameParts.length === 2){
       firstName = nameParts[0];
       lastName = nameParts[1];
+    } else {
+      throw new Error('Full name is incorrectly set. Use pattern: Ferko Mrkvicka');
     }
 
     return {
       profile: {
-        firstName: user.name,
-        lastName: user.name.split(' ')[1],
+        firstName,
+        lastName,
         email: user.email,
         login: user.email,
         mobilePhone: '555-415-1337'
