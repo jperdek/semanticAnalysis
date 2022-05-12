@@ -1,3 +1,7 @@
+Please fill form for user evaluation.
+https://docs.google.com/forms/d/e/1FAIpQLSdGRmQ4Cyc15GiDgFvnrQ5HzKXraYGlpmePEpKyTRO7b0eQIg/viewform?usp=sf_link
+
+
 Repository for master thesis with orientation to semantic aspects of web documents
 
 # Architecture for automatization of semantic analysis - REST API (in development)
